@@ -17,7 +17,13 @@
                 "pages":
                 [
                     { "pageName": "Language Enactor", "href": "/enactor-lang.html" },
-                    { "pageName": "First Discovery Editor", "href": "/firstDiscoveryEditor.html"}
+                    { "pageName": "First Discovery Editor", "href": "/firstDiscoveryEditor.html"},
+                    { "pageName": "Help Button", "href": "/helpButton.html"},
+                    { "pageName": "US Keymap", "href": "/usKeymap.html"},
+                    { "pageName": "Keyboard Input", "href": "/keyboardInput.html"},
+                    { "pageName": "Keyboard Input - Text to Speech", "href": "/keyboardInputTTS.html"},
+                    { "pageName": "Message Lookup", "href": "/msgLookup.html"},
+                    { "pageName": "Navigation", "href": "/nav.html"}
                 ]
             }
 
