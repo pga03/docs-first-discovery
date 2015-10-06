@@ -36,7 +36,7 @@ var myHelpButton = gpii.firstDiscovery.helpButton(container, options);
 The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 used by the the First Discovery Editor:
 
-* [`fluid.viewRelayComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
+* [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 * [`gpii.firstDiscovery.msgLookup`](msgLookup.md)
 
 ## Dependencies
