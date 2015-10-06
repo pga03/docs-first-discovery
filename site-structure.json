@@ -43,6 +43,8 @@
                 [
                     { "pageName": "Ranged", "href": "/ranged.html"},
                     { "pageName": "Ranged With Disabled Message", "href": "/rangedDisabled.html"},
+                    { "pageName": "Sticky Keys Adjuster", "href": "/stickyKeysAdjuster.html"},
+                    { "pageName": "Sticky Keys Assessor", "href": "/stickyKeysAssessment.html"},
                     { "pageName": "Sticky Key – Text To Speech", "href": "/keyboardTTS.html"},
                     { "pageName": "Speech Rate with Prefs Editor Connection", "href": "/speechRatePrefsEditorConnection.html"},
                     { "pageName": "Language with Prefs Editor Connection", "href": "/langPrefEditorConnector.html"},
@@ -82,7 +84,11 @@
                     { "pageName": "Keyboard Input", "href": "/keyboardInput.html"},
                     { "pageName": "Keyboard Input - Text to Speech", "href": "/keyboardInputTTS.html"},
                     { "pageName": "US Keymap", "href": "/usKeymap.html"},
-                    { "pageName": "Attach Tooltip on Language", "href": "/attachTooltipOnLang.html"}
+                    { "pageName": "Attach Tooltip", "href": "/attachTooltip.html"},
+                    { "pageName": "Attach Tooltip Renderer", "href": "/attachTooltip Renderer.html"},
+                    { "pageName": "Attach Tooltip on Language", "href": "/attachTooltipOnLang.html"},
+                    { "pageName": "Text-to-Speech Hookup – Tooltip", "href": "/ttsHookupTooltip.html"},
+                    { "pageName": "Text-to-Speech Hookup – First Discovery", "href": "/ttsHookupFD.html"}
                 ]
             }
         ]
