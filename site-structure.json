@@ -13,20 +13,52 @@
         "sections":
         [
             {
-                "sectionName":"",
+                "sectionName":"General",
                 "pages":
                 [
-                    { "pageName": "Language Enactor", "href": "/enactor-lang.html" },
                     { "pageName": "First Discovery Editor", "href": "/firstDiscoveryEditor.html"},
-                    { "pageName": "Help Button", "href": "/helpButton.html"},
+                    { "pageName": "Help Button", "href": "/helpButton.html"}
+                ]
+            },
+            {
+                "sectionName":"Panels",
+                "pages":
+                [
                     { "pageName": "US Keymap", "href": "/usKeymap.html"},
                     { "pageName": "Keyboard Input", "href": "/keyboardInput.html"},
-                    { "pageName": "Keyboard Input - Text to Speech", "href": "/keyboardInputTTS.html"},
-                    { "pageName": "Message Lookup", "href": "/msgLookup.html"},
-                    { "pageName": "Navigation", "href": "/nav.html"}
+                    { "pageName": "Keyboard Input - Text to Speech", "href": "/keyboardInputTTS.html"}
+                ]
+            },
+            {
+                "sectionName":"Enactors",
+                "pages":
+                [
+                    { "pageName": "Language Enactor", "href": "/enactor-lang.html" }
+                ]
+            },
+            {
+                "sectionName":"Language Management",
+                "pages":
+                [
+                    { "pageName": "Message Lookup", "href": "/msgLookup.html"}
+                ]
+            },
+            {
+                "sectionName":"Navigation",
+                "pages":
+                [
+                    { "pageName": "Navigation", "href": "/nav.html"},
+                    { "pageName": "Navigation Buttons", "href": "/navButtons.html"},
+                    { "pageName": "Navigation Icons", "href": "/navIcons.html"},
+                    { "pageName": "Navigation icon", "href": "/icon.html"}
+                ]
+            },
+            {
+                "sectionName":"Self-voicing",
+                "pages":
+                [
                 ]
             }
-
         ]
     }
 ]

@@ -35,16 +35,14 @@ fluid.defaults("my.auxSchema", {
 });
 ```
 
-*Option 1*: Typically this component is used as a sub-component of the [Keyboard Input](keyboardInput.md).
-
-Adding as sub-component:
+*Option 1*: Typically this component is used as a sub-component of the [Keyboard Input](keyboardInput.md):
 ```javascript
 keymap: {
     type: "gpii.firstDiscovery.usKeymap"
 }
 ```
 
-*Option 2*: Adding as a stand alone component:
+*Option 2*: Outside the context of the First Discovery Tool, developers may wish to create a standalone component:
 ```javascript
 var myKeymap = gpii.firstDiscovery.usKeymap(options);
 ```
@@ -120,12 +118,24 @@ used by the the First Discovery Editor:
         </td>
     </tr>
     <tr>
-        <td>``</td>
+        <td>`selectors`</td>
+        <td>Javascript object containing selectors for various fragments of the markup, including the containers for the subcomponents.</td>
         <td></td>
+        <td>See [Selectors](#selectors) below</td>
+    </tr>
+    <tr>
+        <td>`styles`</td>
+        <td>Specific class names used to achieve the look and feel</td>
         <td></td>
         <td>
         <pre><code></code></pre>
         </td>
+    </tr>
+    <tr>
+        <td>`modelListeners`</td>
+        <td>JavaScript object containing model paths and the listeners that are activated when changes happen to those paths</td>
+        <td>Keys in the object are event names, values are functions or arrays of functions.</td>
+        <td>See [Model](#model) above</td>
     </tr>
 </table>
 

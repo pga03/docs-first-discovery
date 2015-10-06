@@ -23,7 +23,7 @@ keymap: {
 }
 ```
 
-*Option 2*: Adding as a stand alone component:
+*Option 2*: Outside the context of the First Discovery Tool, developers may wish to create a standalone component:
 ```javascript
 var myKeymap = gpii.firstDiscovery.usKeymap(options);
 ```
