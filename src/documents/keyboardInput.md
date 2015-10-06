@@ -4,7 +4,11 @@ layout: default
 category: API
 ---
 
-## Keyboard Input Overview
+## Overview
+
+**Component Name:** `gpii.firstDiscovery.keyboardInput`
+
+**File:** `keyboardInput.js`
 
 When a character is entered via a keyboard, if the SHIFT key is not latched,
 the keyboard input component shows the character itself, otherwise, it shows
@@ -12,18 +16,16 @@ the corresponding SHIFT latched character.
 
 ## Adding a Keyboard Input
 
-*Option 1*: Typically this component is used as a sub-component of a [Sticky Key Panel](stickyKeyPanel.md).
-
-Adding as sub-component:
+*Option 1*: Typically this component is used as a sub-component of a [Sticky Key Panel](stickyKeyPanel.md):
 ```javascript
 keyboardInput: {
     type: "gpii.firstDiscovery.keyboardInput",
     container: "{that}.dom.input",
-    options: {}
+    options: {...}
 }
 ```
 
-*Option 2*: Adding as a stand alone component::
+*Option 2*: Adding as a stand alone component:
 ```javascript
 var myKeyboardInput = gpii.firstDiscovery.keyboardInput(container, options);
 ```

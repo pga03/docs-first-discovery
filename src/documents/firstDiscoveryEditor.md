@@ -4,7 +4,11 @@ layout: default
 category: API
 ---
 
-## First Discovery Editor Overview
+## Overview
+
+**Component Name:** `gpii.firstDiscovery.firstDiscoveryEditor`
+
+**File:** `firstDiscoveryEditor.js`
 
 The First Discovery Tool is a type of Preferences Editor designed to be an entry point for users
 who are new to customizing a user interface to match their own needs and preferences.
@@ -16,9 +20,7 @@ to create an initial set of preferences that meets their current needs and prefe
 The First Discovery Editor should be bound to an instance of a
 [Preferences Editor](http://docs.fluidproject.org/infusion/development/PreferencesEditor.html)
 by supplying it as the loaderGrade in an
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html).
-
-Adding to an [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
 
 ```javascript
 fluid.defaults("my.auxSchema", {

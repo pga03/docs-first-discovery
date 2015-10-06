@@ -4,7 +4,11 @@ layout: default
 category: API
 ---
 
-## Message Lookup Overview
+## Overview
+
+**Component Name:** `gpii.firstDiscovery.msgLookup`
+
+**File:** `msgLookup.js`
 
 The Message Lookup provides a means for resolving
 [message bundles](http://docs.fluidproject.org/infusion/development/LocalizationInThePreferencesFramework.html)
@@ -18,11 +22,12 @@ use it's capabilities for displaying messages/strings to a user.
 
 ## Adding Message Lookup to a Component/Grade
 
-To mixin the Message Lookup into your Component/Grade:
+To mixin the Message Lookup into your Component/Grade, supply it as a `gradeNames` option:
 
 ```javascript
 fluid.defaults("my.component", {
-    gradeNames: ["gpii.firstDiscovery.msgLookup", "autoInit"]
+    gradeNames: ["gpii.firstDiscovery.msgLookup", "autoInit"],
+    ...
 });
 ```
 

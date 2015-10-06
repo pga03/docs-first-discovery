@@ -4,7 +4,11 @@ layout: default
 category: API
 ---
 
-## Keyboard Input - Text to Speech Overview
+## Overview
+
+**Component Name:** `gpii.firstDiscovery.keyboardInputTts`
+
+**File:** `keyboardInput.js`
 
 This component adds the self-voicing to the [Keyboard Input](keyboardInput.md) to announce the input character and
 whether the SHIFT key is latched. This component is not intended to be used on its own, but
@@ -13,13 +17,13 @@ with the [`fluid.textToSpeech`](http://docs.fluidproject.org/infusion/developmen
 
 ## Adding a Keyboard Input - Text to Speech to a Component/Grade
 
-To mixin the Keyboard Input - Text to Speech into the [Keyboard Input](keyboardInput.md) by supplying it as a gradeNames option:
+To mixin the Keyboard Input - Text to Speech into the [Keyboard Input](keyboardInput.md), supply it as a `gradeNames` option:
 ```javascript
 keyboardInput: {
     type: "gpii.firstDiscovery.keyboardInput",
     container: "{that}.dom.input",
     options: {
-        gradeNames: ["gpii.firstDiscovery.keyboardInputTts"]
+        gradeNames: ["gpii.firstDiscovery.keyboardInputTts"],
         ...
     }
 }

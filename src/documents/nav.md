@@ -4,16 +4,18 @@ layout: default
 category: API
 ---
 
-## Navigation Overview
+## Overview
+
+**Component Name:** `gpii.firstDiscovery.nav`
+
+**File:** `nav.js`
 
 Handles the navigation between panels as well as maintaining a set of icons representing each panel.
 
 ## Adding a Navigation Component
 
 *Option 1*: Typically used as a sub-component of a Preferences Editor Loader, particularly the
-[First Discovery Tool Editor](firstDiscoveryEditor.md).
-
-Adding as sub-component:
+[First Discovery Tool Editor](firstDiscoveryEditor.md)t:
 ```javascript
 nav: {
     type: "gpii.firstDiscovery.nav",
@@ -22,7 +24,7 @@ nav: {
 }
 ```
 
-*Option 2*: Adding as a stand alone component::
+*Option 2*: Adding as a stand alone component:
 ```javascript
 var myNav = gpii.firstDiscovery.nav(container, options);
 ```

@@ -4,7 +4,11 @@ layout: default
 category: API
 ---
 
-## US Keymap Overview
+## Overview
+
+**Component Name:** `gpii.firstDiscovery.usKeymap`
+
+**File:** `keyboardInput.js`
 
 Provides methods required for measuring the keyboard input such as the latched SHIFT key and
 retrieving the corresponding character when the SHIFT key is latched.
@@ -12,16 +16,14 @@ Currently this component only supports the US keyboard layout.
 
 ## Adding a US Keymap
 
-*Option 1*: Typically this component is used as a sub-component of the [Keyboard Input](keyboardInput.md).
-
-Adding as sub-component:
+*Option 1*: Typically this component is used as a sub-component of the [Keyboard Input](keyboardInput.md):
 ```javascript
 keymap: {
     type: "gpii.firstDiscovery.usKeymap"
 }
 ```
 
-*Option 2*: Adding as a stand alone component::
+*Option 2*: Adding as a stand alone component:
 ```javascript
 var myKeymap = gpii.firstDiscovery.usKeymap(options);
 ```

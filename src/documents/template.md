@@ -4,18 +4,28 @@ layout: default
 category: API
 ---
 
-## X Overview
+## Overview
+
+**Component Name:** `gpii.firstDiscovery.enactor.lang`
+
+**File:** `enactors.js`
 
 X.
 
 ## Adding a X
 
+To mixin the X into your Component/Grade, supply it as a `gradeNames` option:
+```javascript
+fluid.defaults("my.component", {
+    gradeNames: ["x", "autoInit"],
+    ...
+});
+```
+
 The First Discovery Editor should be bound to an instance of a
 [Preferences Editor](http://docs.fluidproject.org/infusion/development/PreferencesEditor.html)
 by supplying it as the loaderGrade in an
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html).
-
-Adding to an [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
 
 ```javascript
 fluid.defaults("my.auxSchema", {
@@ -34,7 +44,7 @@ keymap: {
 }
 ```
 
-*Option 2*: Adding as a stand alone component::
+*Option 2*: Adding as a stand alone component:
 ```javascript
 var myKeymap = gpii.firstDiscovery.usKeymap(options);
 ```
