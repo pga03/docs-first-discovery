@@ -27,7 +27,15 @@
                     { "pageName": "Ranged", "href": "/ranged.html"},
                     { "pageName": "Ranged With Disabled Message", "href": "/rangedDisabled.html"},
                     { "pageName": "Sticky Key", "href": "/keyboard.html"},
-                    { "pageName": "Sticky Key – Text To Speech", "href": "/keyboardTTS.html"}
+                    { "pageName": "Sticky Key – Text To Speech", "href": "/keyboardTTS.html"},
+                    { "pageName": "Speech Rate", "href": "/speechRate.html"},
+                    { "pageName": "Speech Rate with Prefs Editor Connection", "href": "/speechRatePrefsEditorConnection.html"},
+                    { "pageName": "Text Size", "href": "/textSize.html"},
+                    { "pageName": "Speak Text", "href": "/speakText.html"},
+                    { "pageName": "On-Screen Keyboard", "href": "/onScreenKeyboard.html"},
+                    { "pageName": "Captions", "href": "/captions.html"},
+                    { "pageName": "Show Sounds", "href": "/showSounds.html"},
+                    { "pageName": "Yes/No", "href": "/yesNo.html"}
                 ]
             },
             {
