@@ -24,9 +24,10 @@
                 "sectionName":"Panels",
                 "pages":
                 [
-                    { "pageName": "US Keymap", "href": "/usKeymap.html"},
-                    { "pageName": "Keyboard Input", "href": "/keyboardInput.html"},
-                    { "pageName": "Keyboard Input - Text to Speech", "href": "/keyboardInputTTS.html"}
+                    { "pageName": "Ranged", "href": "/ranged.html"},
+                    { "pageName": "Ranged With Disabled Message", "href": "/rangedDisabled.html"},
+                    { "pageName": "Sticky Key", "href": "/keyboard.html"},
+                    { "pageName": "Sticky Key – Text To Speech", "href": "/keyboardTTS.html"}
                 ]
             },
             {
@@ -57,6 +58,15 @@
                 "sectionName":"Self-voicing",
                 "pages":
                 [
+                ]
+            },
+            {
+                "sectionName":"Utility",
+                "pages":
+                [
+                    { "pageName": "Keyboard Input", "href": "/keyboardInput.html"},
+                    { "pageName": "Keyboard Input - Text to Speech", "href": "/keyboardInputTTS.html"},
+                    { "pageName": "US Keymap", "href": "/usKeymap.html"}
                 ]
             }
         ]

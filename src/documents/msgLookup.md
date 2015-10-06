@@ -26,7 +26,7 @@ To mixin the Message Lookup into your Component/Grade, supply it as a `gradeName
 
 ```javascript
 fluid.defaults("my.component", {
-    gradeNames: ["gpii.firstDiscovery.msgLookup", "autoInit"],
+    gradeNames: ["gpii.firstDiscovery.msgLookup"],
     ...
 });
 ```

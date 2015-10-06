@@ -17,7 +17,7 @@ X.
 To mixin the X into your Component/Grade, supply it as a `gradeNames` option:
 ```javascript
 fluid.defaults("my.component", {
-    gradeNames: ["x", "autoInit"],
+    gradeNames: ["x"],
     ...
 });
 ```
