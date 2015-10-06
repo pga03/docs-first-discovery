@@ -21,20 +21,31 @@
                 ]
             },
             {
-                "sectionName":"Panels",
+                "sectionName":"Panels presented to user",
+                "pages":
+                [
+                    { "pageName": "Welcome", "href": "/welcome.html"},
+                    { "pageName": "Language", "href": "/lang.html"},
+                    { "pageName": "Speak Text", "href": "/speakText.html"},
+                    { "pageName": "Speech Rate", "href": "/speechRate.html"},
+                    { "pageName": "Contrast", "href": "/contrast.html"},
+                    { "pageName": "Text Size", "href": "/textSize.html"},
+                    { "pageName": "On-Screen Keyboard", "href": "/onScreenKeyboard.html"},
+                    { "pageName": "Captions", "href": "/captions.html"},
+                    { "pageName": "Show Sounds", "href": "/showSounds.html"},
+                    { "pageName": "Sticky Key", "href": "/keyboard.html"},
+                    { "pageName": "Congratulations", "href": "/congratulations.html"}
+                ]
+            },
+            {
+                "sectionName":"Components used by panels",
                 "pages":
                 [
                     { "pageName": "Ranged", "href": "/ranged.html"},
                     { "pageName": "Ranged With Disabled Message", "href": "/rangedDisabled.html"},
-                    { "pageName": "Sticky Key", "href": "/keyboard.html"},
                     { "pageName": "Sticky Key – Text To Speech", "href": "/keyboardTTS.html"},
-                    { "pageName": "Speech Rate", "href": "/speechRate.html"},
                     { "pageName": "Speech Rate with Prefs Editor Connection", "href": "/speechRatePrefsEditorConnection.html"},
-                    { "pageName": "Text Size", "href": "/textSize.html"},
-                    { "pageName": "Speak Text", "href": "/speakText.html"},
-                    { "pageName": "On-Screen Keyboard", "href": "/onScreenKeyboard.html"},
-                    { "pageName": "Captions", "href": "/captions.html"},
-                    { "pageName": "Show Sounds", "href": "/showSounds.html"},
+                    { "pageName": "Language with Prefs Editor Connection", "href": "/langPrefEditorConnector.html"},
                     { "pageName": "Yes/No", "href": "/yesNo.html"}
                 ]
             },
@@ -59,22 +70,19 @@
                     { "pageName": "Navigation", "href": "/nav.html"},
                     { "pageName": "Navigation Buttons", "href": "/navButtons.html"},
                     { "pageName": "Navigation Icons", "href": "/navIcons.html"},
-                    { "pageName": "Navigation icon", "href": "/icon.html"}
-                ]
-            },
-            {
-                "sectionName":"Self-voicing",
-                "pages":
-                [
+                    { "pageName": "Navigation Ocon", "href": "/icon.html"},
+                    { "pageName": "Step Count", "href": "/stepCount.html"}
                 ]
             },
             {
                 "sectionName":"Utility",
                 "pages":
                 [
+                    { "pageName": "Self Voicing", "href": "/selfVoicing.html"},
                     { "pageName": "Keyboard Input", "href": "/keyboardInput.html"},
                     { "pageName": "Keyboard Input - Text to Speech", "href": "/keyboardInputTTS.html"},
-                    { "pageName": "US Keymap", "href": "/usKeymap.html"}
+                    { "pageName": "US Keymap", "href": "/usKeymap.html"},
+                    { "pageName": "Attach Tooltip on Language", "href": "/attachTooltipOnLang.html"}
                 ]
             }
         ]
