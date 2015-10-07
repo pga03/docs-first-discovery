@@ -73,15 +73,60 @@ used by the the Self Voicing component:
 
 ## Methods
 
-| Method | Description | Parameters |
-|--------|-------------|------------|
-| `queueSpeech` |Makes use of the fluid.textToSpeech.queueSpeech but only calls it if the enabled model value is true. It also prevents the speech from actually queue, and sets it to always interrupt.  |`text`: The string of text to be voiced; `options`: Any valid speech utterance options (see: [`utteranceOpts`](http://docs.fluidproject.org/infusion/development/TextToSpeechAPI.html#utteranceopts-option))  |
-| `toggleState` | Toggles the enabled state, effectively muting/unmuting. |   |
-| `setLabel` |Sets the mute button label depending on the enabled  state. Note: this is meant for internal use by the component and not for external API calls.  |   |
-| `setTooltip` | Sets the tooltip for the mute button depending on the enabled  state. Note: this is meant for internal use by the component and not for external API calls. |   |
-| `setMuteStyle` | Sets the style class on the mute button depending on the enabled  state. Note: this is meant for internal use by the component and not for external API calls. |   |
-| `clearQueue` | Empties the queue if the self voicing is disabled (muted). |   |
-| `speakVoiceSate` | Utters the current enabled  state. | `options`: Any valid speech utterance options (see: [`utteranceOpts`](http://docs.fluidproject.org/infusion/development/TextToSpeechAPI.html#utteranceopts-option))  |
+<table>
+    <thead>
+        <tr><th>Method</th><th>Description</th><th>Parameters</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>`queueSpeech`</td>
+            <td>Makes use of the fluid.textToSpeech.queueSpeech but only calls it if the enabled model value is true. It also prevents the speech from actually queue, and sets it to always interrupt.</td>
+            <td>
+                <dl>
+                    <dd>`text` (string)</dd>
+                    <dt>The string of text to be voiced</dt>
+                    <dd>`options` (Object)</dd>
+                    <dt>Any valid speech utterance options (see: [`utteranceOpts`](http://docs.fluidproject.org/infusion/development/TextToSpeechAPI.html#utteranceopts-option))</dt>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>`toggleState`</td>
+            <td>Toggles the enabled state, effectively muting/unmuting.</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>`setLabel`</td>
+            <td>Sets the mute button label depending on the enabled  state. Note: this is meant for internal use by the component and not for external API calls.</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>`setTooltip`</td>
+            <td>Sets the tooltip for the mute button depending on the enabled  state. Note: this is meant for internal use by the component and not for external API calls.</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>`setMuteStyle`</td>
+            <td> Sets the style class on the mute button depending on the enabled  state. Note: this is meant for internal use by the component and not for external API calls.</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>`clearQueue`</td>
+            <td>Empties the queue if the self voicing is disabled (muted).</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>`speakVoiceSate`</td>
+            <td>Utters the current enabled  state.</td>
+            <td>
+                <dl>
+                    <dd>`options` (Object)</dd>
+                    <dt>Any valid speech utterance options (see: [`utteranceOpts`](http://docs.fluidproject.org/infusion/development/TextToSpeechAPI.html#utteranceopts-option))</dt>
+                </dl>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Options
 

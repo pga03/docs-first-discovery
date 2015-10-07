@@ -45,7 +45,7 @@ The ranged panel - with disabled message component inherits all methods from
 
 | Method | Description | Parameters |
 |--------|-------------|------------|
-| `toggleDisplay` | Enable (or disable) the increase and decrease buttons and show (or hide) the disabled message. | `isEnabled`: boolean  |
+| `toggleDisplay` | Enable (or disable) the increase and decrease buttons and show (or hide) the disabled message. | `isEnabled` (boolean)  |
 
 
 ## Selectors

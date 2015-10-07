@@ -55,17 +55,52 @@ used by the the First Discovery Editor:
 
 ## Supported Events
 
-| Event  | Type |Description | Parameters | Parameter Description |
-|--------|------|------------|------------|-----------------------|
-| `currentPanelNum` | default | Fired when the internal prefsEditor, containing all of panels, is ready. | `component` |  An instance of `fluid.prefs.prefsEditor` |
-| `onCreateNav` | default | Fired after onPrefsEditorReady, which is when all of the necessary markup is in place. | `component` |  An instance of `fluid.prefs.prefsEditor` |
-| `onPanelShown` | default | Fired each time a panel becomes visible. | `number` |  The panel ID of visible shown panel |
+<table>
+    <thead>
+        <tr><th>Event</th><th>Type</th><th>Description</th><th>Parameters</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>`currentPanelNum`</td>
+            <td>default</td>
+            <td>Fired when the internal prefsEditor, containing all of panels, is ready</td>
+            <td>
+                <dl>
+                    <dd>`component`</dd>
+                    <dt>An instance of `fluid.prefs.prefsEditor`</dt>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>`onCreateNav`</td>
+            <td>default</td>
+            <td>Fired after onPrefsEditorReady, which is when all of the necessary markup is in place</td>
+            <td>
+                <dl>
+                    <dd>`component`</dd>
+                    <dt>An instance of `fluid.prefs.prefsEditor`</dt>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>`onPanelShown`</td>
+            <td>default</td>
+            <td>Fired each time a panel becomes visible</td>
+            <td>
+                <dl>
+                    <dd>`number`</dd>
+                    <dt>The panel ID of visible shown panel</dt>
+                </dl>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Methods
 
 | Method | Description | Parameters |
 |--------|-------------|------------|
-| `showPanel` | Sets the visibility of the panels. The panel which is identified as the current panel in the model is made visible, the reset are hidden. | &nbsp; |
+| `showPanel` | Sets the visibility of the panels. The panel which is identified as the current panel in the model is made visible, the reset are hidden. | none |
 
 
 ## Subcomponents

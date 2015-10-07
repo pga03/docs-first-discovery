@@ -49,21 +49,21 @@ used by the the First Discovery Editor:
 
 ## Supported Events
 
-| Event  | Type |Description | Parameters | Parameter Description |
-|--------|------|------------|------------|-----------------------|
-| `shiftKeydown` | default | Fired when the SHIFT key is pressed. | None | N/A |
-| `keypress` | default | Fired when a key is pressed | `String` | The character associated with the pressed key  |
-| `shiftLatchChange ` | default | Fired when the SHIFT is pressed and the sticky key preference has already been turned on | `Component` | An instance of `gpii.firstDiscovery.keyboardInput`  |
+| Event  | Type |Description | Parameters |
+|--------|------|------------|------------|
+| `shiftKeydown` | default | Fired when the SHIFT key is pressed. | none |
+| `keypress` | default | Fired when a key is pressed | `ch` (string): The character associated with the pressed key  |
+| `shiftLatchChange ` | default | Fired when the SHIFT is pressed and the sticky key preference has already been turned on | `that` ([component](http://docs.fluidproject.org/infusion/development/UnderstandingInfusionComponents.html)): An instance of `gpii.firstDiscovery.keyboardInput`  |
 
 ## Methods
 
 | Method | Description | Parameters |
 |--------|-------------|------------|
-| `unlatchShift` | Unlatches the SHIFT | None |
-| `updateShiftLatchedClass` | Toggles the css class based on whether or not the SHIFT key is latched | None |
-| `clearInput` | Clears the input field. | None |
-| `openTooltipIfNotFocused` | Opens the tooltip for the input field even when the input field does not have focus, for example, when the mouse hovers over the input field | None |
-| `toggleShiftLatched` | Toggles the latched state of the SHIFT key | None |
+| `unlatchShift` | Unlatches the SHIFT | none |
+| `updateShiftLatchedClass` | Toggles the css class based on whether or not the SHIFT key is latched | none |
+| `clearInput` | Clears the input field. | none |
+| `openTooltipIfNotFocused` | Opens the tooltip for the input field even when the input field does not have focus, for example, when the mouse hovers over the input field | none |
+| `toggleShiftLatched` | Toggles the latched state of the SHIFT key | none |
 
 
 ## Options

@@ -33,9 +33,9 @@ keyboardInput: {
 
 | Method | Description | Parameters |
 |--------|-------------|------------|
-| `speak` | Queues speech | None  |
-| `speakOnFocusMessage` | Speaks the message when the input field gets focus | None  |
-| `speakShiftState` | Announces when the SHIFT is latched or unlatched. | None  |
+| `speak` | Queues speech | none  |
+| `speakOnFocusMessage` | Speaks the message when the input field gets focus | none  |
+| `speakShiftState` | Announces when the SHIFT is latched or unlatched. | none  |
 
 
 ## Dependencies

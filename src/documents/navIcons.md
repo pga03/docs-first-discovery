@@ -45,9 +45,26 @@ used by the the First Discovery Editor:
 
 ## Supported Events
 
-| Event  | Type |Description | Parameters | Parameter Description |
-|--------|------|------------|------------|-----------------------|
-| `onCreateIcon` | default | Fired to trigger the creation of each navigation icon | `element`, `position` |  `element`: the DOM element to use as the container for the [Navigation Icon](icon.md); `position`: the position of the [Navigation Icon](icon.md) |
+<table>
+    <thead>
+        <tr><th>Event</th><th>Type</th><th>Description</th><th>Parameters</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>`onCreateIcon`</td>
+            <td>default</td>
+            <td>Fired to trigger the creation of each navigation icon</td>
+            <td>
+                <dl>
+                    <dd>`element`</dd>
+                    <dt>the DOM element to use as the container for the [Navigation Icon](icon.md)</dt>
+                    <dd>`position` (number)</dd>
+                    <dt>the position of the [Navigation Icon](icon.md)</dt>
+                </dl>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Subcomponents
 

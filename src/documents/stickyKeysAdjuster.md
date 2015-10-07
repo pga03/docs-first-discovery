@@ -46,19 +46,12 @@ used by the the First Discovery Editor:
 | `stickyKeysEnabled` | Whether or not the sticky key preference is turned on. | Boolean | undefined |
 | `tryAccommodation ` |Whether or not the user has chosen to try the sticky key feature.  | Boolean | undefined |
 
-## Supported Events
-
-| Event  | Type |Description | Parameters | Parameter Description |
-|--------|------|------------|------------|-----------------------|
-| `stickyKeysEnabled` | default |  | `component` |  An instance of `` |
-| `tryAccommodation ` | default |  | `number` |   |
-
 ## Methods
 
 | Method | Description | Parameters |
 |--------|-------------|------------|
-| `toggleStickyKeys` | Toggles `model.stickyKeysEnabled` between an enabled/disabled state. | None  |
-| `toggleTry` | Toggles `model.tryAccommodation` between an enabled/disabled state. | None  |
+| `toggleStickyKeys` | Toggles `model.stickyKeysEnabled` between an enabled/disabled state. | none  |
+| `toggleTry` | Toggles `model.tryAccommodation` between an enabled/disabled state. | none  |
 
 ## Options
 

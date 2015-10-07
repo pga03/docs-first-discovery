@@ -65,16 +65,55 @@ used by the the First Discovery Editor:
 
 ## Supported Events
 
-| Event  | Type |Description | Parameters | Parameter Description |
-|--------|------|------------|------------|-----------------------|
-| `` | default |  | `component` |  An instance of `` |
-| `` | default |  | `number` |   |
+| Event  | Type |Description | Parameters |
+|--------|------|------------|------------|
+| `` | default |  | none |
+| `` | default |  | none  |
+
+<table>
+    <thead>
+        <tr><th>Event</th><th>Type</th><th>Description</th><th>Parameters</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>`foo`</td>
+            <td>default</td>
+            <td></td>
+            <td>
+                <dl>
+                    <dd>`foo`</dd>
+                    <dt></dt>
+                </dl>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Methods
 
-| Method | Description | Parameters |
-|--------|-------------|------------|
-| `` |  | ``:  |
+## Methods
+
+| Method   |Description | Parameters |
+|--------|------------|------------|
+| ``  |  | `` (type):   |
+
+<table>
+    <thead>
+        <tr><th>Method</th><th>Description</th><th>Parameters</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>`foo`</td>
+            <td></td>
+            <td>
+                <dl>
+                    <dd>`foo`</dd>
+                    <dt></dt>
+                </dl>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Members
 

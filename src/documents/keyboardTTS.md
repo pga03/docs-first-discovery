@@ -38,10 +38,30 @@ supply it as a `gradeNames` option in the [Auxiliary Schema](http://docs.fluidpr
 
 ## Methods
 
-| Method | Description | Parameters |
-|--------|-------------|------------|
-| `speakStickyKeysState` | Announces whether or not the sticky key preference is turned on. | Object: an instance of gpii.firstDiscovery.panel.keyboardTts; Boolean: the state of the sticky key preference |
-| `speakPanelInstructions` | Speaks the panel instruction. | none |
+<table>
+    <thead>
+        <tr><th>Method</th><th>Description</th><th>Parameters</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>`speakStickyKeysState`</td>
+            <td>Announces whether or not the sticky key preference is turned on</td>
+            <td>
+                <dl>
+                    <dd>`that` (object)</dd>
+                    <dt>an instance of `gpii.firstDiscovery.panel.keyboardTts`</dt>
+                    <dd>`state` (boolean)</dd>
+                    <dt>the state of the sticky key preference</dt>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>`speakPanelInstructions`</td>
+            <td>Speaks the panel instruction</td>
+            <td>none</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Dependencies
 

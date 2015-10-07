@@ -26,7 +26,7 @@ fluid.defaults("my.component", {
 
 | Method | Description | Parameters |
 |--------|-------------|------------|
-| `speak` | Calls the queueSpeech method from the Text-to-Speech engine in the component environment |  |
+| `speak` | Calls the queueSpeech method from the Text-to-Speech engine in the component environment | none |
 
 ## Dependencies
 

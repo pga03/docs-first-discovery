@@ -47,13 +47,50 @@ used by the the First Discovery Editor:
 
 ## Methods
 
-| Method | Description | Parameters |
-|--------|-------------|------------|
-| `setButtonLabels` | Sets the labels and tooltip content for the navigation buttons | |
-| `toggleButtonStates` | Toggles an element between an enabled/disabled state | `element`: A jQuery element;  `disabled`: A Boolean value of the disabled state to set |
-| `adjustCurrentPanelNum` | Changes the current panel by a specified change amount  | `toChange`: A number |
-| `backButtonClicked` | Moves the current panel back one position |  |
-| `nextButtonClicked` | Moves the current panel forward one position |  |
+<table>
+    <thead>
+        <tr><th>Method</th><th>Description</th><th>Parameters</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>`setButtonLabels`</td>
+            <td>Sets the labels and tooltip content for the navigation buttons</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>`toggleButtonStates`</td>
+            <td>Toggles an element between an enabled/disabled state</td>
+            <td>
+                <dl>
+                    <dd>`element` (jQuery object)</dd>
+                    <dt>A jQuery element</dt>
+                    <dd>`disabled` (boolean)</dd>
+                    <dt>value of the disabled state to set</dt>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>`adjustCurrentPanelNum`</td>
+            <td>Changes the current panel by a specified change amount</td>
+            <td>
+                <dl>
+                    <dd>`toChange` (number)</dd>
+                    <dt></dt>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>`backButtonClicked`</td>
+            <td>Moves the current panel back one position</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>`nextButtonClicked`</td>
+            <td>Moves the current panel forward one position</td>
+            <td>none</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Options
 

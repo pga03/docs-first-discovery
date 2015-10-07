@@ -51,7 +51,7 @@ used by the the Language Enactor:
 
 | Method | Description | Parameters |
 |--------|-------------|------------|
-| `reloadPage` | Triggers a page reload. | &nbsp; |
+| `reloadPage` | Triggers a page reload. | none |
 
 
 ## Members
