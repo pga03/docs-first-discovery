@@ -4,8 +4,21 @@
         "categoryHref":"/index.html"
     },
     {
-        "category": "Tutorial",
-        "categoryHref": "/index-tutorial.html"
+        "category": "Tutorials",
+        "categoryHref": "/index-tutorials.html",
+        "sections":
+        [
+            {
+                "sectionName":"Customizing the First Discovery Tool",
+                "pages":
+                [
+                    { "pageName": "Simplest: Reordering preferences", "href": "/reordering.html"},
+                    { "pageName": "Less simple: Removing preferences", "href": "/removing.html"},
+                    { "pageName": "More complicated: Adding a simple preference ", "href": "/adding.html"},
+                    { "pageName": "Enactors", "href": "/enactors.html"}
+                ]
+            }
+        ]
     },
     {
         "category": "API",

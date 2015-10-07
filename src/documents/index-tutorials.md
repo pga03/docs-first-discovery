@@ -1,7 +1,7 @@
 ---
-title: Tutorial
+title: Tutorials
 layout: default
-category: Tutorial
+category: Tutorials
 ---
 
 ## Customizing the First Discovery Tool
