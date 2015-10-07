@@ -10,7 +10,8 @@ category: API
 
 **File:** `panels.js`
 
-X.
+Used to set the page's language. Currently this action is performed by saving the selected
+language to the settings store and reloading the page.
 
 ## Adding a Language Panel to a component/grade
 

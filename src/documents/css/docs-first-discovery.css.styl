@@ -1,3 +1,45 @@
+/* customizing colours */
+head-foot-bg = #425165;
+head-fg = #FFFFFF;
+nav-bg = #728195;
+link = #fed73a;
+
+header-footer-link = link;
+header-footer-background = head-foot-bg;
+header-footer-color = head-fg;
+
+header-footer-hover-color = header-footer-background;
+header-footer-hover-background = header-footer-color;
+header-footer-focus = 0.2rem solid header-footer-color;
+header-nav-link = header-footer-color;
+header-active-category = 0.2rem solid header-footer-color;
+logo-color = header-footer-color;
+logo-background = header-footer-background;
+logo-hover-color = header-footer-background;
+logo-hover-background = header-footer-color;
+logo-focus = 0.2rem solid header-footer-color;
+
+header-nav-link = link;
+header-nav-background = nav-bg;
+header-nav-hover-color = nav-bg;
+header-nav-hover-background = link;
+header-nav-border-top = 0.1rem dotted head-fg;
+
+skip-color = header-footer-color;
+skip-background = head-foot-bg;
+skip-focus-outer-border = header-footer-color;
+skip-focus-inner-border = head-foot-bg;
+skip-hover-color = head-foot-bg;
+skip-hover-background = header-footer-color;
+
+hideShow-color = topics-item-color;
+link-color = topics-item-color;
+button-focus = 0.2rem solid topics-item-color;
+link-hover-color = head-fg;
+link-hover-background = topics-item-color;
+
+@import "docs-template.css.styl";
+
 /* remove default logo */
 .docs-template-logo::before {
     content: none;
