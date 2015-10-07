@@ -32,7 +32,7 @@ var myStickyKeyAssessor = gpii.firstDiscovery.keyboard.stickyKeysAssessment(opti
 ## Grades
 
 The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the the First Discovery Editor:
+used by the Sticky Keys Assessor component:
 
 * [`fluid.modelComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 

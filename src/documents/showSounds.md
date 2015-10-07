@@ -55,7 +55,7 @@ var myPanel = gpii.firstDiscovery.panel.showSounds(container, options);
 ## Grades
 
 The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the the First Discovery Editor:
+used by the Show Sounds panel:
 
 * [`gpii.firstDiscovery.panel.yesNo`](yesNo.md)
 

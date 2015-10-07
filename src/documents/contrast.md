@@ -56,7 +56,7 @@ var myPanel = gpii.firstDiscovery.panel.contrast(container, options);
 ## Grades
 
 The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the the First Discovery Editor:
+used by the Contrast panel:
 
 * [`fluid.prefs.panel`](http://docs.fluidproject.org/infusion/development/Panels.html)
 * [`gpii.firstDiscovery.attachTooltip.renderer`](attachTooltipRenderer.md)

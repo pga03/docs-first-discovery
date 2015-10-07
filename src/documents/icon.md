@@ -31,7 +31,7 @@ var myNavIcon = gpii.firstDiscovery.icon(container, options);
 ## Grades
 
 The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the the First Discovery Editor:
+used by the Navigation Icon component:
 
 * [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 

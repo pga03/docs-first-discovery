@@ -35,7 +35,7 @@ Typically passed into the [speech rate](speechRate.md) component by supplying it
 ## Grades
 
 The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the the First Discovery Editor:
+used by the Speech Rate and Preferences Editor Connector component:
 
 * [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 * [`gpii.firstDiscovery.msgLookup`](msgLookup.md)

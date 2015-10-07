@@ -33,7 +33,7 @@ var myKeyboardInput = gpii.firstDiscovery.keyboardInput(container, options);
 ## Grades
 
 The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the the First Discovery Editor:
+used by the Keyboard Input component:
 
 * [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 * [`gpii.firstDiscovery.tts.fdHookup`](tts-hookup.md)

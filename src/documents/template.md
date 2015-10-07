@@ -51,7 +51,7 @@ var myKeymap = gpii.firstDiscovery.usKeymap(options);
 ## Grades
 
 The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the the First Discovery Editor:
+used by the X:
 
 * [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 * [`gpii.firstDiscovery.attachTooltip`](attachTooltip.md)

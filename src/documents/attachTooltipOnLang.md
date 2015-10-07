@@ -40,7 +40,7 @@ fluid.defaults("gpii.firstDiscovery.panel.lang", {
 ## Grades
 
 The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the the First Discovery Editor:
+used by the Attach Tooltip On Lang:
 
 * [`gpii.firstDiscovery.attachTooltip`](attachTooltip.md)
 

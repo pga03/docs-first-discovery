@@ -1,3 +1,8 @@
+/* remove default logo */
+.docs-template-logo::before {
+    content: none;
+}
+
 /* widen main article, to make more room for tables with code in them */
 .docs-core-sidebar-expanded .docs-template-topics-container {
     width: 20%;
@@ -6,6 +11,7 @@
     width: 80%;
 }
 
+/* tidy up parameter descriptions */
 .docs-template-articleBody dl dd {
     margin-bottom: 0;
 }

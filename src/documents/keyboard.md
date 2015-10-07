@@ -1,5 +1,5 @@
 ---
-title: Sticky Key Panel
+title: Sticky Keys Panel
 layout: default
 category: API
 ---
@@ -10,13 +10,13 @@ category: API
 
 **File:** `panels.js`
 
-The Sticky Key panel offers:
+The Sticky Keys panel offers:
 
 1. Assesses whether the user needs the assistance of the sticky key feature;
 2. Provides a means for users to experiment the experience when the sticky key preference is turned on or off;
 3. Turn the sticky key preference on or off.
 
-## Adding a Sticky Key Panel to a Component/Grade
+## Adding a Sticky Keys Panel to a Component/Grade
 
 *Option 1*: Typically the Sticky Key Panel is integrated into the
 [First Discovery Tool](https://wiki.fluidproject.org/display/fluid/First+Discovery+Tool+Architecture)
@@ -59,7 +59,7 @@ var myPanel = gpii.firstDiscovery.panel.keyboard(container, options);
 ## Grades
 
 The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the the First Discovery Editor:
+used by the Sticky Keys panel:
 
 * [`fluid.prefs.panel`](http://docs.fluidproject.org/infusion/development/Panels.html)
 
