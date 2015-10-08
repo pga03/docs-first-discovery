@@ -34,12 +34,16 @@ fluid.defaults("my.auxSchema", {
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the the Language Enactor:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`fluid.prefs.enactor`](http://docs.fluidproject.org/infusion/development/Enactors.html)
 
 ## Model
+
+This component supports the following
+[model](http://docs.fluidproject.org/infusion/development/tutorial-gettingStartedWithInfusion/ModelComponents.html)
+properties:
 
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|

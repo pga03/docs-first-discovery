@@ -33,8 +33,8 @@ fluid.defaults("my.component", {
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the Ranged Panel - With Disabled Message:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`gpii.firstDiscovery.panel.ranged`](ranged.md)
 
@@ -50,9 +50,12 @@ The ranged panel - with disabled message component inherits all methods from
 
 ## Selectors
 
-One of the options that can be provided to the First Discovery Editor is a set of CSS-based
-selectors identifying where in the DOM different elements can be found. The value for the option
-is itself a Javascript object containing name/value pairs:
+One of the options that can be provided to Infusion components is a set of CSS-based
+selectors identifying where in the DOM different elements can be found. Components use a
+[DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
+named elements.
+
+The value for the option is itself a Javascript object containing name/value pairs:
 
 ```javascript
 selectors: {

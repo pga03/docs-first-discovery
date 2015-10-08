@@ -31,18 +31,25 @@ var myStickyKeyAssessor = gpii.firstDiscovery.keyboard.stickyKeysAssessment(opti
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the Sticky Keys Assessor component:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`fluid.modelComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 
 ## Model
+
+This component supports the following
+[model](http://docs.fluidproject.org/infusion/development/tutorial-gettingStartedWithInfusion/ModelComponents.html)
+properties:
 
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|
 | `offerAssistance` | Whether or not the sticky keys feature should be offered. | Boolean | undefined |
 
 ## Options
+
+This component can be configured using the following
+[options](http://docs.fluidproject.org/infusion/development/ComponentOptionsAndDefaults.html):
 
 | Name   | Description | Values | Default |
 |--------|-------------|--------|---------|

@@ -54,8 +54,8 @@ var myPanel = gpii.firstDiscovery.panel.captions(container, options);
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the Captions Panel:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`gpii.firstDiscovery.panel.yesNo`](yesNo.md)
 

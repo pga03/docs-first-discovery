@@ -10,27 +10,29 @@ category: API
 
 **File:** `firstDiscoveryEditor.js`
 
-The First Discovery Tool is a type of Preferences Editor designed to be an entry point for users
-who are new to customizing a user interface to match their own needs and preferences.
-It is intended to inform users of some of the various customization options and allow a user
-to create an initial set of preferences that meets their current needs and preferences.
+The First Discovery Editor component is the core component of the First Discovery Tool:
+It coordinates other major architectural functionality, such as navigation, text-to-speech,
+language management, etc.
 
-## Adding a First Discovery Editor
+## Using the First Discovery Editor component
 
-The First Discovery Editor should be bound to an instance of a
-[Preferences Editor](http://docs.fluidproject.org/infusion/development/PreferencesEditor.html)
-by supplying it as the loaderGrade in an
+The First Discovery Editor component is an instance of a  `fluid.prefs.prefsEditorLoader`.
+To use the component, specify it as the loader grade in the
 [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
 
 ```javascript
 fluid.defaults("my.auxSchema", {
     auxiliarySchema: {
-        "loaderGrades": ["gpii.firstDiscovery.firstDiscoveryEditor"]
+        "loaderGrades": ["gpii.firstDiscovery.firstDiscoveryEditor"],
+        // more not shown
     }
 });
 ```
 
-Instantiating the [Preferences Editor](http://docs.fluidproject.org/infusion/development/PreferencesEditor.html):
+To instantiate the resulting
+[preferences editor](http://docs.fluidproject.org/infusion/development/PreferencesEditor.html),
+use the auxiliary schema in a call to
+[`fluid.prefs.create()`](http://docs.fluidproject.org/infusion/development/PreferencesEditor.html):
 
 ```javascript
 fluid.prefs.create(container, {
@@ -41,19 +43,26 @@ fluid.prefs.create(container, {
 ```
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the First Discovery Editor:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`gpii.firstDiscovery.tts.fdHookup`](tts-hookupFD.md)
 * `fluid.prefs.prefsEditorLoader`
 
 ## Model
 
+This component supports the following
+[model](http://docs.fluidproject.org/infusion/development/tutorial-gettingStartedWithInfusion/ModelComponents.html)
+properties:
+
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|
 | `currentPanelNum` | The panel currently displayed | Panel ID (Number)|  1 |
 
 ## Supported Events
+
+This component supports the following
+[events](http://docs.fluidproject.org/infusion/development/InfusionEventSystem.html):
 
 <table>
     <thead>
@@ -104,6 +113,9 @@ used by the First Discovery Editor:
 
 
 ## Subcomponents
+
+This component has the following
+[subcomponents](http://docs.fluidproject.org/infusion/development/SubcomponentDeclaration.html):
 
 <table>
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
@@ -225,6 +237,9 @@ used by the First Discovery Editor:
 
 ## Options
 
+This component can be configured using the following
+[options](http://docs.fluidproject.org/infusion/development/ComponentOptionsAndDefaults.html):
+
 <table>
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
     <tr>
@@ -295,9 +310,12 @@ used by the First Discovery Editor:
 
 ## Selectors
 
-One of the options that can be provided to the First Discovery Editor is a set of CSS-based
-selectors identifying where in the DOM different elements can be found. The value for the option
-is itself a Javascript object containing name/value pairs:
+One of the options that can be provided to Infusion components is a set of CSS-based
+selectors identifying where in the DOM different elements can be found. Components use a
+[DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
+named elements.
+
+The value for the option is itself a Javascript object containing name/value pairs:
 
 ```javascript
 selectors: {

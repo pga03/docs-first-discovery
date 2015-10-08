@@ -32,14 +32,18 @@ var myStickyKeysAdjuster = gpii.firstDiscovery.keyboard.stickyKeysAdjuster(conta
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the Sticky Keys Adjuster component:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 * [`gpii.firstDiscovery.attachTooltip`](attachTooltip.md)
 * [`gpii.firstDiscovery.msgLookup`](msgLookup.md)
 
 ## Model
+
+This component supports the following
+[model](http://docs.fluidproject.org/infusion/development/tutorial-gettingStartedWithInfusion/ModelComponents.html)
+properties:
 
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|
@@ -55,6 +59,9 @@ used by the Sticky Keys Adjuster component:
 
 ## Options
 
+This component can be configured using the following
+[options](http://docs.fluidproject.org/infusion/development/ComponentOptionsAndDefaults.html):
+
 <table>
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
     <tr>
@@ -67,9 +74,12 @@ used by the Sticky Keys Adjuster component:
 
 ## Selectors
 
-One of the options that can be provided to the First Discovery Editor is a set of CSS-based
-selectors identifying where in the DOM different elements can be found. The value for the option
-is itself a Javascript object containing name/value pairs:
+One of the options that can be provided to Infusion components is a set of CSS-based
+selectors identifying where in the DOM different elements can be found. Components use a
+[DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
+named elements.
+
+The value for the option is itself a Javascript object containing name/value pairs:
 
 ```javascript
 selectors: {

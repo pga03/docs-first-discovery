@@ -30,8 +30,8 @@ var myKeymap = gpii.firstDiscovery.usKeymap(options);
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the US Keymap component:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`fluid.component`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 

@@ -4,10 +4,17 @@ layout: default
 category: Overview
 ---
 
-The First Discovery Tool is a JavaScript-based application that provides an easy-to-use interface
-for discovering and defining accessibility needs and preferences.
+The First Discovery Tool is a
+[Preferences Editor](http://docs.fluidproject.org/infusion/development/PreferencesEditor.html)
+designed to be an entry point for users
+who are new to customizing a user interface to match their own needs and preferences.
+Its goal is to introduce users to some of the interface features that can be customized,
+and to allow users to explore those features to discover their own personal preferences.
 
-The architecure of the First Discovery Tool
+The First Discovery Tool is a JavaScript-based application, built using the
+[Infusion](http://fluidproject.org/infusion.html)
+[Preferences Framework](http://docs.fluidproject.org/infusion/development/PreferencesFramework.html).
+Its architecure
 (described in detail in this [architecture report](https://wiki.fluidproject.org/display/fluid/First+Discovery+Tool+Architecture))
 supports reskinning and customization by integrators.
 

@@ -58,8 +58,8 @@ var myPanel = gpii.firstDiscovery.panel.speechRate(container, options);
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the Speech Rate panel:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`gpii.firstDiscovery.panel.rangedWithDisabledMessage`](rangedDisabled.md)
 
