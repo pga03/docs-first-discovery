@@ -1,5 +1,5 @@
 ---
-title: Sticky Key Panel – Text To Speech
+title: Sticky Keys Panel – Text To Speech
 layout: default
 category: API
 ---
@@ -11,15 +11,15 @@ category: API
 **File:** `panels.js`
 
 Adds the self-voicing to read the instructions at the various stages of the
-[Sticky Key Panel](keyboard.md) workflow. This component is not intended to be used on its own,
-but provided as a grade to the Sticky Key Panel Component. This component also relies on the
+[Sticky Keys Panel](keyboard.md) workflow. This component is not intended to be used on its own,
+but provided as a grade to the Sticky Keys Panel Component. This component also relies on the
 availability of a component with the
 [fluid.textToSpeech](http://docs.fluidproject.org/infusion/development/TextToSpeechAPI.html)
 grade within the component hierarchy to do the actual speaking.
 
-## Adding a Sticky Key Panel – Text To Speech to a Component/Grade
+## Adding a Sticky Keys Panel – Text To Speech to a Component/Grade
 
-To mixin the Sticky Key Panel – Text To Speech into your Component/Grade,
+To mixin the Sticky Keys Panel – Text To Speech into your Component/Grade,
 supply it as a `gradeNames` option in the [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
 
 ```javascript
@@ -45,13 +45,13 @@ supply it as a `gradeNames` option in the [Auxiliary Schema](http://docs.fluidpr
     <tbody>
         <tr>
             <td>`speakStickyKeysState`</td>
-            <td>Announces whether or not the sticky key preference is turned on</td>
+            <td>Announces whether or not the sticky keys preference is turned on</td>
             <td>
                 <dl>
                     <dd>`that` (object)</dd>
                     <dt>an instance of `gpii.firstDiscovery.panel.keyboardTts`</dt>
                     <dd>`state` (boolean)</dd>
-                    <dt>the state of the sticky key preference</dt>
+                    <dt>the state of the sticky keys preference</dt>
                 </dl>
             </td>
         </tr>

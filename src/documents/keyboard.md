@@ -12,14 +12,13 @@ category: API
 
 The Sticky Keys panel offers:
 
-1. Assesses whether the user needs the assistance of the sticky key feature;
-2. Provides a means for users to experiment the experience when the sticky key preference is turned on or off;
-3. Turn the sticky key preference on or off.
+1. Assesses whether the user needs the assistance of the sticky keys feature;
+2. Provides a means for users to experiment the experience when the sticky keys preference is turned on or off;
+3. Turn the sticky keys preference on or off.
 
 ## Adding a Sticky Keys Panel to a Component/Grade
 
-*Option 1*: Typically the Sticky Key Panel is integrated into the
-[First Discovery Tool](https://wiki.fluidproject.org/display/fluid/First+Discovery+Tool+Architecture)
+*Option 1*: Typically the Sticky Keys Panel is integrated into the First Discovery Tool
 by supplying it in an
 [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
 
@@ -37,7 +36,7 @@ by supplying it in an
 ```
 
 Working in conjunction with the Auxiliary Schema, the type and its default value of the
-Sticky Key preference are defined in the
+Sticky Keys preference are defined in the
 [Primary Schema](http://docs.fluidproject.org/infusion/development/PrimarySchemaForPreferencesFramework.html):
 
 ```javascript
@@ -67,22 +66,22 @@ used by the Sticky Keys panel:
 
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|
-| `offerAssistance` | Whether or not the sticky key feature should be offered. | Boolean | undefined |
-| `tryAccommodation` | Whether or not users select to try the sticky key feature. | Boolean | false |
+| `offerAssistance` | Whether or not the sticky keys feature should be offered. | Boolean | undefined |
+| `tryAccommodation` | Whether or not users select to try the sticky keys feature. | Boolean | false |
 | `userInput` | The user input. | String | "" |
 
 ## Supported Events
 
 | Event  | Type |Description | Parameters |
 |--------|------|------------|------------|
-| `onOfferAssistance` | default | Fired when the sticky key feature is determined to be offered. | none |
+| `onOfferAssistance` | default | Fired when the sticky keys feature is determined to be offered. | none |
 | `onInitInput` | default | Fired when it's time to initialize the [keyboard input](keyboardInput.md) sub-component. | none  |
 
 ## Methods
 
 | Method   |Description | Parameters |
 |--------|------------|------------|
-| `toggleAssistance`  | Displays or hide the sticky key assessment container. | `offerAssistance` (boolean): a flag indicating whether or not to display the container  |
+| `toggleAssistance`  | Displays or hide the sticky keys assessment container. | `offerAssistance` (boolean): a flag indicating whether or not to display the container  |
 
 <table>
     <thead>
@@ -118,7 +117,7 @@ used by the Sticky Keys panel:
 
 | Method | Description | Parameters |
 |--------|-------------|------------|
-| `toggleAssistance` | Displays or hide the sticky key assessment container. | `isEnabled`: A state |
+| `toggleAssistance` | Displays or hide the sticky keys assessment container. | `isEnabled`: A state |
 
 ## Subcomponents
 
@@ -126,7 +125,7 @@ used by the Sticky Keys panel:
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
     <tr>
         <td>`assistance`</td>
-        <td>Used to turn on/off the sticky key assistance.</td>
+        <td>Used to turn on/off the sticky keys assistance.</td>
         <td>[`"gpii.firstDiscovery.keyboard.stickyKeysAdjuster"`](stickyKeysAdjuster.md)</td>
         <td>
         <pre><code>assistance: {
@@ -148,7 +147,7 @@ used by the Sticky Keys panel:
     </tr>
     <tr>
         <td>`stickyKeysAssessor`</td>
-        <td>Used to assess whether the user needs the help of the sticky key feature.</td>
+        <td>Used to assess whether the user needs the help of the sticky keys feature.</td>
         <td>[`"gpii.firstDiscovery.keyboard.stickyKeysAssessment"`](stickyKeysAssessment.md)</td>
         <td>
         <pre><code>stickyKeysAssessor: {
@@ -215,7 +214,7 @@ selectors: {
 |---------------|-------------|---------|
 | `input` | The input field. | `".gpiic-fd-keyboard-input"` |
 | `instructions` | The panel instruction. | `".gpiic-fd-keyboard-instructions"` |
-| `assistance` | The area for assessing and experimenting the sticky key feature. | `".gpiic-fd-keyboard-assistance"` |
+| `assistance` | The area for assessing and experimenting the sticky keys feature. | `".gpiic-fd-keyboard-assistance"` |
 
 ## Dependencies
 

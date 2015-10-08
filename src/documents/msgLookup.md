@@ -45,7 +45,7 @@ used by the Message Lookup grade:
     <tr>
         <td>`msgResolver`</td>
         <td>Specifies the type of message resolver to use for resolving the messages from a message bundle</td>
-        <td>[`"fluid.messageResolver"`](.md)</td>
+        <td>`"fluid.messageResolver"`</td>
         <td>
         <pre><code>msgResolver: {
     type: "fluid.messageResolver"

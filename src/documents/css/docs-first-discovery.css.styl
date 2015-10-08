@@ -37,6 +37,7 @@ link-color = topics-item-color;
 button-focus = 0.2rem solid topics-item-color;
 link-hover-color = head-fg;
 link-hover-background = topics-item-color;
+code-block-link-color = topics-item-color;
 
 /* TODO: colours for the 404 page */
 
@@ -48,18 +49,29 @@ link-hover-background = topics-item-color;
 }
 
 /* widen main article, to make more room for tables with code in them */
-.docs-core-sidebar-expanded .docs-template-topics-container {
-    width: 20%;
-}
-.docs-core-sidebar-expanded .docs-template-articleBody {
-    width: 80%;
+.docs-core-sidebar-expanded {
+    .docs-template-topics-container {
+        width: 20%;
+    }
+    .docs-template-articleBody {
+        width: 80%;
+    }
 }
 
 /* tidy up parameter descriptions */
-.docs-template-articleBody dl dd {
-    margin-bottom: 0;
+.docs-template-articleBody dl {
+    dt {
+        font-weight: normal;
+        padding-left: 2rem;
+    }
+    dd {
+        margin-bottom: 0;
+    }
 }
-.docs-template-articleBody dl dt {
-    font-weight: normal;
-    padding-left: 2rem;
+
+/* fix hover style on code snippets */
+.docs-template-articleBody code a:hover,
+.docs-template-articleBody a:hover code {
+    color: link-hover-color;
+    border: none;
 }

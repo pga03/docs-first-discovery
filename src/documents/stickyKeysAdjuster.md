@@ -10,12 +10,12 @@ category: API
 
 **File:** `stickyKeysAdjuster.js`
 
-Creates the interface for users to experiment the keyboard feature when the sticky key
+Creates the interface for users to experiment the keyboard feature when the sticky keys
 preference is turned on or off.
 
 ## Adding a Sticky Keys Adjuster
 
-*Option 1*: Typically this component is used as a sub-component of the [Sticky Key](keyboard.md) panel:
+*Option 1*: Typically this component is used as a sub-component of the [Sticky Keys](keyboard.md) panel:
 ```javascript
 assistance: {
     type: "gpii.firstDiscovery.keyboard.stickyKeysAdjuster",
@@ -26,7 +26,7 @@ assistance: {
 
 *Option 2*: Outside the context of the First Discovery Tool, developers may wish to create a standalone component:
 ```javascript
-var myStickyKeyAdjuster = gpii.firstDiscovery.keyboard.stickyKeysAdjuster(container, options);
+var myStickyKeysAdjuster = gpii.firstDiscovery.keyboard.stickyKeysAdjuster(container, options);
 ```
 
 
@@ -43,8 +43,8 @@ used by the Sticky Keys Adjuster component:
 
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|
-| `stickyKeysEnabled` | Whether or not the sticky key preference is turned on. | Boolean | undefined |
-| `tryAccommodation ` |Whether or not the user has chosen to try the sticky key feature.  | Boolean | undefined |
+| `stickyKeysEnabled` | Whether or not the sticky keys preference is turned on. | Boolean | undefined |
+| `tryAccommodation ` |Whether or not the user has chosen to try the sticky keys feature.  | Boolean | undefined |
 
 ## Methods
 
@@ -81,13 +81,13 @@ selectors: {
 
 | Selector Name | Description | Default |
 |---------------|-------------|---------|
-| `description` | The description of why the sticky key feature is useful. | `".gpiic-fd-keyboard-stickyKeysAdjuster-desc"` |
+| `description` | The description of why the sticky keys feature is useful. | `".gpiic-fd-keyboard-stickyKeysAdjuster-desc"` |
 | `tryButton` | The try it button. | `".gpiic-fd-keyboard-stickyKeysAdjuster-try"` |
-| `accommodation` | The wrapper container of elements to operate the sticky key feature. Typically includes these elements: `accommodationInstr`, `accommodationName`, `accommodationState`, `accommodationToggle` | `".gpiic-fd-keyboard-stickyKeysAdjuster-accommodation"` |
-| `accommodationInstr` | The description of an example of how to use the sticky key feature. | `".gpiic-fd-keyboard-stickyKeysAdjuster-accommodationInstr"` |
+| `accommodation` | The wrapper container of elements to operate the sticky keys feature. Typically includes these elements: `accommodationInstr`, `accommodationName`, `accommodationState`, `accommodationToggle` | `".gpiic-fd-keyboard-stickyKeysAdjuster-accommodation"` |
+| `accommodationInstr` | The description of an example of how to use the sticky keys feature. | `".gpiic-fd-keyboard-stickyKeysAdjuster-accommodationInstr"` |
 | `accommodationName` | The label of "Sticky Keys". | `".gpiic-fd-keyboard-stickyKeysAdjuster-accommodationName"` |
-| `accommodationState` | The current on/off state of the sticky key feature. | `".gpiic-fd-keyboard-stickyKeysAdjuster-accommodationState"` |
-| `accommodationToggle` | The button to toggle the on/off state of the sticky key feature. | `".gpiic-fd-keyboard-stickyKeysAdjuster-accommodationToggle"` |
+| `accommodationState` | The current on/off state of the sticky keys feature. | `".gpiic-fd-keyboard-stickyKeysAdjuster-accommodationState"` |
+| `accommodationToggle` | The button to toggle the on/off state of the sticky keys feature. | `".gpiic-fd-keyboard-stickyKeysAdjuster-accommodationToggle"` |
 
 ## Dependencies
 

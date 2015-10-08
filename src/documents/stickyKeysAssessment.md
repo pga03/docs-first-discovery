@@ -10,12 +10,12 @@ category: API
 
 **File:** `stickyKeysAssessment.js`
 
-Assess whether the user needs the help of the sticky key feature. Currently, the assessor is
+Assess whether the user needs the help of the sticky keys feature. Currently, the assessor is
 simply compare whether the user input string is the same as the expected string.
 
 ## Adding a Sticky Keys Assessor
 
-*Option 1*: Typically this component is used as a sub-component of the [Sticky Key](keyboard.md) panel:
+*Option 1*: Typically this component is used as a sub-component of the [Sticky Keys](keyboard.md) panel:
 ```javascript
 stickyKeysAssessor: {
     type: "gpii.firstDiscovery.keyboard.stickyKeysAssessment",
@@ -40,7 +40,7 @@ used by the Sticky Keys Assessor component:
 
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|
-| `offerAssistance` | Whether or not the sticky key feature should be offered. | Boolean | undefined |
+| `offerAssistance` | Whether or not the sticky keys feature should be offered. | Boolean | undefined |
 
 ## Options
 

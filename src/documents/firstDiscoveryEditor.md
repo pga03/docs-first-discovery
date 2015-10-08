@@ -44,8 +44,8 @@ fluid.prefs.create(container, {
 The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 used by the First Discovery Editor:
 
-* [`gpii.firstDiscovery.tts.fdHookup`](tts-hookup.md)
-* [`fluid.prefs.prefsEditorLoader`](http://docs.fluidproject.org/infusion/development/PreferencesEditor.html)
+* [`gpii.firstDiscovery.tts.fdHookup`](tts-hookupFD.md)
+* `fluid.prefs.prefsEditorLoader`
 
 ## Model
 

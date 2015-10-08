@@ -75,10 +75,10 @@ used by the Language panel:
 
 ## Subcomponents
 
-The [sub-components](https://github.com/fluid-project/infusion-docs/blob/master/src/documents/SubcomponentDeclaration.md)
+The [sub-components](http://docs.fluidproject.org/infusion/development/SubcomponentDeclaration.html)
 used by the Language Panel:
 
-* gpii.firstDiscovery.panel.lang.attachTooltipOnLang
+* [`gpii.firstDiscovery.panel.lang.attachTooltipOnLang`](attachTooltipOnLang.md)
 
 ## Options
 

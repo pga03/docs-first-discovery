@@ -10,7 +10,7 @@ category: API
 
 **File:** `panels.js`
 
-In the [First Discovery Tool](https://wiki.fluidproject.org/display/fluid/First+Discovery+Tool+Architecture),
+In the First Discovery Tool,
 every preference change causes all panels to re-render so that the changed preference can be
 applied to the entire tool.
 When the [language](lang.md) panel is re-rendered, it needs to scroll to the correct position

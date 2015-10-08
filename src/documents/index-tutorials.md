@@ -15,7 +15,7 @@ and are familiar with how it functions from a user perspective.
 
 The First Discovery Tool is built using Infusion’s
 [Preferences Framework](http://docs.fluidproject.org/infusion/development/PreferencesFramework.html).
-Understanding [Infusion](http://docs.fluidproject.org/infusion/development/UnderstandingInfusionComponents.html)
+Understanding [Infusion](http://fluidproject.org/infusion.html)
 and the Preferences Framework will help you, but you should still be able to
 follow this tutorial and make basic customizations to the First Discovery Tool
 even if you aren’t familiar with them.

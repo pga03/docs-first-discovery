@@ -46,7 +46,7 @@
                     { "pageName": "On-Screen Keyboard", "href": "/onScreenKeyboard.html"},
                     { "pageName": "Captions", "href": "/captions.html"},
                     { "pageName": "Show Sounds", "href": "/showSounds.html"},
-                    { "pageName": "Sticky Key", "href": "/keyboard.html"},
+                    { "pageName": "Sticky Keys", "href": "/keyboard.html"},
                     { "pageName": "Congratulations", "href": "/congratulations.html"}
                 ]
             },
@@ -60,7 +60,7 @@
                     { "pageName": "Sticky Keys Assessor", "href": "/stickyKeysAssessment.html"},
                     { "pageName": "Sticky Key – Text To Speech", "href": "/keyboardTTS.html"},
                     { "pageName": "Speech Rate with Prefs Editor Connection", "href": "/speechRatePrefsEditorConnection.html"},
-                    { "pageName": "Language with Prefs Editor Connection", "href": "/langPrefEditorConnector.html"},
+                    { "pageName": "Language with Prefs Editor Connection", "href": "/langPrefsEditorConnection.html"},
                     { "pageName": "Yes/No", "href": "/yesNo.html"}
                 ]
             },
@@ -85,7 +85,7 @@
                     { "pageName": "Navigation", "href": "/nav.html"},
                     { "pageName": "Navigation Buttons", "href": "/navButtons.html"},
                     { "pageName": "Navigation Icons", "href": "/navIcons.html"},
-                    { "pageName": "Navigation Ocon", "href": "/icon.html"},
+                    { "pageName": "Navigation Icon", "href": "/icon.html"},
                     { "pageName": "Step Count", "href": "/stepCount.html"}
                 ]
             },
@@ -98,7 +98,7 @@
                     { "pageName": "Keyboard Input - Text to Speech", "href": "/keyboardInputTTS.html"},
                     { "pageName": "US Keymap", "href": "/usKeymap.html"},
                     { "pageName": "Attach Tooltip", "href": "/attachTooltip.html"},
-                    { "pageName": "Attach Tooltip Renderer", "href": "/attachTooltip Renderer.html"},
+                    { "pageName": "Attach Tooltip Renderer", "href": "/attachTooltipRenderer.html"},
                     { "pageName": "Attach Tooltip on Language", "href": "/attachTooltipOnLang.html"},
                     { "pageName": "Text-to-Speech Hookup – Tooltip", "href": "/ttsHookupTooltip.html"},
                     { "pageName": "Text-to-Speech Hookup – First Discovery", "href": "/ttsHookupFD.html"}

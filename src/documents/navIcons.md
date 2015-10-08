@@ -114,7 +114,7 @@ used by the Navigation Icons component:
     <tr>
         <td>`iconHoles`</td>
         <td>A list of all the panel positions which have no [Navigation Icon](icon.md)s.</td>
-        <td>An array of indexes ( Number )</td>
+        <td>An array of indexes (Number)</td>
         <td>
         <pre><code>iconHoles: [2, 8]</code></pre>
         </td>
@@ -149,8 +149,8 @@ selectors: {
 
 | Selector Name | Description | Default |
 |---------------|-------------|---------|
-| `icon` | The set of containers to use the [Navigation Icon](navIcon)s. | `".gpiic-fd-navIcon"` |
-| `pager` | The container of the [Navigation Icon](navIcon)s. | `".gpii-fd-navIcon-outer"` |
+| `icon` | The set of containers to use the [Navigation Icon](icon.md)s. | `".gpiic-fd-navIcon"` |
+| `pager` | The container of the [Navigation Icon](icon.md)s. | `".gpii-fd-navIcon-outer"` |
 
 ## Dependencies
 

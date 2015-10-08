@@ -18,7 +18,7 @@ component of the demands block was the language panel itself, the demands block 
 applied to all panels rather than the Language Panel only. The Attach Tooltip on Languge Panel
 component is acted as another layer of containment to work around this issue.
 
-## Adding a X
+## Adding an Attach Tooltip On Lang component
 
 Typically, the attach tooltip on language panel component is used as a sub-component of
 the [Language](lang.md) Panel.

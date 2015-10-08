@@ -15,7 +15,7 @@ Handles the navigation between panels as well as maintaining a set of icons repr
 ## Adding a Navigation Component
 
 *Option 1*: Typically used as a sub-component of a Preferences Editor Loader, particularly the
-[First Discovery Tool Editor](firstDiscoveryEditor.md)t:
+[First Discovery Tool Editor](firstDiscoveryEditor.md):
 ```javascript
 nav: {
     type: "gpii.firstDiscovery.nav",
@@ -86,7 +86,7 @@ used by the Navigation component:
     <tr>
         <td>`stepCount`</td>
         <td>Specifies the component responsible for displaying the current step message. ( I.E. a textual indicator of the current panel id and progress. )</td>
-        <td>`"gpii.firstDiscovery.stepCount"`</td>
+        <td>[`"gpii.firstDiscovery.stepCount"`](stepCount.md)</td>
         <td>
         <pre><code>stepCount: {
     type: "gpii.firstDiscovery.stepCount",

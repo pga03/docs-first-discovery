@@ -16,7 +16,7 @@ the corresponding SHIFT latched character.
 
 ## Adding a Keyboard Input
 
-*Option 1*: Typically this component is used as a sub-component of a [Sticky Key Panel](stickyKeyPanel.md):
+*Option 1*: Typically this component is used as a sub-component of a [Sticky Keys Panel](keyboard.md):
 ```javascript
 keyboardInput: {
     type: "gpii.firstDiscovery.keyboardInput",
@@ -36,14 +36,14 @@ The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGra
 used by the Keyboard Input component:
 
 * [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-* [`gpii.firstDiscovery.tts.fdHookup`](tts-hookup.md)
-* [`fluid.prefs.prefsEditorLoader`](http://docs.fluidproject.org/infusion/development/PreferencesEditor.html)
+* [`gpii.firstDiscovery.tts.fdHookup`](tts-hookupFD.md)
+* `fluid.prefs.prefsEditorLoader`
 
 ## Model
 
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|
-| `stickyKeysEnabled` | Whether or not the sticky key feature is enabled | `Boolean` |  `false` |
+| `stickyKeysEnabled` | Whether or not the sticky keys feature is enabled | `Boolean` |  `false` |
 | `shiftLatched` | Whether or not the SHIFT key is latched | `Boolean` |  `false` |
 | `userInput ` | The user input | `String` | `""`  |
 
@@ -53,7 +53,7 @@ used by the Keyboard Input component:
 |--------|------|------------|------------|
 | `shiftKeydown` | default | Fired when the SHIFT key is pressed. | none |
 | `keypress` | default | Fired when a key is pressed | `ch` (string): The character associated with the pressed key  |
-| `shiftLatchChange ` | default | Fired when the SHIFT is pressed and the sticky key preference has already been turned on | `that` ([component](http://docs.fluidproject.org/infusion/development/UnderstandingInfusionComponents.html)): An instance of `gpii.firstDiscovery.keyboardInput`  |
+| `shiftLatchChange ` | default | Fired when the SHIFT is pressed and the sticky keys preference has already been turned on | `that` ([component](http://docs.fluidproject.org/infusion/development/UnderstandingInfusionComponents.html)): An instance of `gpii.firstDiscovery.keyboardInput`  |
 
 ## Methods
 
