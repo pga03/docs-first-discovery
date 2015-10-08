@@ -23,8 +23,8 @@ supplying it as a type option in the
     "panel": {
         "type": "gpii.firstDiscovery.panel.welcome",
         "container": ".gpiic-fd-prefsEditor-panel-welcome",
-        "template": "%prefix/welcomeTemplate.html",
-        "message": "%prefix/welcome.json"
+        "template": "%templatePrefix/welcomeTemplate.html",
+        "message": "%messagePrefix/welcome.json"
     }
 }
 ```

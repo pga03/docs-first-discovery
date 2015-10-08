@@ -29,7 +29,7 @@ Your flying car has an auto-pilot feature, and you want to add a preference for 
 
     ```javascript
     fluid.defaults("gpii.firstDiscovery.schemas.speak", {
-        gradeNames: ["autoInit", "fluid.prefs.schemas"],
+        gradeNames: ["fluid.prefs.schemas"],
             schema: {
               "gpii.firstDiscovery.speak": {
                    "type": "boolean",
@@ -45,7 +45,7 @@ Your flying car has an auto-pilot feature, and you want to add a preference for 
 
     ```javascript
     fluid.defaults("gpii.firstDiscovery.schemas.autoPilot", {
-        gradeNames: ["autoInit", "fluid.prefs.schemas"],
+        gradeNames: ["fluid.prefs.schemas"],
             schema: {
               "gpii.firstDiscovery.autoPilot": {
                    "type": "boolean",
@@ -252,7 +252,7 @@ Your flying car has an auto-pilot feature, and you want to add a preference for 
 
     ```javascript
     fluid.defaults("gpii.firstDiscovery.auxSchema", {
-        gradeNames: ["fluid.prefs.auxSchema", "autoInit"],
+        gradeNames: ["fluid.prefs.auxSchema"],
         auxiliarySchema: {
             "loaderGrades": ["gpii.firstDiscovery.firstDiscoveryEditor"],
             // more not shown here
@@ -262,14 +262,16 @@ Your flying car has an auto-pilot feature, and you want to add a preference for 
 
     ```javascript
     fluid.defaults("gpii.firstDiscovery.auxSchema", {
-        gradeNames: ["fluid.prefs.auxSchema", "autoInit"],
+        gradeNames: ["fluid.prefs.auxSchema"],
         auxiliarySchema: {
             "loaderGrades": ["gpii.firstDiscovery.firstDiscoveryEditor"],
             "namespace": "gpii.firstDiscovery",
-            "templatePrefix": "../src/html/",
-            "template": "../src/html/firstDiscovery.html`,
-            "messagePrefix": "../src/messages/",
-            "message": "%prefix/firstDiscovery.json",
+            "terms": {
+                "templatePrefix": "../src/html",
+                "messagePrefix": "../src/messages"
+            },
+            "template": "../src/html/firstDiscovery.html",
+            "message": "%messagePrefix/firstDiscovery.json",
             "lang": {
                 // some content not shown
             },
@@ -284,8 +286,8 @@ Your flying car has an auto-pilot feature, and you want to add a preference for 
             "panel": {
                 "type": "gpii.firstDiscovery.panel.autoPilot",
                 "container": ".gpiic-fd-prefsEditor-panel-autoPilot",
-                "template": "%prefix/yesNo.html",
-                "message": "%prefix/autoPilot.json"
+                "template": "%templatePrefix/yesNo.html",
+                "message": "%messagePrefix/autoPilot.json"
             }
         },
         // more content not shown

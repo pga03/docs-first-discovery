@@ -25,8 +25,8 @@ supplying it as a type option in the
     "panel": {
         "type": "gpii.firstDiscovery.panel.textSize",
         "container": ".gpiic-fd-prefsEditor-panel-size",
-        "template": "%prefix/rangeTemplate.html",
-        "message": "%prefix/textSize.json"
+        "template": "%templatePrefix/rangeTemplate.html",
+        "message": "%messagePrefix/textSize.json"
     }
 }
 ```
@@ -36,7 +36,7 @@ the text size preference are defined in the
 [Primary Schema](http://docs.fluidproject.org/infusion/development/PrimarySchemaForPreferencesFramework.html):
 ```javascript
 fluid.defaults("gpii.firstDiscovery.schemas.textSize", {
-    gradeNames: ["autoInit", "fluid.prefs.schemas"],
+    gradeNames: ["fluid.prefs.schemas"],
     schema: {
         "fluid.prefs.textSize": {
             "type": "number",

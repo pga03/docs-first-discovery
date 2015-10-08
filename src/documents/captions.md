@@ -26,8 +26,8 @@ supplying it as a type option in the
     "panel": {
         "type": "gpii.firstDiscovery.panel.captions",
         "container": ".gpiic-fd-prefsEditor-panel-captions",
-        "template": "%prefix/yesNo.html",
-        "message": "%prefix/captions.json"
+        "template": "%templatePrefix/yesNo.html",
+        "message": "%messagePrefix/captions.json"
     }
 }
 ```

@@ -30,7 +30,8 @@
                 "pages":
                 [
                     { "pageName": "First Discovery Editor", "href": "/firstDiscoveryEditor.html"},
-                    { "pageName": "Help Button", "href": "/helpButton.html"}
+                    { "pageName": "Help Button", "href": "/helpButton.html"},
+                    { "pageName": "Text to Speech Button", "href": "/selfVoicingToggle.html"}
                 ]
             },
             {

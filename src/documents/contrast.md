@@ -26,8 +26,8 @@ supplying it as a type option in the
         "type": "gpii.firstDiscovery.panel.contrast",
         "container": ".gpiic-fd-prefsEditor-panel-contrast",
         "classnameMap": {"theme": "@contrast.classes"},
-        "template": "%prefix/contrast.html",
-        "message": "%prefix/contrast.json"
+        "template": "%templatePrefix/contrast.html",
+        "message": "%messagePrefix/contrast.json"
     }
 }
 ```
@@ -37,7 +37,7 @@ the text size preference are defined in the
 [Primary Schema](http://docs.fluidproject.org/infusion/development/PrimarySchemaForPreferencesFramework.html):
 ```javascript
 fluid.defaults("fluid.prefs.schemas.contrast", {
-    gradeNames: ["autoInit", "fluid.prefs.schemas"],
+    gradeNames: ["fluid.prefs.schemas"],
     schema: {
         "fluid.prefs.contrast": {
             "type": "string",

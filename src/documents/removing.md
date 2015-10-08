@@ -81,7 +81,7 @@ Your flying car doesn’t support some of the preferences in the First Discovery
 
     ```javascript
     fluid.defaults("gpii.firstDiscovery.auxSchema", {
-        gradeNames: ["fluid.prefs.auxSchema", "autoInit"],
+        gradeNames: ["fluid.prefs.auxSchema"],
         auxiliarySchema: {
             "loaderGrades": ["gpii.firstDiscovery.firstDiscoveryEditor"],
             // more not shown here
@@ -95,8 +95,8 @@ Your flying car doesn’t support some of the preferences in the First Discovery
         "panel": {
             "type": "gpii.firstDiscovery.panel.speechRate",
             "container": ".gpiic-fd-prefsEditor-panel-speechRate",
-            "template": "%prefix/rangeWithDisabledMsgTemplate.html",
-            "message": "%prefix/speechRate.json",
+            "template": "%templatePrefix/rangeWithDisabledMsgTemplate.html",
+            "message": "%messagePrefix/speechRate.json",
             "gradeNames": ["gpii.firstDiscovery.panel.speechRate.prefsEditorConnection"]
         }
     },
@@ -115,8 +115,8 @@ Your flying car doesn’t support some of the preferences in the First Discovery
             "type": "gpii.firstDiscovery.panel.contrast",
             "container": ".gpiic-fd-prefsEditor-panel-contrast",
             "classnameMap": {"theme": "@contrast.classes"},
-            "template": "%prefix/contrast.html",
-            "message": "%prefix/contrast.json"
+            "template": "%templatePrefix/contrast.html",
+            "message": "%messagePrefix/contrast.json"
         }
     },
     "textSize": {
@@ -127,8 +127,8 @@ Your flying car doesn’t support some of the preferences in the First Discovery
         "panel": {
             "type": "gpii.firstDiscovery.panel.textSize",
             "container": ".gpiic-fd-prefsEditor-panel-size",
-            "template": "%prefix/rangeTemplate.html",
-            "message": "%prefix/textSize.json"
+            "template": "%templatePrefix/rangeTemplate.html",
+            "message": "%messagePrefix/textSize.json"
         }
     },
     "onScreenKeyboard": {
@@ -136,8 +136,8 @@ Your flying car doesn’t support some of the preferences in the First Discovery
         "panel": {
             "type": "gpii.firstDiscovery.panel.onScreenKeyboard",
             "container": ".gpiic-fd-prefsEditor-panel-onScreenKeyboard",
-            "template": "%prefix/yesNo.html",
-            "message": "%prefix/onScreenKeyboard.json"
+            "template": "%templatePrefix/yesNo.html",
+            "message": "%messagePrefix/onScreenKeyboard.json"
         }
     },
     "captions": {
@@ -145,8 +145,8 @@ Your flying car doesn’t support some of the preferences in the First Discovery
         "panel": {
             "type": "gpii.firstDiscovery.panel.captions",
             "container": ".gpiic-fd-prefsEditor-panel-captions",
-            "template": "%prefix/yesNo.html",
-            "message": "%prefix/captions.json"
+            "template": "%templatePrefix/yesNo.html",
+            "message": "%messagePrefix/captions.json"
         }
     },
     "showSounds": {
@@ -154,8 +154,8 @@ Your flying car doesn’t support some of the preferences in the First Discovery
         "panel": {
             "type": "gpii.firstDiscovery.panel.showSounds",
             "container": ".gpiic-fd-prefsEditor-panel-showSounds",
-            "template": "%prefix/yesNo.html",
-            "message": "%prefix/showSounds.json"
+            "template": "%templatePrefix/yesNo.html",
+            "message": "%messagePrefix/showSounds.json"
         }
     },
     ```

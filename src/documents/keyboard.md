@@ -28,8 +28,8 @@ by supplying it in an
     "panel": {
         "type": "gpii.firstDiscovery.panel.keyboard",
         "container": ".gpiic-fd-prefsEditor-panel-keyboard",
-        "template": "%prefix/keyboard.html",
-        "message": "%prefix/keyboard.json",
+        "template": "%templatePrefix/keyboard.html",
+        "message": "%messagePrefix/keyboard.json",
         "gradeNames": ["gpii.firstDiscovery.panel.keyboardTts"]
     }
 }
@@ -41,7 +41,7 @@ Sticky Keys preference are defined in the
 
 ```javascript
 fluid.defaults("gpii.firstDiscovery.schemas.stickyKeys", {
-    gradeNames: ["autoInit", "fluid.prefs.schemas"],
+    gradeNames: ["fluid.prefs.schemas"],
     schema: {
         "gpii.firstDiscovery.stickyKeys": {
             "type": "boolean",

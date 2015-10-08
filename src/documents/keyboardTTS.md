@@ -29,8 +29,8 @@ supply it as a `gradeNames` option in the [Auxiliary Schema](http://docs.fluidpr
         "type": "gpii.firstDiscovery.panel.keyboard",
         "container": ".gpiic-fd-prefsEditor-panel-keyboard",
         "gradeNames": ["gpii.firstDiscovery.panel.keyboardTts"],
-        "template": "%prefix/keyboard.html",
-        "message": "%prefix/keyboard.json"
+        "template": "%templatePrefix/keyboard.html",
+        "message": "%messagePrefix/keyboard.json"
     }
 }}
 ```

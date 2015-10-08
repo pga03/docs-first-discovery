@@ -24,8 +24,8 @@ supplying it as a type option in the
     "panel": {
         "type": "gpii.firstDiscovery.panel.lang",
         "container": ".gpiic-fd-prefsEditor-panel-lang",
-        "template": "%prefix/lang.html",
-        "message": "%prefix/lang.json",
+        "template": "%templatePrefix/lang.html",
+        "message": "%messagePrefix/lang.json",
         "stringArrayIndex": {
             "lang": ["lang-en-US", "lang-fr-FR", "lang-es-MX", "lang-de-DE", "lang-nl-NL", "lang-sv-SE"],
             "tooltip": ["lang-en-US-tooltip", "lang-fr-FR-tooltip", "lang-es-MX-tooltip", "lang-de-DE-tooltip", "lang-nl-NL-tooltip", "lang-sv-SE-tooltip"],
@@ -40,7 +40,7 @@ the language preference are defined in the
 [Primary Schema](http://docs.fluidproject.org/infusion/development/PrimarySchemaForPreferencesFramework.html):
 ```javascript
 fluid.defaults("gpii.firstDiscovery.schemas.language", {
-    gradeNames: ["autoInit", "fluid.prefs.schemas"],
+    gradeNames: ["fluid.prefs.schemas"],
     schema: {
         "gpii.firstDiscovery.language": {
             "type": "string",

@@ -44,7 +44,6 @@ fluid.prefs.create(container, {
 The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 used by the First Discovery Editor:
 
-* [`gpii.firstDiscovery.tts.fdHookup`](tts-hookupFD.md)
 * `fluid.prefs.prefsEditorLoader`
 
 ## Model
@@ -113,16 +112,22 @@ used by the First Discovery Editor:
         <td>[`"gpii.firstDiscovery.selfVoicing"`](selfVoicing.md)</td>
         <td>
         <pre><code>selfVoicing: {
-    container: "{that}.dom.selfVoicing",
+    type: "gpii.firstDiscovery.selfVoicing"
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>`selfVoicingToggle`</td>
+        <td>Specifies the type of Text-To-Speech toggle button to turn on/off self voicing that turn on/off the text-to-speech preference accordingly. </td>
+        <td>[`"gpii.firstDiscovery.selfVoicingToggle"`](selfVoicingToggle.md)</td>
+        <td>
+        <pre><code>selfVoicingToggle: {
+    container: "{that}.dom.selfVoicingToggle",
     createOnEvent: "onPrefsEditorReady",
-    type: "gpii.firstDiscovery.selfVoicing",
+    type: "gpii.firstDiscovery.selfVoicingToggle",
     options: {
         model: {
-            enabled: "{prefsEditor}.model.gpii_firstDiscovery_speak",
-            utteranceOpts: {
-                lang: "{prefsEditor}.model.gpii_firstDiscovery_language",
-                rate: "{prefsEditor}.model.gpii_firstDiscovery_speechRate"
-            }
+            enabled: "{prefsEditor}.model.preferences.gpii_firstDiscovery_speak"
         },
         messageBase: "{messageLoader}.resources.prefsEditor.resourceText"
     }

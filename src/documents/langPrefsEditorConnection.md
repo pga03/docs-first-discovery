@@ -23,7 +23,7 @@ the language panel re-renders when the user navigates back to the language panel
 To mixin the language and preferences editor connector into the [Language](lang.md) Panel:
 ```javascript
 fluid.defaults("gpii.firstDiscovery.panel.lang", {
-    gradeNames: ["fluid.prefs.panel", "{that}.options.prefsEditorConnection", "autoInit"],
+    gradeNames: ["fluid.prefs.panel", "{that}.options.prefsEditorConnection"],
     ...
 });
 ```

@@ -25,8 +25,8 @@ in terms of the model, options, selectors and dependencies.
     "panel": {
         "type": "gpii.firstDiscovery.panel.onScreenKeyboard",
         "container": ".gpiic-fd-prefsEditor-panel-onScreenKeyboard",
-        "template": "%prefix/yesNo.html",
-        "message": "%prefix/onScreenKeyboard.json"
+        "template": "%templatePrefix/yesNo.html",
+        "message": "%messagePrefix/onScreenKeyboard.json"
     }
 }```
 
@@ -35,7 +35,7 @@ the on-sceen keybaord preference are defined in the
 [Primary Schema](http://docs.fluidproject.org/infusion/development/PrimarySchemaForPreferencesFramework.html):
 ```javascript
 fluid.defaults("gpii.firstDiscovery.schemas.onScreenKeyboard", {
-    gradeNames: ["autoInit", "fluid.prefs.schemas"],
+    gradeNames: ["fluid.prefs.schemas"],
     schema: {
         "gpii.firstDiscovery.onScreenKeyboard": {
             "type": "boolean",

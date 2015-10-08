@@ -26,8 +26,8 @@ supplying it as a type option in the
     "panel": {
         "type": "gpii.firstDiscovery.panel.speechRate",
         "container": ".gpiic-fd-prefsEditor-panel-speechRate",
-        "template": "%prefix/rangeWithDisabledMsgTemplate.html",
-        "message": "%prefix/speechRate.json",
+        "template": "%templatePrefix/rangeWithDisabledMsgTemplate.html",
+        "message": "%messagePrefix/speechRate.json",
         "gradeNames": ["gpii.firstDiscovery.panel.speechRate.prefsEditorConnection"]
     }
 }
@@ -38,7 +38,7 @@ the text size preference are defined in the
 [Primary Schema](http://docs.fluidproject.org/infusion/development/PrimarySchemaForPreferencesFramework.html):
 ```javascript
 fluid.defaults("gpii.firstDiscovery.schemas.speechRate", {
-    gradeNames: ["autoInit", "fluid.prefs.schemas"],
+    gradeNames: ["fluid.prefs.schemas"],
     schema: {
         "gpii.firstDiscovery.speechRate": {
             "type": "number",

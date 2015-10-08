@@ -25,8 +25,8 @@ supplying it as a type option in the
     "panel": {
         "type": "gpii.firstDiscovery.panel.speakText",
         "container": ".gpiic-fd-prefsEditor-panel-speakText",
-        "template": "%prefix/yesNo.html",
-        "message": "%prefix/speakText.json"
+        "template": "%templatePrefix/yesNo.html",
+        "message": "%messagePrefix/speakText.json"
     }
 }```
 
@@ -35,7 +35,7 @@ the speak text preference are defined in the
 [Primary Schema](http://docs.fluidproject.org/infusion/development/PrimarySchemaForPreferencesFramework.html):
 ```javascript
 fluid.defaults("gpii.firstDiscovery.schemas.speak", {
-    gradeNames: ["autoInit", "fluid.prefs.schemas"],
+    gradeNames: ["fluid.prefs.schemas"],
     schema: {
         "gpii.firstDiscovery.speak": {
             "type": "boolean",

@@ -26,8 +26,8 @@ supplying it as a type option in the
     "panel": {
         "type": "gpii.firstDiscovery.panel.showSounds",
         "container": ".gpiic-fd-prefsEditor-panel-showSounds",
-        "template": "%prefix/yesNo.html",
-        "message": "%prefix/showSounds.json"
+        "template": "%templatePrefix/yesNo.html",
+        "message": "%messagePrefix/showSounds.json"
     }
 }
 ```
@@ -37,7 +37,7 @@ the show sounds preference are defined in the
 [Primary Schema](http://docs.fluidproject.org/infusion/development/PrimarySchemaForPreferencesFramework.html):
 ```javascript
 fluid.defaults("gpii.firstDiscovery.schemas.showSounds", {
-    gradeNames: ["autoInit", "fluid.prefs.schemas"],
+    gradeNames: ["fluid.prefs.schemas"],
     schema: {
         "gpii.firstDiscovery.showSounds": {
             "type": "boolean",
