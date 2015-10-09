@@ -41,6 +41,7 @@ fluid.prefs.create(container, {
     }
 };
 ```
+
 ## Grades
 
 This component uses the following base
@@ -109,7 +110,6 @@ This component supports the following
 | Method | Description | Parameters |
 |--------|-------------|------------|
 | `showPanel` | Sets the visibility of the panels. The panel which is identified as the current panel in the model is made visible, the reset are hidden. | none |
-
 
 ## Subcomponents
 

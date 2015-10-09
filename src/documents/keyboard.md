@@ -89,42 +89,7 @@ This component supports the following
 | Method   |Description | Parameters |
 |--------|------------|------------|
 | `toggleAssistance`  | Displays or hide the sticky keys assessment container. | `offerAssistance` (boolean): a flag indicating whether or not to display the container  |
-
-<table>
-    <thead>
-        <tr><th>Event</th><th>Type</th><th>Description</th><th>Parameters</th></tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>`onOfferAssistance`</td>
-            <td>default</td>
-            <td></td>
-            <td>
-                <dl>
-                    <dd>`foo`</dd>
-                    <dt>boolean (default: undefined)</dt>
-                </dl>
-            </td>
-        </tr>
-        <tr>
-            <td>`onInitInput`</td>
-            <td>default</td>
-            <td></td>
-            <td>
-                <dl>
-                    <dd>`foo`</dd>
-                    <dt>boolean (default: false)</dt>
-                </dl>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-## Methods
-
-| Method | Description | Parameters |
-|--------|-------------|------------|
-| `toggleAssistance` | Displays or hide the sticky keys assessment container. | `isEnabled`: A state |
+| `destroyAssessor`  | Destroys the sticky keys assessment component. | none |
 
 ## Subcomponents
 

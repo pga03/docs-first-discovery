@@ -53,9 +53,9 @@ var myKeymap = gpii.firstDiscovery.usKeymap(options);
 This component uses the following base
 [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
-* [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 * [`gpii.firstDiscovery.attachTooltip`](attachTooltip.md)
 * [`gpii.firstDiscovery.msgLookup`](msgLookup.md)
+* [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 
 ## Model
 

@@ -31,7 +31,7 @@
                 [
                     { "pageName": "First Discovery Editor", "href": "/firstDiscoveryEditor.html"},
                     { "pageName": "Help Button", "href": "/helpButton.html"},
-                    { "pageName": "Text to Speech Button", "href": "/selfVoicingToggle.html"}
+                    { "pageName": "Turn Voice On/Off Button", "href": "/selfVoicingToggle.html"}
                 ]
             },
             {
@@ -57,6 +57,7 @@
                 [
                     { "pageName": "Ranged", "href": "/ranged.html"},
                     { "pageName": "Ranged With Disabled Message", "href": "/rangedDisabled.html"},
+                    { "pageName": "Sticky Keys with Prefs Editor Connection", "href": "/keyboardPrefsEditorConnection.html"},
                     { "pageName": "Sticky Keys Adjuster", "href": "/stickyKeysAdjuster.html"},
                     { "pageName": "Sticky Keys Assessor", "href": "/stickyKeysAssessment.html"},
                     { "pageName": "Sticky Key – Text To Speech", "href": "/keyboardTTS.html"},
@@ -100,9 +101,16 @@
                     { "pageName": "US Keymap", "href": "/usKeymap.html"},
                     { "pageName": "Attach Tooltip", "href": "/attachTooltip.html"},
                     { "pageName": "Attach Tooltip Renderer", "href": "/attachTooltipRenderer.html"},
-                    { "pageName": "Attach Tooltip on Language", "href": "/attachTooltipOnLang.html"},
                     { "pageName": "Text-to-Speech Hookup – Tooltip", "href": "/ttsHookupTooltip.html"},
-                    { "pageName": "Text-to-Speech Hookup – First Discovery", "href": "/ttsHookupFD.html"}
+                    { "pageName": "Text-to-Speech Hookup – Preferences Editor", "href": "/ttsHookupPrefsEditor.html"}
+                ]
+            },
+            {
+                "sectionName":"Preferences Server Integration",
+                "pages":
+                [
+                    { "pageName": "First Discovery Editor - Preferences Server Integration", "href": "/firstDiscoveryEditorPrefsServerIntegration.html"}
+                    { "pageName": "Token Panel", "href": "/token.html"}
                 ]
             }
         ]

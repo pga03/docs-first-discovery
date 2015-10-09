@@ -20,12 +20,21 @@ the language panel re-renders when the user navigates back to the language panel
 
 ## Adding a Language and Preferences Editor Connector component
 
-To mixin the language and preferences editor connector into the [Language](lang.md) Panel:
+Typically the Language and Preferences Editor Connector is integrated into the First Discovery Tool
+by supplying it in an
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+
 ```javascript
-fluid.defaults("gpii.firstDiscovery.panel.lang", {
-    gradeNames: ["fluid.prefs.panel", "{that}.options.prefsEditorConnection"],
-    ...
-});
+"lang": {
+    "type": "gpii.firstDiscovery.language",
+    "panel": {
+        "type": "gpii.firstDiscovery.panel.lang",
+        "container": ".gpiic-fd-prefsEditor-panel-lang",
+        "template": "%templatePrefix/lang.html",
+        "message": "%messagePrefix/lang.json",
+        "gradeNames": ["gpii.firstDiscovery.panel.lang.prefEditorConnection"]
+    }
+}
 ```
 
 ## Grades
@@ -33,7 +42,7 @@ fluid.defaults("gpii.firstDiscovery.panel.lang", {
 This component uses the following base
 [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
-* [`fluid.eventedComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
+* [`fluid.component`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 
 ## Model
 
@@ -50,6 +59,8 @@ properties:
 
 ```html
 <script type="text/javascript" src="src/lib/infusion/infusion-custom.js"></script>
+<script type="text/javascript" src="src/js/msgLookup.js"></script>
+<script type="text/javascript" src="src/js/tooltip.js"></script>
 <script type="text/javascript" src="src/js/panels.js"></script>
 ```
 

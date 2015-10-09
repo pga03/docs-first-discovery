@@ -37,8 +37,8 @@ Typically passed into the [speech rate](speechRate.md) component by supplying it
 This component uses the following base
 [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
-* [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 * [`gpii.firstDiscovery.msgLookup`](msgLookup.md)
+* [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 
 ## Model
 
@@ -55,6 +55,8 @@ properties:
 
 ```html
 <script type="text/javascript" src="src/lib/infusion/infusion-custom.js"></script>
+<script type="text/javascript" src="src/js/msgLookup.js"></script>
+<script type="text/javascript" src="src/js/tooltip.js"></script>
 <script type="text/javascript" src="src/js/panels.js"></script>
 ```
 

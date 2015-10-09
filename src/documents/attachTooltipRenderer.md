@@ -24,7 +24,8 @@ To mixin the Attach Tooltip Renderer into your Component/Grade, supply it as a `
 ```javascript
 fluid.defaults("my.component", {
     gradeNames: ["gpii.firstDiscovery.attachTooltip.renderer"]
-});```
+});
+```
 
 ## Grades
 

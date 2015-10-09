@@ -33,9 +33,9 @@ var myNavButtons = gpii.firstDiscovery.navButtons(container, options);
 This component uses the following base
 [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
-* [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-* [`gpii.firstDiscovery.attachTooltip`](attachTooltip.md)
 * [`gpii.firstDiscovery.msgLookup`](msgLookup.md)
+* [`gpii.firstDiscovery.attachTooltip`](attachTooltip.md)
+* [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 
 ## Model
 
@@ -91,6 +91,11 @@ properties:
         <tr>
             <td>`nextButtonClicked`</td>
             <td>Moves the current panel forward one position</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>`indexToDisposition`</td>
+            <td>Returns the index of the label (or tooltip) messages array for the current panel</td>
             <td>none</td>
         </tr>
     </tbody>

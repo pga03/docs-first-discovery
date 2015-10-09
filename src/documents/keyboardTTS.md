@@ -67,6 +67,8 @@ supply it as a `gradeNames` option in the [Auxiliary Schema](http://docs.fluidpr
 
 ```html
 <script type="text/javascript" src="src/lib/infusion/infusion-custom.js"></script>
+<script type="text/javascript" src="src/js/msgLookup.js"></script>
+<script type="text/javascript" src="src/js/tooltip.js"></script>
 <script type="text/javascript" src="src/js/panels.js"></script>
 ```
 

@@ -32,8 +32,8 @@ fluid.defaults("my.component", {
 This component uses the following base
 [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
-* [`fluid.prefs.panel`](http://docs.fluidproject.org/infusion/development/Panels.html)
 * [`gpii.firstDiscovery.attachTooltip.renderer`](attachTooltipRenderer.md)
+* [`fluid.prefs.panel`](http://docs.fluidproject.org/infusion/development/Panels.html)
 
 ## Model
 

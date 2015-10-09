@@ -35,8 +35,8 @@ var myStepCount = gpii.firstDiscovery.stepCount(container, options);
 This component uses the following base
 [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
-* [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 * [`gpii.firstDiscovery.msgLookup`](msgLookup.md)
+* [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 
 ## Model
 

@@ -70,8 +70,36 @@ This component supports the following
                 </dl>
             </td>
         </tr>
+        <tr>
+            <td>`onSetConfirmedIcon`</td>
+            <td>default</td>
+            <td>Fired to trigger a specific panel icon to show confirmed state</td>
+            <td>
+                <dl>
+                    <dd>`panelNum`</dd>
+                    <dt>the number of the panel whose icon state needs to be set to confirmed</dt>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>`onSetActiveIcon`</td>
+            <td>default</td>
+            <td>Fired to trigger a specific panel icon to show active state</td>
+            <td>
+                <dl>
+                    <dd>`panelNum`</dd>
+                    <dt>the number of the panel whose icon state needs to be set to active</dt>
+                </dl>
+            </td>
+        </tr>
     </tbody>
 </table>
+
+## Methods
+
+| Method | Description | Parameters |
+|--------|-------------|------------|
+| `showIconPage` | Scrolls the icon container to make sure the current active icon is visible. | none |
 
 ## Subcomponents
 
@@ -92,15 +120,25 @@ This component has the following
     options: {
         position: "{arguments}.1",
         styles: "{navIcons}.options.styles",
-        modelListeners: {
-            "{navIcons}.model.currentPanelNum": {
-                listener: "gpii.firstDiscovery.navIcons.updateIconModel",
-                args: ["{that}", "{change}.value", "{change}.oldValue"]
+        listeners: {
+            "{navIcons}.events.onSetConfirmedIcon": {
+                funcName: "{that}.setIconState",
+                args: ["isConfirmed", "{arguments}.0"]
             },
+            "{navIcons}.events.onSetActiveIcon": {
+                funcName: "{that}.setIconState",
+                args: ["isActive", "{arguments}.0"]
+            }
+        },
+        modelListeners: {
             "{navIcons}.model.pageNum": {
                 listener: "gpii.firstDiscovery.icon.measure",
                 args: ["{that}", "{navIcons}.applier", "iconWidth"],
                 priority: 10
+            },
+            "{navIcons}.model.currentPanelNum": {
+                listener: "gpii.firstDiscovery.navIcons.updateIconModel",
+                args: ["{that}", "{change}.value", "{change}.oldValue"]
             }
         }
     }

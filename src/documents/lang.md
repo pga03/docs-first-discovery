@@ -61,6 +61,7 @@ var myPanel = gpii.firstDiscovery.panel.lang(container, options);
 This component uses the following base
 [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
+* [`gpii.firstDiscovery.attachTooltip.renderer`](attachTooltipRenderer.md)
 * [`fluid.prefs.panel`](http://docs.fluidproject.org/infusion/development/Panels.html)
 
 ## Model
@@ -73,16 +74,9 @@ properties:
 |--------|-------------|--------|---------|
 | `lang` | The language applied to the First Discovery Tool | String | undefined |
 | `selectedLang` | The language code that its corresponding button has focus | String | undefined |
-| `displayLangIndex` | The index of the top language button to be displayed on the panel | Number | 0 |
+| `viewportFirstLangIndex` | The index of the first visible language button | Number | 0 |
 | `atStartOfLangs` | Whether the first language button has focus | Boolean | false |
 | `atEndOfLangs` | Whether the last language button has focus | Boolean | false |
-
-## Subcomponents
-
-This component has the following
-[subcomponents](http://docs.fluidproject.org/infusion/development/SubcomponentDeclaration.html):
-
-* [`gpii.firstDiscovery.panel.lang.attachTooltipOnLang`](attachTooltipOnLang.md)
 
 ## Options
 

@@ -46,6 +46,7 @@ properties:
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|
 | `currentPanelNum` | The panel currently displayed | Panel ID (Number) | 1 |
+| `visitedPanelNums` | An array of visited panel numbers | An array of numbers | [] |
 
 ## Subcomponents
 

@@ -1,0 +1,179 @@
+---
+title: Self Voicing Toggle Button
+layout: default
+category: API
+---
+
+## Overview
+
+**Component Name:** `gpii.firstDiscovery.selfVoicingToggle`
+
+**File:** `selfVoicing.js`
+
+Provides user interface for enabling/disabling (mute/unmute) the speech synthesis.
+
+## Adding a Self Voicing Toggle Button component
+
+
+*Option 1*: Typically this component is used as a sub-component of the Preferences Editor Loader, particularly the [First Discovery Tool Editor](firstDiscoveryEditor.md):
+```javascript
+selfVoicingToggle: {
+    container: "{that}.dom.selfVoicingToggle",
+    createOnEvent: "onPrefsEditorReady",
+    type: "gpii.firstDiscovery.selfVoicingToggle",
+    options: {
+        model: {
+            enabled: "{prefsEditor}.model.preferences.gpii_firstDiscovery_speak"
+        },
+        messageBase: "{messageLoader}.resources.prefsEditor.resourceText"
+    }
+}
+```
+
+*Option 2*: Outside the context of the First Discovery Tool, developers may wish to create a standalone component:
+```javascript
+var mySelfVoicing = gpii.firstDiscovery.selfVoicingToggle(container, options);
+```
+
+## Grades
+
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
+
+* [`gpii.firstDiscovery.msgLookup`](msgLookup.md)
+* [`gpii.firstDiscovery.attachTooltip`](attachTooltip.md)
+
+## Model
+
+This component supports the following
+[model](http://docs.fluidproject.org/infusion/development/tutorial-gettingStartedWithInfusion/ModelComponents.html)
+properties:
+
+<table>
+    <tr><th>Path</th><th>Description</th><th>Values</th><th>Default</th></tr>
+    <tr>
+        <td>`enabled`</td>
+        <td>The enabled/disabled (unmute/mute) state of the component</td>
+        <td>true/false (Boolean)</td>
+        <td>false</td>
+    </tr>
+</table>
+
+## Methods
+
+<table>
+    <thead>
+        <tr><th>Method</th><th>Description</th><th>Parameters</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>`toggleState`</td>
+            <td>Toggles the enabled state, effectively muting/unmuting.</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>`setLabel`</td>
+            <td>Sets the mute button label depending on the enabled  state. Note: this is meant for internal use by the component and not for external API calls.</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>`setTooltip`</td>
+            <td>Sets the tooltip for the mute button depending on the enabled  state. Note: this is meant for internal use by the component and not for external API calls.</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>`setMuteStyle`</td>
+            <td> Sets the style class on the mute button depending on the enabled  state. Note: this is meant for internal use by the component and not for external API calls.</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>`setPressedState`</td>
+            <td>Sets the `aria-pressed` attribute of the mute button.</td>
+            <td>A boolean of the button pressed state</td>
+        </tr>
+        <tr>
+            <td>`speakVoiceSate`</td>
+            <td>Utters the current enabled state.</td>
+            <td>
+                <dl>
+                    <dd>`options` (Object)</dd>
+                    <dt>Any valid speech utterance options (see: [`utteranceOpts`](http://docs.fluidproject.org/infusion/development/TextToSpeechAPI.html#utteranceopts-option))</dt>
+                </dl>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+## Options
+
+This component can be configured using the following
+[options](http://docs.fluidproject.org/infusion/development/ComponentOptionsAndDefaults.html):
+
+<table>
+    <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
+    <tr>
+        <td>`tooltipContentMap`</td>
+        <td>The mapping between the selector and tooltip message to be displayed (See [Attach Tooltip](attachTooltip.md)).</td>
+        <td></td>
+        <td>
+        <pre><code>tooltipContentMap: {
+    "mute": "mutedTooltip"
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>`selectors`</td>
+        <td>Javascript object containing selectors for various fragments of the markup, including the containers for the subcomponents.</td>
+        <td></td>
+        <td>See [Selectors](#selectors) below</td>
+    </tr>
+    <tr>
+        <td>`styles`</td>
+        <td>Specific class names used to achieve the look and feel</td>
+        <td></td>
+        <td>
+        <pre><code>styles: {
+    muted: "gpii-fd-selfVoicing-muted",
+    unmuted: "gpii-fd-selfVoicing-unmuted"
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>`modelListeners`</td>
+        <td>JavaScript object containing model paths and the listeners that are activated when changes happen to those paths</td>
+        <td>Keys in the object are event names, values are functions or arrays of functions.</td>
+        <td>See [Model](#model) above</td>
+    </tr>
+</table>
+
+## Selectors
+
+One of the options that can be provided to Infusion components is a set of CSS-based
+selectors identifying where in the DOM different elements can be found. Components use a
+[DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
+named elements.
+
+The value for the option is itself a Javascript object containing name/value pairs:
+
+```javascript
+selectors: {
+    selector1Name: "selector 1 string",
+    selector2Name: "selector 2 string",
+      ...
+}
+```
+
+| Selector Name | Description | Default |
+|---------------|-------------|---------|
+| `mute` | The DOM element to use as the mute button | `".gpiic-fd-selfVoicingToggle-mute"` |
+| `muteLabel` | The DOM element to use as the label for the mute button | `".gpiic-fd-selfVoicingToggle-muteLabel"` |
+
+## Dependencies
+
+```html
+<script type="text/javascript" src="src/lib/infusion/infusion-custom.js"></script>
+<script type="text/javascript" src="src/js/tooltip.js"></script>
+<script type="text/javascript" src="src/js/msgLookup.js"></script>
+<script type="text/javascript" src="src/js/selfVoicing.js"></script>
+```
+
