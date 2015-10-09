@@ -60,7 +60,7 @@ used by the First Discovery Editor:
     </thead>
     <tbody>
         <tr>
-            <td>`currentPanelNum`</td>
+            <td>`onPrefsEditorReady`</td>
             <td>default</td>
             <td>Fired when the internal prefsEditor, containing all of panels, is ready</td>
             <td>
@@ -118,7 +118,7 @@ used by the First Discovery Editor:
     </tr>
     <tr>
         <td>`selfVoicingToggle`</td>
-        <td>Specifies the type of Text-To-Speech toggle button to turn on/off self voicing that turn on/off the text-to-speech preference accordingly. </td>
+        <td>Specifies the type of Text-To-Speech button to mute/unmute self voicing that results in the text-to-speech preference to be turned on/off accordingly. </td>
         <td>[`"gpii.firstDiscovery.selfVoicingToggle"`](selfVoicingToggle.md)</td>
         <td>
         <pre><code>selfVoicingToggle: {
@@ -157,6 +157,22 @@ used by the First Discovery Editor:
         <pre><code>prefsEditor: {
     container: "{that}.dom.prefsEditor",
     options: {
+        gradeNames: ["gpii.firstDiscovery.tts.prefsEditor"],
+        modelListeners: {
+            states: {
+                funcName: "{that}.save",
+                excludeSource: "init"
+            },
+            preferences: {
+                funcName: "{that}.saveAndApply",
+                excludeSource: "init"
+            }
+        },
+        model: {
+            states: {
+                currentPanelNum: "{firstDiscoveryEditor}.model.currentPanelNum"
+            }
+        },
         selectors: {
             panel: "{firstDiscoveryEditor}.options.selectors.panel"
         },
@@ -168,8 +184,8 @@ used by the First Discovery Editor:
                 listener: "{firstDiscoveryEditor}.events.onPrefsEditorReady",
                 args: "{firstDiscoveryEditor}"
             },
-            onAutoSave: "{that}.saveAndApply",
-            "onReset.reload": {
+            // the page is reloaded to reset language and etc.
+            "afterReset.reload": {
                 "this": "location",
                 method: "reload",
                 args: true
@@ -184,12 +200,13 @@ used by the First Discovery Editor:
                 ]
             }
         },
-        autoSave: true,
-        connectionGradeForLang: "gpii.firstDiscovery.panel.lang.prefEditorConnection",
-        distributeOptions: {
-            source: "{that}.options.connectionGradeForLang",
-            target: "{that > gpii.firstDiscovery.panel.lang}.options.prefsEditorConnection"
-        }
+        distributeOptions: [{
+            record: {
+                offerAssistance: "{prefsEditor}.model.states.stickyKey.offerAssistance",
+                tryAccommodation: "{prefsEditor}.model.states.stickyKey.tryAccommodation"
+            },
+            target: "{that > gpii.firstDiscovery.panel.keyboard}.options.model"
+        }]
     }
 }</code></pre>
         </td>
@@ -205,7 +222,8 @@ used by the First Discovery Editor:
     createOnEvent: "onCreateNav",
     options: {
         model: {
-            currentPanelNum: "{firstDiscoveryEditor}.model.currentPanelNum"
+            currentPanelNum: "{firstDiscoveryEditor}.model.currentPanelNum",
+            visitedPanelNums: "{prefsEditor}.model.states.visitedPanelNums"
         },
         messageBase: "{messageLoader}.resources.prefsEditor.resourceText",
         styles: "{firstDiscoveryEditor}.options.styles",
@@ -221,7 +239,7 @@ used by the First Discovery Editor:
         <td>
         <pre><code>messageLoader: {
     options: {
-        locale: "{prefsEditorLoader}.settings.gpii_firstDiscovery_language"
+        locale: "{prefsEditorLoader}.settings.preferences.gpii_firstDiscovery_language"
     }
 }</code></pre>
         </td>
@@ -285,8 +303,7 @@ used by the First Discovery Editor:
         <pre><code>styles: {
     active: "gpii-fd-active",
     show: "gpii-fd-show",
-    currentPanel: "gpii-fd-current",
-    lastPanel: "gpii-fd-lastPanel"
+    currentPanel: "gpii-fd-current"
 }</code></pre>
         </td>
     </tr>
@@ -316,7 +333,7 @@ selectors: {
 |---------------|-------------|---------|
 | `prefsEditor` | The container to use for the internal prefsEditor; which contains all of the adjuster panels. | `".gpiic-fd-prefsEditor"` |
 | `panel` |  Passed down to internal prefsEditor to use as its panel selector. | `".gpiic-fd-prefsEditor-panel"` |
-| `selfVoicing` | The container for the selfVoicing subcomponent. | `".gpiic-fd-selfVoicing"` |
+| `selfVoicingToggle` | The container for the selfVoicingToggle subcomponent. | `".gpiic-fd-selfVoicingToggle"` |
 | `helpButton` | The container for the help button. | `".gpiic-fd-help"` |
 | `nav` | The container for the navigation subcomponent. | `".gpiic-fd-nav"` |
 
