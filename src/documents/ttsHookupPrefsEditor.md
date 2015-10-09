@@ -35,6 +35,9 @@ fluid.defaults("my.component", {
 
 ## Subcomponents
 
+This component has the following
+[subcomponents](http://docs.fluidproject.org/infusion/development/SubcomponentDeclaration.html):
+
 <table>
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
     <tr>

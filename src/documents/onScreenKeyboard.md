@@ -51,8 +51,8 @@ var myPanel = gpii.firstDiscovery.panel.onScreenKeyboard(container, options);
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the On-screen Keyboard panel:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`gpii.firstDiscovery.panel.yesNo`](yesNo.md)
 

@@ -56,8 +56,8 @@ var myPanel = gpii.firstDiscovery.panel.textSize(container, options);
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the Text Size panel:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`gpii.firstDiscovery.panel.ranged`](ranged.md)
 

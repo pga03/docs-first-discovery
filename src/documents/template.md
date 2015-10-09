@@ -12,7 +12,7 @@ category: API
 
 X.
 
-## Adding a X
+## Using the X
 
 To mixin the X into your Component/Grade, supply it as a `gradeNames` option:
 ```javascript
@@ -50,8 +50,8 @@ var myKeymap = gpii.firstDiscovery.usKeymap(options);
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the X:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 * [`gpii.firstDiscovery.attachTooltip`](attachTooltip.md)
@@ -59,11 +59,18 @@ used by the X:
 
 ## Model
 
+This component supports the following
+[model](http://docs.fluidproject.org/infusion/development/tutorial-gettingStartedWithInfusion/ModelComponents.html)
+properties:
+
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|
 | `` |  |  |   |
 
 ## Supported Events
+
+This component supports the following
+[events](http://docs.fluidproject.org/infusion/development/InfusionEventSystem.html):
 
 | Event  | Type |Description | Parameters |
 |--------|------|------------|------------|
@@ -88,8 +95,6 @@ used by the X:
         </tr>
     </tbody>
 </table>
-
-## Methods
 
 ## Methods
 
@@ -124,6 +129,9 @@ used by the X:
 
 ## Subcomponents
 
+This component has the following
+[subcomponents](http://docs.fluidproject.org/infusion/development/SubcomponentDeclaration.html):
+
 <table>
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
     <tr>
@@ -145,6 +153,9 @@ used by the X:
 </table>
 
 ## Options
+
+This component can be configured using the following
+[options](http://docs.fluidproject.org/infusion/development/ComponentOptionsAndDefaults.html):
 
 <table>
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
@@ -180,9 +191,12 @@ used by the X:
 
 ## Selectors
 
-One of the options that can be provided to the First Discovery Editor is a set of CSS-based
-selectors identifying where in the DOM different elements can be found. The value for the option
-is itself a Javascript object containing name/value pairs:
+One of the options that can be provided to Infusion components is a set of CSS-based
+selectors identifying where in the DOM different elements can be found. Components use a
+[DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
+named elements.
+
+The value for the option is itself a Javascript object containing name/value pairs:
 
 ```javascript
 selectors: {

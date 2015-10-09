@@ -33,8 +33,8 @@ var myHelpButton = gpii.firstDiscovery.helpButton(container, options);
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the Help Button:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 * [`gpii.firstDiscovery.msgLookup`](msgLookup.md)

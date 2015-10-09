@@ -30,12 +30,16 @@ fluid.defaults("gpii.firstDiscovery.panel.lang", {
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the the Language and Preferences Editor Connector:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`fluid.eventedComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 
 ## Model
+
+This component supports the following
+[model](http://docs.fluidproject.org/infusion/development/tutorial-gettingStartedWithInfusion/ModelComponents.html)
+properties:
 
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|

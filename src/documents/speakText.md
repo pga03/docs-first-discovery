@@ -52,8 +52,8 @@ var myPanel = gpii.firstDiscovery.panel.speakText(container, options);
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the Speak Text panel:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`gpii.firstDiscovery.panel.yesNo`](yesNo.md)
 

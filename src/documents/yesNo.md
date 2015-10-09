@@ -29,13 +29,17 @@ fluid.defaults("my.component", {
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the the Yes/No panel:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`fluid.prefs.panel`](http://docs.fluidproject.org/infusion/development/Panels.html)
 * [`gpii.firstDiscovery.attachTooltip.renderer`](attachTooltipRenderer.md)
 
 ## Model
+
+This component supports the following
+[model](http://docs.fluidproject.org/infusion/development/tutorial-gettingStartedWithInfusion/ModelComponents.html)
+properties:
 
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|
@@ -44,6 +48,9 @@ used by the the Yes/No panel:
 
 
 ## Options
+
+This component can be configured using the following
+[options](http://docs.fluidproject.org/infusion/development/ComponentOptionsAndDefaults.html):
 
 <table>
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
@@ -67,9 +74,12 @@ used by the the Yes/No panel:
 
 ## Selectors
 
-One of the options that can be provided to the First Discovery Editor is a set of CSS-based
-selectors identifying where in the DOM different elements can be found. The value for the option
-is itself a Javascript object containing name/value pairs:
+One of the options that can be provided to Infusion components is a set of CSS-based
+selectors identifying where in the DOM different elements can be found. Components use a
+[DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
+named elements.
+
+The value for the option is itself a Javascript object containing name/value pairs:
 
 ```javascript
 selectors: {

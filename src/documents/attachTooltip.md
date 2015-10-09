@@ -26,18 +26,25 @@ fluid.defaults("my.component", {
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the Attach Tooltip:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 
 ## Model
+
+This component supports the following
+[model](http://docs.fluidproject.org/infusion/development/tutorial-gettingStartedWithInfusion/ModelComponents.html)
+properties:
 
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|
 | `currentSelectedIndex` |The index of the currently selected element  | Number | undefined |
 
 ## Subcomponents
+
+This component has the following
+[subcomponents](http://docs.fluidproject.org/infusion/development/SubcomponentDeclaration.html):
 
 <table>
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
@@ -84,6 +91,9 @@ used by the Attach Tooltip:
 </table>
 
 ## Options
+
+This component can be configured using the following
+[options](http://docs.fluidproject.org/infusion/development/ComponentOptionsAndDefaults.html):
 
 <table>
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>

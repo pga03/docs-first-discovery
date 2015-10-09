@@ -33,12 +33,15 @@ fluid.defaults("my.component", {
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the Message Lookup grade:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * `fluid.presf.msgLookup`
 
 ## Subcomponents
+
+This component has the following
+[subcomponents](http://docs.fluidproject.org/infusion/development/SubcomponentDeclaration.html):
 
 <table>
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
@@ -56,6 +59,9 @@ used by the Message Lookup grade:
 </table>
 
 ## Options
+
+This component can be configured using the following
+[options](http://docs.fluidproject.org/infusion/development/ComponentOptionsAndDefaults.html):
 
 <table>
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>

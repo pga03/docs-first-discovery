@@ -32,14 +32,18 @@ var myKeyboardInput = gpii.firstDiscovery.keyboardInput(container, options);
 
 ## Grades
 
-The base [grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
-used by the Keyboard Input component:
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
 
 * [`fluid.viewComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 * [`gpii.firstDiscovery.tts.fdHookup`](tts-hookupFD.md)
 * `fluid.prefs.prefsEditorLoader`
 
 ## Model
+
+This component supports the following
+[model](http://docs.fluidproject.org/infusion/development/tutorial-gettingStartedWithInfusion/ModelComponents.html)
+properties:
 
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|
@@ -48,6 +52,9 @@ used by the Keyboard Input component:
 | `userInput ` | The user input | `String` | `""`  |
 
 ## Supported Events
+
+This component supports the following
+[events](http://docs.fluidproject.org/infusion/development/InfusionEventSystem.html):
 
 | Event  | Type |Description | Parameters |
 |--------|------|------------|------------|
@@ -67,6 +74,9 @@ used by the Keyboard Input component:
 
 
 ## Options
+
+This component can be configured using the following
+[options](http://docs.fluidproject.org/infusion/development/ComponentOptionsAndDefaults.html):
 
 <table>
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
