@@ -109,7 +109,7 @@
                 "sectionName":"Preferences Server Integration",
                 "pages":
                 [
-                    { "pageName": "First Discovery Editor - Preferences Server Integration", "href": "/firstDiscoveryEditorPrefsServerIntegration.html"}
+                    { "pageName": "First Discovery Editor - Preferences Server Integration", "href": "/firstDiscoveryEditorPrefsServerIntegration.html"},
                     { "pageName": "Token Panel", "href": "/token.html"}
                 ]
             }
