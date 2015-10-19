@@ -20,9 +20,9 @@ and should contain all the strings used by a user interface. As such, Message Lo
 are not intended to be used on their own, but provided as a grade to another component that will
 use it's capabilities for displaying messages/strings to a user.
 
-## Adding Message Lookup to a Component/Grade
+## Using the Message Lookup grade
 
-To mixin the Message Lookup into your Component/Grade, supply it as a `gradeNames` option:
+To use the Message Lookup grade, supply it as a `gradeNames` option in your component definition:
 
 ```javascript
 fluid.defaults("my.component", {

@@ -14,7 +14,7 @@ Allows users to turn on/off the text-to-speech. This component uses [Yes/No](yes
 Panel as a base grade so it has the same component structure as Yes/No Panel
 in terms of the model, options, selectors and dependencies.
 
-## Adding a Speak Text Panel to a component/grade
+## Using the Speak Text Panel
 
 *Option 1*: Typically this component integrated into the First Discovery Tool by
 supplying it as a type option in the

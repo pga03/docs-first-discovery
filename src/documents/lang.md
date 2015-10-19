@@ -13,7 +13,7 @@ category: API
 Used to set the page's language. Currently this action is performed by saving the selected
 language to the settings store and reloading the page.
 
-## Adding a Language Panel to a component/grade
+## Using the Language Panel
 
 *Option 1*: Typically this component integrated into the First Discovery Tool by
 supplying it as a type option in the

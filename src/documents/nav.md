@@ -12,7 +12,7 @@ category: API
 
 Handles the navigation between panels as well as maintaining a set of icons representing each panel.
 
-## Adding a Navigation Component
+## Using the Navigation component
 
 *Option 1*: Typically used as a sub-component of a Preferences Editor Loader, particularly the
 [First Discovery Tool Editor](firstDiscoveryEditor.md):

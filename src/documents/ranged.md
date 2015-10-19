@@ -17,9 +17,9 @@ that will use it's capabilities for creating such panels. An UI example of one o
 
 ![vertical bar with "fast" above it and "slow" below it, with plus and minus buttons next to it](images/rangedPanel.jpeg)
 
-## Adding a Ranged Panel to a component/grade
+## Using the Ranged Panel grade
 
-To mixin the Ranged Panel into your Component/Grade, supply it as a `gradeNames` option:
+To use the Ranged Panel grade, supply it as a `gradeNames` option in your component definition:
 ```javascript
 fluid.defaults("my.component", {
     gradeNames: ["gpii.firstDiscovery.panel.ranged"],

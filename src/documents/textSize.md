@@ -14,7 +14,7 @@ Allows users to adjust the text to the size they want. This component uses [Rang
 Panel as a base grade so it has the same component structure as Ranged Panel
 in terms of the model, options, selectors and dependencies.
 
-## Adding a Text Size Panel to a component/grade
+## Using Text Size Panel
 
 *Option 1*: Typically this component integrated into the First Discovery Tool by
 supplying it as a type option in the

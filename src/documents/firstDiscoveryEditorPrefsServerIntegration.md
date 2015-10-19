@@ -14,9 +14,11 @@ First Discovery Editor (Preferences Server Integration) component is a grade con
 
 This component uses the [Preferences Server API](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md) to save preferences that users select in the First Discovery Tool to the server. The server returns a token that identifies the saved preferences for them to be applied to other devices.
 
-## Adding a First Discovery Editor - Preferences Server Integration
+## Using the First Discovery Editor - Preferences Server Integration component
 
-The First Discovery Editor - Preferences Server Integration is intended to work in conjuction with the [First Discovery Editor](firstDiscoveryEditor.md) by supplying both components as the loaderGrade in an
+The First Discovery Editor - Preferences Server Integration is intended to work in conjuction
+with the [First Discovery Editor](firstDiscoveryEditor.md) by supplying both components as the
+`loaderGrade` in an
 [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
 
 ```javascript

@@ -17,9 +17,9 @@ An UI example of one of these panels:
 
 ![A question with two buttons below it, labelled "yes" and "no"](images/yesNoPanel.jpeg)
 
-## Adding a Yes/No panel to a component/grade
+## Using the Yes/No grade
 
-To mixin the Yes/No into your Component/Grade, supply it as a `gradeNames` option:
+To use the Yes/No grade, supply it as a `gradeNames` option in your component definition:
 ```javascript
 fluid.defaults("my.component", {
     gradeNames: ["gpii.firstDiscovery.panel.yesNo"],

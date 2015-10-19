@@ -18,9 +18,9 @@ except that it is geared for working with
 [fluid.rendererComponent](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)s
 where the tooltip model needs to be updated after rendering.
 
-## Adding an Attach Tooltip Renderer to a component/grade
+## Using the Attach Tooltip Renderer grade
 
-To mixin the Attach Tooltip Renderer into your Component/Grade, supply it as a `gradeNames` option:
+To use the Attach Tooltip Renderer grade, supply it as a `gradeNames` option in your component definition:
 ```javascript
 fluid.defaults("my.component", {
     gradeNames: ["gpii.firstDiscovery.attachTooltip.renderer"]

@@ -15,9 +15,10 @@ whether the SHIFT key is latched. This component is not intended to be used on i
 provided as a base grade to another component. It also relies on the availability of a component
 with the [`fluid.textToSpeech`](http://docs.fluidproject.org/infusion/development/TextToSpeechAPI.html) grade within the component hierarchy to do the actual speaking.
 
-## Adding a Keyboard Input - Text-to-Speech to a Component/Grade
+## Using the Keyboard Input - Text-to-Speech grade
 
-To mixin the Keyboard Input - Text-to-Speech into the [Keyboard Input](keyboardInput.md), supply it as a `gradeNames` option:
+To use the Keyboard Input - Text-to-Speech grade in the [Keyboard Input](keyboardInput.md),
+supply it as a `gradeNames` option in the component definition:
 ```javascript
 keyboardInput: {
     type: "gpii.firstDiscovery.keyboardInput",

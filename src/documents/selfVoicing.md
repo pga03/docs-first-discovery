@@ -15,8 +15,7 @@ Provides a Text-to-Speech engine for vocalizing text.
 Note: This is will only work in browsers that support the
 [SpeechSynthesis API](https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html#tts-section).
 
-## Adding a Self Voicing component
-
+## Using the Self Voicing component
 
 *Option 1*: Typically this component is used as a sub-component of the Preferences Editor Loader,
 particularly the [First Discovery Tool Editor](firstDiscoveryEditor.md):

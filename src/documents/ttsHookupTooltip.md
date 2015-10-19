@@ -14,9 +14,9 @@ Text-to-Speech Hookup is a grade containing the configuration necessary to bind 
 the Text-to-Speech engine within the component's
 [environment](http://docs.fluidproject.org/infusion/development/Contexts.html).
 
-## Adding a Text-to-Speech Hookup – Tooltip
+## Using the Text-to-Speech Hookup – Tooltip grade
 
-To mixin the Text-to-Speech Hookup – Tooltip into your Component/Grade, supply it as a `gradeNames` option:
+To use the Text-to-Speech Hookup – Tooltip grade, supply it as a `gradeNames` option in your component definition:
 ```javascript
 fluid.defaults("my.component", {
     gradeNames: ["gpii.firstDiscovery.tts.tooltipHookup"]

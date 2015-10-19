@@ -12,7 +12,7 @@ category: API
 
 A component wrapper around a single navigational icon, managing the state (active/inactive, confirmed).
 
-## Adding a Navigation Icon component
+## Using the Navigation Icon component
 
 *Option 1*: Typically this component is used as a sub-component of the [Navigation Icons](navIcons.md):
 ```javascript

@@ -15,7 +15,7 @@ This component uses [Ranged Panel - with Disabled Message ](rangedDisabled.md)
 as a base grade so it has the same component structure as that panel
 in terms of of the model, options, selectors and dependencies.
 
-## Adding a Speech Rate Panel to a component/grade
+## Using the Speech Rate Panel
 
 *Option 1*: Typically this component integrated into the First Discovery Tool by
 supplying it as a type option in the

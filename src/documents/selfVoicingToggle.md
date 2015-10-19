@@ -12,8 +12,7 @@ category: API
 
 Provides user interface for enabling/disabling (mute/unmute) the speech synthesis.
 
-## Adding a Self Voicing Toggle Button component
-
+## Using the Self Voicing Toggle Button
 
 *Option 1*: Typically this component is used as a sub-component of the Preferences Editor Loader, particularly the [First Discovery Tool Editor](firstDiscoveryEditor.md):
 ```javascript

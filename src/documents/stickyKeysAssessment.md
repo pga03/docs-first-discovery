@@ -13,7 +13,7 @@ category: API
 Assess whether the user needs the help of the sticky keys feature. Currently, the assessor is
 simply compare whether the user input string is the same as the expected string.
 
-## Adding a Sticky Keys Assessor
+## Using the Sticky Keys Assessor
 
 *Option 1*: Typically this component is used as a sub-component of the [Sticky Keys](keyboard.md) panel:
 ```javascript

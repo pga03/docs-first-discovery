@@ -16,7 +16,7 @@ The Sticky Keys panel offers:
 2. Provides a means for users to experiment the experience when the sticky keys preference is turned on or off;
 3. Turn the sticky keys preference on or off.
 
-## Adding a Sticky Keys Panel to a Component/Grade
+## Using the Sticky Keys Panel
 
 *Option 1*: Typically the Sticky Keys Panel is integrated into the First Discovery Tool
 by supplying it in an

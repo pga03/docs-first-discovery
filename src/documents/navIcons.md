@@ -12,7 +12,7 @@ category: API
 
 Wraps the set of [Navigation Icon](icon.md)s and assists in determining the position of each navigation icon.
 
-## Adding a Navigation Icons component
+## Using the Navigation Icons component
 
 *Option 1*: Typically this component is used as a sub-component of the [Navigation](nav.md):
 ```javascript

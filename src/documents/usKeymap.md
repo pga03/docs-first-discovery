@@ -14,7 +14,7 @@ Provides methods required for measuring the keyboard input such as the latched S
 retrieving the corresponding character when the SHIFT key is latched.
 Currently this component only supports the US keyboard layout.
 
-## Adding a US Keymap
+## Using the US Keymap
 
 *Option 1*: Typically this component is used as a sub-component of the [Keyboard Input](keyboardInput.md):
 ```javascript

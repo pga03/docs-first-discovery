@@ -12,7 +12,7 @@ category: API
 
 Displays the welcome message.
 
-## Adding a Welcome Panel to a Component/Grade
+## Using the Welcome Panel
 
 *Option 1*: Typically this component integrated into the First Discovery Tool by
 supplying it as a type option in the

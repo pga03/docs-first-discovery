@@ -18,7 +18,7 @@ to show the selected language button. However, while the language panel is hidde
 would not occur because the button positions are not retrievable. This connector component ensures
 the language panel re-renders when the user navigates back to the language panel.
 
-## Adding a Language and Preferences Editor Connector component
+## Using the Language and Preferences Editor Connector component
 
 Typically the Language and Preferences Editor Connector is integrated into the First Discovery Tool
 by supplying it in an

@@ -14,7 +14,7 @@ The Help Button provides a component for handling the interface and interaction 
 This has only been roughed in and currently only sets the text of the help button to
 assist with localization.
 
-## Adding a Help Button
+## Using the Help Button
 
 *Option 1*: Typically used as a sub-component of a Preferences Editor Loader,
 particularly the [First Discovery Editor](firstDiscoveryEditor.md):

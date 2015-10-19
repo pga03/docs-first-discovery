@@ -14,7 +14,7 @@ Used to set the page's language by 1) saving the selected
 language to the settings store and 2) reloading the page. When the page reloads, it will
 automatically select the appropriate language based on the saved preference.
 
-## Adding a Language Enactor
+## Using the Language Enactor
 
 The Language Enactor should be bound to an instance of a Preferences Editor by supplying it in
 an [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):

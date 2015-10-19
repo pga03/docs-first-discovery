@@ -16,7 +16,7 @@ In the First Discovery Tool, the state of the text-to-speech preference is store
 `prefsEditor.model.gpii_firstDiscovery_speak`.
 This connector component distributes this model value into the speech rate panel component.
 
-## Adding a Speech Rate and Preferences Editor Connector component
+## Using the Speech Rate and Preferences Editor Connector component
 
 Typically passed into the [speech rate](speechRate.md) component by supplying it as a
 `gradeNames` option in the

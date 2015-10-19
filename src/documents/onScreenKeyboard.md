@@ -15,7 +15,7 @@ This component uses [Yes/No](yesNo.md)
 Panel as a base grade so it has the same component structure as Yes/No Panel
 in terms of the model, options, selectors and dependencies.
 
-## Adding an On-Screen Keyboard to a component/grade
+## Using the On-Screen Keyboard Panel
 
 *Option 1:* Typically the On-Screen Keyboard Panel is integrated into the first discovery tool by supplying it as a type option in the
 [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):

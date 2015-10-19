@@ -14,7 +14,7 @@ When a character is entered via a keyboard, if the SHIFT key is not latched,
 the keyboard input component shows the character itself, otherwise, it shows
 the corresponding SHIFT latched character.
 
-## Adding a Keyboard Input
+## Using the Keyboard Input component
 
 *Option 1*: Typically this component is used as a sub-component of a [Sticky Keys Panel](keyboard.md):
 ```javascript

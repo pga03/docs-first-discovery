@@ -14,9 +14,9 @@ Text-to-Speech Hookup - First Discovery is a grade containing the configuration 
 
 Note: _The utterance will only occur when self voicing is enabled._
 
-## Adding a Text-to-Speech Hookup – Preferences Editor
+## Using the Text-to-Speech Hookup – Preferences Editor grade
 
-To mixin the Text-to-Speech Hookup – Preferences Editor into your Component/Grade, supply it as a `gradeNames` option:
+To use the Text-to-Speech Hookup – Preferences Editor grade, supply it as a `gradeNames` option in your component definition:
 ```javascript
 fluid.defaults("my.component", {
     gradeNames: ["gpii.firstDiscovery.tts.prefsEditor"]

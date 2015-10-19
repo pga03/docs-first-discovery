@@ -13,7 +13,7 @@ category: API
 Creates the interface for users to experiment the keyboard feature when the sticky keys
 preference is turned on or off.
 
-## Adding a Sticky Keys Adjuster
+## Using the Sticky Keys Adjuster
 
 *Option 1*: Typically this component is used as a sub-component of the [Sticky Keys](keyboard.md) panel:
 ```javascript

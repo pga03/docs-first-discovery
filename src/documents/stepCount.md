@@ -12,7 +12,7 @@ category: API
 
 Assists to display how many steps users have gone through.
 
-## Adding a Step Count component
+## Using the Step Count component
 
 *Option 1*: Typically this component is used as a sub-component of the [Navigation](nav.md):
 ```javascript

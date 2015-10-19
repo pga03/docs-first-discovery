@@ -21,9 +21,9 @@ component that will use it's capabilities for creating such panels.
 This component uses [Ranged Panel](ranged.md) as a base grade, so it has the same component structure as
 that panel in terms of the model and options.
 
-## Adding a Ranged Panel - With Disabled Message to a component/grade
+## Using the Ranged Panel - With Disabled Message grade
 
-To mixin the Ranged Panel - With Disabled Message into your Component/Grade, supply it as a `gradeNames` option:
+To use the Ranged Panel - With Disabled Message grade, supply it as a `gradeNames` option in your component definition:
 ```javascript
 fluid.defaults("my.component", {
     gradeNames: ["gpii.firstDiscovery.panel.rangedWithDisabledMsg"],

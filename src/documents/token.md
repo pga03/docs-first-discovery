@@ -12,7 +12,7 @@ category: API
 
 Used the [Preferences Server API](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md) to save preferences that users select in the First Discovery Tool to the server as well as displaying the server returned token. This token identifies the saved preferences for them to be applied to other devices.
 
-## Adding a Token Panel to a component/grade
+## Using the Token Panel
 
 *Option 1*: Typically this component integrated into the First Discovery Tool by supplying it as a type option in the
 [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):

@@ -12,7 +12,7 @@ category: API
 
 Provides the back/next buttons for navigating between the panels of the [First Discovery Tool](firstDiscoveryEditor.md).
 
-## Adding a Navigation Buttons Componnet
+## Using the Navigation Buttons componnet
 
 *Option 1*: Typically this component is used as a sub-component of the [Navigation](nav.md):
 ```javascript

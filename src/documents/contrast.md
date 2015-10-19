@@ -14,7 +14,7 @@ The contrast panel component provides a means to change the contrast theme of th
 First Discovery Tool. Each contrast theme defines its own combination of foreground
 and background colors.
 
-## Adding a Contrast Panel to a Component/Grade
+## Using the Contrast Panel
 
 *Option 1*: Typically this component integrated into the First Discovery Tool by
 supplying it as a type option in the
