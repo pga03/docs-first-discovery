@@ -10,7 +10,11 @@ category: API
 
 **File:** `panels.js`
 
-Used the [Preferences Server API](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md) to save preferences that users select in the First Discovery Tool to the server as well as displaying the server returned token. This token identifies the saved preferences for them to be applied to other devices.
+Used the
+[GPII Preferences Server API](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md)
+to save preferences that users select in the First Discovery Tool to the server as well as
+displaying the server returned token. This token identifies the saved preferences for them to be
+applied to other devices.
 
 ## Using the Token Panel
 

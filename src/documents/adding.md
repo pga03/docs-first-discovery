@@ -23,7 +23,7 @@ Your flying car has an auto-pilot feature, and you want to add a preference for 
 
     A. The `src/schemas/schemas.js` file contains the primary schema, which defines the preferences, and the auxiliary schema, which defines the editor itself (i.e. the panels used to adjust the preferences, where to find HTML templates, etc.)
 
-    You can see the entire file here: https://github.com/fluid-project/first-discovery/blob/master/src/schemas/schemas.js
+    You can see the entire file here: https://github.com/GPII/first-discovery/blob/master/src/schemas/schemas.js
 
     B. In the `schemas.js` file, find the definition of the `"speak"` primary schema, which start with `fluid.defaults("gpii.firstDiscovery.schemas.speak", `:
 
@@ -59,7 +59,7 @@ Your flying car has an auto-pilot feature, and you want to add a preference for 
 
     A. The src/messages folder contains JSON files containing the interface strings for each preference panel. The file "speakText_en-US.json" is an example of the form of message file you’ll create for your preference panel.
 
-    You can see that file here: https://github.com/fluid-project/first-discovery/blob/master/src/messages/speakText_en-US.json
+    You can see that file here: https://github.com/GPII/first-discovery/blob/master/src/messages/speakText_en-US.json
 
     B. Create a new file in the messages folder called "autoPilot_en-US.json".
 
@@ -152,7 +152,7 @@ Your flying car has an auto-pilot feature, and you want to add a preference for 
 
     A. The icons at the bottom of the screen are implemented in CSS, using an icon font. These instructions assume you are familiar with icon fonts and will use them for your new panel. For information about creating and usin icon fonts, see http://docs.fluidproject.org/infusion/development/tutorial-creatingANewAdjusterUI/HowToCreateAndUseFontIcons.html
 
-    You can see the entire CSS file here: https://github.com/fluid-project/first-discovery/blob/master/src/css/style.css
+    You can see the entire CSS file here: https://github.com/GPII/first-discovery/blob/master/src/css/style.css
 
     B. The icon characters are added as content to the document using the :before selector and the content property, as seen in the CSS for the language icon:
 
@@ -246,7 +246,7 @@ Your flying car has an auto-pilot feature, and you want to add a preference for 
 
     A. The `src/schemas/schemas.js` file contains the auxiliary schema, which defines the editor itself (i.e. the panels used to adjust the preferences, where to find HTML templates, etc.)
 
-    You can see the entire file here: https://github.com/fluid-project/first-discovery/blob/master/src/schemas/schemas.js
+    You can see the entire file here: https://github.com/GPII/first-discovery/blob/master/src/schemas/schemas.js
 
     B. In the `schemas.js` file, find the auxiliary schema, which starts with `fluid.defaults("gpii.firstDiscovery.auxSchema", `.
 

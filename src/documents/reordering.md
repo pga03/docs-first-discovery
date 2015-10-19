@@ -16,7 +16,7 @@ You’ve built the world’s first flying car, and of course, you want your cust
 
     A. The `demos/index.html` file is the main HTML file for the First Discovery Tool demo. It contains [placeholders for the bits and pieces that will be rendered into the interface].
 
-    You can see the entire file here: https://github.com/fluid-project/first-discovery/blob/master/demos/index.html
+    You can see the entire file here: https://github.com/GPII/first-discovery/blob/master/demos/index.html
 
     B. In the `demos/index.html` file, find the list of icons (a `<ul>` with the class `"gpii-fd-navIcon-outer"` as described above).
 
@@ -64,7 +64,7 @@ You’ve built the world’s first flying car, and of course, you want your cust
 2. Edit `src/html/firstDiscovery.html` to change the order of the panels.
     The `src/html/firstDiscovery.html` file is the main template for the preference panels. It contains placeholders elements for each preference panel.
 
-    You can see the entire file here: https://github.com/fluid-project/first-discovery/blob/master/src/html/firstDiscovery.html
+    You can see the entire file here: https://github.com/GPII/first-discovery/blob/master/src/html/firstDiscovery.html
 
     In the `"firstDiscovery.html` file, find the `<section>` element that has the class name `"gpiic-fd-prefsEditor-panel-showSounds"`.
 

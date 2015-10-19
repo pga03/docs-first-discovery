@@ -75,7 +75,7 @@ Your flying car doesn’t support some of the preferences in the First Discovery
 
     A. The `src/js/schemas.js` contains the primary schema (which defines the preferences) and the auxiliary schema (which defines the editor itself, i.e. the panels used to adjust the preferences, where to find HTML templates, etc).
 
-    You can see the entire file here: https://github.com/fluid-project/first-discovery/blob/master/src/js/schemas.js
+    You can see the entire file here: https://github.com/GPII/first-discovery/blob/master/src/js/schemas.js
 
     B. In the `schemas.js` file, find the auxiliary schema, which starts with `fluid.defaults("gpii.firstDiscovery.auxSchema", `.
 

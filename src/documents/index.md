@@ -31,6 +31,4 @@ Voting Booth Context: http://build.fluidproject.org/first-discovery/demos/voting
 
 ## Source code
 
-https://github.com/fluid-project/first-discovery
-
-**Note:** The code will soon be moved to the GPII repository project.
+https://github.com/GPII/first-discovery

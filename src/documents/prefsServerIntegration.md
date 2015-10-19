@@ -1,5 +1,5 @@
 ---
-title: First Discovery Editor - Preferences Server Integration
+title: Preferences Server Integration
 layout: default
 category: API
 ---
@@ -10,13 +10,19 @@ category: API
 
 **File:** `firstDiscoveryEditor.js`
 
-First Discovery Editor (Preferences Server Integration) component is a grade containing the configuration necessary to connect the [First Discovery Editor](firstDiscoveryEditor.md) with the [Preferences Server](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md). This grade is intended to be added as a base grade to the [First Discovery Editor](firstDiscoveryEditor.md).
+The Preferences Server Integration component is a grade containing the
+configuration necessary to connect the [First Discovery Editor](firstDiscoveryEditor.md) with the
+[GPII Preferences Server](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md).
+This grade is intended to be added as a base grade to the First Discovery Editor.
 
-This component uses the [Preferences Server API](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md) to save preferences that users select in the First Discovery Tool to the server. The server returns a token that identifies the saved preferences for them to be applied to other devices.
+This component uses the
+[GPII Preferences Server API](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md)
+to save preferences to the server. The server returns a token that identifies the saved
+preferences for them to be applied to other devices.
 
-## Using the First Discovery Editor - Preferences Server Integration component
+## Using the Preferences Server Integration component
 
-The First Discovery Editor - Preferences Server Integration is intended to work in conjuction
+The Preferences Server Integration component is intended to work in conjuction
 with the [First Discovery Editor](firstDiscoveryEditor.md) by supplying both components as the
 `loaderGrade` in an
 [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):

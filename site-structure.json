@@ -29,9 +29,7 @@
                 "sectionName":"General",
                 "pages":
                 [
-                    { "pageName": "First Discovery Editor", "href": "/firstDiscoveryEditor.html"},
-                    { "pageName": "Help Button", "href": "/helpButton.html"},
-                    { "pageName": "Self Voicing Toggle Button", "href": "/selfVoicingToggle.html"}
+                    { "pageName": "First Discovery Editor", "href": "/firstDiscoveryEditor.html"}
                 ]
             },
             {
@@ -49,6 +47,14 @@
                     { "pageName": "Show Sounds", "href": "/showSounds.html"},
                     { "pageName": "Sticky Keys", "href": "/keyboard.html"},
                     { "pageName": "Congratulations", "href": "/congratulations.html"}
+                ]
+            },
+            {
+                "sectionName":"Preferences Server Integration",
+                "pages":
+                [
+                    { "pageName": "Preferences Server Integration", "href": "/prefsServerIntegration.html"},
+                    { "pageName": "Token Panel", "href": "/token.html"}
                 ]
             },
             {
@@ -95,7 +101,9 @@
                 "sectionName":"Utility",
                 "pages":
                 [
+                    { "pageName": "Help Button", "href": "/helpButton.html"},
                     { "pageName": "Self Voicing", "href": "/selfVoicing.html"},
+                    { "pageName": "Self Voicing Toggle Button", "href": "/selfVoicingToggle.html"},
                     { "pageName": "Keyboard Input", "href": "/keyboardInput.html"},
                     { "pageName": "Keyboard Input - Text-to-Speech", "href": "/keyboardInputTTS.html"},
                     { "pageName": "US Keymap", "href": "/usKeymap.html"},
@@ -103,14 +111,6 @@
                     { "pageName": "Attach Tooltip Renderer", "href": "/attachTooltipRenderer.html"},
                     { "pageName": "Text-to-Speech Hookup – Tooltip", "href": "/ttsHookupTooltip.html"},
                     { "pageName": "Text-to-Speech Hookup – Preferences Editor", "href": "/ttsHookupPrefsEditor.html"}
-                ]
-            },
-            {
-                "sectionName":"Preferences Server Integration",
-                "pages":
-                [
-                    { "pageName": "First Discovery Editor - Preferences Server Integration", "href": "/firstDiscoveryEditorPrefsServerIntegration.html"},
-                    { "pageName": "Token Panel", "href": "/token.html"}
                 ]
             }
         ]
