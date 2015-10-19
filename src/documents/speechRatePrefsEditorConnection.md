@@ -11,8 +11,8 @@ category: API
 **File:** `panels.js`
 
 The [speech rate](speechRate.md) panel component and the [self voicing](selfVoicing.md) component
-controls the enabling and disabling of the same preference: the text to speech.
-In the First Discovery Tool, the state of the text to speech preference is stored in
+control the enabling and disabling of the same preference: text-to-speech.
+In the First Discovery Tool, the state of the text-to-speech preference is stored in
 `prefsEditor.model.gpii_firstDiscovery_speak`.
 This connector component distributes this model value into the speech rate panel component.
 
@@ -48,7 +48,7 @@ properties:
 
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|
-| `enabled` | Indicates whether the text to speech is enabled. | Boolean | undefined |
+| `enabled` | Indicates whether the text-to-speech is enabled. | Boolean | undefined |
 
 
 ## Dependencies

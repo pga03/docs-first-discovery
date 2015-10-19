@@ -1,5 +1,5 @@
 ---
-title: Sticky Keys Panel – Text To Speech
+title: Sticky Keys Panel – Text-to-Speech
 layout: default
 category: API
 ---
@@ -17,9 +17,9 @@ availability of a component with the
 [fluid.textToSpeech](http://docs.fluidproject.org/infusion/development/TextToSpeechAPI.html)
 grade within the component hierarchy to do the actual speaking.
 
-## Adding a Sticky Keys Panel – Text To Speech to a Component/Grade
+## Adding a Sticky Keys Panel – Text-to-Speech to a Component/Grade
 
-To mixin the Sticky Keys Panel – Text To Speech into your Component/Grade,
+To mixin the Sticky Keys Panel – Text-to-Speech into your Component/Grade,
 supply it as a `gradeNames` option in the [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
 
 ```javascript

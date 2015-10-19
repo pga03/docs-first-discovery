@@ -10,7 +10,7 @@ category: API
 
 **File:** `selfVoicing.js`
 
-Provides a Text-To-Speech engine for vocalizing text.
+Provides a Text-to-Speech engine for vocalizing text.
 
 Note: This is will only work in browsers that support the
 [SpeechSynthesis API](https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html#tts-section).

@@ -31,7 +31,7 @@
                 [
                     { "pageName": "First Discovery Editor", "href": "/firstDiscoveryEditor.html"},
                     { "pageName": "Help Button", "href": "/helpButton.html"},
-                    { "pageName": "Turn Voice On/Off Button", "href": "/selfVoicingToggle.html"}
+                    { "pageName": "Self Voicing Toggle Button", "href": "/selfVoicingToggle.html"}
                 ]
             },
             {
@@ -55,15 +55,15 @@
                 "sectionName":"Components used by panels",
                 "pages":
                 [
+                    { "pageName": "Yes/No", "href": "/yesNo.html"},
                     { "pageName": "Ranged", "href": "/ranged.html"},
                     { "pageName": "Ranged With Disabled Message", "href": "/rangedDisabled.html"},
                     { "pageName": "Sticky Keys with Prefs Editor Connection", "href": "/keyboardPrefsEditorConnection.html"},
                     { "pageName": "Sticky Keys Adjuster", "href": "/stickyKeysAdjuster.html"},
                     { "pageName": "Sticky Keys Assessor", "href": "/stickyKeysAssessment.html"},
-                    { "pageName": "Sticky Key – Text To Speech", "href": "/keyboardTTS.html"},
+                    { "pageName": "Sticky Keys – Text-to-Speech", "href": "/keyboardTTS.html"},
                     { "pageName": "Speech Rate with Prefs Editor Connection", "href": "/speechRatePrefsEditorConnection.html"},
-                    { "pageName": "Language with Prefs Editor Connection", "href": "/langPrefsEditorConnection.html"},
-                    { "pageName": "Yes/No", "href": "/yesNo.html"}
+                    { "pageName": "Language with Prefs Editor Connection", "href": "/langPrefsEditorConnection.html"}
                 ]
             },
             {
@@ -97,7 +97,7 @@
                 [
                     { "pageName": "Self Voicing", "href": "/selfVoicing.html"},
                     { "pageName": "Keyboard Input", "href": "/keyboardInput.html"},
-                    { "pageName": "Keyboard Input - Text to Speech", "href": "/keyboardInputTTS.html"},
+                    { "pageName": "Keyboard Input - Text-to-Speech", "href": "/keyboardInputTTS.html"},
                     { "pageName": "US Keymap", "href": "/usKeymap.html"},
                     { "pageName": "Attach Tooltip", "href": "/attachTooltip.html"},
                     { "pageName": "Attach Tooltip Renderer", "href": "/attachTooltipRenderer.html"},

@@ -52,7 +52,7 @@ properties:
 
 | Path   | Description | Values | Default |
 |--------|-------------|--------|---------|
-| `enabled` | Indicates whether the text to speech is enabled. | Boolean | undefined |
+| `enabled` | Indicates whether the text-to-speech is enabled. | Boolean | undefined |
 
 
 ## Dependencies

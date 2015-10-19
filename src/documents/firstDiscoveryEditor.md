@@ -120,7 +120,7 @@ This component has the following
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
     <tr>
         <td>`selfVoicing`</td>
-        <td>Specifies the Text-To-Speech engine to use for self voicing.</td>
+        <td>Specifies the Text-to-Speech engine to use for self voicing.</td>
         <td>[`"gpii.firstDiscovery.selfVoicing"`](selfVoicing.md)</td>
         <td>
         <pre><code>selfVoicing: {
@@ -130,7 +130,7 @@ This component has the following
     </tr>
     <tr>
         <td>`selfVoicingToggle`</td>
-        <td>Specifies the type of Text-To-Speech button to mute/unmute self voicing that results in the text-to-speech preference to be turned on/off accordingly. </td>
+        <td>Specifies the type of Text-to-Speech button to mute/unmute self voicing that results in the text-to-speech preference to be turned on/off accordingly. </td>
         <td>[`"gpii.firstDiscovery.selfVoicingToggle"`](selfVoicingToggle.md)</td>
         <td>
         <pre><code>selfVoicingToggle: {

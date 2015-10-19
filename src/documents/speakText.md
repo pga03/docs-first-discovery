@@ -10,7 +10,7 @@ category: API
 
 **File:** `panels.js`
 
-Allows users to turn on/off the text to speech. This component uses [Yes/No](yesNo.md)
+Allows users to turn on/off the text-to-speech. This component uses [Yes/No](yesNo.md)
 Panel as a base grade so it has the same component structure as Yes/No Panel
 in terms of the model, options, selectors and dependencies.
 
