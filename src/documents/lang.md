@@ -10,14 +10,16 @@ category: API
 
 **File:** `panels.js`
 
+The Language panel presents an adjuster that allows the user to adjust the language preference settings.
+
 Used to set the page's language. Currently this action is performed by saving the selected
 language to the settings store and reloading the page.
 
 ## Using the Language Panel
 
-*Option 1*: Typically this component integrated into the First Discovery Tool by
-supplying it as a type option in the
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+*Option 1*: In the
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html),
+specify the name of the panel as the `type` property of the `panel` section:
 ```javascript
 "lang": {
     "type": "gpii.firstDiscovery.language",

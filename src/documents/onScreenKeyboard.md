@@ -10,7 +10,10 @@ category: API
 
 **File:** `panels.js`
 
-Allows users to choose whether they want to use the on-screen keyboard.
+The On-Screen Keyboard panel presents an adjuster that allows the user to adjust the
+on-screen keyboard preference settings.
+The adjuster presents Yes and No buttons that allow users to choose whether or not they want to use the on-screen keyboard.
+
 This component uses [Yes/No](yesNo.md)
 Panel as a base grade so it has the same component structure as Yes/No Panel
 in terms of the model, options, selectors and dependencies.

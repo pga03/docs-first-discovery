@@ -10,15 +10,23 @@ category: API
 
 **File:** `panels.js`
 
-Allows users to adjust the text to the size they want. This component uses [Ranged](ranged.md)
+The Text Size panel presents an adjuster that allows the user to adjust the text size preference settings.
+The adjuster presents plus and minus buttons, and a range indicator.
+When the user activates the buttons to change the text size, an
+[enactor](http://docs.fluidproject.org/infusion/development/Enactors.html)
+(provided by the
+[Infusion Preferences Framework](http://docs.fluidproject.org/infusion/development/PreferencesFramework.html))
+applies the new text size to the First Discovery Tool interface.
+
+This component uses [Ranged](ranged.md)
 Panel as a base grade so it has the same component structure as Ranged Panel
 in terms of the model, options, selectors and dependencies.
 
 ## Using Text Size Panel
 
-*Option 1*: Typically this component integrated into the First Discovery Tool by
-supplying it as a type option in the
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+*Option 1*: In the
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html),
+specify the name of the panel as the `type` property of the `panel` section:
 ```javascript
 "textSize": {
     "type": "fluid.prefs.textSize",

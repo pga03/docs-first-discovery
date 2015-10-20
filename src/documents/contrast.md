@@ -10,15 +10,18 @@ category: API
 
 **File:** `panels.js`
 
-The contrast panel component provides a means to change the contrast theme of the
-First Discovery Tool. Each contrast theme defines its own combination of foreground
-and background colors.
+The Contrast panel presents an adjuster that allows the user to adjust the contrast preference settings.
+The adjuster presents different forground and background colour themes.
+When the user selects a theme, an [enactor](http://docs.fluidproject.org/infusion/development/Enactors.html)
+(provided by the
+[Infusion Preferences Framework](http://docs.fluidproject.org/infusion/development/PreferencesFramework.html))
+applies the selected theme to the First Discovery Tool interface.
 
 ## Using the Contrast Panel
 
-*Option 1*: Typically this component integrated into the First Discovery Tool by
-supplying it as a type option in the
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+*Option 1*: In the
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html),
+specify the name of the panel as the `type` property of the `panel` section:
 ```javascript
 "contrast": {
     "type": "fluid.prefs.contrast",

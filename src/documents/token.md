@@ -10,16 +10,18 @@ category: API
 
 **File:** `panels.js`
 
-Used the
+This panel saves the user's preferences to the
+[GPII Preferences Server](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md)
+using the
 [GPII Preferences Server API](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md)
-to save preferences that users select in the First Discovery Tool to the server as well as
-displaying the server returned token. This token identifies the saved preferences for them to be
-applied to other devices.
+and displays the token returned by the server. This token identifies the saved preferences
+so that they can be applied to other devices or edited using another preferences editor.
 
 ## Using the Token Panel
 
-*Option 1*: Typically this component integrated into the First Discovery Tool by supplying it as a type option in the
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+*Option 1*: In the
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html),
+specify the name of the panel as the `type` property of the `panel` section:
 ```javascript
 "token": {
     "type": "gpii.firstDiscovery.token",

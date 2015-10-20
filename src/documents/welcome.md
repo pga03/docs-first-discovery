@@ -14,9 +14,9 @@ Displays the welcome message.
 
 ## Using the Welcome Panel
 
-*Option 1*: Typically this component integrated into the First Discovery Tool by
-supplying it as a type option in the
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+*Option 1*: In the
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html),
+specify the name of the panel as the `type` property of the `panel` section:
 ```javascript
 "welcome": {
     "type": "gpii.firstDiscovery.welcome",

@@ -10,21 +10,14 @@ category: API
 
 **File:** `firstDiscoveryEditor.js`
 
-The Preferences Server Integration component is a grade containing the
+The Preferences Server Integration grade contains the
 configuration necessary to connect the [First Discovery Editor](firstDiscoveryEditor.md) with the
 [GPII Preferences Server](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md).
 This grade is intended to be added as a base grade to the First Discovery Editor.
 
-This component uses the
-[GPII Preferences Server API](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md)
-to save preferences to the server. The server returns a token that identifies the saved
-preferences for them to be applied to other devices.
+## Using the Preferences Server Integration grade
 
-## Using the Preferences Server Integration component
-
-The Preferences Server Integration component is intended to work in conjuction
-with the [First Discovery Editor](firstDiscoveryEditor.md) by supplying both components as the
-`loaderGrade` in an
+The Preferences Server Integration grade is added to the list of `loaderGrade`s in an
 [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
 
 ```javascript

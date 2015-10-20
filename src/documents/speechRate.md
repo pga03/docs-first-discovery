@@ -10,16 +10,18 @@ category: API
 
 **File:** `panels.js`
 
-Allows users to adjust the speed at which items on the screen are read.
+The Speech Rate panel presents an adjuster that allows the user to adjust the speech rate preference settings.
+The adjuster presents plus and minus buttons, and a range indicator.
+
 This component uses [Ranged Panel - with Disabled Message ](rangedDisabled.md)
-as a base grade so it has the same component structure as that panel
+as a base grade, so it has the same component structure as that panel
 in terms of of the model, options, selectors and dependencies.
 
 ## Using the Speech Rate Panel
 
-*Option 1*: Typically this component integrated into the First Discovery Tool by
-supplying it as a type option in the
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+*Option 1*: In the
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html),
+specify the name of the panel as the `type` property of the `panel` section:
 ```javascript
 "speechRate": {
     "type": "gpii.firstDiscovery.speechRate",

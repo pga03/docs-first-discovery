@@ -10,16 +10,18 @@ category: API
 
 **File:** `panels.js`
 
-Allows users to choose whether they want the screen to flash when a sound is played.
+The Show Sounds panel presents an adjuster that allows the user to adjust the show sounds preference settings.
+The adjuster presents Yes and No buttons that allow users to choose whether they want the screen to flash when a sound is played.
+
 This component uses [Yes/No](yesNo.md)
 Panel as a base grade so it has the same component structure as Yes/No Panel
 in terms of the model, options, selectors and dependencies.
 
 ## Using the Show Sounds Panel
 
-*Option 1*: Typically this component integrated into the First Discovery Tool by
-supplying it as a type option in the
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+*Option 1*: In the
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html),
+specify the name of the panel as the `type` property of the `panel` section:
 ```javascript
 "showSounds": {
     "type": "gpii.firstDiscovery.showSounds",

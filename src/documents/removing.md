@@ -71,11 +71,11 @@ Your flying car doesn’t support some of the preferences in the First Discovery
 
     B. Remove the `<section>` elements completely.
 
-3. Edit `src/js/schemas.js` to remove code for the panels from the auxiliary schema.
+3. Edit `src/schemas/schemas.js` to remove code for the panels from the auxiliary schema.
 
     A. The `src/js/schemas.js` contains the primary schema (which defines the preferences) and the auxiliary schema (which defines the editor itself, i.e. the panels used to adjust the preferences, where to find HTML templates, etc).
 
-    You can see the entire file here: https://github.com/GPII/first-discovery/blob/master/src/js/schemas.js
+    You can see the entire file here: https://github.com/GPII/first-discovery/blob/master/src/schemas/schemas.js
 
     B. In the `schemas.js` file, find the auxiliary schema, which starts with `fluid.defaults("gpii.firstDiscovery.auxSchema", `.
 

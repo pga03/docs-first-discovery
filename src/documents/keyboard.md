@@ -10,18 +10,19 @@ category: API
 
 **File:** `panels.js`
 
-The Sticky Keys panel offers:
+The Sticky Keys panel presents an adjuster that allows the user to adjust the sticky preference settings.
 
-1. Assesses whether the user needs the assistance of the sticky keys feature;
-2. Provides a means for users to experiment the experience when the sticky keys preference is turned on or off;
-3. Turn the sticky keys preference on or off.
+The Sticky Keys panel:
+
+1. assesses whether the user needs the assistance of the Sticky Keys feature,
+2. provides a means for users to experiment the experience when the Sticky Keys preference is turned on or off, and
+3. turns the Sticky Keys preference on or off.
 
 ## Using the Sticky Keys Panel
 
-*Option 1*: Typically the Sticky Keys Panel is integrated into the First Discovery Tool
-by supplying it in an
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
-
+*Option 1*: In the
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html),
+specify the name of the panel as the `type` property of the `panel` section:
 ```javascript
 "keyboard": {
     "type": "gpii.firstDiscovery.stickyKeys",

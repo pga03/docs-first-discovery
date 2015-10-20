@@ -10,15 +10,20 @@ category: API
 
 **File:** `panels.js`
 
-Allows users to turn on/off the text-to-speech. This component uses [Yes/No](yesNo.md)
+The Speak Text panel presents an adjuster that allows the user to adjust the speak text preference settings.
+The adjuster presents Yes and No buttons that allow users to turn on or off the text-to-speech.
+When the user chooses, an [enactor](http://docs.fluidproject.org/infusion/development/Enactors.html)
+applies activates or deactivates the First Discovery Tool's [text-to-speech](selfVoicing.md) functionality.
+
+This component uses [Yes/No](yesNo.md)
 Panel as a base grade so it has the same component structure as Yes/No Panel
 in terms of the model, options, selectors and dependencies.
 
 ## Using the Speak Text Panel
 
-*Option 1*: Typically this component integrated into the First Discovery Tool by
-supplying it as a type option in the
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+*Option 1*: In the
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html),
+specify the name of the panel as the `type` property of the `panel` section:
 ```javascript
 "speakText": {
     "type": "gpii.firstDiscovery.speak",

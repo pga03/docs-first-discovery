@@ -10,16 +10,18 @@ category: API
 
 **File:** `panels.js`
 
-Allows users to choose whether they want to see captions when playing videos.
+The Captions panel presents an adjuster that allows the user to adjust the captions preference settings.
+The adjuster presents Yes and No buttons that allows users to choose whether they want to see captions when playing videos.
+
 This component uses [Yes/No](yesNo.md)
 Panel as a base grade so it has the same component structure as Yes/No Panel
 in terms of the model, options, selectors and dependencies.
 
 ## Using the Captions Panel
 
-*Option 1*: Typically this component integrated into the First Discovery Tool by
-supplying it as a type option in the
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+*Option 1*: In the
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html),
+specify the name of the panel as the `type` property of the `panel` section:
 ```javascript
 "captions": {
     "type": "gpii.firstDiscovery.captions",
