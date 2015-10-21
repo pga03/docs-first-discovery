@@ -29,6 +29,8 @@ Learning Assessment Context: http://build.fluidproject.org/first-discovery/demos
 
 Voting Booth Context: http://build.fluidproject.org/first-discovery/demos/voting
 
+Preferences Server Integration: http://build.fluidproject.org/first-discovery/demos/prefsServerIntegration (doesn't yet return a token)
+
 ## Source code
 
 https://github.com/GPII/first-discovery

@@ -89,3 +89,14 @@ code-block-link-color = topics-item-color;
         padding: 0.3rem 0.2rem 0.3rem 0;
     }
 }
+
+/* make the 'active' indicator span multiple lines */
+.docs-template-topics {
+    .docs-template-topics-active {
+        border-left: 5px solid;
+        padding-left: 5px;
+    }
+    .docs-template-topics-active:before {
+        content: none;
+    }
+}
