@@ -10,7 +10,9 @@ This tutorial explains how the First Discovery Tool connects to the
 ## Background
 
 Broadly speaking, the configuration of the First Discovery Tool (and of any preferences editor
-created with the Preferences Framework) is configured through an
+created with the
+[Preferences Framework](http://docs.fluidproject.org/infusion/development/PreferencesFramework.html)
+) is configured through an
 [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html).
 This is a JSON document that specifies configuration information such as what panels to show,
 where to find HTML templates, and other things.
@@ -44,17 +46,8 @@ fluid.defaults("gpii.firstDiscovery.auxSchema.prefsServerIntegration", {
     auxiliarySchema: {
 
         // add the extra grade to the loader grades
-        "loaderGrades": ["gpii.firstDiscovery.firstDiscoveryEditor", "gpii.firstDiscovery.prefsServerIntegration"],
-
-        // override the original template to add the extra panel placeholder
-        "template": "%templatePrefix/firstDiscoveryPrefsServerIntegration.html",
-
-        // customize the text on the congratulations panel
-        "congratulations": {
-            "panel": {
-                "message": "%messagePrefix/congratulationsPrefsServerIntegration.json"
-            }
-        },
+        "loaderGrades": ["gpii.firstDiscovery.firstDiscoveryEditor",
+                         "gpii.firstDiscovery.prefsServerIntegration"],
 
         // add the token panel
         "token": {
@@ -65,6 +58,16 @@ fluid.defaults("gpii.firstDiscovery.auxSchema.prefsServerIntegration", {
                 "template": "%templatePrefix/token.html",
                 "message": "%messagePrefix/token.json"
             }
+        },
+
+        // override the original template to add the extra panel placeholder
+        "template": "%templatePrefix/firstDiscoveryPrefsServerIntegration.html",
+
+        // customize the text on the congratulations panel
+        "congratulations": {
+            "panel": {
+                "message": "%messagePrefix/congratulationsPrefsServerIntegration.json"
+            }
         }
     }
 });
@@ -74,7 +77,8 @@ This schema makes two key changes to the auxiliary schema:
 * It adds a [Preferences Server Integration](prefsServerIntegration.md) grade to the `loaderGrades`.
 This grade sets up the connection between the Token Panel (see below) and the rest of the tool.
 * It adds a [Token Panel](token.md) to the set of panels. This panel transmits the preferences
-to the server and receives, in return, a unique token that can be used to retrieve the preferences later.
+to the server and receives, in return, a unique token that is displayed and
+can be used to retrieve the preferences later.
 
 In addition to these changes, this schema makes two more changes to support different messages
 in the interface:
@@ -86,7 +90,10 @@ message file containing information about the saving of preferences.
 ## Using the Alternative Schema
 
 To instantiate the First Discovery Tool using the Preferences Server Integration schema, provide
-the schema name in the call to `fluid.prefs.create()` instead of the default schema:
+the schema name in the call to
+[`fluid.prefs.create()`](http://docs.fluidproject.org/infusion/development/PreferencesEditor.html)
+instead of the default schema:
+
 ```javascript
 fluid.prefs.create(container, {
     build: {
@@ -101,9 +108,9 @@ The default
 [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html)
 provided with the First Discovery Tool specifies root paths to
 the templates and message bundles used by the First Discovery Tool. These paths are relative, so an
-integration will likely need to override them. To do thi:
+integration will likely need to override them. To do this:
 
-1. Create a custom Auxiliary Schema that implements the `prefsServerIntegration` schema and
+1. Create a custom Auxiliary Schema that uses the `prefsServerIntegration` schema and
 overrides the `terms` property, which specifies the paths:
 
     ```javascript
@@ -131,14 +138,15 @@ overrides the `terms` property, which specifies the paths:
 
 ### Configuring the Preferences Server Connection
 
-The Token Panel, which saves the preferences to the preferences server, uses a default URL that
+The [Token Panel](token.md), which saves the preferences to the preferences server, uses a default URL that
 assumes that the preferences server is at the same base URL as the First Discovery Tool itself.
 It's likely that this won't be case, and that you'll need to specify a different URL. To do this:
 
 1. Create a grade that defines the server configuration options you want.
 
-    This grade should use `fluid.component` as its base grade and provide the `saveRequestConfig`
-    option required by the [Token Panel](token.md):
+    This grade should use `fluid.component` as its base grade and provide the
+    [`saveRequestConfig` option](token.md#options)
+    required by the Token Panel:
 
     ```javascript
     fluid.defaults("my.serverConfig", {
@@ -164,9 +172,9 @@ It's likely that this won't be case, and that you'll need to specify a different
                              "gpii.firstDiscovery.prefsServerIntegration",
                              "my.serverConfig"],
             "terms": {
-                // path to templates and messages, relative to where the demo HTML is
-                "templatePrefix": "../../src/html",
-                "messagePrefix": "../../src/messages"
+                // new paths to templates and messages
+                "templatePrefix": "my/path/to/first-discovery/src/html",
+                "messagePrefix": "my/path/to/first-discovery/src/messages"
             }
         }
     });
