@@ -6,12 +6,8 @@ category: Tutorials
 
 This tutorial explains how the First Discovery Tool connects to the
 [GPII Preferences Server](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md).
-It introduces some functionality of
-[Infusion](http://fluidproject.org/infusion.html)
-and its
-[Preferences Framework](http://docs.fluidproject.org/infusion/development/PreferencesFramework.html).
 
-----
+## Background
 
 Broadly speaking, the configuration of the First Discovery Tool (and of any preferences editor
 created with the Preferences Framework) is configured through an
@@ -31,10 +27,15 @@ fluid.defaults("gpii.firstDiscovery.auxSchema", {
 });
 ```
 
-This basic configuration of the First Discovery Tool does _not_ connect to a preferences server.
-The Tool includes an alternative Auxiliary Schema that customizes the default schema, adding the
-necessary bits and pieces. This alternative schema is also defined in the
+## Alternative Auxiliary Schema
+
+This basic configuration of the First Discovery Tool does _not_ connect to a preferences server,
+but the Tool includes an alternative Auxiliary Schema, the "Preferences Server Integration schema",
+that can be used to make this connection.
+
+The Preferences Server Integration schema is defined alongside the default schema, in the
 [schemas.js file](https://github.com/GPII/first-discovery/blob/master/src/schemas/schemas.js):
+
 ```javascript
 fluid.defaults("gpii.firstDiscovery.auxSchema.prefsServerIntegration", {
     // using the base auxSchema as the grade inherits everything in there
@@ -69,28 +70,78 @@ fluid.defaults("gpii.firstDiscovery.auxSchema.prefsServerIntegration", {
 });
 ```
 
-This special preferences server integration schema uses two components that work together to save
-the user's preferences to the Preferences Server at the end of the First Discovery Process:
-1. the [Token Panel](token.md), which transmits the preferences to the server and receives,
-in return, a unique token that can be used to retrieve the preferences later, and
-2. a [Preferences Server Integration](prefsServerIntegration.md) grade that
-sets up the connection between the Token Panel and the rest of the tool.
+This schema makes two key changes to the auxiliary schema:
+* It adds a [Preferences Server Integration](prefsServerIntegration.md) grade to the `loaderGrades`.
+This grade sets up the connection between the Token Panel (see below) and the rest of the tool.
+* It adds a [Token Panel](token.md) to the set of panels. This panel transmits the preferences
+to the server and receives, in return, a unique token that can be used to retrieve the preferences later.
 
-----
+In addition to these changes, this schema makes two more changes to support different messages
+in the interface:
+* It overrides the default `template` with an alternative template containing a placeholder for
+the new Token Panel at the end of the process.
+* It overrides the default message file for the `congratulations` panel with an alternative
+message file containing information about the saving of preferences.
 
-## Quick version
-1. Create a grade that defines the server configuration options you want.
-2. Add your grade to the `loaderGrades` in the
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html).
+## Using the Alternative Schema
 
-## Detailed Instructions
+To instantiate the First Discovery Tool using the Preferences Server Integration schema, provide
+the schema name in the call to `fluid.prefs.create()` instead of the default schema:
+```javascript
+fluid.prefs.create(container, {
+    build: {
+        gradeNames: ["gpii.firstDiscovery.auxSchema.prefsServerIntegration"]
+    }
+});
+```
 
-1. Create a grade that defines the server configuration options you want.
+### Overriding Paths
 
-    A. asdf
+The default
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html)
+provided with the First Discovery Tool specifies root paths to
+the templates and message bundles used by the First Discovery Tool. These paths are relative, so an
+integration will likely need to override them. To do thi:
+
+1. Create a custom Auxiliary Schema that implements the `prefsServerIntegration` schema and
+overrides the `terms` property, which specifies the paths:
 
     ```javascript
-    fluid.defaults("gpii.firstDiscovery.myServerConfig", {
+    fluid.defaults("my.auxSchema.prefsServerIntegration", {
+        gradeNames: ["gpii.firstDiscovery.auxSchema.prefsServerIntegration"],
+        auxiliarySchema: {
+            "terms": {
+                // path to templates and messages, relative to where this FD tool is
+                "templatePrefix": "my/relative/path/to/first-discovery/src/html",
+                "messagePrefix": "my/relative/path/to/first-discoverysrc/messages"
+            }
+        }
+    });
+    ```
+
+2. Use this custom schema in the instantiation of the Tool:
+
+    ```javascript
+    fluid.prefs.create(container, {
+        build: {
+            gradeNames: ["my.auxSchema.prefsServerIntegration"]
+        }
+    });
+    ```
+
+### Configuring the Preferences Server Connection
+
+The Token Panel, which saves the preferences to the preferences server, uses a default URL that
+assumes that the preferences server is at the same base URL as the First Discovery Tool itself.
+It's likely that this won't be case, and that you'll need to specify a different URL. To do this:
+
+1. Create a grade that defines the server configuration options you want.
+
+    This grade should use `fluid.component` as its base grade and provide the `saveRequestConfig`
+    option required by the [Token Panel](token.md):
+
+    ```javascript
+    fluid.defaults("my.serverConfig", {
         gradeNames: ["fluid.component"],
         saveRequestConfig: {
             url: "http://my.host/myServer/user",
@@ -99,21 +150,38 @@ sets up the connection between the Token Panel and the rest of the tool.
     });
     ```
 
-    B. asdf.
-
 2. Add your grade to the `loaderGrades` in the
 [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html).
 
-    A. asdf
+    Note that all of the desired loader grades must be included in the `loaderGrades` property,
+    not just the new one that you are adding.
 
     ```javascript
-    fluid.defaults("my.prefsEditor", {
-        gradeNames: ["gpii.firstDiscovery.auxSchema"],
+    fluid.defaults("my.auxSchema.prefsServerIntegration", {
+        gradeNames: ["gpii.firstDiscovery.auxSchema.prefsServerIntegration"],
         auxiliarySchema: {
             "loaderGrades": ["gpii.firstDiscovery.firstDiscoveryEditor",
-                            "gpii.firstDiscovery.prefsServerIntegration",
-                            "gpii.firstDiscovery.myServerConfig"],
+                             "gpii.firstDiscovery.prefsServerIntegration",
+                             "my.serverConfig"],
+            "terms": {
+                // path to templates and messages, relative to where the demo HTML is
+                "templatePrefix": "../../src/html",
+                "messagePrefix": "../../src/messages"
+            }
+        }
+    });
     ```
 
-    B. asdf.
+3. Use this custom schema in the instantiation of the Tool:
+
+    ```javascript
+    fluid.prefs.create(container, {
+        build: {
+            gradeNames: ["my.auxSchema.prefsServerIntegration"]
+        }
+    });
+    ```
+
+
+
 
