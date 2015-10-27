@@ -162,8 +162,6 @@ Your flying car has an auto-pilot feature, and you want to add a preference for 
     }
     ```
 
-    asdf...
-
     C. Create a style for your new icon, using the class name defined in step 3, and set the content to the character code for your desired icon (this example will use "\e700" just as an example – no such character exists currently in the icon font; you must use the correct character code for the icon you want to use).
 
     ```css
@@ -282,14 +280,16 @@ Your flying car has an auto-pilot feature, and you want to add a preference for 
                 // some content not shown
             },
             "autoPilot": {
-            "type": "gpii.firstDiscovery.autoPilot",
-            "panel": {
-                "type": "gpii.firstDiscovery.panel.autoPilot",
-                "container": ".gpiic-fd-prefsEditor-panel-autoPilot",
-                "template": "%templatePrefix/yesNo.html",
-                "message": "%messagePrefix/autoPilot.json"
-            }
-        },
-        // more content not shown
+                "type": "gpii.firstDiscovery.autoPilot",
+                "panel": {
+                    "type": "gpii.firstDiscovery.panel.autoPilot",
+                    "container": ".gpiic-fd-prefsEditor-panel-autoPilot",
+                    "template": "%templatePrefix/yesNo.html",
+                    "message": "%messagePrefix/autoPilot.json"
+                }
+            },
+            // more content not shown
+        }
+    });
     ```
 
