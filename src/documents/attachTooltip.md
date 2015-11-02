@@ -12,7 +12,7 @@ category: API
 
 Attach Tooltip provides a means for attaching tooltips to various elements in the DOM.
 The Attach Tooltip grade is not intended to be used on its own, but provided as a base grade
-to another component that will use it's capabilities for binding tooltips.
+to another component that will use its capabilities for binding tooltips.
 
 ## Using the Attach Tooltip grade
 
