@@ -13,7 +13,7 @@ category: API
 The ranged panel component provides a means to create panels that adjust a value by clicking DOM
 elements such as buttons, as well as showing the adjusted value in a meter. The ranged panel
 component is not intended to be used on its own, but provided as a base grade to another component
-that will use it's capabilities for creating such panels. An UI example of one of these panels:
+that will use its capabilities for creating such panels. A UI example of one of these panels:
 
 ![vertical bar with "fast" above it and "slow" below it, with plus and minus buttons next to it](images/rangedPanel.jpeg)
 
@@ -63,7 +63,7 @@ This component can be configured using the following
     <tr>
         <td>`range`</td>
         <td>An object that contains two elements: "min" and "max". They determine the minimum and maximum values of the range.</td>
-        <td>Object<br/>"min" and "max" values are numbers.</td>
+        <td>Object;<br/>"min" and "max" values are numbers.</td>
         <td>
         <pre><code>range: {
     min: 1,
@@ -73,7 +73,7 @@ This component can be configured using the following
     </tr>
     <tr>
         <td>`step`</td>
-        <td>Determines the size or amount of each interval or step the slider takes between the min and max</td>
+        <td>Determines the size or amount of each interval or step the slider takes between the min and max.</td>
         <td>Number</td>
         <td>
         <pre><code>step: 0.1</code></pre>
@@ -94,7 +94,7 @@ selectors identifying where in the DOM different elements can be found. Componen
 [DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
 named elements.
 
-The value for the option is itself a Javascript object containing name/value pairs:
+The value for the `selectors` option is itself a Javascript object containing name/value pairs:
 
 ```javascript
 selectors: {

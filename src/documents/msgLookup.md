@@ -18,7 +18,7 @@ Message bundles are the localization strategy used by the
 [Preferences Framework](http://docs.fluidproject.org/infusion/development/PreferencesFramework.html),
 and should contain all the strings used by a user interface. As such, Message Lookup components
 are not intended to be used on their own, but provided as a grade to another component that will
-use it's capabilities for displaying messages/strings to a user.
+use its capabilities for displaying messages/strings to a user.
 
 ## Using the Message Lookup grade
 
@@ -88,7 +88,7 @@ Javascript object containing messages available for the component to output/disp
     someGroup: ["myNamespace-string1", "myNamespace-string2"]
 }</code></pre></td>
         <td>
-        <pre><code>stringArrayIndex: {}: {}</code></pre>
+        <pre><code>stringArrayIndex: {}</code></pre>
         </td>
     </tr>
     <tr>

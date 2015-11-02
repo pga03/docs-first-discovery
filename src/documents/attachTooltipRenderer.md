@@ -12,7 +12,7 @@ category: API
 
 Attach Tooltip - Renderer provides a means for attaching tooltips to various elements in the DOM.
 The Attach Tooltip - Renderer grade is not intended to be used on its own, but is
-provided as a base grade to another component that will use it's capabilities for binding tooltips.
+provided as a base grade to another component that will use its capabilities for binding tooltips.
 This is very similar to [Attach Tooltip](attachTooltip.md),
 except that it is geared for working with
 [fluid.rendererComponent](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)s

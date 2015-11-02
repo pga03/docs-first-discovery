@@ -12,7 +12,7 @@ category: API
 
 Provides a means to create panels that select and only select one of two choices, such as yes or no.
 This component is not intended to be used on its own, but provided as a base grade to another
-component that will use it's capabilities for creating such panels.
+component that will use its capabilities for creating such panels.
 An UI example of one of these panels:
 
 ![A question with two buttons below it, labelled "yes" and "no"](images/yesNoPanel.jpeg)
@@ -57,7 +57,7 @@ This component can be configured using the following
     <tr>
         <td>`controlValues`</td>
         <td>An object that contains a "choice" element that determines choice values assigned to HTML radio buttons.</td>
-        <td>Object<br/>"choice" value is an array with two elements.</td>
+        <td>Object;<br/>"choice" value is an array with two elements.</td>
         <td>
         <pre><code>controlValues: {
     choice: ["yes", "no"]
@@ -79,7 +79,7 @@ selectors identifying where in the DOM different elements can be found. Componen
 [DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
 named elements.
 
-The value for the option is itself a Javascript object containing name/value pairs:
+The value for the `selectors` option is itself a Javascript object containing name/value pairs:
 
 ```javascript
 selectors: {

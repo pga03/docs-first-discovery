@@ -109,7 +109,7 @@ This component supports the following
 
 | Method | Description | Parameters |
 |--------|-------------|------------|
-| `showPanel` | Sets the visibility of the panels. The panel which is identified as the current panel in the model is made visible, the reset are hidden. | none |
+| `showPanel` | Sets the visibility of the panels. The panel which is identified as the current panel in the model is made visible, the rest are hidden. | none |
 
 ## Subcomponents
 
@@ -314,7 +314,6 @@ This component can be configured using the following
         <td>Specific class names used to achieve the look and feel.</td>
         <td></td>
         <td>
-        This resolves to "en-US":<br/>
         <pre><code>styles: {
     active: "gpii-fd-active",
     show: "gpii-fd-show",
@@ -337,7 +336,7 @@ selectors identifying where in the DOM different elements can be found. Componen
 [DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
 named elements.
 
-The value for the option is itself a Javascript object containing name/value pairs:
+The value for the `selectors` option is itself a Javascript object containing name/value pairs:
 
 ```javascript
 selectors: {
@@ -349,7 +348,7 @@ selectors: {
 
 | Selector Name | Description | Default |
 |---------------|-------------|---------|
-| `prefsEditor` | The container to use for the internal prefsEditor; which contains all of the adjuster panels. | `".gpiic-fd-prefsEditor"` |
+| `prefsEditor` | The container to use for the internal prefsEditor, which contains all of the adjuster panels. | `".gpiic-fd-prefsEditor"` |
 | `panel` |  Passed down to internal prefsEditor to use as its panel selector. | `".gpiic-fd-prefsEditor-panel"` |
 | `selfVoicingToggle` | The container for the selfVoicingToggle subcomponent. | `".gpiic-fd-selfVoicingToggle"` |
 | `helpButton` | The container for the help button. | `".gpiic-fd-help"` |

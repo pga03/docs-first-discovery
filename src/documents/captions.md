@@ -34,7 +34,7 @@ specify the name of the panel as the `type` property of the `panel` section:
 }
 ```
 
-Working in conjunction with the Auxiliary Schema, the type, its default value and range of
+Working in conjunction with the Auxiliary Schema, the type and default value of
 the captions preference are defined in the
 [Primary Schema](http://docs.fluidproject.org/infusion/development/PrimarySchemaForPreferencesFramework.html):
 ```javascript

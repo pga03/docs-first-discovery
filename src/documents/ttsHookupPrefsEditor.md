@@ -28,7 +28,7 @@ fluid.defaults("my.component", {
 | Method | Description | Parameters |
 |--------|-------------|------------|
 | `speakPanelMessage` | Utters the panel message. Typically a combination of the step ( e.g. x of y ) and the panel instructions | `speakOpts`: Any valid speech utterance options (see: [utteranceOpts](http://docs.fluidproject.org/infusion/development/TextToSpeechAPI.html#utteranceopts-option)) |
-| `speakPanelInstructions` | Utters the panel instructions | `speakOpts`: Any valid speech utterance options (see: [utteranceOpts](http://docs.fluidproject.org/infusion/development/TextToSpeechAPI.html#utteranceopts-option) |
+| `speakPanelInstructions` | Utters the panel instructions | `speakOpts`: Any valid speech utterance options (see: [utteranceOpts](http://docs.fluidproject.org/infusion/development/TextToSpeechAPI.html#utteranceopts-option)) |
 
 ## Options
 

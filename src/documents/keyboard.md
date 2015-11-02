@@ -89,7 +89,7 @@ This component supports the following
 
 | Method   |Description | Parameters |
 |--------|------------|------------|
-| `toggleAssistance`  | Displays or hide the sticky keys assessment container. | `offerAssistance` (boolean): a flag indicating whether or not to display the container  |
+| `toggleAssistance`  | Displays or hides the sticky keys assessment container. | `offerAssistance` (boolean): a flag indicating whether or not to display the container  |
 | `destroyAssessor`  | Destroys the sticky keys assessment component. | none |
 
 ## Subcomponents
@@ -182,7 +182,7 @@ selectors identifying where in the DOM different elements can be found. Componen
 [DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
 named elements.
 
-The value for the option is itself a Javascript object containing name/value pairs:
+The value for the `selectors` option is itself a Javascript object containing name/value pairs:
 
 ```javascript
 selectors: {

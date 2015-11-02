@@ -13,7 +13,7 @@ category: API
 The Speak Text panel presents an adjuster that allows the user to adjust the speak text preference settings.
 The adjuster presents Yes and No buttons that allow users to turn on or off the text-to-speech.
 When the user chooses, an [enactor](http://docs.fluidproject.org/infusion/development/Enactors.html)
-applies activates or deactivates the First Discovery Tool's [text-to-speech](selfVoicing.md) functionality.
+activates or deactivates the First Discovery Tool's [text-to-speech](selfVoicing.md) functionality.
 
 This component uses [Yes/No](yesNo.md)
 Panel as a base grade so it has the same component structure as Yes/No Panel

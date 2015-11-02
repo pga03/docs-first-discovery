@@ -17,7 +17,7 @@ This grade is intended to be added as a base grade to the First Discovery Editor
 
 ## Using the Preferences Server Integration grade
 
-The Preferences Server Integration grade is added to the list of `loaderGrade`s in an
+The Preferences Server Integration grade is added to the list of `loaderGrades` in an
 [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
 
 ```javascript

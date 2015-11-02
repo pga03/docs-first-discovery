@@ -110,7 +110,7 @@ This component has the following
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
     <tr>
         <td>`icon`</td>
-        <td>This is a dynamic component. A new instance is created for each `onCreateIcon` event that is fired.</td>
+        <td>This is a dynamic component. A new instance is created when the `onCreateIcon` event is fired.</td>
         <td>[`"gpii.firstDiscovery.icon"`](icon.md)</td>
         <td>
         <pre><code>icon: {
@@ -191,7 +191,7 @@ selectors identifying where in the DOM different elements can be found. Componen
 [DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
 named elements.
 
-The value for the option is itself a Javascript object containing name/value pairs:
+The value for the `selectors` option is itself a Javascript object containing name/value pairs:
 
 ```javascript
 selectors: {
@@ -203,7 +203,7 @@ selectors: {
 
 | Selector Name | Description | Default |
 |---------------|-------------|---------|
-| `icon` | The set of containers to use the [Navigation Icon](icon.md)s. | `".gpiic-fd-navIcon"` |
+| `icon` | The set of containers to render the [Navigation Icon](icon.md)s. | `".gpiic-fd-navIcon"` |
 | `pager` | The container of the [Navigation Icon](icon.md)s. | `".gpii-fd-navIcon-outer"` |
 
 ## Dependencies

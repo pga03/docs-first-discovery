@@ -40,9 +40,9 @@ This component uses the following base
 | Method | Description | Parameters |
 |--------|-------------|------------|
 | `isShiftEvent` | Whether or not the pressed key is a SHIFT key. | `e`: A [keyboard event object](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent) |
-| `isShiftEvent` | Whether or not the given character is a lower case letter. | `ch`: A character |
-| `isShiftEvent` | Whether or not the given character has a corresponding character when the SHIFT key is latched. | `ch`: A character |
-| `isShiftEvent` | Retrieves the corresponding character when the SHIFT key is latched. | `ch`: A character |
+| `isLowerCaseLetter` | Whether or not the given character is a lower case letter. | `ch`: A character |
+| `canShiftChar` | Whether or not the given character has a corresponding character when the SHIFT key is latched. | `ch`: A character |
+| `getShiftedChar` | Retrieves the corresponding character when the SHIFT key is latched. | `ch`: A character |
 
 
 ## Dependencies

@@ -16,7 +16,7 @@ it is able to handle cases when the panel needs to be enabled or disabled. When 
 disabled, all the control items in the panel including increase and decrease buttons and the
 meter are disabled. In the meantime, a message that explains the disabled state is displayed.
 This component is not intended to be used on its own, but provided as a base grade to another
-component that will use it's capabilities for creating such panels.
+component that will use its capabilities for creating such panels.
 
 This component uses [Ranged Panel](ranged.md) as a base grade, so it has the same component structure as
 that panel in terms of the model and options.
@@ -55,7 +55,7 @@ selectors identifying where in the DOM different elements can be found. Componen
 [DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
 named elements.
 
-The value for the option is itself a Javascript object containing name/value pairs:
+The value for the `selectors` option is itself a Javascript object containing name/value pairs:
 
 ```javascript
 selectors: {

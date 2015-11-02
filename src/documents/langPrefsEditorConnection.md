@@ -44,17 +44,6 @@ This component uses the following base
 
 * [`fluid.component`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 
-## Model
-
-This component supports the following
-[model](http://docs.fluidproject.org/infusion/development/tutorial-gettingStartedWithInfusion/ModelComponents.html)
-properties:
-
-| Path   | Description | Values | Default |
-|--------|-------------|--------|---------|
-| `enabled` | Indicates whether the text-to-speech is enabled. | Boolean | undefined |
-
-
 ## Dependencies
 
 ```html

@@ -63,7 +63,7 @@ selectors identifying where in the DOM different elements can be found. Componen
 [DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
 named elements.
 
-The value for the option is itself a Javascript object containing name/value pairs:
+The value for the `selectors` option is itself a Javascript object containing name/value pairs:
 
 ```javascript
 selectors: {
@@ -75,7 +75,7 @@ selectors: {
 
 | Selector Name | Description | Default |
 |---------------|-------------|---------|
-| `message` | The container to display the welcome message. | `".gpiic-fd-welcome-instructions"` |
+| `message` | The container to display the congratulations message. | `".gpiic-fd-congratulations-message"` |
 
 ## Dependencies
 

@@ -110,7 +110,7 @@ selectors identifying where in the DOM different elements can be found. Componen
 [DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
 named elements.
 
-The value for the option is itself a Javascript object containing name/value pairs:
+The value for the `selectors` option is itself a Javascript object containing name/value pairs:
 
 ```javascript
 selectors: {
@@ -125,7 +125,7 @@ selectors: {
 | `instructions` | The container to display the panel instruction. | `".gpiic-fd-lang-instructions"` |
 | `langRow` | The row of each language selection. It often contains `langLabel` and `langInput`. | `".gpiic-fd-lang-langRow"` |
 | `langLabel` | The label for each language button | `".gpiic-fd-lang-langLabel"` |
-| `controlsDiv` | The `<input>` tag for each language button | `".gpiic-fd-lang-controls"` |
+| `controlsDiv` | The container for all language buttons | `".gpiic-fd-lang-controls"` |
 | `prev` | The "previous" button | `".gpiic-fd-lang-prev"` |
 | `next` | The "next" button | `".gpiic-fd-lang-next"` |
 

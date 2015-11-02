@@ -83,11 +83,12 @@ This component can be configured using the following
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
     <tr>
         <td>`controlValues`</td>
-        <td>An object that contains a "theme" element that determines values assigned to HTML radio buttons.</td>
-        <td>Object<br/>The "theme" element: array.</td>
+        <td>An object that contains an array of values that will be assigned to HTML radio buttons.</td>
+        <td>Object;<br/>The `controlValues` object of a [Renderer protoTree](http://docs.fluidproject.org/infusion/development/ProtoComponentTypes.html):
+            an array of string values</td>
         <td>
         <pre><code>controlValues: {
-    choice: ["default", "bw", "wb"]
+    theme: ["default", "bw", "wb"]
 }</code></pre>
         </td>
     </tr>
@@ -106,7 +107,7 @@ selectors identifying where in the DOM different elements can be found. Componen
 [DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
 named elements.
 
-The value for the option is itself a Javascript object containing name/value pairs:
+The value for the `selectors` option is itself a Javascript object containing name/value pairs:
 
 ```javascript
 selectors: {
