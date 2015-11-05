@@ -10,8 +10,9 @@
     "docpad-plugin-handlebars": "~2.3.0",
     "docpad-plugin-highlightjs": "~2.3.0",
     "docpad-plugin-marked": "~2.3.0",
+    "docpad-plugin-partials": "~2.9.2",
     "docpad-plugin-stylus": "~2.10.0",
-    "docs-core": "jhung/docs-core"
+    "docs-core": "fluid-project/docs-core"
   },
   "licenses": [
     {

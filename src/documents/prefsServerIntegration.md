@@ -47,7 +47,7 @@ This component uses the following base
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
     <tr>
         <td>`styles`</td>
-        <td>Specific the class name used to identify the last panel is visible.</td>
+        <td>Specify the class name used to identify that the currently visible panel is the last panel.</td>
         <td></td>
         <td>
         <pre><code>styles: {

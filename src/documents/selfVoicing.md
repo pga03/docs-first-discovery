@@ -62,7 +62,7 @@ This component uses the following base
         </tr>
         <tr>
             <td>`queueSpeechImpl`</td>
-            <td>Makes use of the fluid.textToSpeech.queueSpeech to queue speeches. It also prevents the speech from actually queue, and sets it to always interrupt.</td>
+            <td>Makes use of the [`fluid.textToSpeech.queueSpeech`](http://docs.fluidproject.org/infusion/development/TextToSpeechAPI.html#queuespeech) to queue speeches.</td>
             <td>
                 <dl>
                     <dd>`text` (string)</dd>

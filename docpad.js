@@ -1,5 +1,5 @@
 /*
-Copyright 2014 OCAD University
+Copyright 2015 OCAD University
 
 Licensed under the Educational Community License (ECL), Version 2.0 or the New
 BSD license. You may not use this file except in compliance with one these
@@ -17,6 +17,7 @@ var path = require("path");
 var fs = require("fs");
 var docsCore = require("docs-core");
 var siteStructure = JSON.parse(fs.readFileSync("site-structure.json"));
+var selectorsIntro = fs.readFileSync("src/partials/selectors-intro.md", "utf8");
 
 // We locate the images within the src/documents directory so that images can
 // be viewed on GitHub, as well as in the DocPad output. We need to
@@ -45,6 +46,9 @@ module.exports = {
                 getGithubLocation: docsCore.helpers.makeGithubLocationHelper(githubDocRoot),
                 getRelativeUrl: docsCore.helpers.getRelativeUrl,
                 ifEqual: docsCore.helpers.ifEqual
+            },
+            partials: {
+                selectorsIntro: selectorsIntro
             }
         },
         highlightjs: {

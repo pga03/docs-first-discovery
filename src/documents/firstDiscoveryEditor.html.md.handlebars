@@ -72,7 +72,7 @@ This component supports the following
         <tr>
             <td>`onPrefsEditorReady`</td>
             <td>default</td>
-            <td>Fired when the internal prefsEditor, containing all of panels, is ready</td>
+            <td>Fired when the internal prefsEditor, containing all of the panels, is ready</td>
             <td>
                 <dl>
                     <dd>`component`</dd>
@@ -289,7 +289,7 @@ This component can be configured using the following
         <td>The options to be used by any descendant tooltip components.</td>
         <td></td>
         <td>
-        <pre><codetooltipOptions: {
+        <pre><code>tooltipOptions: {
     delay: 0,
     duration: 0,
     position: {
@@ -331,20 +331,7 @@ This component can be configured using the following
 
 ## Selectors
 
-One of the options that can be provided to Infusion components is a set of CSS-based
-selectors identifying where in the DOM different elements can be found. Components use a
-[DOM Binder](http://docs.fluidproject.org/infusion/development/DOMBinder.html) to access the
-named elements.
-
-The value for the `selectors` option is itself a Javascript object containing name/value pairs:
-
-```javascript
-selectors: {
-    selector1Name: "selector 1 string",
-    selector2Name: "selector 2 string",
-      ...
-}
-```
+{{>selectorsIntro}}
 
 | Selector Name | Description | Default |
 |---------------|-------------|---------|
