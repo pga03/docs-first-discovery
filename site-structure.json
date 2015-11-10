@@ -55,7 +55,8 @@
                 "pages":
                 [
                     { "pageName": "Preferences Server Integration", "href": "/prefsServerIntegration.html"},
-                    { "pageName": "Token Panel", "href": "/token.html"}
+                    { "pageName": "Token Panel", "href": "/token.html"},
+                    { "pageName": "Token and Preferences Server Integration Connector", "href": "/tokenPrefsServerIntegrationConnection.html"}
                 ]
             },
             {

@@ -268,7 +268,7 @@ Your flying car has an auto-pilot feature, and you want to add a preference for 
                 "templatePrefix": "../src/html",
                 "messagePrefix": "../src/messages"
             },
-            "template": "../src/html/firstDiscovery.html",
+            "template": "%templatePrefix/firstDiscovery.html",
             "message": "%messagePrefix/firstDiscovery.json",
             "lang": {
                 // some content not shown

@@ -153,7 +153,8 @@ It's likely that this won't be case, and that you'll need to specify a different
         gradeNames: ["fluid.component"],
         saveRequestConfig: {
             url: "http://my.host/myServer/user",
-            method: "POST"
+            method: "POST",
+            view: "myApp"
         }
     });
     ```

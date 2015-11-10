@@ -105,12 +105,13 @@ This component can be configured using the following
     <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
     <tr>
         <td>`saveRequestConfig`</td>
-        <td>To config the endpoint and method for sending ajax request to the server.</td>
+        <td>To config the endpoint, method and view for sending ajax request to the server. <br />(see: [Preferences Server](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md#user-content-description) to understand `view`)</td>
         <td>A object with ajax request configurations</td>
         <td>
         <pre><code>saveRequestConfig: {
     url: "/user",
-    method: "POST"
+    method: "POST",
+    view: ""
 }</code></pre>
         </td>
     </tr>
