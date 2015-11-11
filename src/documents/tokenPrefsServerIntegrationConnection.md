@@ -10,11 +10,11 @@ category: API
 
 **File:** `panels.js`
 
-This connector sends a http request to the first discovery server to save user selected preferences when the token panel becomes visible.
+This connector sends an http request to the first discovery server to save user selected preferences when the token panel becomes visible.
 
 ## Using the Token and Preferences Server Integration Connector component
 
-Typically the Token and Preferences Server Integration Connector is integrated into the First Discovery Tool by supplying it in an
+Typically, the Token and Preferences Server Integration Connector is added as an extra grade to the [Token Panel](token.md) specification in the
 [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
 
 ```javascript

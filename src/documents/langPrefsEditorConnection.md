@@ -20,9 +20,7 @@ the language panel re-renders when the user navigates back to the language panel
 
 ## Using the Language and Preferences Editor Connector component
 
-Typically the Language and Preferences Editor Connector is integrated into the First Discovery Tool
-by supplying it in an
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+Typically, the Language and Preferences Editor Connector is added as an extra grade to the [Language Panel](lang.md) specification in the [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
 
 ```javascript
 "lang": {

@@ -19,6 +19,8 @@ grade within the component hierarchy to do the actual speaking.
 
 ## Using the Sticky Keys Panel – Text-to-Speech grade
 
+Typically, the Sticky Keys Panel – Text-to-Speech grade is added as an extra grade to the [Sticky Keys Panel](keyboard.md) specification in the [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+
 To use the Sticky Keys Panel – Text-to-Speech grade, supply it as a `gradeNames` option
 in the [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
 
@@ -28,9 +30,9 @@ in the [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/Auxi
     "panel": {
         "type": "gpii.firstDiscovery.panel.keyboard",
         "container": ".gpiic-fd-prefsEditor-panel-keyboard",
-        "gradeNames": ["gpii.firstDiscovery.panel.keyboardTts"],
         "template": "%templatePrefix/keyboard.html",
-        "message": "%messagePrefix/keyboard.json"
+        "message": "%messagePrefix/keyboard.json",
+        "gradeNames": ["gpii.firstDiscovery.panel.keyboardTts", "gpii.firstDiscovery.panel.keyboard.prefEditorConnection"]
     }
 }}
 ```
