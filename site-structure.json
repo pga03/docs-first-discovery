@@ -1,7 +1,18 @@
 [
     {
         "category": "Overview",
-        "categoryHref":"/index.html"
+        "categoryHref":"/index.html",
+        "sections":
+        [
+            {
+                "sectionName":"Preferences Server Integration",
+                "pages":
+                [
+                    { "pageName": "Introduction", "href": "/integrationIntro.html"},
+                    { "pageName": "The Work Flow", "href": "/integrationWorkFlow.html"}
+                ]
+            }
+        ]
     },
     {
         "category": "Tutorials",
