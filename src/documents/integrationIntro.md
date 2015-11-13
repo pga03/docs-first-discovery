@@ -19,10 +19,10 @@ The First Discovery Tool makes use of [OAuth2 Client Credentials Grant API](http
 
 ## Demos
 
-Preferences Server Integration: http://build.fluidproject.org/first-discovery/demos/prefsServerIntegration (doesn't yet return a token)
+http://build.fluidproject.org/first-discovery/demos/prefsServerIntegration (doesn't yet return a token)
 
 ## Source code
 
-Client (First Discovery Tool): https://github.com/GPII/first-discovery
-Server (First Discovery Server): https://github.com/GPII/first-discovery-server (under development)
-GPII Preferences Server: https://github.com/GPII/universal
+* Client (First Discovery Tool): https://github.com/GPII/first-discovery
+* Server (First Discovery Server): https://github.com/GPII/first-discovery-server (under development)
+* GPII Preferences Server: https://github.com/GPII/universal
