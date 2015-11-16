@@ -5,6 +5,13 @@
         "sections":
         [
             {
+                "sectionName":"First Discovery Tool",
+                "pages":
+                [
+                    { "pageName": "Introduction", "href": "/index.html"}
+                ]
+            },
+            {
                 "sectionName":"Preferences Server Integration",
                 "pages":
                 [

@@ -93,7 +93,7 @@ Javascript object containing messages available for the component to output/disp
     </tr>
     <tr>
         <td>`rendererOptions`</td>
-        <td>Only used when combined with a rendererComponent. This option is used to override the default messageLocator used by the renderer.<br/><em>NOTE: In general this should not be modified.</em></td>
+        <td>Only used when combined with a rendererComponent. This option is used to override the default messageLocator used by the renderer.<br/><strong>NOTE</strong>: In general this should not be modified.</td>
         <td></td>
         <td>
         <pre><code>rendererOptions: {

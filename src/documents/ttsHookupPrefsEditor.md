@@ -12,7 +12,7 @@ category: API
 
 Text-to-Speech Hookup - First Discovery is a grade containing the configuration necessary to setup the utterance of the panel introductions. As a panel is made visible, a message is uttered. The 'h' key is also wired up utter the panel instructions. This grade is intended to be added as a base grade to the `prefsEditor` subcomponent in the [First Discovery Editor](firstDiscoveryEditor.md).
 
-Note: _The utterance will only occur when self voicing is enabled._
+**Note**: The utterance will only occur when self voicing is enabled.
 
 ## Using the Text-to-Speech Hookup – Preferences Editor grade
 
