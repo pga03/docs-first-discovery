@@ -8,8 +8,6 @@ The First Discovery Tool supports integration with the [GPII Preferences Server]
 
 **Note**: While this document focuses on integration with the GPII Preferences Server, the First Discovery Tool could be integrated with any data store to save a user's preferences.
 
-![Diagram showing the integration of the First Discovery Tool and the GPII Preferences Server](images/GPII-Preferences-Server-Integration.svg)
-
 ## The First Discovery Server
 
 The First Discovery Tool uses the [OAuth2 Client Credentials Grant API](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) to securely save preferences. This API requires the client ID and secret to be included in the http request for OAuth authentication. Because this sensitive information must be sent server-to-server, the First Discovery Tool uses a separate server – the First Discovery Server – to mediate the exchange.
@@ -20,6 +18,8 @@ What it does:
 * receives http requests sent from the First Discovery Tool. These requests only contain user selected preferences
 * follows the [OAuth2 Client Credentials Grant API](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) to send user selected preferences to the GPII Preferences Server, and
 * sends the GPII token returned by the GPII Preferences Server to the First Discovery Tool 
+
+![Diagram showing the integration of the First Discovery Tool and the GPII Preferences Server](images/GPII-Preferences-Server-Integration.svg)
 
 ## Demos
 
