@@ -12,18 +12,18 @@ The First Discovery Tool supports integration with the [GPII Preferences Server]
 
 ## The First Discovery Server
 
-The First Discovery Tool makes use of the [OAuth2 Client Credentials Grant API](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) provided by the [GPII Preferences Server](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md) to securely save preferences. The OAuth2 Client Credentials Grant API requires the client ID and secret (confidential shared secret, used to verify the identity of the solution) to be included in the http request for OAuth authentication, because this must be sent server-to-server, the First Discovery Server is used to mediate the exchange.
+The First Discovery Tool uses the [OAuth2 Client Credentials Grant API](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) to securely save preferences. This API requires the client ID and secret to be included in the http request for OAuth authentication. Because this sensitive information must be sent server-to-server, the First Discovery Tool uses a separate server – the First Discovery Server – to mediate the exchange.
 
 What it does:
 
 * serves the First Discovery Tool
 * receives http requests sent from the First Discovery Tool. These requests only contain user selected preferences
-* follows the [OAuth2 Client Credentials Grant API](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) to send user selected preferences to the [GPII Preferences Server](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md), and
-* sends the GPII token returned by the [GPII Preferences Server](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md) to the First Discovery Tool 
+* follows the [OAuth2 Client Credentials Grant API](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) to send user selected preferences to the GPII Preferences Server, and
+* sends the GPII token returned by the GPII Preferences Server to the First Discovery Tool 
 
 ## Demos
 
-This demo implements the integration with the [GPII Preferences Server] to save preferences.
+This demo implements the integration with the [GPII Preferences Server](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md) to save preferences.
 http://build.fluidproject.org/first-discovery/demos/prefsServerIntegration
 
 ## Source code
