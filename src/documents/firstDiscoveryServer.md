@@ -263,21 +263,6 @@ root directory.
     </thead>
     <tbody>
         <tr>
-            <td><code>/demos/...<code></td>
-            <td><code>GET</code></td>
-            <td>
-                The First Discovery Tool's demos are served up from this root directory. The exact path to files will depend on the structure of the demos.
-                <em>(See: <a href="https://github.com/gpii/first-discovery">first-discovery</a>)</em>
-            </td>
-        </tr>
-        <tr>
-            <td><code>/src/...<code></td>
-            <td><code>GET</code></td>
-            <td>
-                Serves the dependencies required by the First Discovery Tool's demos. Typically these resources will not needed to be accessed directly.
-            </td>
-        </tr>
-        <tr>
             <td><code>/user?[view=:view]</code></td>
             <td><code>POST</code></td>
             <td>
