@@ -17,6 +17,7 @@
                 [
                     { "pageName": "Introduction", "href": "/integrationIntro.html"},
                     { "pageName": "The Work Flow", "href": "/integrationWorkFlow.html"}
+                    { "pageName": "The Work Flow", "href": "/firstDiscoveryServer.html"}
                 ]
             }
         ]
