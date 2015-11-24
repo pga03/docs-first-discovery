@@ -15,14 +15,13 @@ By default the server will run from port 8088, but can be configured to use a di
 
 The First Discovery Server connects to the Preferences Server via the Security layer. The server-to-server communication needs to be configured to specify things such as hostname, port, client_id, client_secret and etc.
 
-Configuration can be provided using either environment variables or a JSON config file. In the event that both are provided, the environment variables will take precedence.
-
-#### Environment Variables ####
+Configuration can be provided using either environment variables or a JSON config file. In the event that both are provided, the environment variables will take precedence. If a JSON config file is used, it must be located in the server's root directory and be called "fd_security_config.json".
 
 <table>
     <thead>
         <tr>
             <th>Environment Variable</th>
+            <th>JSON Config Path</th>
             <th>Description</th>
             <th>Example</th>
         <tr>
@@ -31,6 +30,9 @@ Configuration can be provided using either environment variables or a JSON confi
         <tr>
             <td>
                 <code>GPII_OAUTH2_TCP_PORT</code>
+            </td>
+            <td>
+                <code>securityServer.port</code>
             </td>
             <td>
                 The port number that the GPII Oauth2 server is hosted at.
@@ -44,6 +46,9 @@ Configuration can be provided using either environment variables or a JSON confi
                 <code>GPII_OAUTH2_HOST_NAME</code>
             </td>
             <td>
+                <code>securityServer.hostname</code>
+            </td>
+            <td>
                 The hostname that the GPII Oauth2 server is hosted at.
             </td>
             <td>
@@ -55,6 +60,9 @@ Configuration can be provided using either environment variables or a JSON confi
                 <code>GPII_OAUTH2_PATH_ACCESS_TOKEN</code>
             </td>
             <td>
+                <code>securityServer.paths.token</code>
+            </td>
+            <td>
                 The path to the resource for requesting an access token
             </td>
             <td>
@@ -64,6 +72,9 @@ Configuration can be provided using either environment variables or a JSON confi
         <tr>
             <td>
                 <code>GPII_OAUTH2_PATH_ADD_PREFERENCES</code>
+            </td>
+            <td>
+                <code>securityServer.paths.preferences</code>
             </td>
             <td>
                 The path to the resource for creating a preference set.
@@ -79,6 +90,9 @@ Configuration can be provided using either environment variables or a JSON confi
                 <code>GPII_OAUTH2_AUTH_GRANT_TYPE</code>
             </td>
             <td>
+                <code>authentication.grant_type</code>
+            </td>
+            <td>
                 The grant type supported by the Oauth2 server.
             </td>
             <td>
@@ -88,6 +102,9 @@ Configuration can be provided using either environment variables or a JSON confi
         <tr>
             <td>
                 <code>GPII_OAUTH2_AUTH_SCOPE</code>
+            </td>
+            <td>
+                <code>authentication.scope</code>
             </td>
             <td>
                 The level of permissions that are being requested.
@@ -101,111 +118,6 @@ Configuration can be provided using either environment variables or a JSON confi
                 <code>GPII_OAUTH2_AUTH_CLIENT_ID</code>
             </td>
             <td>
-                The client ID registered with the Oauth2 server.
-            </td>
-            <td>
-                "client_id_first_discovery"
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <code>GPII_OAUTH2_AUTH_CLIENT_SECRET</code>
-            </td>
-            <td>
-                The client secret registered with the Oauth2 server.
-                Used to securely identify the client with the Oauth2.
-            </td>
-            <td>
-                "client_secret_first_discovery"
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-#### Configuration File ####
-
-The configuration file must be called "fd_security_config.json" and be located in the server's
-root directory.
-
-<table>
-    <thead>
-        <tr>
-            <th>Path</th>
-            <th>Description</th>
-            <th>Example</th>
-        <tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <code>securityServer.port</code>
-            </td>
-            <td>
-                The port number that the GPII Oauth2 server is hosted at.
-            </td>
-            <td>
-                "8088"
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <code>securityServer.hostname</code>
-            </td>
-            <td>
-                The hostname that the GPII Oauth2 server is hosted at.
-            </td>
-            <td>
-                "http://localhost"
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <code>securityServer.paths.token</code>
-            </td>
-            <td>
-                The path to the resource for requesting an access token
-            </td>
-            <td>
-                "/access_token"
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <code>securityServer.paths.preferences</code>
-            </td>
-            <td>
-                The path to the resource for creating a preference set.
-                A query parameter can be added to provide the view/ontology that the
-                preferences are to be stored in.
-            </td>
-            <td>
-                "/add-preferences?view=%view"
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <code>authentication.grant_type</code>
-            </td>
-            <td>
-                The grant type supported by the Oauth2 server.
-            </td>
-            <td>
-                "client_credentials"
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <code>authentication.scope</code>
-            </td>
-            <td>
-                The level of permissions that are being requested.
-            </td>
-            <td>
-                "add_preferences"
-            </td>
-        </tr>
-        <tr>
-            <td>
                 <code>authentication.client_id</code>
             </td>
             <td>
@@ -216,6 +128,9 @@ root directory.
             </td>
         </tr>
         <tr>
+            <td>
+                <code>GPII_OAUTH2_AUTH_CLIENT_SECRET</code>
+            </td>
             <td>
                 <code>authentication.client_secret</code>
             </td>
@@ -230,7 +145,7 @@ root directory.
     </tbody>
 </table>
 
-##### Example #####
+#### Example: Config File ####
 
 ```JSON
 {
