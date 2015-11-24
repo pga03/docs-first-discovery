@@ -20,8 +20,7 @@ Configuration can be provided using either environment variables or a JSON confi
 <table>
     <thead>
         <tr>
-            <th>Environment Variable</th>
-            <th>JSON Config Path</th>
+            <th>Configuration</th>
             <th>Description</th>
             <th>Example</th>
         <tr>
@@ -29,10 +28,15 @@ Configuration can be provided using either environment variables or a JSON confi
     <tbody>
         <tr>
             <td>
-                <code>GPII_OAUTH2_TCP_PORT</code>
-            </td>
-            <td>
-                <code>securityServer.port</code>
+                <p>
+                    Environment Variable:
+                    <code>GPII_OAUTH2_TCP_PORT</code>
+                </p>
+
+                <p>
+                    JSON Config Path:
+                    <code>securityServer.port</code>
+                </p>
             </td>
             <td>
                 The port number that the GPII Oauth2 server is hosted at.
@@ -43,10 +47,15 @@ Configuration can be provided using either environment variables or a JSON confi
         </tr>
         <tr>
             <td>
-                <code>GPII_OAUTH2_HOST_NAME</code>
-            </td>
-            <td>
-                <code>securityServer.hostname</code>
+                <p>
+                    Environment Variable:
+                    <code>GPII_OAUTH2_HOST_NAME</code>
+                </p>
+
+                <p>
+                    JSON Config Path:
+                    <code>securityServer.hostname</code>
+                </p>
             </td>
             <td>
                 The hostname that the GPII Oauth2 server is hosted at.
@@ -57,10 +66,15 @@ Configuration can be provided using either environment variables or a JSON confi
         </tr>
         <tr>
             <td>
-                <code>GPII_OAUTH2_PATH_ACCESS_TOKEN</code>
-            </td>
-            <td>
-                <code>securityServer.paths.token</code>
+                <p>
+                    Environment Variable:
+                    <code>GPII_OAUTH2_PATH_ACCESS_TOKEN</code>
+                </p>
+
+                <p>
+                    JSON Config Path:
+                    <code>securityServer.paths.token</code>
+                </p>
             </td>
             <td>
                 The path to the resource for requesting an access token
@@ -71,10 +85,15 @@ Configuration can be provided using either environment variables or a JSON confi
         </tr>
         <tr>
             <td>
-                <code>GPII_OAUTH2_PATH_ADD_PREFERENCES</code>
-            </td>
-            <td>
-                <code>securityServer.paths.preferences</code>
+                <p>
+                    Environment Variable:
+                    <code>GPII_OAUTH2_PATH_ADD_PREFERENCES</code>
+                </p>
+
+                <p>
+                    JSON Config Path:
+                    <code>securityServer.paths.preferences</code>
+                </p>
             </td>
             <td>
                 The path to the resource for creating a preference set.
@@ -87,10 +106,15 @@ Configuration can be provided using either environment variables or a JSON confi
         </tr>
         <tr>
             <td>
-                <code>GPII_OAUTH2_AUTH_GRANT_TYPE</code>
-            </td>
-            <td>
-                <code>authentication.grant_type</code>
+                <p>
+                    Environment Variable:
+                    <code>GPII_OAUTH2_AUTH_GRANT_TYPE</code>
+                </p>
+
+                <p>
+                    JSON Config Path:
+                    <code>authentication.grant_type</code>
+                </p>
             </td>
             <td>
                 The grant type supported by the Oauth2 server.
@@ -101,10 +125,15 @@ Configuration can be provided using either environment variables or a JSON confi
         </tr>
         <tr>
             <td>
-                <code>GPII_OAUTH2_AUTH_SCOPE</code>
-            </td>
-            <td>
-                <code>authentication.scope</code>
+                <p>
+                    Environment Variable:
+                    <code>GPII_OAUTH2_AUTH_SCOPE</code>
+                </p>
+
+                <p>
+                    JSON Config Path:
+                    <code>authentication.scope</code>
+                </p>
             </td>
             <td>
                 The level of permissions that are being requested.
@@ -115,10 +144,15 @@ Configuration can be provided using either environment variables or a JSON confi
         </tr>
         <tr>
             <td>
-                <code>GPII_OAUTH2_AUTH_CLIENT_ID</code>
-            </td>
-            <td>
-                <code>authentication.client_id</code>
+                <p>
+                    Environment Variable:
+                    <code>GPII_OAUTH2_AUTH_CLIENT_ID</code>
+                </p>
+
+                <p>
+                    JSON Config Path:
+                    <code>authentication.client_id</code>
+                </p>
             </td>
             <td>
                 The client ID registered with the Oauth2 server.
@@ -129,10 +163,15 @@ Configuration can be provided using either environment variables or a JSON confi
         </tr>
         <tr>
             <td>
-                <code>GPII_OAUTH2_AUTH_CLIENT_SECRET</code>
-            </td>
-            <td>
-                <code>authentication.client_secret</code>
+                <p>
+                    Environment Variable:
+                    <code>GPII_OAUTH2_AUTH_CLIENT_SECRET</code>
+                </p>
+
+                <p>
+                    JSON Config Path:
+                    <code>authentication.client_secret</code>
+                </p>
             </td>
             <td>
                 The client secret registered with the Oauth2 server.
