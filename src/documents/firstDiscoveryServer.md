@@ -15,7 +15,7 @@ By default the server will run from port 8088, but can be configured to use a di
 
 The First Discovery Server connects to the Preferences Server via the Security layer. The server-to-server communication needs to be configured to specify things such as hostname, port, client_id, client_secret and etc.
 
-Configuration can be provided using either environment variables or a JSON config file. In the event that both are provided, the environment variables will take precedence. If a JSON config file is used, it must be located in the server's root directory and be called "fd_security_config.json".
+Configuration can be provided using either environment variables or a JSON config file. In the event that both are provided, the environment variables will take precedence. If a JSON config file is used, it must be located in the server's root directory and be called **fd_security_config.json**.
 
 <table>
     <thead>
