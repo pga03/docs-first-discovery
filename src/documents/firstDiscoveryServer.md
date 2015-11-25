@@ -68,7 +68,7 @@ Configuration can be provided using either environment variables or a JSON confi
             <td>
                 <p>
                     Environment Variable:
-                    <code>GPII_OAUTH2_PATH_ACCESS_TOKEN</code>
+                    <code>GPII_OAUTH2_ACCESS_TOKEN_PATH</code>
                 </p>
 
                 <p>
@@ -87,7 +87,7 @@ Configuration can be provided using either environment variables or a JSON confi
             <td>
                 <p>
                     Environment Variable:
-                    <code>GPII_OAUTH2_PATH_ADD_PREFERENCES</code>
+                    <code>GPII_OAUTH2_ADD_PREFERENCES_PATH</code>
                 </p>
 
                 <p>
