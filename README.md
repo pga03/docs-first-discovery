@@ -28,7 +28,9 @@ Conflicts may occur when merging in changes from `docs-template` to your custom 
 docpad deploy-ghpages --env static
 ```
 
-*Note:* The above command will deploy to the origin of the repository. To deploy to production, you may need to be working from Master, not a fork.
+WARNING deploy-ghpages will upload the site to the repository's source. If you have cloned from the
+production repository and you have push access, you will actually run the docs publication workflow
+against the live production branch, whichever branch you happen to be working on.
 
 # Generating a static version
 To create a static version of the site, run: `docpad generate --env static`. This will generate a version in the `./out/` directory which you can then view locally or upload to a web server.
