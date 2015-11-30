@@ -1,0 +1,371 @@
+---
+title: First Discovery Editor
+layout: default
+category: API
+---
+
+## Overview
+
+**Component Name:** `gpii.firstDiscovery.firstDiscoveryEditor`
+
+**File:** `firstDiscoveryEditor.js`
+
+The First Discovery Editor component is the core component of the First Discovery Tool:
+It coordinates other major architectural functionality, such as navigation, text-to-speech,
+language management, etc.
+
+## Using the First Discovery Editor component
+
+The First Discovery Editor component is an instance of a  `fluid.prefs.prefsEditorLoader`.
+To use the component, specify it as the loader grade in the
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+
+```javascript
+fluid.defaults("my.auxSchema", {
+    auxiliarySchema: {
+        "loaderGrades": ["gpii.firstDiscovery.firstDiscoveryEditor"],
+        // more not shown
+    }
+});
+```
+
+To instantiate the resulting
+[preferences editor](http://docs.fluidproject.org/infusion/development/PreferencesEditor.html),
+use the auxiliary schema in a call to
+[`fluid.prefs.create()`](http://docs.fluidproject.org/infusion/development/PreferencesEditor.html):
+
+```javascript
+fluid.prefs.create(container, {
+    build: {
+        gradeNames: ["my.auxSchema"]
+    }
+};
+```
+
+## Grades
+
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
+
+* `fluid.prefs.prefsEditorLoader`
+
+## Model
+
+This component supports the following
+[model](http://docs.fluidproject.org/infusion/development/tutorial-gettingStartedWithInfusion/ModelComponents.html)
+properties:
+
+| Path   | Description | Values | Default |
+|--------|-------------|--------|---------|
+| `currentPanelNum` | The panel currently displayed | Panel ID (Number)|  1 |
+
+## Supported Events
+
+This component supports the following
+[events](http://docs.fluidproject.org/infusion/development/InfusionEventSystem.html):
+
+<table>
+    <thead>
+        <tr><th>Event</th><th>Type</th><th>Description</th><th>Parameters</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>`onPrefsEditorReady`</td>
+            <td>default</td>
+            <td>Fired when the internal prefsEditor, containing all of the panels, is ready</td>
+            <td>
+                <dl>
+                    <dd>`component`</dd>
+                    <dt>An instance of `fluid.prefs.prefsEditor`</dt>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>`onCreateNav`</td>
+            <td>default</td>
+            <td>Fired after onPrefsEditorReady, which is when all of the necessary markup is in place</td>
+            <td>
+                <dl>
+                    <dd>`component`</dd>
+                    <dt>An instance of `fluid.prefs.prefsEditor`</dt>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>`onPanelShown`</td>
+            <td>default</td>
+            <td>Fired each time a panel becomes visible</td>
+            <td>
+                <dl>
+                    <dd>`number`</dd>
+                    <dt>The panel ID of visible shown panel</dt>
+                </dl>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+## Methods
+
+| Method | Description | Parameters |
+|--------|-------------|------------|
+| `showPanel` | Sets the visibility of the panels. The panel which is identified as the current panel in the model is made visible, the rest are hidden. | none |
+
+## Subcomponents
+
+This component has the following
+[subcomponents](http://docs.fluidproject.org/infusion/development/SubcomponentDeclaration.html):
+
+<table>
+    <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
+    <tr>
+        <td>`selfVoicing`</td>
+        <td>Specifies the Text-to-Speech engine to use for self voicing.</td>
+        <td>[`"gpii.firstDiscovery.selfVoicing"`](selfVoicing.md)</td>
+        <td>
+        <pre><code>selfVoicing: {
+    type: "gpii.firstDiscovery.selfVoicing"
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>`selfVoicingToggle`</td>
+        <td>Specifies the type of Text-to-Speech button to mute/unmute self voicing that results in the text-to-speech preference to be turned on/off accordingly. </td>
+        <td>[`"gpii.firstDiscovery.selfVoicingToggle"`](selfVoicingToggle.md)</td>
+        <td>
+        <pre><code>selfVoicingToggle: {
+    container: "{that}.dom.selfVoicingToggle",
+    createOnEvent: "onPrefsEditorReady",
+    type: "gpii.firstDiscovery.selfVoicingToggle",
+    options: {
+        model: {
+            enabled: "{prefsEditor}.model.preferences.gpii_firstDiscovery_speak"
+        },
+        messageBase: "{messageLoader}.resources.prefsEditor.resourceText"
+    }
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>`helpButton`</td>
+        <td>Specifies the type of help button to use. The current help button is mostly a placeholder, as it only sets the text.</td>
+        <td>[`"gpii.firstDiscovery.helpButton"`](helpButton.md)</td>
+        <td>
+        <pre><code>helpButton: {
+    type: "gpii.firstDiscovery.helpButton",
+    container: "{that}.dom.helpButton",
+    createOnEvent: "onPrefsEditorReady",
+    options: {
+        messageBase: "{messageLoader}.resources.prefsEditor.resourceText"
+    }
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>`prefsEditor`</td>
+        <td>Specifies the underlying prefs editor used. This is the part that contains all of the adjuster panels.</td>
+        <td>[`"fluid.prefs.prefsEditor"`](http://docs.fluidproject.org/infusion/development/PreferencesEditor.html)</td>
+        <td>
+        <pre><code>prefsEditor: {
+    container: "{that}.dom.prefsEditor",
+    options: {
+        gradeNames: ["gpii.firstDiscovery.tts.prefsEditor"],
+        modelListeners: {
+            states: {
+                funcName: "{that}.save",
+                excludeSource: "init"
+            },
+            preferences: {
+                funcName: "{that}.saveAndApply",
+                excludeSource: "init"
+            }
+        },
+        model: {
+            states: {
+                currentPanelNum: "{firstDiscoveryEditor}.model.currentPanelNum"
+            }
+        },
+        selectors: {
+            panel: "{firstDiscoveryEditor}.options.selectors.panel"
+        },
+        events: {
+            onPanelShown: "{firstDiscoveryEditor}.events.onPanelShown"
+        },
+        listeners: {
+            onReady: {
+                listener: "{firstDiscoveryEditor}.events.onPrefsEditorReady",
+                args: "{firstDiscoveryEditor}"
+            },
+            // the page is reloaded to reset language and etc.
+            "afterReset.reload": {
+                "this": "location",
+                method: "reload",
+                args: true
+            },
+            "onCreate.bindResetShortcut": {
+                listener: "gpii.firstDiscovery.keyboardShortcut.bindShortcut",
+                args: [
+                    "body",
+                    gpii.firstDiscovery.keyboardShortcut.key.r,
+                    ["ctrlKey", "altKey"],
+                    "{that}.reset"
+                ]
+            }
+        },
+        distributeOptions: [{
+            record: {
+                offerAssistance: "{prefsEditor}.model.states.stickyKey.offerAssistance",
+                tryAccommodation: "{prefsEditor}.model.states.stickyKey.tryAccommodation"
+            },
+            target: "{that > gpii.firstDiscovery.panel.keyboard}.options.model"
+        }]
+    }
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>`nav`</td>
+        <td>Specifies the component to use to handle the navigation between panels, and the set of panel icons.</td>
+        <td>[`"gpii.firstDiscovery.nav"`](nav.md)</td>
+        <td>
+        <pre><code>nav: {
+    type: "gpii.firstDiscovery.nav",
+    container: "{that}.dom.nav",
+    createOnEvent: "onCreateNav",
+    options: {
+        model: {
+            currentPanelNum: "{firstDiscoveryEditor}.model.currentPanelNum",
+            visitedPanelNums: "{prefsEditor}.model.states.visitedPanelNums"
+        },
+        messageBase: "{messageLoader}.resources.prefsEditor.resourceText",
+        styles: "{firstDiscoveryEditor}.options.styles",
+        panelTotalNum: "{firstDiscoveryEditor}.panels.length"
+    }
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>`messageLoader`</td>
+        <td>Specifies the component and means for loading in the JSON message bundle files.</td>
+        <td>[`"fluid.prefs.resourceLoader"`](http://docs.fluidproject.org/infusion/development/LocalizationInThePreferencesFramework.html)</td>
+        <td>
+        <pre><code>messageLoader: {
+    options: {
+        locale: "{prefsEditorLoader}.settings.preferences.gpii_firstDiscovery_language"
+    }
+}</code></pre>
+        </td>
+    </tr>
+</table>
+
+## Options
+
+This component can be configured using the following
+[options](http://docs.fluidproject.org/infusion/development/ComponentOptionsAndDefaults.html):
+
+<table>
+    <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
+    <tr>
+        <td>`defaultLocale`</td>
+        <td>The language code to use, for selecting the correct message bundle, when no language has been provided in the preferences.</td>
+        <td>A valid language code such as: `"en-US"`, `"fr-FR"`, `"es-MX"`, `"de-DE"`, `"nl-NL"`, `"sv-SE"`</td>
+        <td>
+        This resolves to "en-US":<br/>
+        <pre><code>defaultLocale: {
+    expander: {
+        funcName: "fluid.get",
+        args: [{
+            expander: {
+                funcName: "fluid.defaults",
+                args: ["gpii.firstDiscovery.schemas.language"]
+            }
+        }, ["schema", "properties", "gpii.firstDiscovery.language", "default"]]
+    }
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>`tooltipOptions`</td>
+        <td>The options to be used by any descendant tooltip components.</td>
+        <td></td>
+        <td>
+        <pre><code>tooltipOptions: {
+    delay: 0,
+    duration: 0,
+    position: {
+        my: "left bottom",
+        at: "right+1 top"
+    },
+    styles: {
+        tooltip: "gpii-fd-tooltip"
+    },
+    items: ".gpiic-fd-tooltip:not([disabled])"
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>`selectors`</td>
+        <td>Javascript object containing selectors for various fragments of the markup, including the containers for the subcomponents.</td>
+        <td></td>
+        <td>See [Selectors](#selectors)</td>
+    </tr>
+    <tr>
+        <td>`styles`</td>
+        <td>Specific class names used to achieve the look and feel.</td>
+        <td></td>
+        <td>
+        <pre><code>styles: {
+    active: "gpii-fd-active",
+    show: "gpii-fd-show",
+    currentPanel: "gpii-fd-current"
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>`modelListeners`</td>
+        <td>JavaScript object containing model paths and the listeners that are activated when changes happen to those paths.</td>
+        <td>Keys in the object are event names, values are functions or arrays of functions.</td>
+        <td>See [Model](#model)</td>
+    </tr>
+</table>
+
+## Selectors
+
+{{>selectorsIntro}}
+
+| Selector Name | Description | Default |
+|---------------|-------------|---------|
+| `prefsEditor` | The container to use for the internal prefsEditor, which contains all of the adjuster panels. | `".gpiic-fd-prefsEditor"` |
+| `panel` |  Passed down to internal prefsEditor to use as its panel selector. | `".gpiic-fd-prefsEditor-panel"` |
+| `selfVoicingToggle` | The container for the selfVoicingToggle subcomponent. | `".gpiic-fd-selfVoicingToggle"` |
+| `helpButton` | The container for the help button. | `".gpiic-fd-help"` |
+| `nav` | The container for the navigation subcomponent. | `".gpiic-fd-nav"` |
+
+## Dependencies
+
+```html
+<link rel="stylesheet" href="src/lib/infusion/src/lib/normalize/css/normalize.css" />
+<link rel="stylesheet" href="src/lib/foundation/css/foundation.min.css" />
+<link rel="stylesheet" href="src/css/style.css" />
+<link rel="stylesheet" type="text/css" href="src/lib/infusion/src/framework/preferences/css/Enactors.css" />
+<link rel="stylesheet" type="text/css" href="src/lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+
+<script type="text/javascript" src="src/lib/infusion/infusion-custom.js"></script>
+<script type="text/javascript" src="src/schemas/schemas.js"></script>
+<script type="text/javascript" src="src/js/keyboardShortcut.js"></script>
+<script type="text/javascript" src="src/js/ttsHookup.js"></script>
+<script type="text/javascript" src="src/js/tooltip.js"></script>
+<script type="text/javascript" src="src/js/msgLookup.js"></script>
+<script type="text/javascript" src="src/js/selfVoicing.js"></script>
+<script type="text/javascript" src="src/js/stickyKeysAssessment.js"></script>
+<script type="text/javascript" src="src/js/keyboardInput.js"></script>
+<script type="text/javascript" src="src/js/stickyKeysAdjuster.js"></script>
+<script type="text/javascript" src="src/js/panels.js"></script>
+<script type="text/javascript" src="src/js/enactors.js"></script>
+<script type="text/javascript" src="src/js/navButtons.js"></script>
+<script type="text/javascript" src="src/js/navIcons.js"></script>
+<script type="text/javascript" src="src/js/helpButton.js"></script>
+<script type="text/javascript" src="src/js/stepCount.js"></script>
+<script type="text/javascript" src="src/js/nav.js"></script>
+<script type="text/javascript" src="src/js/firstDiscoveryEditor.js"></script>
+```

@@ -1,0 +1,135 @@
+---
+title: Token Panel
+layout: default
+category: API
+---
+
+## Overview
+
+**Component Name:** `gpii.firstDiscovery.panel.token`
+
+**File:** `panels.js`
+
+This panel saves the user's preferences to the
+[GPII Preferences Server](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md)
+using the
+[GPII Preferences Server API](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md)
+and displays the token returned by the server. This token identifies the saved preferences
+so that they can be applied to other devices or edited using another preferences editor.
+
+## Using the Token Panel
+
+*Option 1*: In the
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html),
+specify the name of the panel as the `type` property of the `panel` section:
+```javascript
+"token": {
+    "type": "gpii.firstDiscovery.token",
+    "panel": {
+        "type": "gpii.firstDiscovery.panel.token",
+        "container": ".gpiic-fd-prefsEditor-panel-token",
+        "template": "%templatePrefix/token.html",
+        "message": "%messagePrefix/token.json"
+    }
+}
+```
+
+*Option 2*: Outside the context of the First Discovery Tool, developers may wish to create a standalone component:
+```javascript
+var myPanel = gpii.firstDiscovery.panel.token(container, options);
+```
+
+## Grades
+
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
+
+* [`fluid.prefs.panel`](http://docs.fluidproject.org/infusion/development/Panels.html)
+
+## Supported Events
+
+This component supports the following
+[events](http://docs.fluidproject.org/infusion/development/InfusionEventSystem.html):
+
+<table>
+    <thead>
+        <tr><th>Event</th><th>Type</th><th>Description</th><th>Parameters</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>`onSuccess`</td>
+            <td>default</td>
+            <td>Fired when the ajax request to the Preferences Server is successful</td>
+            <td>
+                <dl>
+                    <dd>`data`</dd>
+                    <dt>The data returned from the server</dt>
+                    <dd>`textStatus`</dd>
+                    <dt>A string describing the status</dt>
+                    <dd>`jqXHR`</dd>
+                    <dt>[The `jqXHR` object](http://api.jquery.com/Types/#jqXHR)</dt>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td>`onError`</td>
+            <td>default</td>
+            <td>Fired when the ajax request to the Preferences Server is failed</td>
+            <td>
+                <dl>
+                    <dd>`jqXHR`</dd>
+                    <dt>[The `jqXHR` object](http://api.jquery.com/Types/#jqXHR)</dt>
+                    <dd>`textStatus`</dd>
+                    <dt>A string describing the status</dt>
+                    <dd>`errorThrown`</dd>
+                    <dt>An optional exception object, if one occurred</dt>
+                </dl>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+## Methods
+
+| Method | Description | Parameters |
+|--------|-------------|------------|
+| `showTokenText` | Displays the server returned token. | A string of token text. |
+| `savePrefsToServer` | Sends ajax request to the Preferences Server to save preferences. | none |
+
+## Options
+
+This component can be configured using the following
+[options](http://docs.fluidproject.org/infusion/development/ComponentOptionsAndDefaults.html):
+
+<table>
+    <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
+    <tr>
+        <td>`saveRequestConfig`</td>
+        <td>To config the endpoint and method for sending ajax request to the server.</td>
+        <td>A object with ajax request configurations</td>
+        <td>
+        <pre><code>saveRequestConfig: {
+    url: "/user",
+    method: "POST"
+}</code></pre>
+        </td>
+    </tr>
+</table>
+
+## Selectors
+
+{{>selectorsIntro}}
+
+| Selector Name | Description | Default |
+|---------------|-------------|---------|
+| `message` | The container to display the panel instruction. | `".gpiic-fd-token-message"` |
+| `token` |  The textarea to display the server returned token. | `".gpiic-fd-token"` |
+
+## Dependencies
+
+```html
+<script type="text/javascript" src="src/lib/infusion/infusion-custom.js"></script>
+<script type="text/javascript" src="src/js/msgLookup.js"></script>
+<script type="text/javascript" src="src/js/tooltip.js"></script>
+<script type="text/javascript" src="src/js/panels.js"></script>
+```

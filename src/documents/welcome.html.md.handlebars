@@ -1,0 +1,75 @@
+---
+title: Welcome
+layout: default
+category: API
+---
+
+## Overview
+
+**Component Name:** `gpii.firstDiscovery.panel.welcome`
+
+**File:** `panels.js`
+
+Displays the welcome message.
+
+## Using the Welcome Panel
+
+*Option 1*: In the
+[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html),
+specify the name of the panel as the `type` property of the `panel` section:
+```javascript
+"welcome": {
+    "type": "gpii.firstDiscovery.welcome",
+    "panel": {
+        "type": "gpii.firstDiscovery.panel.welcome",
+        "container": ".gpiic-fd-prefsEditor-panel-welcome",
+        "template": "%templatePrefix/welcomeTemplate.html",
+        "message": "%messagePrefix/welcome.json"
+    }
+}
+```
+
+*Option 2*: Outside the context of the First Discovery Tool, developers may wish to create a standalone component:
+```javascript
+var myPanel = gpii.firstDiscovery.panel.welcome(container, options);
+```
+
+## Grades
+
+This component uses the following base
+[grades](http://docs.fluidproject.org/infusion/development/ComponentGrades.html):
+
+* [`fluid.prefs.panel`](http://docs.fluidproject.org/infusion/development/Panels.html)
+
+## Options
+
+This component can be configured using the following
+[options](http://docs.fluidproject.org/infusion/development/ComponentOptionsAndDefaults.html):
+
+<table>
+    <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
+    <tr>
+        <td>`selectors`</td>
+        <td>Javascript object containing selectors for various fragments of the markup, including the containers for the subcomponents.</td>
+        <td></td>
+        <td>See [Selectors](#selectors) below</td>
+    </tr>
+</table>
+
+## Selectors
+
+{{>selectorsIntro}}
+
+| Selector Name | Description | Default |
+|---------------|-------------|---------|
+| `message` | The container to display the welcome message. | `".gpiic-fd-welcome-instructions"` |
+
+## Dependencies
+
+```html
+<script type="text/javascript" src="src/lib/infusion/infusion-custom.js"></script>
+<script type="text/javascript" src="src/js/msgLookup.js"></script>
+<script type="text/javascript" src="src/js/tooltip.js"></script>
+<script type="text/javascript" src="src/js/panels.js"></script>
+```
+

@@ -1,0 +1,100 @@
+/* customizing colours */
+head-foot-bg = #425165;
+head-fg = #FFFFFF;
+nav-bg = #728195;
+link = #fed73a;
+
+header-footer-link = link;
+header-footer-background = head-foot-bg;
+header-footer-color = head-fg;
+
+header-footer-hover-color = header-footer-background;
+header-footer-hover-background = header-footer-color;
+header-footer-focus = 0.2rem solid header-footer-color;
+header-nav-link = header-footer-color;
+header-active-category = 0.2rem solid header-footer-color;
+logo-color = header-footer-color;
+logo-background = header-footer-background;
+logo-hover-color = header-footer-background;
+logo-hover-background = header-footer-color;
+logo-focus = 0.2rem solid header-footer-color;
+
+header-nav-link = link;
+header-nav-background = nav-bg;
+header-nav-hover-color = nav-bg;
+header-nav-hover-background = link;
+header-nav-border-top = 0.1rem dotted head-fg;
+
+skip-color = header-footer-color;
+skip-background = head-foot-bg;
+skip-focus-outer-border = header-footer-color;
+skip-focus-inner-border = head-foot-bg;
+skip-hover-color = head-foot-bg;
+skip-hover-background = header-footer-color;
+
+hideShow-color = topics-item-color;
+link-color = topics-item-color;
+button-focus = 0.2rem solid topics-item-color;
+link-hover-color = head-fg;
+link-hover-background = topics-item-color;
+code-block-link-color = topics-item-color;
+
+@import "docs-template.css.styl";
+
+/* remove default logo */
+.docs-template-logo::before {
+    content: none;
+}
+
+/* widen main article, to make more room for tables with code in them */
+.docs-core-sidebar-expanded {
+    .docs-template-topics-container {
+        width: 20%;
+    }
+    .docs-template-articleBody {
+        width: 80%;
+    }
+}
+
+/* tidy up parameter descriptions */
+.docs-template-articleBody {
+    code {
+        font-size: 97%;
+    }
+
+    dl {
+        dt {
+            font-weight: normal;
+            padding-left: 2rem;
+        }
+        dd {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/* fix hover style on code snippets */
+.docs-template-articleBody code a:hover,
+.docs-template-articleBody a:hover code {
+    color: link-hover-color;
+    border: none;
+}
+
+/* reduce space between nav items */
+.docs-template-topics {
+   li {
+        padding: 0.3rem 0.2rem 0.3rem 0;
+    }
+}
+
+/* make the 'active' indicator span multiple lines */
+.docs-template-topics {
+    .docs-template-topics-active {
+        border-left: 5px solid;
+        padding-left: 5px;
+    }
+    .docs-template-topics-active:before {
+        content: none;
+    }
+}
