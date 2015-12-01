@@ -35,11 +35,22 @@ This component uses the following base
 
 * [`fluid.modelComponent`](http://docs.fluidproject.org/infusion/development/ComponentGrades.html)
 
+## Model
+
+This component supports the following
+[model](http://docs.fluidproject.org/infusion/development/tutorial-gettingStartedWithInfusion/ModelComponents.html)
+properties:
+
+| Path   | Description | Values | Default |
+|--------|-------------|--------|---------|
+| `isLastPanel` | Whether or not the current panel is the last panel. | Boolean | undefined |
+
+
 ## Methods
 
 | Method | Description | Parameters |
 |--------|-------------|------------|
-| `setLastPanelStyle` | Applies a special class name to the First Discovery Editor container when the current visible panel is the last panel of the First Discovery Tool. | none |
+| `updateIsLastPanel` | Update the model value `isLastPanel`. This method sets the model value to `true` when the last panel becomes visible. Otherwise, sets the value to `false`.| none |
 
 ## Options
 
@@ -53,6 +64,16 @@ This component uses the following base
         <pre><code>styles: {
     lastPanel: "gpii-fd-lastPanel"
 }</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>`saveRequestConfig`</td>
+        <td>Specify the endpoint, method and view for sending ajax request to the server. This option is distributed to the [token panel](token.md) where the configuration is actually used.</td>
+        <td></td>
+        <td>
+        <pre><code>saveRequestConfig: {
+            view: "firstDiscovery"
+        }</code></pre>
         </td>
     </tr>
 </table>

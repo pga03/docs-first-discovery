@@ -1,7 +1,25 @@
 [
     {
         "category": "Overview",
-        "categoryHref":"/index.html"
+        "categoryHref":"/index.html",
+        "sections":
+        [
+            {
+                "sectionName":"First Discovery Tool",
+                "pages":
+                [
+                    { "pageName": "Introduction", "href": "/index.html"}
+                ]
+            },
+            {
+                "sectionName":"Preferences Server Integration",
+                "pages":
+                [
+                    { "pageName": "Introduction", "href": "/integrationIntro.html"},
+                    { "pageName": "The Work Flow", "href": "/integrationWorkFlow.html"}
+                ]
+            }
+        ]
     },
     {
         "category": "Tutorials",
@@ -55,7 +73,8 @@
                 "pages":
                 [
                     { "pageName": "Preferences Server Integration", "href": "/prefsServerIntegration.html"},
-                    { "pageName": "Token Panel", "href": "/token.html"}
+                    { "pageName": "Token Panel", "href": "/token.html"},
+                    { "pageName": "Token and Preferences Server Integration Connection", "href": "/tokenPrefsServerIntegrationConnection.html"}
                 ]
             },
             {

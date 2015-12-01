@@ -16,9 +16,7 @@ The Sticky Keys Panel and Preferences Editor Connector is intended to be added a
 
 ## Using the Sticky Keys Panel and Preferences Editor Connector component
 
-Typically, the Sticky Keys Panel and Preferences Editor Connector is integrated into the First Discovery Tool
-by supplying it in an
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+Typically, the Sticky Keys Panel and Preferences Editor Connector is added as an extra grade to the [Sticky Keys Panel](keyboard.md) specification in the [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
 
 ```javascript
 "keyboard": {
@@ -28,7 +26,7 @@ by supplying it in an
         "container": ".gpiic-fd-prefsEditor-panel-keyboard",
         "template": "%templatePrefix/keyboard.html",
         "message": "%messagePrefix/keyboard.json",
-        "gradeNames": ["gpii.firstDiscovery.panel.keyboardTts", "gpii.firstDiscovery.panel.keyboard.prefEditorConnection"],
+        "gradeNames": ["gpii.firstDiscovery.panel.keyboardTts", "gpii.firstDiscovery.panel.keyboard.prefEditorConnection"]
     }
 }
 ```

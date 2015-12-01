@@ -18,9 +18,7 @@ This connector component distributes this model value into the speech rate panel
 
 ## Using the Speech Rate and Preferences Editor Connector component
 
-Typically passed into the [speech rate](speechRate.md) component by supplying it as a
-`gradeNames` option in the
-[Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
+Typically, the Speech Rate and Preferences Editor Connector component is added as an extra grade to the [Speech Rate Panel](speechRate.md) specification in the [Auxiliary Schema](http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html):
 
 ```javascript
 "speechRate": {

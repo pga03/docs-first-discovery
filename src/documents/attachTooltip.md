@@ -114,9 +114,9 @@ Two methods to define mappings:
 <ol>
 <li>The direct mapping between one element and one label:
 
-        The left hand side is the name in the selectors block for the element to have the tooltip.
+        The left hand side is the name in the selectors block for the element to have the tooltip.<br />
 
-        Note: the empty string `""` at the left hand is to reference the component container itself. The right hand side is the name in the message bundle referencing the tooltip content for that element.
+        <strong>Note</strong>: the empty string `""` at the left hand is to reference the component container itself. The right hand side is the name in the message bundle referencing the tooltip content for that element.
 <pre><code>{
     "": "containerLabel",
     "back": "backLabel"
