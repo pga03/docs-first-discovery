@@ -8,7 +8,7 @@ category: Overview
 
 The First Discovery Server can be launched as a [Kettle](https://github.com/amb26/kettle/blob/KETTLE-32/README.md) application by making use of [Kettle Configs](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#structure-of-a-kettle-config).
 
-There are two typical ways of launching a Kettle app, programmatically and from command line
+There are two typical ways of launching a Kettle app, programmatically and from command line.
 
 (See: [Starting a Kettle application](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#starting-a-kettle-application))
 
