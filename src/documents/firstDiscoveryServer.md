@@ -319,18 +319,18 @@ Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree
             <td>
                 Accepts a set of preferences, in a JSON object, to be stored on the preferences server. For example:
 
-                <code>
-                    <pre>
+                <pre>
+                    <code>
 {
   "gpii_firstDiscovery_language": "en-US"
 }
-                    </pre>
-                </code>
+                    </code>
+                </pre>
 
                 A GPII token will be returned and can be used for retrieving the preferences on a GPII enabled device. For example:
 
-                <code>
-                    <pre>
+                <pre>
+                    <code>
 {
   "userToken": "2288e676-d0bb-4d29-8131-7cff268ba012",
   "preferences": {
@@ -344,8 +344,8 @@ Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree
     }
   }
 }
-                    </pre>
-                </code>
+                    </code>
+                </pre>
 
                 The <code>view</code> query parameter is used to specify which ontology the preferences are stored in. (See: <a href="https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md#post-preferencesviewview">Preferences Server</a>)
             </td>
