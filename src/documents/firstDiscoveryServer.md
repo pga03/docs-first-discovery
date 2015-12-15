@@ -347,7 +347,7 @@ Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree
                     </pre>
                 </code>
 
-                The <code>view</code> query parameter is used to specify which ontology the preferences are stored in. (See: <a href="https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md#post-preferencesviewview">Prefrences Server</a>)
+                The <code>view</code> query parameter is used to specify which ontology the preferences are stored in. (See: <a href="https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md#post-preferencesviewview">Preferences Server</a>)
             </td>
         </tr>
     </tbody>
