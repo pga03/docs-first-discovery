@@ -4,27 +4,61 @@ layout: default
 category: Overview
 ---
 
+## Launching ##
+
+The First Discovery Server can be launched as a Kettle application by making use of [Kettle Configs](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#structure-of-a-kettle-config).
+
+There are two typical ways of launching a Kettle app, programmatically and from command line
+
+(See: [Starting a Kettle application](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#starting-a-kettle-application))
+
+### Programmatically ###
+
+```javascript
+// require the kettle module
+var kettle = require("kettle");
+
+// load the config
+kettle.config.loadConfig({
+    // path to the config directory
+    configPath:"./src/config",
+
+    // name of the config to load, without the file extension
+    configName: "vagrant"
+});
+```
+
+### Command Line ####
+
+```bash
+# Call Kettle's init.js script with the
+# configPath and configName
+node node_modules/kettle/init.js <configPath> [<configName>]
+
+# or using an environment variable to specify
+# the configName
+NODE_EVN=<configName> node node_modules/kettle/init.js <configPath>
+```
+
 ## Configuration ##
 
-### Host Port ###
+The First Discovery Server can be configured via [Kettle Configs](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#structure-of-a-kettle-config). A set of these are provided with the server in the [config](https://github.com/GPII/first-discovery-server/tree/master/src/config) directory. An integrator can choose to make use of the provide configs directly or use them as the basis for creating new configs.
 
-By default the server will run from port 8088, but can be configured to use a different port by setting the `FIRST_DISCOVERY_SERVER_TCP_PORT` environment variable to a different port number.
+The [`gpii.firstDiscovery.server.configurator`](./src/js/firstDiscoveryServer.js) grade defines a default schema for which the configuration is validated against. If the validation fails, the application will throw and error.
 
+For more information about how the Preferences Server's security layer is configured. Please see the [Client Credentials Grant](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) documentation.
 
-### Preferences Server Communication ###
+### environment.json ###
 
-The First Discovery Server connects to the Preferences Server via the Security layer. The server-to-server communication needs to be configured to specify things such as hostname, port, client_id, client_secret and etc.
+Accepts environment variables for all of the critical configuration options that are needed for running the First Discovery Server and connecting to the Oauth2 security server.
 
-Configuration can be provided using either environment variables or a JSON config file. In the event that both are provided, the environment variables will take precedence. If a JSON config file is used, it must be located in the server's root directory and be called **fd_security_config.json**.
-
-<div class="infusion-docs-note">
-    Note: All of the configuration is required. If any parts are missing, an error will be thrown.
-</div>
+(see: [environment.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/environment.json))
 
 <table>
     <thead>
         <tr>
-            <th>Configuration</th>
+            <th>Option</th>
+            <th>Environment Variable</th>
             <th>Description</th>
             <th>Example</th>
         <tr>
@@ -32,18 +66,13 @@ Configuration can be provided using either environment variables or a JSON confi
     <tbody>
         <tr>
             <td>
-                <p>
-                    Environment Variable:
-                    <code>GPII_OAUTH2_TCP_PORT</code>
-                </p>
-
-                <p>
-                    JSON Config Path:
-                    <code>securityServer.port</code>
-                </p>
+                <code>"port"</code>
             </td>
             <td>
-                The port number that the GPII OAuth2 server is hosted at.
+                <code>FIRST_DISCOVERY_SERVER_TCP_PORT</code>
+            </td>
+            <td>
+                The port number that the First Discovery Server is hosted at.
             </td>
             <td>
                 "8088"
@@ -51,15 +80,24 @@ Configuration can be provided using either environment variables or a JSON confi
         </tr>
         <tr>
             <td>
-                <p>
-                    Environment Variable:
-                    <code>GPII_OAUTH2_HOST_NAME</code>
-                </p>
-
-                <p>
-                    JSON Config Path:
-                    <code>securityServer.hostname</code>
-                </p>
+                <code>"preferencesConfig.securityServer.port"</code>
+            </td>
+            <td>
+                <code>GPII_OAUTH2_TCP_PORT</code>
+            </td>
+            <td>
+                The port number that the GPII OAuth2 server is hosted at.
+            </td>
+            <td>
+                "8081"
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>"preferencesConfig.securityServer.hostname"</code>
+            </td>
+            <td>
+                <code>GPII_OAUTH2_HOST_NAME</code>
             </td>
             <td>
                 The hostname that the GPII OAuth2 server is hosted at.
@@ -70,15 +108,10 @@ Configuration can be provided using either environment variables or a JSON confi
         </tr>
         <tr>
             <td>
-                <p>
-                    Environment Variable:
-                    <code>GPII_OAUTH2_ACCESS_TOKEN_PATH</code>
-                </p>
-
-                <p>
-                    JSON Config Path:
-                    <code>securityServer.paths.token</code>
-                </p>
+                <code>"preferencesConfig.securityServer.paths.token"</code>
+            </td>
+            <td>
+                <code>GPII_OAUTH2_ACCESS_TOKEN_PATH</code>
             </td>
             <td>
                 The path to the resource for requesting an access token
@@ -89,15 +122,10 @@ Configuration can be provided using either environment variables or a JSON confi
         </tr>
         <tr>
             <td>
-                <p>
-                    Environment Variable:
-                    <code>GPII_OAUTH2_ADD_PREFERENCES_PATH</code>
-                </p>
-
-                <p>
-                    JSON Config Path:
-                    <code>securityServer.paths.preferences</code>
-                </p>
+                <code>"preferencesConfig.securityServer.paths.preferences"</code>
+            </td>
+            <td>
+                <code>GPII_OAUTH2_ADD_PREFERENCES_PATH</code>
             </td>
             <td>
                 The path to the resource for creating a preference set.
@@ -110,15 +138,10 @@ Configuration can be provided using either environment variables or a JSON confi
         </tr>
         <tr>
             <td>
-                <p>
-                    Environment Variable:
-                    <code>GPII_OAUTH2_AUTH_GRANT_TYPE</code>
-                </p>
-
-                <p>
-                    JSON Config Path:
-                    <code>authentication.grant_type</code>
-                </p>
+                <code>"preferencesConfig.authentication.grant_type"</code>
+            </td>
+            <td>
+                <code>GPII_OAUTH2_AUTH_GRANT_TYPE</code>
             </td>
             <td>
                 The grant type supported by the OAuth2 server.
@@ -129,15 +152,10 @@ Configuration can be provided using either environment variables or a JSON confi
         </tr>
         <tr>
             <td>
-                <p>
-                    Environment Variable:
-                    <code>GPII_OAUTH2_AUTH_SCOPE</code>
-                </p>
-
-                <p>
-                    JSON Config Path:
-                    <code>authentication.scope</code>
-                </p>
+                <code>"preferencesConfig.authentication.scope"</code>
+            </td>
+            <td>
+                <code>GPII_OAUTH2_AUTH_SCOPE</code>
             </td>
             <td>
                 The level of permissions that are being requested.
@@ -148,18 +166,14 @@ Configuration can be provided using either environment variables or a JSON confi
         </tr>
         <tr>
             <td>
-                <p>
-                    Environment Variable:
-                    <code>GPII_OAUTH2_AUTH_CLIENT_ID</code>
-                </p>
-
-                <p>
-                    JSON Config Path:
-                    <code>authentication.client_id</code>
-                </p>
+                <code>"preferencesConfig.authentication.client_id"</code>
+            </td>
+            <td>
+                <code>GPII_OAUTH2_AUTH_CLIENT_ID</code>
             </td>
             <td>
                 The client ID registered with the OAuth2 server.
+                Should be kept confidentially.
             </td>
             <td>
                 "client_id_first_discovery"
@@ -167,19 +181,15 @@ Configuration can be provided using either environment variables or a JSON confi
         </tr>
         <tr>
             <td>
-                <p>
-                    Environment Variable:
-                    <code>GPII_OAUTH2_AUTH_CLIENT_SECRET</code>
-                </p>
-
-                <p>
-                    JSON Config Path:
-                    <code>authentication.client_secret</code>
-                </p>
+                <code>"preferencesConfig.authentication.client_secret"</code>
+            </td>
+            <td>
+                <code>GPII_OAUTH2_AUTH_CLIENT_SECRET</code>
             </td>
             <td>
                 The client secret registered with the OAuth2 server.
                 Used to securely identify the client with the OAuth2.
+                Should be kept confidentially.
             </td>
             <td>
                 "client_secret_first_discovery"
@@ -188,50 +198,27 @@ Configuration can be provided using either environment variables or a JSON confi
     </tbody>
 </table>
 
-#### Example: Config File ####
+### oauth2.json ###
 
-```JSON
-{
-    "securityServer": {
-        "port": "8081",
-        "hostname": "http://10.0.2.2",
-        "paths": {
-            "token": "/access_token",
-            "preferences": "/add-preferences?view=%view"
-        }
-    },
-    "authentication": {
-        "grant_type": "client_credentials",
-        "scope": "add_preferences",
-        "client_id": "client_id_first_discovery",
-        "client_secret": "client_secret_first_discovery"
-    }
-}
-```
+Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/environment.json), setting concrete values to configuration of the Oauth2 server that are known to exists for the GPII security layer.
 
-#### GPII Preferences Server Specific Configuration ####
-
-When connecting to the the GPII Preferences server the First Discovery Server must be configured with the following specific values:
+(see: [oauth2.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/oauth2.json))
 
 <table>
     <thead>
         <tr>
-            <th>Configuration</th>
+            <th>Option</th>
+            <th>Description</th>
             <th>Value</th>
         <tr>
     </thead>
     <tbody>
         <tr>
             <td>
-                <p>
-                    Environment Variable:
-                    <code>GPII_OAUTH2_ACCESS_TOKEN_PATH</code>
-                </p>
-
-                <p>
-                    JSON Config Path:
-                    <code>securityServer.paths.token</code>
-                </p>
+                <code>"preferencesConfig.securityServer.paths.token"</code>
+            </td>
+            <td>
+                The path to the resource for requesting an access token
             </td>
             <td>
                 "/access_token"
@@ -239,15 +226,12 @@ When connecting to the the GPII Preferences server the First Discovery Server mu
         </tr>
         <tr>
             <td>
-                <p>
-                    Environment Variable:
-                    <code>GPII_OAUTH2_ADD_PREFERENCES_PATH</code>
-                </p>
-
-                <p>
-                    JSON Config Path:
-                    <code>securityServer.paths.preferences</code>
-                </p>
+                <code>"preferencesConfig.securityServer.paths.preferences"</code>
+            </td>
+            <td>
+                The path to the resource for creating a preference set.
+                A query parameter can be added to provide the view/ontology that the
+                preferences are to be stored in.
             </td>
             <td>
                 "/add-preferences?view=%view"
@@ -255,15 +239,10 @@ When connecting to the the GPII Preferences server the First Discovery Server mu
         </tr>
         <tr>
             <td>
-                <p>
-                    Environment Variable:
-                    <code>GPII_OAUTH2_AUTH_GRANT_TYPE</code>
-                </p>
-
-                <p>
-                    JSON Config Path:
-                    <code>authentication.grant_type</code>
-                </p>
+                <code>"preferencesConfig.authentication.grant_type"</code>
+            </td>
+            <td>
+                The grant type supported by the OAuth2 server.
             </td>
             <td>
                 "client_credentials"
@@ -271,15 +250,10 @@ When connecting to the the GPII Preferences server the First Discovery Server mu
         </tr>
         <tr>
             <td>
-                <p>
-                    Environment Variable:
-                    <code>GPII_OAUTH2_AUTH_SCOPE</code>
-                </p>
-
-                <p>
-                    JSON Config Path:
-                    <code>authentication.scope</code>
-                </p>
+                <code>"preferencesConfig.authentication.scope"</code>
+            </td>
+            <td>
+                The level of permissions that are being requested.
             </td>
             <td>
                 "add_preferences"
@@ -288,7 +262,45 @@ When connecting to the the GPII Preferences server the First Discovery Server mu
     </tbody>
 </table>
 
-For more information about how the Preferences Server's security layer is configured. Please see the [Client Credentials Grant](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) documentation.
+### vagrant.json ###
+
+Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/environment.json) and [oauth2.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/oauth2.json), setting concrete values to configuration of the Oauth2 server that are expected when being run via the Vagrant VM. This is typically only used for development.
+
+(see: [vagrant.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/vagrant.json))
+
+<table>
+    <thead>
+        <tr>
+            <th>Option</th>
+            <th>Description</th>
+            <th>Example</th>
+        <tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <code>"preferencesConfig.securityServer.port"</code>
+            </td>
+            <td>
+                The port number that the GPII OAuth2 server is hosted at.
+            </td>
+            <td>
+                "8081"
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>"preferencesConfig.securityServer.hostname"</code>
+            </td>
+            <td>
+                The hostname that the GPII OAuth2 server is hosted at.
+            </td>
+            <td>
+                "http://10.0.2.2"
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## REST API ##
 
@@ -310,7 +322,7 @@ For more information about how the Preferences Server's security layer is config
                 <code>
                     <pre>
 {
-    "gpii_firstDiscovery_language": "en-US"
+  "gpii_firstDiscovery_language": "en-US"
 }
                     </pre>
                 </code>
