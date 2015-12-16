@@ -35,9 +35,15 @@ kettle.config.loadConfig({
 # configPath and configName
 node node_modules/kettle/init.js <configPath> [<configName>]
 
+# example
+node node_modules/kettle/init.js ./src/config vagrant
+
 # or using an environment variable to specify
 # the configName
 NODE_EVN=<configName> node node_modules/kettle/init.js <configPath>
+
+# example
+NODE_EVN=vagrant node node_modules/kettle/init.js ./src/config
 ```
 
 ## Configuration ##
