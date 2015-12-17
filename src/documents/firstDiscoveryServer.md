@@ -4,47 +4,7 @@ layout: default
 category: Overview
 ---
 
-## Launching ##
-
-The First Discovery Server can be launched as a [Kettle](https://github.com/amb26/kettle/blob/KETTLE-32/README.md) application by making use of [Kettle Configs](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#structure-of-a-kettle-config).
-
-There are two typical ways of launching a Kettle app, programmatically and from command line.
-
-(See: [Starting a Kettle application](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#starting-a-kettle-application))
-
-### Programmatically ###
-
-```javascript
-// require the kettle module
-var kettle = require("kettle");
-
-// load the config
-kettle.config.loadConfig({
-    // path to the config directory
-    configPath:"./src/config",
-
-    // name of the config to load, without the file extension
-    configName: "vagrant"
-});
-```
-
-### Command Line ####
-
-```bash
-# Call Kettle's init.js script with the
-# configPath and configName
-node node_modules/kettle/init.js <configPath> [<configName>]
-
-# example
-node node_modules/kettle/init.js ./src/config vagrant
-
-# or using an environment variable to specify
-# the configName
-NODE_EVN=<configName> node node_modules/kettle/init.js <configPath>
-
-# example
-NODE_EVN=vagrant node node_modules/kettle/init.js ./src/config
-```
+The First Discovery Server acts as a web server for a  [First Discovery Editor](https://github.com/GPII/first-discovery) instance and provides a means for storing preferences to the [GPII](http://gpii.net) Preferences server. By default the storing of preferences is channeled through the GPII's Oauth2 secruity layer, using the [Client Credentials Grant](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) type. 
 
 ## Configuration ##
 
@@ -307,6 +267,44 @@ Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree
         </tr>
     </tbody>
 </table>
+
+## Launching ##
+
+The First Discovery Server can be launched as a [Kettle](https://github.com/amb26/kettle/blob/KETTLE-32/README.md) application by making use of [Kettle Configs](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#structure-of-a-kettle-config).
+
+There are two typical ways of launching a Kettle app, programmatically and from command line.
+
+(See: [Starting a Kettle application](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#starting-a-kettle-application))
+
+### Programmatically ###
+
+```javascript
+// require the kettle module
+var kettle = require("kettle");
+
+// load the config
+kettle.config.loadConfig({
+    // path to the config directory
+    configPath:"./src/config",
+
+    // name of the config to load, without the file extension
+    configName: "vagrant"
+});
+```
+
+### Command Line ####
+
+```bash
+# Call Kettle's init.js script with the
+# configPath and configName
+# node node_modules/kettle/init.js <configPath> [<configName>]
+node node_modules/kettle/init.js ./src/config vagrant
+
+# or using an environment variable to specify
+# the configName
+# NODE_EVN=<configName> node node_modules/kettle/init.js <configPath>
+NODE_EVN=vagrant node node_modules/kettle/init.js ./src/config
+```
 
 ## REST API ##
 
