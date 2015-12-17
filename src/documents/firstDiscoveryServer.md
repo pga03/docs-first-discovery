@@ -6,13 +6,14 @@ category: Overview
 
 The First Discovery Server acts as a web server for a  [First Discovery Editor](https://github.com/GPII/first-discovery) instance and provides a means for storing preferences to the [GPII](http://gpii.net) Preferences server. While the First Discovery Server is built with [gpii-express](https://github.com/gpii/gpii-express) and is not actually a [Kettle](https://github.com/amb26/kettle/blob/KETTLE-32/README.md) application, it does makes use of Kettle features for creating [datasources](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#datasources), [configuration](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#structure-of-a-kettle-config), and for [starting](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#starting-a-kettle-application) the server.
 
+Access to the GPII Preferences Server is mediated by the [GPII Oauth2 Security layer](https://wiki.gpii.net/w/GPII_OAuth_2_Guide). The First Discovery Server, communicates with the Security layer via the [Client Credentials Grant](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) workflow.
+
+
 ## Configuration ##
 
 The First Discovery Server can be configured via [Kettle Configs](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#structure-of-a-kettle-config). A set of these are provided with the server in the [config](https://github.com/GPII/first-discovery-server/tree/master/src/config) directory. An integrator can choose to make use of the provide configs directly or use them as the basis for creating new configs.
 
 The [`gpii.firstDiscovery.server.configurator`](https://github.com/GPII/first-discovery-server/src/js/firstDiscoveryServer.js) grade defines a default schema for which the configuration is validated against. If the validation fails, the application will throw and error.
-
-For more information about how the Preferences Server's security layer is configured. Please see the [Client Credentials Grant](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) documentation.
 
 ### environment.json ###
 
