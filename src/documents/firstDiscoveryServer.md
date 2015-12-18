@@ -231,9 +231,9 @@ Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree
 
 ### vagrant.json ###
 
-Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/environment.json) and [oauth2.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/oauth2.json), setting concrete values to configuration of the OAuth2 server that are expected when being run in a  [Vagrant VM](https://www.vagrantup.com). 
+Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/environment.json) and [oauth2.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/oauth2.json), setting concrete values to configuration of the OAuth2 server that are expected when being run in a  [Vagrant VM](https://www.vagrantup.com). The configuration assumes that an instance of the OAuth2 server is available through the host machine at port 8081.
 
-A Vagrant VM is provided with the First Discovery Server for quickly creating its own [development environment](https://github.com/GPII/first-discovery-server/blob/master/README.md#development). It is assumed that an instance of the OAuth2 server is available through the host machine at port 8081.
+A Vagrant VM is provided with the First Discovery Server for quickly creating its own [development environment](https://github.com/GPII/first-discovery-server/blob/master/README.md#development).
 
 (see: [vagrant.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/vagrant.json))
 
@@ -321,7 +321,7 @@ NODE_EVN=vagrant node node_modules/kettle/init.js ./src/config
     </thead>
     <tbody>
         <tr>
-            <td><code>/user?[view=:view]</code></td>
+            <td><code>/user[?view=:view]</code></td>
             <td><code>POST</code></td>
             <td>
                 Accepts a set of preferences, in a JSON object, to be stored on the preferences server. For example:
@@ -334,7 +334,7 @@ NODE_EVN=vagrant node node_modules/kettle/init.js ./src/config
                     </code>
                 </pre>
 
-                A GPII token will be returned and can be used for retrieving the preferences on a GPII enabled device. For example:
+                On successfully storing the preferences set, a JSON object is returned containing `userToken` and `preferences` properties. The `userToken` is the GPII token, which can be used for retrieving the preferences on a GPII enabled device. The `preferences` are a confirmation of the preferences stored on Preferences server for that GPII token. For example:
 
                 <pre>
                     <code>
@@ -354,7 +354,7 @@ NODE_EVN=vagrant node node_modules/kettle/init.js ./src/config
                     </code>
                 </pre>
 
-                The <code>view</code> query parameter is used to specify which ontology the preferences are stored in. (See: <a href="https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md#post-preferencesviewview">Preferences Server</a>)
+                The optional <code>view</code> query parameter is used to specify which ontology the preferences are stored in. (See: <a href="https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md#post-preferencesviewview">Preferences Server</a>)
             </td>
         </tr>
     </tbody>
