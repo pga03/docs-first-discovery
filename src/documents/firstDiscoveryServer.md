@@ -6,14 +6,14 @@ category: Overview
 
 The First Discovery Server acts as a web server for a  [First Discovery Editor](https://github.com/GPII/first-discovery) instance and provides a means for storing preferences to the [GPII](http://gpii.net) [Preferences Server](https://github.com/GPII/universal). While the First Discovery Server is built with [gpii-express](https://github.com/gpii/gpii-express) and is not actually a [Kettle](https://github.com/amb26/kettle/blob/KETTLE-32/README.md) application, it does makes use of Kettle features for creating [datasources](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#datasources), [configuration](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#structure-of-a-kettle-config), and for [starting](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#starting-a-kettle-application) the server.
 
-Access to the GPII Preferences Server is mediated by the [GPII OAuth2 Security layer](https://wiki.gpii.net/w/GPII_OAuth_2_Guide). The First Discovery Server, communicates with the Security layer via the [Client Credentials Grant](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) workflow.
+Access to the GPII Preferences Server is mediated by the [GPII OAuth2 Security layer](https://wiki.gpii.net/w/GPII_OAuth_2_Guide). The First Discovery Server communicates with the Security layer via the [Client Credentials Grant](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) workflow.
 
 
 ## Configuration ##
 
-The First Discovery Server can be configured via [Kettle Configs](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#structure-of-a-kettle-config). A set of these are provided with the server in the [config](https://github.com/GPII/first-discovery-server/tree/master/src/config) directory. An integrator can choose to make use of the provide configs directly or use them as the basis for creating new configs.
+The First Discovery Server can be configured via [Kettle Configs](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#structure-of-a-kettle-config). A set of these are provided with the server in the [config](https://github.com/GPII/first-discovery-server/tree/master/src/config) directory. An integrator can choose to make use of the provided configs directly or use them as the basis for creating new configs.
 
-The [`gpii.firstDiscovery.server.configurator`](https://github.com/GPII/first-discovery-server/src/js/firstDiscoveryServer.js) grade defines a default schema for which the configuration is validated against. If the validation fails, the application will throw and error.
+The [`gpii.firstDiscovery.server.configurator`](https://github.com/GPII/first-discovery-server/tree/master/src/js/firstDiscoveryServer.js) grade defines a default schema which the configuration is validated against. If the validation fails, the application will throw and error.
 
 ### environment.json ###
 
@@ -299,18 +299,14 @@ NODE_EVN=vagrant node node_modules/kettle/init.js ./src/config
                 Accepts a set of preferences, in a JSON object, to be stored on the preferences server. For example:
 
                 <pre>
-                    <code>
-{
-  "gpii_firstDiscovery_language": "en-US"
-}
-                    </code>
+<code>{"gpii_firstDiscovery_language": "en-US"}</code>
                 </pre>
 
                 On successfully storing the preferences set, a JSON object is returned containing `userToken` and `preferences` properties. The `userToken` is the GPII token, which can be used for retrieving the preferences on a GPII enabled device. The `preferences` are a confirmation of the preferences stored on Preferences server for that GPII token. For example:
 
                 <pre>
-                    <code>
-{
+
+<code>{
   "userToken": "2288e676-d0bb-4d29-8131-7cff268ba012",
   "preferences": {
     "contexts": {
@@ -322,8 +318,7 @@ NODE_EVN=vagrant node node_modules/kettle/init.js ./src/config
       }
     }
   }
-}
-                    </code>
+}</code>
                 </pre>
 
                 The optional <code>view</code> query parameter is used to specify which ontology the preferences are stored in. (See: <a href="https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md#post-preferencesviewview">Preferences Server</a>)
@@ -340,5 +335,5 @@ http://build.fluidproject.org/first-discovery/demos/prefsServerIntegration
 ## Source code
 
 * [Client (First Discovery Tool)](https://github.com/GPII/first-discovery)
-* [Server (First Discovery Server) - under development](https://github.com/GPII/first-discovery-server)
+* [Server (First Discovery Server)](https://github.com/GPII/first-discovery-server)
 * [GPII Preferences Server](https://github.com/GPII/universal)
