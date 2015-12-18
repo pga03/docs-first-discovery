@@ -24,10 +24,9 @@ Accepts environment variables for all of the critical configuration options that
 <table>
     <thead>
         <tr>
-            <th>Option</th>
-            <th>Environment Variable</th>
+            <th>Option Path</th>
             <th>Description</th>
-            <th>Example</th>
+            <th>Environment Variable</th>
         <tr>
     </thead>
     <tbody>
@@ -36,13 +35,10 @@ Accepts environment variables for all of the critical configuration options that
                 <code>"port"</code>
             </td>
             <td>
+                The port number that the First Discovery Server is hosted at. (e.g. "8088")
+            </td>
+            <td>
                 <code>FIRST_DISCOVERY_SERVER_TCP_PORT</code>
-            </td>
-            <td>
-                The port number that the First Discovery Server is hosted at.
-            </td>
-            <td>
-                "8088"
             </td>
         </tr>
         <tr>
@@ -50,13 +46,10 @@ Accepts environment variables for all of the critical configuration options that
                 <code>"preferencesConfig.securityServer.port"</code>
             </td>
             <td>
+                The port number that the GPII OAuth2 server is hosted at. (e.g. "8081")
+            </td>
+            <td>
                 <code>GPII_OAUTH2_TCP_PORT</code>
-            </td>
-            <td>
-                The port number that the GPII OAuth2 server is hosted at.
-            </td>
-            <td>
-                "8081"
             </td>
         </tr>
         <tr>
@@ -64,13 +57,10 @@ Accepts environment variables for all of the critical configuration options that
                 <code>"preferencesConfig.securityServer.hostname"</code>
             </td>
             <td>
+                The hostname that the GPII OAuth2 server is hosted at. (e.g. "http://localhost")
+            </td>
+            <td>
                 <code>GPII_OAUTH2_HOST_NAME</code>
-            </td>
-            <td>
-                The hostname that the GPII OAuth2 server is hosted at.
-            </td>
-            <td>
-                "http://localhost"
             </td>
         </tr>
         <tr>
@@ -78,13 +68,10 @@ Accepts environment variables for all of the critical configuration options that
                 <code>"preferencesConfig.securityServer.paths.token"</code>
             </td>
             <td>
+                The path to the resource for requesting an access token (e.g. "/access_token")
+            </td>
+            <td>
                 <code>GPII_OAUTH2_ACCESS_TOKEN_PATH</code>
-            </td>
-            <td>
-                The path to the resource for requesting an access token
-            </td>
-            <td>
-                "/access_token"
             </td>
         </tr>
         <tr>
@@ -92,15 +79,12 @@ Accepts environment variables for all of the critical configuration options that
                 <code>"preferencesConfig.securityServer.paths.preferences"</code>
             </td>
             <td>
-                <code>GPII_OAUTH2_ADD_PREFERENCES_PATH</code>
-            </td>
-            <td>
                 The path to the resource for creating a preference set.
                 A query parameter can be added to provide the view/ontology that the
-                preferences are to be stored in.
+                preferences are to be stored in. (e.g. "/add-preferences?view=%view")
             </td>
             <td>
-                "/add-preferences?view=%view"
+                <code>GPII_OAUTH2_ADD_PREFERENCES_PATH</code>
             </td>
         </tr>
         <tr>
@@ -108,13 +92,10 @@ Accepts environment variables for all of the critical configuration options that
                 <code>"preferencesConfig.authentication.grant_type"</code>
             </td>
             <td>
+                The grant type supported by the OAuth2 server. (e.g. "client_credentials")
+            </td>
+            <td>
                 <code>GPII_OAUTH2_AUTH_GRANT_TYPE</code>
-            </td>
-            <td>
-                The grant type supported by the OAuth2 server.
-            </td>
-            <td>
-                "client_credentials"
             </td>
         </tr>
         <tr>
@@ -122,13 +103,10 @@ Accepts environment variables for all of the critical configuration options that
                 <code>"preferencesConfig.authentication.scope"</code>
             </td>
             <td>
+                The level of permissions that are being requested. (e.g. "add_preferences")
+            </td>
+            <td>
                 <code>GPII_OAUTH2_AUTH_SCOPE</code>
-            </td>
-            <td>
-                The level of permissions that are being requested.
-            </td>
-            <td>
-                "add_preferences"
             </td>
         </tr>
         <tr>
@@ -136,14 +114,11 @@ Accepts environment variables for all of the critical configuration options that
                 <code>"preferencesConfig.authentication.client_id"</code>
             </td>
             <td>
-                <code>GPII_OAUTH2_AUTH_CLIENT_ID</code>
-            </td>
-            <td>
                 The client ID registered with the OAuth2 server.
-                Should be kept confidentially.
+                Should be kept confidentially. (e.g. "client_id_first_discovery")
             </td>
             <td>
-                "client_id_first_discovery"
+                <code>GPII_OAUTH2_AUTH_CLIENT_ID</code>
             </td>
         </tr>
         <tr>
@@ -151,15 +126,12 @@ Accepts environment variables for all of the critical configuration options that
                 <code>"preferencesConfig.authentication.client_secret"</code>
             </td>
             <td>
-                <code>GPII_OAUTH2_AUTH_CLIENT_SECRET</code>
-            </td>
-            <td>
                 The client secret registered with the OAuth2 server.
                 Used to securely identify the client with the OAuth2.
-                Should be kept confidentially.
+                Should be kept confidentially. (e.g. "client_secret_first_discovery")
             </td>
             <td>
-                "client_secret_first_discovery"
+                <code>GPII_OAUTH2_AUTH_CLIENT_SECRET</code>
             </td>
         </tr>
     </tbody>
@@ -174,7 +146,7 @@ Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree
 <table>
     <thead>
         <tr>
-            <th>Option</th>
+            <th>Option Path</th>
             <th>Description</th>
             <th>Value</th>
         <tr>
@@ -240,7 +212,7 @@ A Vagrant VM is provided with the First Discovery Server for quickly creating it
 <table>
     <thead>
         <tr>
-            <th>Option</th>
+            <th>Option Path</th>
             <th>Description</th>
             <th>Example</th>
         <tr>
