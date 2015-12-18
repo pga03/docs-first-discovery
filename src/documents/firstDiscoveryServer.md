@@ -6,7 +6,7 @@ category: Overview
 
 The First Discovery Server acts as a web server for a  [First Discovery Editor](https://github.com/GPII/first-discovery) instance and provides a means for storing preferences to the [GPII](http://gpii.net) Preferences server. While the First Discovery Server is built with [gpii-express](https://github.com/gpii/gpii-express) and is not actually a [Kettle](https://github.com/amb26/kettle/blob/KETTLE-32/README.md) application, it does makes use of Kettle features for creating [datasources](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#datasources), [configuration](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#structure-of-a-kettle-config), and for [starting](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#starting-a-kettle-application) the server.
 
-Access to the GPII Preferences Server is mediated by the [GPII Oauth2 Security layer](https://wiki.gpii.net/w/GPII_OAuth_2_Guide). The First Discovery Server, communicates with the Security layer via the [Client Credentials Grant](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) workflow.
+Access to the GPII Preferences Server is mediated by the [GPII OAuth2 Security layer](https://wiki.gpii.net/w/GPII_OAuth_2_Guide). The First Discovery Server, communicates with the Security layer via the [Client Credentials Grant](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) workflow.
 
 
 ## Configuration ##
@@ -17,7 +17,7 @@ The [`gpii.firstDiscovery.server.configurator`](https://github.com/GPII/first-di
 
 ### environment.json ###
 
-Accepts environment variables for all of the critical configuration options that are needed for running the First Discovery Server and connecting to the Oauth2 security server.
+Accepts environment variables for all of the critical configuration options that are needed for running the First Discovery Server and connecting to the OAuth2 security server.
 
 (see: [environment.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/environment.json))
 
@@ -167,7 +167,7 @@ Accepts environment variables for all of the critical configuration options that
 
 ### oauth2.json ###
 
-Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/environment.json), setting concrete values to configuration of the Oauth2 server that are known to exists for the GPII security layer.
+Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/environment.json), setting concrete values to configuration of the OAuth2 server that are known to exists for the GPII security layer.
 
 (see: [oauth2.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/oauth2.json))
 
@@ -231,7 +231,9 @@ Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree
 
 ### vagrant.json ###
 
-Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/environment.json) and [oauth2.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/oauth2.json), setting concrete values to configuration of the Oauth2 server that are expected when being run via the Vagrant VM. This is typically only used for development.
+Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/environment.json) and [oauth2.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/oauth2.json), setting concrete values to configuration of the OAuth2 server that are expected when being run in a  [Vagrant VM](https://www.vagrantup.com). 
+
+A Vagrant VM is provided with the First Discovery Server for quickly creating its own [development environment](https://github.com/GPII/first-discovery-server/blob/master/README.md#development). It is assumed that an instance of the OAuth2 server is available through the host machine at port 8081.
 
 (see: [vagrant.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/vagrant.json))
 
