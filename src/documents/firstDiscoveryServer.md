@@ -41,7 +41,7 @@ Accepts environment variables for all of the critical configuration options that
                 </p>
                 <p>
                     Option Path:
-                    <code>"port"</code>
+                    <code>port</code>
                 </p>
             </td>
         </tr>
@@ -57,7 +57,7 @@ Accepts environment variables for all of the critical configuration options that
                 </p>
                 <p>
                     Option Path:
-                    <code>"preferencesConfig.securityServer.port"</code>
+                    <code>preferencesConfig.securityServer.port</code>
                 </p>
             </td>
         </tr>
@@ -73,7 +73,7 @@ Accepts environment variables for all of the critical configuration options that
                 </p>
                 <p>
                     Option Path:
-                    <code>"preferencesConfig.securityServer.hostname"</code>
+                    <code>preferencesConfig.securityServer.hostname</code>
                 </p>
             </td>
         </tr>
@@ -89,7 +89,7 @@ Accepts environment variables for all of the critical configuration options that
                 </p>
                 <p>
                     Option Path:
-                    <code>"preferencesConfig.securityServer.paths.token"</code>
+                    <code>preferencesConfig.securityServer.paths.token</code>
                 </p>
             </td>
         </tr>
@@ -107,7 +107,7 @@ Accepts environment variables for all of the critical configuration options that
                 </p>
                 <p>
                     Option Path:
-                    <code>"preferencesConfig.securityServer.paths.preferences"</code>
+                    <code>preferencesConfig.securityServer.paths.preferences</code>
                 </p>
             </td>
         </tr>
@@ -123,7 +123,7 @@ Accepts environment variables for all of the critical configuration options that
                 </p>
                 <p>
                     Option Path:
-                    <code>"preferencesConfig.authentication.grant_type"</code>
+                    <code>preferencesConfig.authentication.grant_type</code>
                 </p>
             </td>
         </tr>
@@ -139,7 +139,7 @@ Accepts environment variables for all of the critical configuration options that
                 </p>
                 <p>
                     Option Path:
-                    <code>"preferencesConfig.authentication.scope"</code>
+                    <code>preferencesConfig.authentication.scope</code>
                 </p>
             </td>
         </tr>
@@ -156,7 +156,7 @@ Accepts environment variables for all of the critical configuration options that
                 </p>
                 <p>
                     Option Path:
-                    <code>"preferencesConfig.authentication.client_id"</code>
+                    <code>preferencesConfig.authentication.client_id</code>
                 </p>
             </td>
         </tr>
@@ -174,7 +174,7 @@ Accepts environment variables for all of the critical configuration options that
                 </p>
                 <p>
                     Option Path:
-                    <code>"preferencesConfig.authentication.client_secret"</code>
+                    <code>preferencesConfig.authentication.client_secret</code>
                 </p>
             </td>
         </tr>
@@ -198,7 +198,7 @@ Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree
     <tbody>
         <tr>
             <td>
-                <code>"preferencesConfig.securityServer.paths.token"</code>
+                <code>preferencesConfig.securityServer.paths.token</code>
             </td>
             <td>
                 The path to the resource for requesting an access token
@@ -209,7 +209,7 @@ Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree
         </tr>
         <tr>
             <td>
-                <code>"preferencesConfig.securityServer.paths.preferences"</code>
+                <code>preferencesConfig.securityServer.paths.preferences</code>
             </td>
             <td>
                 The path to the resource for creating a preference set.
@@ -222,7 +222,7 @@ Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree
         </tr>
         <tr>
             <td>
-                <code>"preferencesConfig.authentication.grant_type"</code>
+                <code>preferencesConfig.authentication.grant_type</code>
             </td>
             <td>
                 The grant type supported by the OAuth2 server.
@@ -233,7 +233,7 @@ Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree
         </tr>
         <tr>
             <td>
-                <code>"preferencesConfig.authentication.scope"</code>
+                <code>preferencesConfig.authentication.scope</code>
             </td>
             <td>
                 The level of permissions that are being requested.
@@ -264,7 +264,7 @@ A Vagrant VM is provided with the First Discovery Server for quickly creating it
     <tbody>
         <tr>
             <td>
-                <code>"preferencesConfig.securityServer.port"</code>
+                <code>preferencesConfig.securityServer.port</code>
             </td>
             <td>
                 The port number that the GPII OAuth2 server is hosted at.
@@ -275,7 +275,7 @@ A Vagrant VM is provided with the First Discovery Server for quickly creating it
         </tr>
         <tr>
             <td>
-                <code>"preferencesConfig.securityServer.hostname"</code>
+                <code>preferencesConfig.securityServer.hostname</code>
             </td>
             <td>
                 The hostname that the GPII OAuth2 server is hosted at.
