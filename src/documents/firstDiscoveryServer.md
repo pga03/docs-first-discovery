@@ -13,7 +13,7 @@ Access to the GPII Preferences Server is mediated by the [GPII OAuth2 Security l
 
 The First Discovery Server can be configured via [Kettle Configs](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#structure-of-a-kettle-config). A set of these are provided with the server in the [config](https://github.com/GPII/first-discovery-server/tree/master/src/config) directory. An integrator can choose to make use of the provided configs directly or use them as the basis for creating new configs.
 
-The [`gpii.firstDiscovery.server.configurator`](https://github.com/GPII/first-discovery-server/tree/master/src/js/firstDiscoveryServer.js) grade defines a default schema which the configuration is validated against. If the validation fails, the application will throw and error.
+The [`gpii.firstDiscovery.server.configurator`](https://github.com/GPII/first-discovery-server/tree/master/src/js/firstDiscoveryServer.js) grade defines a default schema which the configuration is validated against. If the validation fails, the application will throw an error.
 
 ### environment.json ###
 
@@ -321,8 +321,8 @@ node node_modules/kettle/init.js ./src/config vagrant
 
 # or using an environment variable to specify
 # the configName
-# NODE_EVN=<configName> node node_modules/kettle/init.js <configPath>
-NODE_EVN=vagrant node node_modules/kettle/init.js ./src/config
+# NODE_ENV=<configName> node node_modules/kettle/init.js <configPath>
+NODE_ENV=vagrant node node_modules/kettle/init.js ./src/config
 ```
 
 ## REST API ##
