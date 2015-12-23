@@ -4,7 +4,7 @@ layout: default
 category: Overview
 ---
 
-The First Discovery Server acts as a web server for a  [First Discovery Editor](https://github.com/GPII/first-discovery) instance and provides a means for storing preferences to the [GPII](http://gpii.net) [Preferences Server](https://github.com/GPII/universal). While the First Discovery Server is built with [gpii-express](https://github.com/gpii/gpii-express) and is not actually a [Kettle](https://github.com/amb26/kettle/blob/KETTLE-32/README.md) application, it does makes use of Kettle features for creating [datasources](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#datasources), [configuration](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#structure-of-a-kettle-config), and for [starting](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#starting-a-kettle-application) the server.
+The First Discovery Server acts as a web server for a  [First Discovery Editor](https://github.com/GPII/first-discovery) instance and provides a means for storing preferences to the [GPII](http://gpii.net) [Preferences Server](https://github.com/GPII/universal). The First Discovery Server makes use of the [Kettle configuration system](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#structure-of-a-kettle-config) for [configuration](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#structure-of-a-kettle-config) and [instantiation](https://github.com/amb26/kettle/blob/KETTLE-32/README.md#starting-a-kettle-application), but uses [gpii-express](https://github.com/gpii/gpii-express) rather than [Kettle](https://github.com/amb26/kettle/blob/KETTLE-32/README.md) for expressing an HTTP server.
 
 Access to the GPII Preferences Server is mediated by the [GPII OAuth2 Security layer](https://wiki.gpii.net/w/GPII_OAuth_2_Guide). The First Discovery Server communicates with the Security layer via the [Client Credentials Grant](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) workflow.
 
@@ -17,9 +17,7 @@ The [`gpii.firstDiscovery.server.configurator`](https://github.com/GPII/first-di
 
 ### environment.json ###
 
-Accepts environment variables for all of the critical configuration options that are needed for running the First Discovery Server and connecting to the OAuth2 security server.
-
-(see: [environment.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/environment.json))
+[environment.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/environment.json) accepts environment variables for all of the critical configuration options that are needed for running the First Discovery Server and connecting to the OAuth2 security server.
 
 <table>
     <thead>
@@ -183,9 +181,7 @@ Accepts environment variables for all of the critical configuration options that
 
 ### oauth2.json ###
 
-Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/environment.json), setting concrete values to configuration of the OAuth2 server that are known to exists for the GPII security layer.
-
-(see: [oauth2.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/oauth2.json))
+[oauth2.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/oauth2.json) merges on top of  [environment.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/environment.json) to replace the authentication related environment variables with concrete values for the [Client Credentials Grant](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant) workflow.
 
 <table>
     <thead>
@@ -201,7 +197,9 @@ Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree
                 <code>preferencesConfig.securityServer.paths.token</code>
             </td>
             <td>
-                The path to the resource for requesting an access token
+                The path to the resource for requesting an access token.
+
+                (see: [GPII OAuth 2 Guide: Access Token](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Step_1:_Request_an_access_token))
             </td>
             <td>
                 "/access_token"
@@ -215,6 +213,8 @@ Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree
                 The path to the resource for creating a preference set.
                 A query parameter can be added to provide the view/ontology that the
                 preferences are to be stored in.
+
+                (see: [GPII OAuth 2 Guide: User's Preferences](https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Step_2:_Use_the_access_token_to_add_the_user.27s_preferences))
             </td>
             <td>
                 "/add-preferences?view=%view"
@@ -247,7 +247,7 @@ Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree
 
 ### vagrant.json ###
 
-Builds on [environment.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/environment.json) and [oauth2.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/oauth2.json), setting concrete values to configuration of the OAuth2 server that are expected when being run in a  [Vagrant VM](https://www.vagrantup.com). The configuration assumes that an instance of the OAuth2 server is available through the host machine at port 8081.
+[vagrant.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/vagrant.json) merges on top of   [oauth2.json](https://github.com/GPII/first-discovery-server/tree/master/src/config/oauth2.json), replacing the environment variables for connecting to the OAuth2 server with the expect hostname and port when running inside of a [Vagrant VM]([Vagrant VM](https://www.vagrantup.com). The configuration assumes that an instance of the OAuth2 server is available through the host machine at port 8081.
 
 A Vagrant VM is provided with the First Discovery Server for quickly creating its own [development environment](https://github.com/GPII/first-discovery-server/blob/master/README.md#development).
 
@@ -380,4 +380,4 @@ http://build.fluidproject.org/first-discovery/demos/prefsServerIntegration
 
 * [Client (First Discovery Tool)](https://github.com/GPII/first-discovery)
 * [Server (First Discovery Server)](https://github.com/GPII/first-discovery-server)
-* [GPII Preferences Server](https://github.com/GPII/universal)
+* [GPII Preferences Server](https://github.com/GPII/universal/tree/master/gpii/node_modules/preferencesServer)
