@@ -266,7 +266,7 @@ Your flying car has an "Autopilot" feature, and you want to add a preference for
                                     language: "Language:",
                                     speak: "Text to Speech:",
                                     autopilot: "Autopilot:",
-                                    speechRate: "Speech Rate:,
+                                    speechRate: "Speech Rate:",
                                     contrast: "Contrast:",
                                     textSize: "Text Size:",
                                     letterSpace: "Letter Spacing:",
