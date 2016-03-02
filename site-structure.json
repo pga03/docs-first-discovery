@@ -35,7 +35,8 @@
                     { "pageName": "Less simple: Removing preferences", "href": "/removing.html"},
                     { "pageName": "More complicated: Adding a simple preference ", "href": "/adding.html"},
                     { "pageName": "Enactors", "href": "/enactors.html"},
-                    { "pageName": "Advanced: Configuring the connection to the Preferences Server", "href": "/serverConfig.html"}
+                    { "pageName": "Advanced: Configuring the connection to the Preferences Server", "href": "/serverConfig.html"},
+                    { "pageName": "Advanced: Adding A Custom Preview", "href": "/customPreview.html"}
                 ]
             }
         ]
