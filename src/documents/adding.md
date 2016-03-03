@@ -115,7 +115,7 @@ Your flying car has an "Autopilot" feature, and you want to add a preference for
     <section class="gpiic-fd-prefsEditor-panel-autopilot gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-autopilot gpii-fd-main"></section>
     <section class="gpiic-fd-prefsEditor-panel-speakText gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-speakText gpii-fd-main"></section>   
      
-     //more content not shown
+    //more content not shown
     ```
 
     Make sure that the new `<section>` element places the panel in the order that you want the preferences. You can see the new `<section>` for `"gpiic-fd-prefsEditor-panel-autopilot"` is placed between the `"showSounds"` and `"speakText"` sections. Be sure to use this same position for other added elements for the "Autopilot" preference.
@@ -253,7 +253,7 @@ Your flying car has an "Autopilot" feature, and you want to add a preference for
 
     A. Navigate to the `"fluid.defaults()"` call to `"gpii.firstDiscovery.panel.confirm"`, and find the section for `""modelRelay[]`.
  
-    This panel uses many modelRelays. The modelRelays populate two model values in this panel,`"friendlyNames"` and `"tts"`, which were difined in the previous step.
+    This panel uses many modelRelays. The modelRelays populate two model values in this panel,`"friendlyNames"` and `"tts"`, which were defined in the previous step.
     
     Take, for example, the model relays for the "Speak" preference, another simple preference that follows the "yesNo" template. 
     
