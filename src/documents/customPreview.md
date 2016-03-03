@@ -148,7 +148,7 @@ __STEP 1: Navigate to__ your __firstDiscoveryEditor.js__ file and open it. Make 
 
 __firstDiscoveryEditor.js__
 
-```jquery
+```javascript
 gpii.firstDiscovery.getPreviewUrl = function (that, languageCode) {
     var baseurl = "../../src/html/";
     var previewname = gpii.firstDiscovery.getPreviewName();
@@ -203,7 +203,7 @@ The First Discovery Tool supports multiple languages, so the next step is to ext
 __STEP 1:__ Add the following functions to script tag that the $(document).foundation(); call is made.
 
 __examplePreview.html__
-```jquery
+```javascript
 <script>
     $(document).ready(function () {
         // populate the preview's text.
@@ -263,14 +263,14 @@ __examplePreview.html__
 These functions are the helper functions that we will use to read the text from the JSON file that we will create and use to insert the text into the html file. The __fetch_and_insert_text()__ function is the most important to understand to make use of the language preference of the First Discovery Tool. This function makes a call to the __getLanguageCode()__ to get the __language code__ that has been set on the document. This language code is used to select the correct language message file by concatenating the language code into the name of the JSON file.
 
 __examplePreview.html__ - reference
-```jquery
+```javascript
     function fetch_and_insert_text() {
         var langaugeCode = getLanguageCode();
         var url = '../messages/examplePreview_' + langaugeCode + ".json";
 ```
 After the url is created an ajax call is made to get the data from the file and pass it to the insertText(data) function. 
 
-```jquery
+```javascript
         $.ajax({
             type: 'GET',
             url: url,
@@ -390,13 +390,13 @@ By setting up an English language message file containing all of the text for ou
 
 Once we have the data from the ajax get statement, we can access it in our insertText(data) function in the following manner.  
 
-```jquery
+```javascript
 $("#heading0").text(example_preview_text.headings[0].text);
 ```
 
-__#heading0__ references an id that we will assign to an html element. __.text()__ will set the text of that element to string that is inside the function. __example_preview_text__ is what we call the json data in the insertText(example_preview_text) function. Once we have that json data object we can access it by using the __data.key[].key__ format. The one above would be __example_preview_text.headings[0].text__  which would return __“Standard”__.
+__#heading0__ references an id that we will assign to an html element. __.text()__ will set the text of that element to string that is inside the function. __example_preview_text__ is what we call the json data in the insertText(example_preview_text) function. Once we have that json data object we can access it by using the __data.key[].key__ format. The one above would be __example_preview_text.headings[0].text__  which would return __"Standard"__.
 
-__STEP 3: Update customPreview.html__ with id’s to match what the example above shows and delete the text. You can use the following code.
+__STEP 3: Update customPreview.html__ with id's to match what the example above shows and delete the text. You can use the following code.
 
 __examplePreview.html__
 ```html
@@ -441,7 +441,7 @@ __examplePreview.html__
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
 ```
 
-__STEP 4: Populate the insertText(example_preview_text)__ with calls to get the text from the JSON data object based on the id’s we just added to the html elements.
+__STEP 4: Populate the insertText(example_preview_text)__ with calls to get the text from the JSON data object based on the id's we just added to the html elements.
 
 __examplePreview.html__
 ```javascript
@@ -484,13 +484,13 @@ __examplePreview.html__
     }
 ```
 
-Reload your Chrome browser to see the results of all of the sweeping changes we just made. Don’t worry, it will all make sense in the next section when we start translating the text into different languages.
+Reload your Chrome browser to see the results of all of the sweeping changes we just made. Don't worry, it will all make sense in the next section when we start translating the text into different languages.
 
 ![After all of that work, the preview content seems to be the same.](images/customPreview5.png)
 
 ## Translating the Web Page Content
 
-One of the key features of the First Discovery Tool is its ability to help individuals of all needs discover the preference settings that work best for him/her. Without the ability to read and understand the First Discovery Tool, it becomes useless to its users. This is why the first preference that you set is the language preference. You may have noticed that our changes didn’t really seem to do anything. Think again! 
+One of the key features of the First Discovery Tool is its ability to help individuals of all needs discover the preference settings that work best for him/her. Without the ability to read and understand the First Discovery Tool, it becomes useless to its users. This is why the first preference that you set is the language preference. You may have noticed that our changes didn't really seem to do anything. Think again! 
 
 __STEP 1: Change your preferred language from English to French.__  You will see something very surprising (see below).
 
@@ -609,7 +609,7 @@ If you save and switch the language preferences to Spanish, you should see that 
 
 ![Spanish Language text for the example Preview is now displaying.](images/customPreview7.png)
 
-Now let’s do the same thing for the French language preference.
+Now let's do the same thing for the French language preference.
 
 __STEP 3: Create a new file__ in __src/messages__ called __examplePreview_fr-FR.json__ and __copy the following__ code into it. (This is a __translated version__ of the English one).
 
@@ -725,11 +725,11 @@ If you save and switch the language preferences to French, you should see that w
 
 ## Adding Self Voicing Functionality
 
-Self voicing is another key aspect of the First Discovery Tool’s functionality. As far as the preview is concerned, just about any or all parts of it can be voiced through the use of a combination of jquery focus/mouse events and the use of tab index on the desired elements. If you were curious to what those “tts”: “value” lines in the language message files were for, they stand for “text to speech” and basically allow us to define whatever we want to be spoken similarly to how the text field was what we wanted to display.
+Self voicing is another key aspect of the First Discovery Tool's functionality. As far as the preview is concerned, just about any or all parts of it can be voiced through the use of a combination of jquery focus/mouse events and the use of tab index on the desired elements. If you were curious to what those "tts": "value" lines in the language message files were for, they stand for "text to speech" and basically allow us to define whatever we want to be spoken similarly to how the text field was what we wanted to display.
 
-__NOTE:__ You do not need to voice everything individually, if you want to have all of the information spoken about the deal package when the user tabs to the title of the package, you can just include everything that you want it to say in that elements “tts” field in the message file. Don’t worry we will go through an example of each below.  First, lets do some prep work and set up some tab stops on the preview.
+__NOTE:__ You do not need to voice everything individually, if you want to have all of the information spoken about the deal package when the user tabs to the title of the package, you can just include everything that you want it to say in that elements "tts" field in the message file. Don't worry we will go through an example of each below.  First, lets do some prep work and set up some tab stops on the preview.
 
-__STEP 1: Add tabindex=”0”__ to the __heading elements__ in the body of __examplePreview.html.__ You can copy the code below. 
+__STEP 1: Add tabindex="0"__ to the __heading elements__ in the body of __examplePreview.html.__ You can copy the code below. 
 
 __examplePreview.html__
 
@@ -776,15 +776,15 @@ __examplePreview.html__
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
 ```
 
-This allows for users who make use of keyboard navigation to stop at these three specific elements as they go through the preview. These are the headings and will serve as our outlet to speaking the rest of the information that doesn’t necessarily need to be stopped at. It is important to note that any html element that is made up of an attribute tag will also have a tab stop by design. This allows the keyboard navigators to stop at buttons and links easily.  Next, we’ll need to include our __setupTts(text)__ function and include it in our __ajax__ call in the __fetch_and_insert_text()__ function.
+This allows for users who make use of keyboard navigation to stop at these three specific elements as they go through the preview. These are the headings and will serve as our outlet to speaking the rest of the information that doesn't necessarily need to be stopped at. It is important to note that any html element that is made up of an attribute tag will also have a tab stop by design. This allows the keyboard navigators to stop at buttons and links easily.  Next, we'll need to include our __setupTts(text)__ function and include it in our __ajax__ call in the __fetch_and_insert_text()__ function.
 
-__NOTE:__ if you need to remove a tab stop from an element, use __tabindex=”-1”__
+__NOTE:__ if you need to remove a tab stop from an element, use __tabindex="-1"__
 
 __STEP 2:  Add the setupTts(text)__ function to __examplePreview.html__ below the __insertText(electron_preview_text)__ function.
 
 __examplePreview.html__
 
-```jquery
+```javascript
     // Attach events to page elements so they can self voice when navigated to
     function setUpTts(text) {
         // The parent window contains a self voicing function from the First Discovery Tool that
@@ -794,13 +794,13 @@ __examplePreview.html__
     }
 ```
 
-Basically, the First Discovery Tool has self voicing capabilities, and the preview doesn’t. This means we need to make a call to the window parent to get the queueSpeech function for our uses here in the preview. We save it to a variable to save us some time when we start adding the speech cases.  Next, we need to add this functions call to the ajax success area in the __fetch_and_insert_text() function.__
+Basically, the First Discovery Tool has self voicing capabilities, and the preview doesn't. This means we need to make a call to the window parent to get the queueSpeech function for our uses here in the preview. We save it to a variable to save us some time when we start adding the speech cases.  Next, we need to add this functions call to the ajax success area in the __fetch_and_insert_text() function.__
 
 __STEP 3:  Add a call to the setupTts(text) function to the fetch_and_insert_text() function under the ajax call for success. This is right after the call to insertText(data);__
 
 __examplePreview.html__
 
-```jquery
+```javascript
     // the returned json data to the function that will place strings in the UI
     function fetch_and_insert_text() {
         var langaugeCode = getLanguageCode();
@@ -883,7 +883,7 @@ __examplePreview_fr-FR.json__
 ```
 __STEP 7:  Populate the setuptts(text) function using the speechQueueFuction that we setup earlier to set up jquery focus functions for the heading and the buttons on our examplePreview.html__
 
-```jquery
+```javascript
     // Attach events to page elements so they can self voice when navigated to
     function setUpTts(text) {
         // The parent window contains a self voicing function from the First Discovery Tool that
@@ -926,7 +926,7 @@ __STEP 8:  Add a css class called highlighted to the style tag at top of the exa
 
 __examplePreview.html__
 
-```jquery
+```javascript
     <!-- Internal Style Sheet -->
     <style type="text/css">
         .highlighted {
