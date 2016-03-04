@@ -39,7 +39,7 @@
                     { "pageName": "Advanced: Configuring the connection to the Preferences Server", "href": "/serverConfig.html"},
                     { "pageName": "Advanced: Deploying First Discovery to Bluemix", "href": "/bluemix.html"},
                     { "pageName": "Advanced: Adding A Custom Preview", "href": "/customPreview.html"},
-                    { "pageName": "Installing a Frist Discovery Terminal", "href": "/terminalInstall.html"}
+                    { "pageName": "Installing a First Discovery Terminal", "href": "/terminalInstall.html"}
                 ]
             }
         ]
