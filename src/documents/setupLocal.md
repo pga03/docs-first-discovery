@@ -19,8 +19,6 @@ __Setup 2:__ Install Github - https://desktop.github.com/ - This should include 
 ### 2. Clone first-discovery-server @ https://github.com/GPII/first-discovery-server
   * RUN: __git clone https://github.com/GPII/first-discovery-server.git__
 
-![Command Prompt image showing two folders in the working directory](images/localEnvironment1.png)
-
 ### 3. Install first-discovery-server
   * RUN: __cd first-discovery-server__
   * RUN: __npm install__ - Ignore the errors
@@ -62,27 +60,15 @@ __environment.json__
 ### 5. Locate and delete gpii-first-discovery
   * RUN: __RD /S gpii-first-discovery__
   * Yes, Delete the folder
-  
-![Command Prompt image showing deletion process for the gpii-first-discovery folder](images/localEnvironment2.png)
 
-### 6. Get the path to your first-discovery clone
-  * Open Windows Explorer
-  * Navigate into your first-discovery clone
-  * Click the folder icon in the top left to reveal the path
-  * Right click and copy the path.
-  
-![Windows Explorer image showing how to get the path to the first discovery clone](images/localEnvironment3.png)  
-  
-### 7. Create a Symlink in the node_modules folder of the first-discovery-server named gpii-first-discovery linking to the first-discovery clone.
-  * Right-Click Command Prompt and select "Run as Adminstrator"
+### 6. Get the relative path to your first-discovery clone
+
+### 7. Create a Symbolic link at /first-discovery-server/node_modules/gpii-first-discovery that points to your first discovery tool repository.
   * Navigate back to ../first-discovery-server/node_modules 
-  * RUN: __mklink /D gpii-first-discovery "C:\Users\IBM_ADMIN\Desktop\FDT Setup Example\first-discovery"__
+  * RUN: __mklink /D gpii-first-discovery "relative path to first-discovery clone with quotations"__
   * RUN: __dir__ - make sure the folder* is there.
+  * NOTE: You may need administrator privileges to create a symbolic link.
   
-![Command Prompt image showing that the symlink has been created](images/localEnvironment4.png)  
-
-![Command Prompt image showing Symlink in the directory](images/localEnvironment5.png)  
-    
 ### 8. Navigate back to the ../first-discovery-server
   * RUN: __cd ..__
 

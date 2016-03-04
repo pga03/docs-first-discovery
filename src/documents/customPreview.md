@@ -182,8 +182,6 @@ gpii.firstDiscovery.getPreviewUrl = function (that, languageCode) {
 __STEP 2: Start up your first-discovery-server__ by navigating to your local repository and __run :
 node index.js__
 
-![Command Prompt demonstrating successful startup of local first discovery server](images/customPreview3.png)
-
 __STEP 3:__ Navigate to your __Chrome browser__ and navigate to http://localhost:8088/demos/prefsServerIntegration/index.html?preview=example
 
 ![The first Discovery Tool with the new custom preview html that we created earlier](images/customPreview4.png)
@@ -198,7 +196,7 @@ EXAMPLE: http://localhost:8088/demos/prefsServerIntegration/index.html?preview=e
 
 ## Extracting and Storing the Page Content
 
-The First Discovery Tool supports multiple languages, so the next step is to extract all of the words that could be translated into a separate message file (JSON file) that is easily translated and maintained, as opposed to several whole html pages in different languages.
+The First Discovery Tool supports multiple languages, so the next step is to extract all of the words that could be translated into a separate message file (JSON file) that is easily translated and maintained, as opposed to several whole html pages in different languages. The language is provided to the preview via the lang querystring variable is of the form en-US/es-MX.
 
 __STEP 1:__ Add the following functions to script tag that the $(document).foundation(); call is made.
 
