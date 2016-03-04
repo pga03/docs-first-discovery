@@ -60,8 +60,8 @@
                 "sectionName":"Panels presented to user",
                 "pages":
                 [
-                    { "pageName": "Welcome", "href": "/welcome.html"},
                     { "pageName": "Language", "href": "/lang.html"},
+                    { "pageName": "Welcome", "href": "/welcome.html"},
                     { "pageName": "Speak Text", "href": "/speakText.html"},
                     { "pageName": "Speech Rate", "href": "/speechRate.html"},
                     { "pageName": "Contrast", "href": "/contrast.html"},
