@@ -23,7 +23,11 @@ customize or extend the First Discovery Tool.
 
 ## Demos
 
-Basic: http://build.fluidproject.org/first-discovery/demos/
+### First Discovery Tool:
+
+Electrons Educational Preview: http://first-discovery.mybluemix.net/demos/prefsServerIntegration/?preview=electron
+    
+Search Engine Preview: http://first-discovery.mybluemix.net/demos/prefsServerIntegration/?preview=search
 
 Learning Assessment Context: http://build.fluidproject.org/first-discovery/demos/assessment
 

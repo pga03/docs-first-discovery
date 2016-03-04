@@ -24,7 +24,7 @@ What it does:
 ## Demos
 
 This demo implements the integration with the [GPII Preferences Server](https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md) to save preferences.
-http://build.fluidproject.org/first-discovery/demos/prefsServerIntegration
+http://first-discovery.mybluemix.net/demos/prefsServerIntegration/
 
 ## Source code
 

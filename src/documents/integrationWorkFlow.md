@@ -18,6 +18,8 @@ The process of saving preferences to the [GPII Preferences Server](https://githu
         gpii_firstDiscovery_speak: false
         gpii_firstDiscovery_speechRate: 1
         gpii_firstDiscovery_stickyKeys: false
+        gpii_firstDiscovery_lineSpace: 1.2,
+        gpii_firstDiscovery_letterSpace: 0.5,
     }
     ```
 

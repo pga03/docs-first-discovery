@@ -39,7 +39,7 @@
                     { "pageName": "Advanced: Configuring the connection to the Preferences Server", "href": "/serverConfig.html"},
                     { "pageName": "Advanced: Deploying First Discovery to Bluemix", "href": "/bluemix.html"},
                     { "pageName": "Advanced: Adding A Custom Preview", "href": "/customPreview.html"},
-                    { "pageName": "Installing a Frist Discovery Terminal", "href": "/terminalInstall.html"}
+                    { "pageName": "Installing a First Discovery Terminal", "href": "/terminalInstall.html"}
                 ]
             }
         ]
@@ -60,8 +60,8 @@
                 "sectionName":"Panels presented to user",
                 "pages":
                 [
-                    { "pageName": "Welcome", "href": "/welcome.html"},
                     { "pageName": "Language", "href": "/lang.html"},
+                    { "pageName": "Welcome", "href": "/welcome.html"},
                     { "pageName": "Speak Text", "href": "/speakText.html"},
                     { "pageName": "Speech Rate", "href": "/speechRate.html"},
                     { "pageName": "Contrast", "href": "/contrast.html"},
