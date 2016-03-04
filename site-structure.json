@@ -36,7 +36,8 @@
                     { "pageName": "More complicated: Adding a simple preference ", "href": "/adding.html"},
                     { "pageName": "Enactors", "href": "/enactors.html"},
                     { "pageName": "Advanced: Configuring the connection to the Preferences Server", "href": "/serverConfig.html"},
-                    { "pageName": "Installing a Frist Discovery Terminal", "href": "/terminalInstall.html"}
+                    { "pageName": "Installing a Frist Discovery Terminal", "href": "/terminalInstall.html"},
+                    { "pageName": "Advanced: Deploying First Discovery to Bluemix", "href": "/bluemix.html"}
                 ]
             }
         ]
