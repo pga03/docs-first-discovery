@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Less simple: Removing preferences | First Discovery Tool Documentation</title>
+        <link rel="icon" type="image/png" href="images/favico.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/highlightjs-custom.css">
+        <link rel="stylesheet" href="lib/infusion/src/lib/jquery/ui/css/default-theme/jquery.ui.theme.css">
+
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/Enactors.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+        <link rel="stylesheet" href="css/docs-first-discovery.css">
+
+        <script type="text/javascript" src="lib/infusion/infusion-uio.js"></script>
+        <script type="text/javascript" src="js/DocsCore.js"></script>
+        <script type="text/javascript" src="lib/jqueryui/jquery-ui.min.js"></script>
+    </head>
+    <body class="docs-template docs-core-sidebar-expanded">
+
+        <div class="container docs-template-container">
+
+            <!-- Skip Link -->
+            <nav id="skip" class="fl-inverted-color">
+                <a href="#topics" class="docs-template-skip-topics">Skip to Topics</a>
+                <a href="#content" class="docs-template-skip-content">Skip to Content</a>
+            </nav>
+            <!-- END skip link -->
+
+
+            <header class="ignore-for-TOC row fl-inverted-color">
+                <!-- BEGIN markup for Preference Editor -->
+                <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+                    <!-- This is the div that will contain the Preference Editor component -->
+                    <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+                    <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->
+                    <div class="fl-panelBar">
+                        <span class="fl-prefsEditor-buttons">
+                            <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+                            <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide">+ show display preferences</button>
+                        </span>
+                    </div>
+                </div>
+                <!-- END markup for Preference Editor -->
+
+                <div class="small-12 column docs-template-header">
+                    <a class="docs-template-logo" href="index.html" title="Home: First Discovery Tool Documentation">
+                        <span class="show-for-sr">
+                            <h1>Documentation for the First Discovery Tool</h1>
+                        </span>
+                        <span aria-hidden="true">
+                            <h1>First Discovery Tool</h1>
+                            <span class="docs-template-tagline">Documentation</span>
+                        </span>
+                    </a>
+
+                    
+                    <nav class="right show-for-small-only docs-template-nav-mobile">
+                        <ul id="menu">
+                            <li class="docs-template-dropDown-header"><span class="docs-template-nav-mobile-icon"></span>
+                                <ul class="docs-template-dropDown">
+                                    
+                                    
+                                        
+                                            <li><a href="index.html" title="Overview">Overview</a></li>
+                                        
+                                    
+                                        
+                                            <li class="docs-template-category-active"><span aria-label="Currently on Category: Tutorials">Tutorials</span></li>
+                                        
+                                    
+                                        
+                                            <li><a href="index-api.html" title="API">API</a></li>
+                                        
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="docs-template-header">
+                    <nav class="small-12 column show-for-medium-up">
+                        <ul class="inline-list right">
+                        
+                        
+                            
+                                <li><a href="index.html" title="Overview">Overview</a></li>
+                            
+                        
+                            
+                                <li class="docs-template-category-active"><span aria-label="Currently on Category: Tutorials">Tutorials</span></li>
+                            
+                        
+                            
+                                <li><a href="index-api.html" title="API">API</a></li>
+                            
+                        
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="docs-corec-sidebar-bar ignore-for-TOC docs-template-topics-container small-8 medium-3 column">
+                <nav id="topics" class="docs-template-topics" tabindex="-1">
+                    
+                        
+                        
+                    
+                        
+                        
+                            <h2 class="docs-template-category">Tutorials</h2>
+                            
+                                <h3 class="docs-template-sectionName">Customizing the First Discovery Tool</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="reordering.html">Simplest: Reordering preferences</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <span aria-label="Currently on: Less simple: Removing preferences" class="docs-template-topics-active">Less simple: Removing preferences</span>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="adding.html">More complicated: Adding a simple preference </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="enactors.html">Enactors</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="serverConfig.html">Advanced: Configuring the connection to the Preferences Server</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="terminalInstall.html">Installing a Frist Discovery Terminal</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="bluemix.html">Advanced: Deploying First Discovery to Bluemix</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                        
+                    
+                        
+                        
+                    
+                </nav>
+            </div>
+
+            <div class="docs-template-articleBody small-12 medium-8 column">
+
+                <div class="small-4 medium-1 column docs-template-topics-hideShow fl-inverted-color">
+                    <a href="#" class="docs-corec-sidebar-toggle">Topics</a>
+                </div>
+
+                <article id="content">
+                    <h1>Less simple: Removing preferences</h1>
+
+                    <div class="flc-toc-tocContainer docs-template-uio-toc"> </div>
+
+
+                    <div class="docs-template-articleContent">
+                        <p>Your flying car doesn’t support some of the preferences in the First Discovery Tool – in particular, &quot;Captions&quot; and &quot;On-Screen Keyboard&quot; preferences. You want to remove those preferences entirely.</p>
+<h2 id="quick-version">Quick version</h2>
+<ol>
+<li>Edit <code>firstDiscoveryPrefsServerIntegration.html</code> to remove the placeholders for the panels.</li>
+<li>Edit <code>schemas.js</code> to remove code for the panels from the auxiliary schema.</li>
+<li>Edit <code>src/schemas/schemas.js</code> to remove code for the preferences from the primary schema.</li>
+<li>Edit <code>src/html/confirmTemplate.html</code> to remove the preferences in the preferences table on the confirm panel. </li>
+<li>Edit <code>src/js/panels.js</code> (and optionally) <code>src/messages/confirm_en-US.json</code> to remove remaining code for the removed preferences. </li>
+</ol>
+<h2 id="detailed-instructions">Detailed Instructions</h2>
+<ol>
+<li><p>Edit <code>src/html/firstDiscoveryPrefsServerIntegration.html</code> to remove the placeholders for the panels.</p>
+<p> A. In the <code>firstDiscoveryPrefsServerIntegration.html</code> file, find the <code>&lt;section&gt;</code> elements for the panels we want to remove. Look for the class names <code>&quot;gpiic-fd-prefsEditor-panel-captions&quot;</code> and <code>&quot;gpiic-fd-prefsEditor-panel-onScreenKeyboard&quot;</code>.</p>
+<pre class="highlight"><code class="hljs xml"> <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-lang gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-lang gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-welcome gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-welcome gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-showSounds gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-showSounds gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-speakText gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-speakText gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-speechRate gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-speechRate gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-contrast gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-contrast gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-size gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-size gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-onScreenKeyboard gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-onScreenKeyboard gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-captions gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-captions gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-keyboard gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-keyboard gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-congratulations gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-congratulations gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<p> B. Remove each of the <code>&lt;section&gt;</code> elements completely for those classes mentioned above.</p>
+<p> Now that the placeholders for these panels are removed, these preferences will no longer appear to the user while going through the tool.</p>
+</li>
+<li><p>Edit <code>src/schemas/schemas.js</code> to remove code for the panels from the auxiliary schema.</p>
+<p> The <code>src/js/schemas.js</code> contains the primary schema (which defines the preferences) and the auxiliary schema (which defines the editor itself, i.e. the panels used to adjust the preferences, where to find HTML templates, etc).</p>
+<p> A. In the <code>schemas.js</code> file, find the auxiliary schema, which starts with <code>fluid.defaults(&quot;gpii.firstDiscovery.auxSchema&quot;,</code>.</p>
+<pre class="highlight"><code class="hljs javascript"> fluid.defaults(<span class="hljs-string">"gpii.firstDiscovery.auxSchema"</span>, {
+     gradeNames: [<span class="hljs-string">"fluid.prefs.auxSchema"</span>],
+     auxiliarySchema: {
+         <span class="hljs-string">"loaderGrades"</span>: [<span class="hljs-string">"gpii.firstDiscovery.firstDiscoveryEditor"</span>],
+         <span class="hljs-comment">// more not shown here</span>
+</code></pre>
+<p> B. Inside the section named <code>&quot;auxiliarySchema&quot;</code>, find the properties that are named to match the preferences we want to remove. Look for <code>&quot;captions&quot;</code> and <code>&quot;onscreenKeyboard&quot;</code>.</p>
+<pre class="highlight"><code class="hljs javascript"> <span class="hljs-comment">//more content not shown here</span>
+ <span class="hljs-string">"onScreenKeyboard"</span>: {
+     <span class="hljs-string">"type"</span>: <span class="hljs-string">"gpii.firstDiscovery.onScreenKeyboard"</span>,
+     <span class="hljs-string">"panel"</span>: {
+         <span class="hljs-string">"type"</span>: <span class="hljs-string">"gpii.firstDiscovery.panel.onScreenKeyboard"</span>,
+         <span class="hljs-string">"container"</span>: <span class="hljs-string">".gpiic-fd-prefsEditor-panel-onScreenKeyboard"</span>,
+         <span class="hljs-string">"template"</span>: <span class="hljs-string">"%templatePrefix/yesNo.html"</span>,
+         <span class="hljs-string">"message"</span>: <span class="hljs-string">"%messagePrefix/onScreenKeyboard.json"</span>
+     }
+ },
+ <span class="hljs-string">"captions"</span>: {
+     <span class="hljs-string">"type"</span>: <span class="hljs-string">"gpii.firstDiscovery.captions"</span>,
+     <span class="hljs-string">"panel"</span>: {
+         <span class="hljs-string">"type"</span>: <span class="hljs-string">"gpii.firstDiscovery.panel.captions"</span>,
+         <span class="hljs-string">"container"</span>: <span class="hljs-string">".gpiic-fd-prefsEditor-panel-captions"</span>,
+         <span class="hljs-string">"template"</span>: <span class="hljs-string">"%templatePrefix/yesNo.html"</span>,
+         <span class="hljs-string">"message"</span>: <span class="hljs-string">"%messagePrefix/captions.json"</span>
+     }
+ },
+ <span class="hljs-comment">//more content not shown here</span>
+ },
+</code></pre>
+<p> D. Remove the properties for the preferences you wish to remove, including the keys.</p>
+</li>
+<li><p>Edit <code>src/schemas/schemas.js</code> to remove code for the preferences from the primary schema.</p>
+<p> A. In the <code>schemas.js</code> file, find the primary schema. It is a list of <code>fluid.defaults()</code> calls for each of the preferences, starting with <code>&quot;gpii.firstDiscovery.schemas.language&quot;</code>.</p>
+<p> B. Find the <code>fluid.defaults()</code> calls for the preferences we want to remove. Look for <code>&quot;gpii.firstDiscovery.schemas.captions&quot;</code> and <code>&quot;gpii.firstDiscovery.schemas.onscreenKeyboard&quot;</code>.</p>
+<pre class="highlight"><code class="hljs javascript"> <span class="hljs-comment">//more content not shown here</span>
+ fluid.defaults(<span class="hljs-string">"gpii.firstDiscovery.schemas.onScreenKeyboard"</span>, {
+     gradeNames: [<span class="hljs-string">"fluid.prefs.schemas"</span>],
+     schema: {
+         <span class="hljs-string">"gpii.firstDiscovery.onScreenKeyboard"</span>: {
+             <span class="hljs-string">"type"</span>: <span class="hljs-string">"boolean"</span>,
+             <span class="hljs-string">"default"</span>: <span class="hljs-literal">false</span>
+         }
+     }
+ });
+
+ fluid.defaults(<span class="hljs-string">"gpii.firstDiscovery.schemas.captions"</span>, {
+     gradeNames: [<span class="hljs-string">"fluid.prefs.schemas"</span>],
+     schema: {
+         <span class="hljs-string">"gpii.firstDiscovery.captions"</span>: {
+             <span class="hljs-string">"type"</span>: <span class="hljs-string">"boolean"</span>,
+             <span class="hljs-string">"default"</span>: <span class="hljs-literal">true</span>
+         }
+     }
+ });
+ <span class="hljs-comment">//more content not shown here</span>
+</code></pre>
+<p> C. Remove the <code>fluid.defaults()</code> calls for the preferences you want to remove. </p>
+<p> Now that these preferences are removed rom the primary schema, not only are they not presented to the user, but they are also not saved with the users other preferences with a default value. Since they are removed from the primary schema, these preferences do not exist in the tool at all.</p>
+<p> Now that these preferences do not exist, you&#39;ll want to have them removed from the preferences table on the confirm panel.</p>
+</li>
+<li><p>Edit <code>src/html/confirmTemplate.html</code> to remove the preferences in the preferences table on the confirm panel. </p>
+<p> A. In <code>confirmTemplate.html</code>, find the table declaration with the class <code>&quot;gpii-fd-confirm-table&quot;</code>, and search for the <code>&lt;tr&gt;</code> declarations for the preferences we want to remove.</p>
+<pre class="highlight"><code class="hljs xml"> <span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table"</span>&gt;</span>
+ //more content not shown here
+ <span class="hljs-tag">&lt;<span class="hljs-title">tr</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"captions"</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table-name"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-label "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table-value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-value "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-unit "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">tr</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"onScreenKeyboard"</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table-name"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-label "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table-value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-value "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-unit "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+ //more content not shown here
+</code></pre>
+<p> B. Remove the <code>&lt;tr&gt;</code> declarations for the preferences you want to remove. </p>
+<p> Now that the preferences are removed from the preferences table, you&#39;ll want to remove the voicing for those preferences as well.</p>
+<p> C. Find the <code>&lt;p&gt;</code> declarations with the &quot;tts&quot; class declarations for the preferences we want to remove. (<code>captions-tts</code> and <code>onScreenKeyboard-tts</code>)</p>
+<pre class="highlight"><code class="hljs xml"> <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-hidden-accessible gpiic-fd-panel-content-tts captions-tts"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-hidden-accessible gpiic-fd-panel-content-tts onScreenKeyboard-tts"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<p> D. Remove those <code>&lt;p&gt;</code> declarations. </p>
+<p> Now the preferences have been completely removed from the tool and will no longer appear in the preferences table on the confirm panel, or be voiced on the confirm panel.</p>
+<p> We are still not finished though. There is still some remaining code for the preferences that hasn&#39;t been removed that, because the preferences no longer exist, can cause some runtime errors. The final step is to do a final sweep of any leftoever code from the preferences we have removed.</p>
+</li>
+<li><p>Edit <code>src/js/panels.js</code> (and optionally) <code>src/messages/confirm_en-US.json</code> to remove remaining code for the removed preferences. </p>
+<p> A. In  <code>panels.js</code>, find the <code>fluid.defaults()</code> calls for the preferences we want to remove. The calls are made to <code>&quot;gpii.firstDiscovery.panel.captions&quot;</code> and <code>&quot;gpii.firstDiscovery.panel.onScreenKeyboard&quot;</code>. Remove these sections of code.</p>
+<pre class="highlight"><code class="hljs javascript"> <span class="hljs-comment">//more content not shown here</span>
+ fluid.defaults(<span class="hljs-string">"gpii.firstDiscovery.panel.onScreenKeyboard"</span>, {
+     gradeNames: [<span class="hljs-string">"gpii.firstDiscovery.panel.yesNo"</span>],
+     preferenceMap: {
+         <span class="hljs-string">"gpii.firstDiscovery.onScreenKeyboard"</span>: {
+             <span class="hljs-string">"model.value"</span>: <span class="hljs-string">"default"</span>
+         }
+     }
+ });
+
+ fluid.defaults(<span class="hljs-string">"gpii.firstDiscovery.panel.captions"</span>, {
+     gradeNames: [<span class="hljs-string">"gpii.firstDiscovery.panel.yesNo"</span>],
+     preferenceMap: {
+         <span class="hljs-string">"gpii.firstDiscovery.captions"</span>: {
+             <span class="hljs-string">"model.value"</span>: <span class="hljs-string">"default"</span>
+         }
+     }
+ });
+ <span class="hljs-comment">//more content not shown here</span>
+</code></pre>
+<p> Now we need to erase the code that was used to place the preferences on the confirm panel.</p>
+<p> B. Find the <code>fluid.defaults()</code> call for <code>&quot;gpii.firstDiscovery.panel.confirm&quot;</code>.</p>
+<p> There are 4 areas we need to remove code for the preferences we are removing from the tool. 1) &quot;Model Relays&quot;, 2) &quot;Selectors&quot;, 3) &quot;ProtoTree&quot;, and 4) &quot;Bindings&quot;.</p>
+<p> C. Find the <code>modelRelay: []</code> section and remove the 2 model relays for each preference you want to remove.  </p>
+<pre class="highlight"><code class="hljs javascript"> <span class="hljs-comment">//more content not shown here</span>
+ {
+     source: <span class="hljs-string">"{fluid.prefs.prefsEditor}.model.preferences.gpii_firstDiscovery_onScreenKeyboard"</span>,
+     target: <span class="hljs-string">"friendlyNames.onScreenKeyboard"</span>,
+     singleTransform: {
+         type: <span class="hljs-string">"fluid.transforms.valueMapper"</span>,
+         inputPath: <span class="hljs-string">""</span>,
+         options: {
+             <span class="hljs-literal">true</span>: <span class="hljs-string">"{that}.options.messageBase.true"</span>,
+             <span class="hljs-literal">false</span>: <span class="hljs-string">"{that}.options.messageBase.false"</span>
+         }
+     }
+ },
+ {
+     source: <span class="hljs-string">"friendlyNames.onScreenKeyboard"</span>,
+     target: <span class="hljs-string">"tts.onScreenKeyboard"</span>,
+     singleTransform: {
+         type: <span class="hljs-string">"fluid.transforms.stringTemplate"</span>,
+         template: <span class="hljs-string">"%preamble %value %units."</span>,
+         terms: {
+             preamble: <span class="hljs-string">"{that}.options.messageBase.onScreenKeyboardTtsPreamble"</span>,
+             value: <span class="hljs-string">"{that}.model.friendlyNames.onScreenKeyboard"</span>,
+             units: <span class="hljs-string">""</span>
+         }
+     }
+ },
+ <span class="hljs-comment">//more content not shown here</span>
+ {
+     source: <span class="hljs-string">"{fluid.prefs.prefsEditor}.model.preferences.gpii_firstDiscovery_captions"</span>,
+     target: <span class="hljs-string">"friendlyNames.captions"</span>,
+     singleTransform: {
+         type: <span class="hljs-string">"fluid.transforms.valueMapper"</span>,
+         inputPath: <span class="hljs-string">""</span>,
+         options: {
+             <span class="hljs-literal">true</span>: <span class="hljs-string">"{that}.options.messageBase.true"</span>,
+             <span class="hljs-literal">false</span>: <span class="hljs-string">"{that}.options.messageBase.false"</span>
+         }
+     }
+ },
+ {
+     source: <span class="hljs-string">"friendlyNames.captions"</span>,
+     target: <span class="hljs-string">"tts.captions"</span>,
+     singleTransform: {
+         type: <span class="hljs-string">"fluid.transforms.stringTemplate"</span>,
+         template: <span class="hljs-string">"%preamble %value %units."</span>,
+         terms: {
+             preamble: <span class="hljs-string">"{that}.options.messageBase.captionsTtsPreamble"</span>,
+             value: <span class="hljs-string">"{that}.model.friendlyNames.captions"</span>,
+             units: <span class="hljs-string">""</span>
+         }
+     }
+ },
+ <span class="hljs-comment">//more content not shown here</span>
+</code></pre>
+<p> Each preference has 3 selectors, 1) for the &quot;value&quot;, 2) for the &quot;label&quot;, and 3) for the &quot;tts&quot;.</p>
+<p> D. Find the <code>selectors: {}</code> section and remove the 3 selectors for each preference you want to remove.  </p>
+<pre class="highlight"><code class="hljs javascript"> selectors: {
+     <span class="hljs-comment">//more content not shown here</span>
+     onScreenKeyboardValue: <span class="hljs-string">".onScreenKeyboard .gpii-confirm-value"</span>,
+     onScreenKeyboardLabel: <span class="hljs-string">".onScreenKeyboard .gpii-confirm-label"</span>,
+     onScreenKeyboardTts: <span class="hljs-string">".onScreenKeyboard-tts"</span>,
+     captionsValue: <span class="hljs-string">".captions .gpii-confirm-value"</span>,
+     captionsLabel: <span class="hljs-string">".captions .gpii-confirm-label"</span>,
+     captionsTts: <span class="hljs-string">".captions-tts"</span>,
+     <span class="hljs-comment">//more content not shown here</span>
+ }
+</code></pre>
+<p> Each preference has 3 protoTree values, 1) for the &quot;value&quot;, 2) for the &quot;label&quot;, and 3) for the &quot;tts&quot;.</p>
+<p> E. Find the <code>protoTree: {}</code> section and remove the 3 selectors for each preference you want to remove.  </p>
+<pre class="highlight"><code class="hljs javascript"> protoTree: {
+     <span class="hljs-comment">//more content not shown</span>
+     onScreenKeyboardLabel: {messagekey: <span class="hljs-string">"onScreenKeyboardLabel"</span>},
+     onScreenKeyboardValue: {messagekey: <span class="hljs-string">"onScreenKeyboardValue"</span>},
+     onScreenKeyboardTts: {messagekey: <span class="hljs-string">"onScreenKeyboardTtsPreamble"</span>},
+     captionsLabel: {messagekey: <span class="hljs-string">"captionsLabel"</span>},
+     captionsValue: {messagekey: <span class="hljs-string">"captionsValue"</span>},
+     captionsTts: {messagekey: <span class="hljs-string">"captionsTtsPreamble"</span>},
+     <span class="hljs-comment">//more content not shown</span>
+ }
+</code></pre>
+<p> Each preference has 2 protoTree values, 1) for the &quot;value&quot; and 2) for the &quot;tts&quot;.</p>
+<p> F. Find the <code>bindings: {}</code> section and remove the 2 selectors for each preference you want to remove.</p>
+<pre class="highlight"><code class="hljs javascript"> bindings: {
+     <span class="hljs-comment">//more content not shown</span>
+     <span class="hljs-string">"onScreenKeyboardValue"</span>: <span class="hljs-string">"friendlyNames.onScreenKeyboard"</span>,
+     <span class="hljs-string">"onScreenKeyboardTts"</span>: <span class="hljs-string">"tts.onScreenKeyboard"</span>,
+     <span class="hljs-string">"captionsValue"</span>: <span class="hljs-string">"friendlyNames.captions"</span>,
+     <span class="hljs-string">"captionsTts"</span>: <span class="hljs-string">"tts.captions"</span>,
+     <span class="hljs-comment">//more content not shown</span>
+ }
+</code></pre>
+<p> Now all of the code to place the preference on the confirm panel has been removed.</p>
+<p> The last steps are optional because they will not effect the tool, however, removing unused code is good practice.</p>
+<p> The <code>src/messages/confirm_en-US.json</code> file holds &quot;friendly name&quot; and &quot;tts&quot; values for the preferences we have removed. Since they are no longer used, we should remove them. </p>
+<p> For each preference, there are 2 friendly name values, 1) for the &quot;label&quot;, and 2) for the &quot;value&quot;, as well as 3) a &quot;tts preamble&quot;.</p>
+<p> G. (optional) In <code>confirm_en-US.json</code>, remove the 3 values for the preferences we want to remove. </p>
+<pre class="highlight"><code class="hljs javascript"> {
+     <span class="hljs-comment">//more content not shown</span>
+     <span class="hljs-string">"onScreenKeyboardLabel"</span>: <span class="hljs-string">"On-Screen Keyboard:"</span>,
+     <span class="hljs-string">"onScreenKeyboardValue"</span>: <span class="hljs-string">""</span>,
+     <span class="hljs-string">"captionsLabel"</span>: <span class="hljs-string">"Captions:"</span>,
+     <span class="hljs-string">"captionsValue"</span>: <span class="hljs-string">""</span>,
+     <span class="hljs-comment">//more content not shown</span>
+     <span class="hljs-string">"onScreenKeyboardTtsPreamble"</span>: <span class="hljs-string">"Your on screen keyboard choice is"</span>,
+     <span class="hljs-string">"captionsTtsPreamble"</span>: <span class="hljs-string">"Your captions choice is"</span>,
+     <span class="hljs-comment">//more content not shown</span>
+ }
+</code></pre>
+<p> H. (optional) repeat step &quot;G&quot; for the alternate language files, for example, <code>src/messages/confirm_fr-FR.json</code>.</p>
+<p> The last step is to delete the message files used on the preference panel. For each preference there is a <code>en-US</code> for English, <code>fr-FR</code> for French, and <code>es-MX</code> for Spanish (these are currently the only three supported languages in the tool).</p>
+<p> I. (optional) Delete the <code>en-US</code>, <code>fr-FR</code>, and <code>es-MX</code> message files for each preference (as well as any other language versions for that preference). For example, <code>captions_en-US.json</code>, <code>captions_fr-FR.json</code>, and <code>captions_es-MX.json</code>.</p>
+</li>
+</ol>
+
+                    </div>
+
+                    <p class="docs-template-githubLink"><a href="https://github.com/GPII/docs-first-discovery/blob/master/src/documents/removing.md" rel="nofollow" target="_blank" class="link-external">Edit this Page on GitHub</a></p>
+                </article>
+
+            </div>
+
+            <footer class="row docs-template-footer fl-inverted-color">
+                <p>The First Discovery Tool was developed by the <a href="http://idrc.ocad.ca/" rel="nofollow" target="_blank">Inclusive Design Research Centre</a>,<br/>
+                through the <a href="https://wiki.fluidproject.org/display/fluid/Preferences+for+Global+Access">Preferences for Global Access</a> project,
+                funded by the US Dept. of Educations's <a href="http://www.ed.gov/category/program/national-institute-disability-and-rehabilitation-research">National Institute on Disability and Rehabilitation Research</a>.</p>
+            </footer>
+
+            <script type="text/javascript">
+                docsCore.init("./");
+                jQuery( "#menu" ).menu({
+                    position: {my: "right top", at: "right bottom"},
+                    icons: {submenu:"ui-icon-blank"},
+                    // Remove the anchors from the tabindex as they are triggered
+                    // via the select event. (see below)
+                    create: function (event, ui) {
+                        jQuery("#menu .ui-menu-item a").attr("tabindex", -1);
+                    },
+                    // The jQuery menu doesn't seem to like it when the <a> are
+                    // specified as the "item" and are nested under an <li>. There
+                    // seems to be styling issues and occassionally an error thrown.
+                    // The page transition work around below is used to maintian the semantic structure,
+                    // while allowing the menu to behave as normal.
+                    select: function( event, ui ) {
+                        var location = ui.item.children("a").attr("href");
+                        if (location) {
+                            window.location.href = location;
+                        }
+                    }
+                });
+            </script>
+        </div> <!-- end container -->
+
+    </body>
+</html>

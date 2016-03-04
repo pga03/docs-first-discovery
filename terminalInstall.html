@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>First Discovery Terminal Installation | First Discovery Tool Documentation</title>
+        <link rel="icon" type="image/png" href="images/favico.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/highlightjs-custom.css">
+        <link rel="stylesheet" href="lib/infusion/src/lib/jquery/ui/css/default-theme/jquery.ui.theme.css">
+
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/Enactors.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+        <link rel="stylesheet" href="css/docs-first-discovery.css">
+
+        <script type="text/javascript" src="lib/infusion/infusion-uio.js"></script>
+        <script type="text/javascript" src="js/DocsCore.js"></script>
+        <script type="text/javascript" src="lib/jqueryui/jquery-ui.min.js"></script>
+    </head>
+    <body class="docs-template docs-core-sidebar-expanded">
+
+        <div class="container docs-template-container">
+
+            <!-- Skip Link -->
+            <nav id="skip" class="fl-inverted-color">
+                <a href="#topics" class="docs-template-skip-topics">Skip to Topics</a>
+                <a href="#content" class="docs-template-skip-content">Skip to Content</a>
+            </nav>
+            <!-- END skip link -->
+
+
+            <header class="ignore-for-TOC row fl-inverted-color">
+                <!-- BEGIN markup for Preference Editor -->
+                <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+                    <!-- This is the div that will contain the Preference Editor component -->
+                    <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+                    <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->
+                    <div class="fl-panelBar">
+                        <span class="fl-prefsEditor-buttons">
+                            <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+                            <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide">+ show display preferences</button>
+                        </span>
+                    </div>
+                </div>
+                <!-- END markup for Preference Editor -->
+
+                <div class="small-12 column docs-template-header">
+                    <a class="docs-template-logo" href="index.html" title="Home: First Discovery Tool Documentation">
+                        <span class="show-for-sr">
+                            <h1>Documentation for the First Discovery Tool</h1>
+                        </span>
+                        <span aria-hidden="true">
+                            <h1>First Discovery Tool</h1>
+                            <span class="docs-template-tagline">Documentation</span>
+                        </span>
+                    </a>
+
+                    
+                    <nav class="right show-for-small-only docs-template-nav-mobile">
+                        <ul id="menu">
+                            <li class="docs-template-dropDown-header"><span class="docs-template-nav-mobile-icon"></span>
+                                <ul class="docs-template-dropDown">
+                                    
+                                    
+                                        
+                                            <li><a href="index.html" title="Overview">Overview</a></li>
+                                        
+                                    
+                                        
+                                            <li class="docs-template-category-active"><span aria-label="Currently on Category: Tutorials">Tutorials</span></li>
+                                        
+                                    
+                                        
+                                            <li><a href="index-api.html" title="API">API</a></li>
+                                        
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="docs-template-header">
+                    <nav class="small-12 column show-for-medium-up">
+                        <ul class="inline-list right">
+                        
+                        
+                            
+                                <li><a href="index.html" title="Overview">Overview</a></li>
+                            
+                        
+                            
+                                <li class="docs-template-category-active"><span aria-label="Currently on Category: Tutorials">Tutorials</span></li>
+                            
+                        
+                            
+                                <li><a href="index-api.html" title="API">API</a></li>
+                            
+                        
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="docs-corec-sidebar-bar ignore-for-TOC docs-template-topics-container small-8 medium-3 column">
+                <nav id="topics" class="docs-template-topics" tabindex="-1">
+                    
+                        
+                        
+                    
+                        
+                        
+                            <h2 class="docs-template-category">Tutorials</h2>
+                            
+                                <h3 class="docs-template-sectionName">Customizing the First Discovery Tool</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="reordering.html">Simplest: Reordering preferences</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="removing.html">Less simple: Removing preferences</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="adding.html">More complicated: Adding a simple preference </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="enactors.html">Enactors</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="serverConfig.html">Advanced: Configuring the connection to the Preferences Server</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <span aria-label="Currently on: Installing a Frist Discovery Terminal" class="docs-template-topics-active">Installing a Frist Discovery Terminal</span>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="bluemix.html">Advanced: Deploying First Discovery to Bluemix</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                        
+                    
+                        
+                        
+                    
+                </nav>
+            </div>
+
+            <div class="docs-template-articleBody small-12 medium-8 column">
+
+                <div class="small-4 medium-1 column docs-template-topics-hideShow fl-inverted-color">
+                    <a href="#" class="docs-corec-sidebar-toggle">Topics</a>
+                </div>
+
+                <article id="content">
+                    <h1>First Discovery Terminal Installation</h1>
+
+                    <div class="flc-toc-tocContainer docs-template-uio-toc"> </div>
+
+
+                    <div class="docs-template-articleContent">
+                        <h2 id="overview">Overview</h2>
+<p>This guide is written for IT workers who plan on deploying a First Discovery Terminal on Windows.
+It is assumed that the reader has a basic understanding of the Windows operating system as well as 
+the capability to edit text-based configurations as needed. Anyone deploying a First Discovery
+Terminal must have administrator rights on the production system. All in all, 
+it&#39;s a fairly painless process.  Let&#39;s get started.  </p>
+<h2 id="installation-procedure">Installation Procedure</h2>
+<ol>
+<li><p>As an administrator, create a new user named &quot;first-discovery&quot;, also with
+administrator privileges. </p>
+</li>
+<li><p>Log in as the first-discovery user.</p>
+</li>
+<li><p><a href="https://python.org/downloads">Download and install Python 2.7.x for all
+users.</a> During the installation, make sure to
+enable the option to &quot;Add python.exe to Path&quot;</p>
+<p><img src="images/pythonInstallPath.png" alt="alt text" title="Add python.exe to path"> </p>
+</li>
+<li><p><a href="https://www.google.com/chrome/browser/desktop/">Download and install the latest version of Chrome</a></p>
+</li>
+<li><p><a href="https://chrome.google.com/webstore/detail/comibmfirstdiscovery/nkojgcmaioingjndknblmghefcfijobm">Download and install the First Discovery Chrome Extension</a></p>
+</li>
+<li><p><a href="https://github.com/pga03/first-discovery-native-host">Download and install the windows native messaging host</a></p>
+<p>A. Download a zip file of the repository and extract it.</p>
+<p>B. Navigate to the newly extracted folder.</p>
+<p>C. The Native Host assumes the USB drive is mounted at <code>E:\</code>. If the USB
+drive you are using has a different drive letter, edit python-host and change
+the usbDriveLetter variable from <code>E:</code> to the correct drive letter (eg <code>D:</code> or
+<code>G:</code>)</p>
+<p>D. In the extracted folder, run <code>install-host.bat</code> as an administrator. The
+script will perform these actions:</p>
+<ul>
+<li><p>Creates a folder at <code>C:\Program Files\First-Discovery-Chrome-Extension</code></p>
+</li>
+<li><p>Copies the contents of the repo&#39;s folder to the above path.</p>
+</li>
+<li><p>Sets a registry key to that Chrome can find the Native Messaging Host.</p>
+</li>
+<li><p><strong>NOTE:</strong> if the first-discovery account isn&#39;t an administrator,
+<code>install-host.bat</code> will not be able to set registry values and native
+messaging will not work!</p>
+</li>
+</ul>
+</li>
+<li><p>Remove all existing desktop icons.</p>
+</li>
+<li><p>Install the First Discovery Launcher</p>
+<p>A. <a href="https://github.com/pga03/first-discovery-launcher-windows">Go here</a> and 
+download a ZIP of the repository. Extract it where you&#39;d like.</p>
+<p>B. Navigate to the newly extracted folder</p>
+<p>C. Double-click <code>install-launcher.bat</code></p>
+<p>D. When prompted, select if you want the shortcut to point to the version of 
+First Discovery with the Search preview or the Electron preview.</p>
+<p>E. There should now be one icon on the desktop with the title &quot;Start Here&quot;</p>
+<p>F. Double click the icon. This should trigger a security warning. Uncheck 
+the &quot;Always ask before opening this file&quot; box so that the end user doesn&#39;t 
+see the warning. You&#39;ll need to repeat this step every time you run <code>install-launcher.bat</code></p>
+<p><img src="images/launcherWarning.png" alt="alt text" title="The user shouldn&#39;t see this"> </p>
+<p>G. Chrome should now be open in kiosk mode. If Chrome isn&#39;t set as the default 
+browser, it will display a prompt asking if you want to set Chrome as the 
+default browser. Either set Chrome as the default or select the option to 
+not ask again so that the end user doesn&#39;t see the prompt. <strong>NOTE:</strong> if
+Chrome is already open when the launcher is launched, Chrome will open First
+Disocvery in a new tab in the existing window instead op launching in kiosk
+mode.</p>
+<p>H. Close the browser window by pressing <code>Alt-F4</code> or <code>Ctrl-w</code></p>
+<p>I. Optionally, you can make the desktop icons large by right clicking on 
+the desktop and selecting “View” &gt; “Large icons”</p>
+</li>
+<li><p>Set first-discovery to auto login on boot.</p>
+</li>
+<li><p>Downgrade first-discovery user to a standard account.</p>
+</li>
+</ol>
+
+                    </div>
+
+                    <p class="docs-template-githubLink"><a href="https://github.com/GPII/docs-first-discovery/blob/master/src/documents/terminalInstall.md" rel="nofollow" target="_blank" class="link-external">Edit this Page on GitHub</a></p>
+                </article>
+
+            </div>
+
+            <footer class="row docs-template-footer fl-inverted-color">
+                <p>The First Discovery Tool was developed by the <a href="http://idrc.ocad.ca/" rel="nofollow" target="_blank">Inclusive Design Research Centre</a>,<br/>
+                through the <a href="https://wiki.fluidproject.org/display/fluid/Preferences+for+Global+Access">Preferences for Global Access</a> project,
+                funded by the US Dept. of Educations's <a href="http://www.ed.gov/category/program/national-institute-disability-and-rehabilitation-research">National Institute on Disability and Rehabilitation Research</a>.</p>
+            </footer>
+
+            <script type="text/javascript">
+                docsCore.init("./");
+                jQuery( "#menu" ).menu({
+                    position: {my: "right top", at: "right bottom"},
+                    icons: {submenu:"ui-icon-blank"},
+                    // Remove the anchors from the tabindex as they are triggered
+                    // via the select event. (see below)
+                    create: function (event, ui) {
+                        jQuery("#menu .ui-menu-item a").attr("tabindex", -1);
+                    },
+                    // The jQuery menu doesn't seem to like it when the <a> are
+                    // specified as the "item" and are nested under an <li>. There
+                    // seems to be styling issues and occassionally an error thrown.
+                    // The page transition work around below is used to maintian the semantic structure,
+                    // while allowing the menu to behave as normal.
+                    select: function( event, ui ) {
+                        var location = ui.item.children("a").attr("href");
+                        if (location) {
+                            window.location.href = location;
+                        }
+                    }
+                });
+            </script>
+        </div> <!-- end container -->
+
+    </body>
+</html>

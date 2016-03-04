@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Preferences Server Integration | First Discovery Tool Documentation</title>
+        <link rel="icon" type="image/png" href="images/favico.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/highlightjs-custom.css">
+        <link rel="stylesheet" href="lib/infusion/src/lib/jquery/ui/css/default-theme/jquery.ui.theme.css">
+
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/Enactors.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+        <link rel="stylesheet" href="css/docs-first-discovery.css">
+
+        <script type="text/javascript" src="lib/infusion/infusion-uio.js"></script>
+        <script type="text/javascript" src="js/DocsCore.js"></script>
+        <script type="text/javascript" src="lib/jqueryui/jquery-ui.min.js"></script>
+    </head>
+    <body class="docs-template docs-core-sidebar-expanded">
+
+        <div class="container docs-template-container">
+
+            <!-- Skip Link -->
+            <nav id="skip" class="fl-inverted-color">
+                <a href="#topics" class="docs-template-skip-topics">Skip to Topics</a>
+                <a href="#content" class="docs-template-skip-content">Skip to Content</a>
+            </nav>
+            <!-- END skip link -->
+
+
+            <header class="ignore-for-TOC row fl-inverted-color">
+                <!-- BEGIN markup for Preference Editor -->
+                <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+                    <!-- This is the div that will contain the Preference Editor component -->
+                    <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+                    <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->
+                    <div class="fl-panelBar">
+                        <span class="fl-prefsEditor-buttons">
+                            <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+                            <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide">+ show display preferences</button>
+                        </span>
+                    </div>
+                </div>
+                <!-- END markup for Preference Editor -->
+
+                <div class="small-12 column docs-template-header">
+                    <a class="docs-template-logo" href="index.html" title="Home: First Discovery Tool Documentation">
+                        <span class="show-for-sr">
+                            <h1>Documentation for the First Discovery Tool</h1>
+                        </span>
+                        <span aria-hidden="true">
+                            <h1>First Discovery Tool</h1>
+                            <span class="docs-template-tagline">Documentation</span>
+                        </span>
+                    </a>
+
+                    
+                    <nav class="right show-for-small-only docs-template-nav-mobile">
+                        <ul id="menu">
+                            <li class="docs-template-dropDown-header"><span class="docs-template-nav-mobile-icon"></span>
+                                <ul class="docs-template-dropDown">
+                                    
+                                    
+                                        
+                                            <li class="docs-template-category-active"><span aria-label="Currently on Category: Overview">Overview</span></li>
+                                        
+                                    
+                                        
+                                            <li><a href="index-tutorials.html" title="Tutorials">Tutorials</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="index-api.html" title="API">API</a></li>
+                                        
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="docs-template-header">
+                    <nav class="small-12 column show-for-medium-up">
+                        <ul class="inline-list right">
+                        
+                        
+                            
+                                <li class="docs-template-category-active"><span aria-label="Currently on Category: Overview">Overview</span></li>
+                            
+                        
+                            
+                                <li><a href="index-tutorials.html" title="Tutorials">Tutorials</a></li>
+                            
+                        
+                            
+                                <li><a href="index-api.html" title="API">API</a></li>
+                            
+                        
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="docs-corec-sidebar-bar ignore-for-TOC docs-template-topics-container small-8 medium-3 column">
+                <nav id="topics" class="docs-template-topics" tabindex="-1">
+                    
+                        
+                        
+                            <h2 class="docs-template-category">Overview</h2>
+                            
+                                <h3 class="docs-template-sectionName">First Discovery Tool</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="index.html">Introduction</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                                <h3 class="docs-template-sectionName">Preferences Server Integration</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <span aria-label="Currently on: Introduction" class="docs-template-topics-active">Introduction</span>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="integrationWorkFlow.html">The Work Flow</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="firstDiscoveryServer.html">First Discovery Server</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                </nav>
+            </div>
+
+            <div class="docs-template-articleBody small-12 medium-8 column">
+
+                <div class="small-4 medium-1 column docs-template-topics-hideShow fl-inverted-color">
+                    <a href="#" class="docs-corec-sidebar-toggle">Topics</a>
+                </div>
+
+                <article id="content">
+                    <h1>Preferences Server Integration</h1>
+
+                    <div class="flc-toc-tocContainer docs-template-uio-toc"> </div>
+
+
+                    <div class="docs-template-articleContent">
+                        <p>The First Discovery Tool supports integration with the <a href="https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md">GPII Preferences Server</a> to save user selected preferences. The First Discovery Tool has been designed for users who are new to the concept of user interface customization and setting preferences. It is assumed that users will not already have any preferences stored on the GPII Preferences Server and that the First Discovery Tool will walk them through the process of creating their first preference set. This integration will save the selected preferences to the GPII Preferences server and return a token to the user. The token will allow the user to retrieve the saved preferences when needed.</p>
+<p><strong>Note</strong>: While this document focuses on integration with the GPII Preferences Server, the First Discovery Tool could be integrated with any data store to save a user&#39;s preferences.</p>
+<h2 id="the-first-discovery-server">The First Discovery Server</h2>
+<p>The GPII Preferences Server provides the <a href="https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant">OAuth2 Client Credentials Grant API</a> to securely save preferences. This API requires the client ID and secret to be included in the http request for OAuth authentication. Because this sensitive information must be sent server-to-server, the First Discovery Tool uses a separate server – the First Discovery Server – to mediate the exchange.</p>
+<p>What it does:</p>
+<ul>
+<li>serves the First Discovery Tool</li>
+<li>receives http requests sent from the First Discovery Tool. These requests only contain user selected preferences</li>
+<li>follows the <a href="https://wiki.gpii.net/w/GPII_OAuth_2_Guide#Client_Credentials_Grant">OAuth2 Client Credentials Grant API</a> to send user selected preferences to the GPII Preferences Server, and</li>
+<li>sends the GPII token returned by the GPII Preferences Server to the First Discovery Tool </li>
+</ul>
+<p><img src="images/GPII-Preferences-Server-Integration.svg" alt="Diagram showing the integration of the First Discovery Tool and the GPII Preferences Server"></p>
+<h2 id="demos">Demos</h2>
+<p>This demo implements the integration with the <a href="https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md">GPII Preferences Server</a> to save preferences.
+<a href="http://build.fluidproject.org/first-discovery/demos/prefsServerIntegration">http://build.fluidproject.org/first-discovery/demos/prefsServerIntegration</a></p>
+<h2 id="source-code">Source code</h2>
+<ul>
+<li><a href="https://github.com/GPII/first-discovery">Client (First Discovery Tool)</a></li>
+<li><a href="https://github.com/GPII/first-discovery-server">Server (First Discovery Server) - under development</a></li>
+<li><a href="https://github.com/GPII/universal">GPII Preferences Server</a></li>
+</ul>
+
+                    </div>
+
+                    <p class="docs-template-githubLink"><a href="https://github.com/GPII/docs-first-discovery/blob/master/src/documents/integrationIntro.md" rel="nofollow" target="_blank" class="link-external">Edit this Page on GitHub</a></p>
+                </article>
+
+            </div>
+
+            <footer class="row docs-template-footer fl-inverted-color">
+                <p>The First Discovery Tool was developed by the <a href="http://idrc.ocad.ca/" rel="nofollow" target="_blank">Inclusive Design Research Centre</a>,<br/>
+                through the <a href="https://wiki.fluidproject.org/display/fluid/Preferences+for+Global+Access">Preferences for Global Access</a> project,
+                funded by the US Dept. of Educations's <a href="http://www.ed.gov/category/program/national-institute-disability-and-rehabilitation-research">National Institute on Disability and Rehabilitation Research</a>.</p>
+            </footer>
+
+            <script type="text/javascript">
+                docsCore.init("./");
+                jQuery( "#menu" ).menu({
+                    position: {my: "right top", at: "right bottom"},
+                    icons: {submenu:"ui-icon-blank"},
+                    // Remove the anchors from the tabindex as they are triggered
+                    // via the select event. (see below)
+                    create: function (event, ui) {
+                        jQuery("#menu .ui-menu-item a").attr("tabindex", -1);
+                    },
+                    // The jQuery menu doesn't seem to like it when the <a> are
+                    // specified as the "item" and are nested under an <li>. There
+                    // seems to be styling issues and occassionally an error thrown.
+                    // The page transition work around below is used to maintian the semantic structure,
+                    // while allowing the menu to behave as normal.
+                    select: function( event, ui ) {
+                        var location = ui.item.children("a").attr("href");
+                        if (location) {
+                            window.location.href = location;
+                        }
+                    }
+                });
+            </script>
+        </div> <!-- end container -->
+
+    </body>
+</html>

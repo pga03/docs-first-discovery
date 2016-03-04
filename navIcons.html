@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Navigation Icons | First Discovery Tool Documentation</title>
+        <link rel="icon" type="image/png" href="images/favico.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/highlightjs-custom.css">
+        <link rel="stylesheet" href="lib/infusion/src/lib/jquery/ui/css/default-theme/jquery.ui.theme.css">
+
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/Enactors.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+        <link rel="stylesheet" href="css/docs-first-discovery.css">
+
+        <script type="text/javascript" src="lib/infusion/infusion-uio.js"></script>
+        <script type="text/javascript" src="js/DocsCore.js"></script>
+        <script type="text/javascript" src="lib/jqueryui/jquery-ui.min.js"></script>
+    </head>
+    <body class="docs-template docs-core-sidebar-expanded">
+
+        <div class="container docs-template-container">
+
+            <!-- Skip Link -->
+            <nav id="skip" class="fl-inverted-color">
+                <a href="#topics" class="docs-template-skip-topics">Skip to Topics</a>
+                <a href="#content" class="docs-template-skip-content">Skip to Content</a>
+            </nav>
+            <!-- END skip link -->
+
+
+            <header class="ignore-for-TOC row fl-inverted-color">
+                <!-- BEGIN markup for Preference Editor -->
+                <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+                    <!-- This is the div that will contain the Preference Editor component -->
+                    <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+                    <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->
+                    <div class="fl-panelBar">
+                        <span class="fl-prefsEditor-buttons">
+                            <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+                            <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide">+ show display preferences</button>
+                        </span>
+                    </div>
+                </div>
+                <!-- END markup for Preference Editor -->
+
+                <div class="small-12 column docs-template-header">
+                    <a class="docs-template-logo" href="index.html" title="Home: First Discovery Tool Documentation">
+                        <span class="show-for-sr">
+                            <h1>Documentation for the First Discovery Tool</h1>
+                        </span>
+                        <span aria-hidden="true">
+                            <h1>First Discovery Tool</h1>
+                            <span class="docs-template-tagline">Documentation</span>
+                        </span>
+                    </a>
+
+                    
+                    <nav class="right show-for-small-only docs-template-nav-mobile">
+                        <ul id="menu">
+                            <li class="docs-template-dropDown-header"><span class="docs-template-nav-mobile-icon"></span>
+                                <ul class="docs-template-dropDown">
+                                    
+                                    
+                                        
+                                            <li><a href="index.html" title="Overview">Overview</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="index-tutorials.html" title="Tutorials">Tutorials</a></li>
+                                        
+                                    
+                                        
+                                            <li class="docs-template-category-active"><span aria-label="Currently on Category: API">API</span></li>
+                                        
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="docs-template-header">
+                    <nav class="small-12 column show-for-medium-up">
+                        <ul class="inline-list right">
+                        
+                        
+                            
+                                <li><a href="index.html" title="Overview">Overview</a></li>
+                            
+                        
+                            
+                                <li><a href="index-tutorials.html" title="Tutorials">Tutorials</a></li>
+                            
+                        
+                            
+                                <li class="docs-template-category-active"><span aria-label="Currently on Category: API">API</span></li>
+                            
+                        
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="docs-corec-sidebar-bar ignore-for-TOC docs-template-topics-container small-8 medium-3 column">
+                <nav id="topics" class="docs-template-topics" tabindex="-1">
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            <h2 class="docs-template-category">API</h2>
+                            
+                                <h3 class="docs-template-sectionName">General</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="firstDiscoveryEditor.html">First Discovery Editor</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                                <h3 class="docs-template-sectionName">Panels presented to user</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="welcome.html">Welcome</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="lang.html">Language</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="speakText.html">Speak Text</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="speechRate.html">Speech Rate</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="contrast.html">Contrast</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="textSize.html">Text Size</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="onScreenKeyboard.html">On-Screen Keyboard</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="captions.html">Captions</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="showSounds.html">Show Sounds</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="keyboard.html">Sticky Keys</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="congratulations.html">Congratulations</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                                <h3 class="docs-template-sectionName">Preferences Server Integration</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="prefsServerIntegration.html">Preferences Server Integration</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="token.html">Token Panel</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="tokenPrefsServerIntegrationConnection.html">Token and Preferences Server Integration Connection</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                                <h3 class="docs-template-sectionName">Components used by panels</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="yesNo.html">Yes/No</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="ranged.html">Ranged</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="rangedDisabled.html">Ranged With Disabled Message</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="keyboardPrefsEditorConnection.html">Sticky Keys with Prefs Editor Connection</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="stickyKeysAdjuster.html">Sticky Keys Adjuster</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="stickyKeysAssessment.html">Sticky Keys Assessor</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="keyboardTTS.html">Sticky Keys – Text-to-Speech</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="speechRatePrefsEditorConnection.html">Speech Rate with Prefs Editor Connection</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="langPrefsEditorConnection.html">Language with Prefs Editor Connection</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                                <h3 class="docs-template-sectionName">Enactors</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="enactor-lang.html">Language Enactor</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                                <h3 class="docs-template-sectionName">Language Management</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="msgLookup.html">Message Lookup</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                                <h3 class="docs-template-sectionName">Navigation</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="nav.html">Navigation</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="navButtons.html">Navigation Buttons</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <span aria-label="Currently on: Navigation Icons" class="docs-template-topics-active">Navigation Icons</span>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="icon.html">Navigation Icon</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="stepCount.html">Step Count</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                                <h3 class="docs-template-sectionName">Utility</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="helpButton.html">Help Button</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="selfVoicing.html">Self Voicing</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="selfVoicingToggle.html">Self Voicing Toggle Button</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="keyboardInput.html">Keyboard Input</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="keyboardInputTTS.html">Keyboard Input - Text-to-Speech</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="usKeymap.html">US Keymap</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="attachTooltip.html">Attach Tooltip</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="attachTooltipRenderer.html">Attach Tooltip Renderer</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="ttsHookupTooltip.html">Text-to-Speech Hookup – Tooltip</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="ttsHookupPrefsEditor.html">Text-to-Speech Hookup – Preferences Editor</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                        
+                    
+                </nav>
+            </div>
+
+            <div class="docs-template-articleBody small-12 medium-8 column">
+
+                <div class="small-4 medium-1 column docs-template-topics-hideShow fl-inverted-color">
+                    <a href="#" class="docs-corec-sidebar-toggle">Topics</a>
+                </div>
+
+                <article id="content">
+                    <h1>Navigation Icons</h1>
+
+                    <div class="flc-toc-tocContainer docs-template-uio-toc"> </div>
+
+
+                    <div class="docs-template-articleContent">
+                        <h2 id="overview">Overview</h2>
+<p><strong>Component Name:</strong> <code>gpii.firstDiscovery.navIcons</code></p>
+<p><strong>File:</strong> <code>navIcons.js</code></p>
+<p>Wraps the set of <a href="icon.html">Navigation Icon</a>s and assists in determining the position of each navigation icon.</p>
+<h2 id="using-the-navigation-icons-component">Using the Navigation Icons component</h2>
+<p><em>Option 1</em>: Typically this component is used as a sub-component of the <a href="nav.html">Navigation</a>:</p>
+<pre class="highlight"><code class="hljs javascript">navIcons: {
+    type: <span class="hljs-string">"gpii.firstDiscovery.navIcons"</span>,
+    container: <span class="hljs-string">"{nav}.dom.navIcons"</span>,
+    options: {}
+}
+</code></pre>
+<p><em>Option 2</em>: Outside the context of the First Discovery Tool, developers may wish to create a standalone component:</p>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> myNavIcons = gpii.firstDiscovery.navIcons(container, options);
+</code></pre>
+<h2 id="grades">Grades</h2>
+<p>This component uses the following base
+<a href="http://docs.fluidproject.org/infusion/development/ComponentGrades.html">grades</a>:</p>
+<ul>
+<li><a href="http://docs.fluidproject.org/infusion/development/ComponentGrades.html"><code>fluid.viewComponent</code></a></li>
+</ul>
+<h2 id="model">Model</h2>
+<p>This component supports the following
+<a href="http://docs.fluidproject.org/infusion/development/tutorial-gettingStartedWithInfusion/ModelComponents.html">model</a>
+properties:</p>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Description</th>
+<th>Values</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pageNum</code></td>
+<td>Corresponds to the index of the current panel.</td>
+<td>Panel ID (Number)</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>iconWidth</code></td>
+<td>The width of the icon. Used to determine where to scroll to make it visible.</td>
+<td>Number (in pixels)</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-events">Supported Events</h2>
+<p>This component supports the following
+<a href="http://docs.fluidproject.org/infusion/development/InfusionEventSystem.html">events</a>:</p>
+<table>
+    <thead>
+        <tr><th>Event</th><th>Type</th><th>Description</th><th>Parameters</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>onCreateIcon</code></td>
+            <td>default</td>
+            <td>Fired to trigger the creation of each navigation icon</td>
+            <td>
+                <dl>
+                    <dd><code>element</code></dd>
+                    <dt>the DOM element to use as the container for the <a href="icon.html">Navigation Icon</a></dt>
+                    <dd><code>position</code> (number)</dd>
+                    <dt>the position of the <a href="icon.html">Navigation Icon</a></dt>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td><code>onSetConfirmedIcon</code></td>
+            <td>default</td>
+            <td>Fired to trigger a specific panel icon to show confirmed state</td>
+            <td>
+                <dl>
+                    <dd><code>panelNum</code></dd>
+                    <dt>the number of the panel whose icon state needs to be set to confirmed</dt>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td><code>onSetActiveIcon</code></td>
+            <td>default</td>
+            <td>Fired to trigger a specific panel icon to show active state</td>
+            <td>
+                <dl>
+                    <dd><code>panelNum</code></dd>
+                    <dt>the number of the panel whose icon state needs to be set to active</dt>
+                </dl>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+<th>Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>showIconPage</code></td>
+<td>Scrolls the icon container to make sure the current active icon is visible.</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h2 id="subcomponents">Subcomponents</h2>
+<p>This component has the following
+<a href="http://docs.fluidproject.org/infusion/development/SubcomponentDeclaration.html">subcomponents</a>:</p>
+<table>
+    <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
+    <tr>
+        <td><code>icon</code></td>
+        <td>This is a dynamic component. A new instance is created when the <code>onCreateIcon</code> event is fired.</td>
+        <td><a href="icon.html"><code>&quot;gpii.firstDiscovery.icon&quot;</code></a></td>
+        <td>
+        <pre class="highlight"><code class="hljs puppet"><span class="hljs-keyword">icon: {</span>
+    createOnEvent: <span class="hljs-string">"onCreateIcon"</span>,
+    <span class="hljs-built_in">type</span>: <span class="hljs-string">"gpii.firstDiscovery.icon"</span>,
+    container: <span class="hljs-string">"{arguments}.0"</span>,
+    <span class="hljs-keyword">options: {</span>
+        position: <span class="hljs-string">"{arguments}.1"</span>,
+        styles: <span class="hljs-string">"{navIcons}.options.styles"</span>,
+        <span class="hljs-keyword">listeners: {</span>
+            <span class="hljs-string">"{navIcons}.events.onSetConfirmedIcon"</span><span class="hljs-keyword">: {</span>
+                funcName: <span class="hljs-string">"{that}.setIconState"</span>,
+                args: [<span class="hljs-string">"isConfirmed"</span>, <span class="hljs-string">"{arguments}.0"</span>]
+            <span class="hljs-keyword">}</span>,
+            <span class="hljs-string">"{navIcons}.events.onSetActiveIcon"</span><span class="hljs-keyword">: {</span>
+                funcName: <span class="hljs-string">"{that}.setIconState"</span>,
+                args: [<span class="hljs-string">"isActive"</span>, <span class="hljs-string">"{arguments}.0"</span>]
+            <span class="hljs-keyword">}</span>
+        <span class="hljs-keyword">}</span>,
+        <span class="hljs-keyword">modelListeners: {</span>
+            <span class="hljs-string">"{navIcons}.model.pageNum"</span><span class="hljs-keyword">: {</span>
+                listener: <span class="hljs-string">"gpii.firstDiscovery.icon.measure"</span>,
+                args: [<span class="hljs-string">"{that}"</span>, <span class="hljs-string">"{navIcons}.applier"</span>, <span class="hljs-string">"iconWidth"</span>],
+                <span class="hljs-literal">priority</span>: <span class="hljs-number">10</span>
+            <span class="hljs-keyword">}</span>,
+            <span class="hljs-string">"{navIcons}.model.currentPanelNum"</span><span class="hljs-keyword">: {</span>
+                listener: <span class="hljs-string">"gpii.firstDiscovery.navIcons.updateIconModel"</span>,
+                args: [<span class="hljs-string">"{that}"</span>, <span class="hljs-string">"{change}.value"</span>, <span class="hljs-string">"{change}.oldValue"</span>]
+            <span class="hljs-keyword">}</span>
+        <span class="hljs-keyword">}</span>
+    <span class="hljs-keyword">}</span>
+<span class="hljs-keyword">}</span></code></pre>
+        </td>
+    </tr>
+</table>
+
+<h2 id="options">Options</h2>
+<p>This component can be configured using the following
+<a href="http://docs.fluidproject.org/infusion/development/ComponentOptionsAndDefaults.html">options</a>:</p>
+<table>
+    <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
+    <tr>
+        <td><code>pageSize</code></td>
+        <td>The maximum number of icons to show at a time.</td>
+        <td>Number</td>
+        <td>
+        <pre class="highlight"><code class="hljs http"><span class="hljs-attribute">pageSize</span>: <span class="hljs-string">5</span></code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td><code>iconHoles</code></td>
+        <td>A list of all the panel positions which have no <a href="icon.html">Navigation Icon</a>s.</td>
+        <td>An array of indexes (Number)</td>
+        <td>
+        <pre class="highlight"><code class="hljs http"><span class="hljs-attribute">iconHoles</span>: <span class="hljs-string">[2, 8]</span></code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td><code>selectors</code></td>
+        <td>Javascript object containing selectors for various fragments of the markup, including the containers for the subcomponents.</td>
+        <td></td>
+        <td>See <a href="#selectors">Selectors</a> below</td>
+    </tr>
+    <tr>
+        <td><code>modelListeners</code></td>
+        <td>JavaScript object containing model paths and the listeners that are activated when changes happen to those paths</td>
+        <td>Keys in the object are event names, values are functions or arrays of functions.</td>
+        <td>See <a href="#model">Model</a> above</td>
+    </tr>
+</table>
+
+<h2 id="selectors">Selectors</h2>
+<p>One of the options that can be provided to Infusion components is a set of CSS-based
+selectors identifying where in the DOM different elements can be found. Components use a
+<a href="http://docs.fluidproject.org/infusion/development/DOMBinder.html">DOM Binder</a> to access the
+named elements.</p>
+<p>The value for the <code>selectors</code> option is itself a Javascript object containing name/value pairs:</p>
+<pre class="highlight"><code class="hljs javascript">selectors: {
+    selector1Name: <span class="hljs-string">"selector 1 string"</span>,
+    selector2Name: <span class="hljs-string">"selector 2 string"</span>,
+      ...
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Selector Name</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>icon</code></td>
+<td>The set of containers to render the <a href="icon.html">Navigation Icon</a>s.</td>
+<td><code>&quot;.gpiic-fd-navIcon&quot;</code></td>
+</tr>
+<tr>
+<td><code>pager</code></td>
+<td>The container of the <a href="icon.html">Navigation Icon</a>s.</td>
+<td><code>&quot;.gpii-fd-navIcon-outer&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="dependencies">Dependencies</h2>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/lib/infusion/infusion-custom.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/navIcons.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+
+                    </div>
+
+                    <p class="docs-template-githubLink"><a href="https://github.com/GPII/docs-first-discovery/blob/master/src/documents/navIcons.html.md.handlebars" rel="nofollow" target="_blank" class="link-external">Edit this Page on GitHub</a></p>
+                </article>
+
+            </div>
+
+            <footer class="row docs-template-footer fl-inverted-color">
+                <p>The First Discovery Tool was developed by the <a href="http://idrc.ocad.ca/" rel="nofollow" target="_blank">Inclusive Design Research Centre</a>,<br/>
+                through the <a href="https://wiki.fluidproject.org/display/fluid/Preferences+for+Global+Access">Preferences for Global Access</a> project,
+                funded by the US Dept. of Educations's <a href="http://www.ed.gov/category/program/national-institute-disability-and-rehabilitation-research">National Institute on Disability and Rehabilitation Research</a>.</p>
+            </footer>
+
+            <script type="text/javascript">
+                docsCore.init("./");
+                jQuery( "#menu" ).menu({
+                    position: {my: "right top", at: "right bottom"},
+                    icons: {submenu:"ui-icon-blank"},
+                    // Remove the anchors from the tabindex as they are triggered
+                    // via the select event. (see below)
+                    create: function (event, ui) {
+                        jQuery("#menu .ui-menu-item a").attr("tabindex", -1);
+                    },
+                    // The jQuery menu doesn't seem to like it when the <a> are
+                    // specified as the "item" and are nested under an <li>. There
+                    // seems to be styling issues and occassionally an error thrown.
+                    // The page transition work around below is used to maintian the semantic structure,
+                    // while allowing the menu to behave as normal.
+                    select: function( event, ui ) {
+                        var location = ui.item.children("a").attr("href");
+                        if (location) {
+                            window.location.href = location;
+                        }
+                    }
+                });
+            </script>
+        </div> <!-- end container -->
+
+    </body>
+</html>

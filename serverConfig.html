@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Advanced: Configuring the connection to the Preferences Server | First Discovery Tool Documentation</title>
+        <link rel="icon" type="image/png" href="images/favico.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/highlightjs-custom.css">
+        <link rel="stylesheet" href="lib/infusion/src/lib/jquery/ui/css/default-theme/jquery.ui.theme.css">
+
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/Enactors.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+        <link rel="stylesheet" href="css/docs-first-discovery.css">
+
+        <script type="text/javascript" src="lib/infusion/infusion-uio.js"></script>
+        <script type="text/javascript" src="js/DocsCore.js"></script>
+        <script type="text/javascript" src="lib/jqueryui/jquery-ui.min.js"></script>
+    </head>
+    <body class="docs-template docs-core-sidebar-expanded">
+
+        <div class="container docs-template-container">
+
+            <!-- Skip Link -->
+            <nav id="skip" class="fl-inverted-color">
+                <a href="#topics" class="docs-template-skip-topics">Skip to Topics</a>
+                <a href="#content" class="docs-template-skip-content">Skip to Content</a>
+            </nav>
+            <!-- END skip link -->
+
+
+            <header class="ignore-for-TOC row fl-inverted-color">
+                <!-- BEGIN markup for Preference Editor -->
+                <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+                    <!-- This is the div that will contain the Preference Editor component -->
+                    <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+                    <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->
+                    <div class="fl-panelBar">
+                        <span class="fl-prefsEditor-buttons">
+                            <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+                            <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide">+ show display preferences</button>
+                        </span>
+                    </div>
+                </div>
+                <!-- END markup for Preference Editor -->
+
+                <div class="small-12 column docs-template-header">
+                    <a class="docs-template-logo" href="index.html" title="Home: First Discovery Tool Documentation">
+                        <span class="show-for-sr">
+                            <h1>Documentation for the First Discovery Tool</h1>
+                        </span>
+                        <span aria-hidden="true">
+                            <h1>First Discovery Tool</h1>
+                            <span class="docs-template-tagline">Documentation</span>
+                        </span>
+                    </a>
+
+                    
+                    <nav class="right show-for-small-only docs-template-nav-mobile">
+                        <ul id="menu">
+                            <li class="docs-template-dropDown-header"><span class="docs-template-nav-mobile-icon"></span>
+                                <ul class="docs-template-dropDown">
+                                    
+                                    
+                                        
+                                            <li><a href="index.html" title="Overview">Overview</a></li>
+                                        
+                                    
+                                        
+                                            <li class="docs-template-category-active"><span aria-label="Currently on Category: Tutorials">Tutorials</span></li>
+                                        
+                                    
+                                        
+                                            <li><a href="index-api.html" title="API">API</a></li>
+                                        
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="docs-template-header">
+                    <nav class="small-12 column show-for-medium-up">
+                        <ul class="inline-list right">
+                        
+                        
+                            
+                                <li><a href="index.html" title="Overview">Overview</a></li>
+                            
+                        
+                            
+                                <li class="docs-template-category-active"><span aria-label="Currently on Category: Tutorials">Tutorials</span></li>
+                            
+                        
+                            
+                                <li><a href="index-api.html" title="API">API</a></li>
+                            
+                        
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="docs-corec-sidebar-bar ignore-for-TOC docs-template-topics-container small-8 medium-3 column">
+                <nav id="topics" class="docs-template-topics" tabindex="-1">
+                    
+                        
+                        
+                    
+                        
+                        
+                            <h2 class="docs-template-category">Tutorials</h2>
+                            
+                                <h3 class="docs-template-sectionName">Customizing the First Discovery Tool</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="reordering.html">Simplest: Reordering preferences</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="removing.html">Less simple: Removing preferences</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="adding.html">More complicated: Adding a simple preference </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="enactors.html">Enactors</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <span aria-label="Currently on: Advanced: Configuring the connection to the Preferences Server" class="docs-template-topics-active">Advanced: Configuring the connection to the Preferences Server</span>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="terminalInstall.html">Installing a Frist Discovery Terminal</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="bluemix.html">Advanced: Deploying First Discovery to Bluemix</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                        
+                    
+                        
+                        
+                    
+                </nav>
+            </div>
+
+            <div class="docs-template-articleBody small-12 medium-8 column">
+
+                <div class="small-4 medium-1 column docs-template-topics-hideShow fl-inverted-color">
+                    <a href="#" class="docs-corec-sidebar-toggle">Topics</a>
+                </div>
+
+                <article id="content">
+                    <h1>Advanced: Configuring the connection to the Preferences Server</h1>
+
+                    <div class="flc-toc-tocContainer docs-template-uio-toc"> </div>
+
+
+                    <div class="docs-template-articleContent">
+                        <p>This tutorial explains how the First Discovery Tool connects to the
+<a href="https://github.com/GPII/universal/blob/master/documentation/PreferencesServer.md">GPII Preferences Server</a>.</p>
+<h2 id="background">Background</h2>
+<p>Broadly speaking, the configuration of the First Discovery Tool (and of any preferences editor
+created with the
+<a href="http://docs.fluidproject.org/infusion/development/PreferencesFramework.html">Preferences Framework</a>
+) is configured through an
+<a href="http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html">Auxiliary Schema</a>.
+This is a JSON document that specifies configuration information such as what panels to show,
+where to find HTML templates, and other things.</p>
+<p>The basic First Discovery Tool is configured through the default Auxiliary Schema, which can be
+seen in the
+<a href="https://github.com/GPII/first-discovery/blob/master/src/schemas/schemas.js">schemas.js file</a>:</p>
+<pre class="highlight"><code class="hljs javascript">fluid.defaults(<span class="hljs-string">"gpii.firstDiscovery.auxSchema"</span>, {
+    gradeNames: [<span class="hljs-string">"fluid.prefs.auxSchema"</span>],
+    auxiliarySchema: {
+        <span class="hljs-comment">// schema details not shown here</span>
+    }
+});
+</code></pre>
+<h2 id="alternative-auxiliary-schema">Alternative Auxiliary Schema</h2>
+<p>This basic configuration of the First Discovery Tool does <em>not</em> connect to a preferences server,
+but the Tool includes an alternative Auxiliary Schema, the &quot;Preferences Server Integration schema&quot;,
+that can be used to make this connection.</p>
+<p>The Preferences Server Integration schema is defined alongside the default schema, in the
+<a href="https://github.com/GPII/first-discovery/blob/master/src/schemas/schemas.js">schemas.js file</a>:</p>
+<pre class="highlight"><code class="hljs javascript">fluid.defaults(<span class="hljs-string">"gpii.firstDiscovery.auxSchema.prefsServerIntegration"</span>, {
+    <span class="hljs-comment">// using the base auxSchema as the grade inherits everything in there</span>
+    gradeNames: [<span class="hljs-string">"gpii.firstDiscovery.auxSchema"</span>],
+
+    auxiliarySchema: {
+
+        <span class="hljs-comment">// add the extra grade to the loader grades</span>
+        <span class="hljs-string">"loaderGrades"</span>: [<span class="hljs-string">"gpii.firstDiscovery.firstDiscoveryEditor"</span>,
+                         <span class="hljs-string">"gpii.firstDiscovery.prefsServerIntegration"</span>],
+
+        <span class="hljs-comment">// add the token panel</span>
+        <span class="hljs-string">"token"</span>: {
+            <span class="hljs-string">"type"</span>: <span class="hljs-string">"gpii.firstDiscovery.token"</span>,
+            <span class="hljs-string">"panel"</span>: {
+                <span class="hljs-string">"type"</span>: <span class="hljs-string">"gpii.firstDiscovery.panel.token"</span>,
+                <span class="hljs-string">"container"</span>: <span class="hljs-string">".gpiic-fd-prefsEditor-panel-token"</span>,
+                <span class="hljs-string">"template"</span>: <span class="hljs-string">"%templatePrefix/token.html"</span>,
+                <span class="hljs-string">"message"</span>: <span class="hljs-string">"%messagePrefix/token.json"</span>
+            }
+        },
+
+        <span class="hljs-comment">// override the original template to add the extra panel placeholder</span>
+        <span class="hljs-string">"template"</span>: <span class="hljs-string">"%templatePrefix/firstDiscoveryPrefsServerIntegration.html"</span>,
+
+        <span class="hljs-comment">// customize the text on the congratulations panel</span>
+        <span class="hljs-string">"congratulations"</span>: {
+            <span class="hljs-string">"panel"</span>: {
+                <span class="hljs-string">"message"</span>: <span class="hljs-string">"%messagePrefix/congratulationsPrefsServerIntegration.json"</span>
+            }
+        }
+    }
+});
+</code></pre>
+<p>This schema makes two key changes to the auxiliary schema:</p>
+<ul>
+<li>It adds a <a href="prefsServerIntegration.html">Preferences Server Integration</a> grade to the <code>loaderGrades</code>.
+This grade sets up the connection between the Token Panel (see below) and the rest of the tool.</li>
+<li>It adds a <a href="token.html">Token Panel</a> to the set of panels. This panel transmits the preferences
+to the server and receives, in return, a unique token that is displayed and
+can be used to retrieve the preferences later.</li>
+</ul>
+<p>In addition to these changes, this schema makes two more changes to support different messages
+in the interface:</p>
+<ul>
+<li>It overrides the default <code>template</code> with an alternative template containing a placeholder for
+the new Token Panel at the end of the process.</li>
+<li>It overrides the default message file for the <code>congratulations</code> panel with an alternative
+message file containing information about the saving of preferences.</li>
+</ul>
+<h2 id="using-the-alternative-schema">Using the Alternative Schema</h2>
+<p>To instantiate the First Discovery Tool using the Preferences Server Integration schema, provide
+the schema name in the call to
+<a href="http://docs.fluidproject.org/infusion/development/PreferencesEditor.html"><code>fluid.prefs.create()</code></a>
+instead of the default schema:</p>
+<pre class="highlight"><code class="hljs javascript">fluid.prefs.create(container, {
+    build: {
+        gradeNames: [<span class="hljs-string">"gpii.firstDiscovery.auxSchema.prefsServerIntegration"</span>]
+    }
+});
+</code></pre>
+<h3 id="overriding-paths">Overriding Paths</h3>
+<p>The default
+<a href="http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html">Auxiliary Schema</a>
+provided with the First Discovery Tool specifies root paths to
+the templates and message bundles used by the First Discovery Tool. These paths are relative, so an
+integration will likely need to override them. To do this:</p>
+<ol>
+<li><p>Create a custom Auxiliary Schema that uses the <code>prefsServerIntegration</code> schema and
+overrides the <code>terms</code> property, which specifies the paths:</p>
+<pre class="highlight"><code class="hljs javascript"> fluid.defaults(<span class="hljs-string">"my.auxSchema.prefsServerIntegration"</span>, {
+     gradeNames: [<span class="hljs-string">"gpii.firstDiscovery.auxSchema.prefsServerIntegration"</span>],
+     auxiliarySchema: {
+         <span class="hljs-string">"terms"</span>: {
+             <span class="hljs-comment">// path to templates and messages, relative to where this FD tool is</span>
+             <span class="hljs-string">"templatePrefix"</span>: <span class="hljs-string">"my/relative/path/to/first-discovery/src/html"</span>,
+             <span class="hljs-string">"messagePrefix"</span>: <span class="hljs-string">"my/relative/path/to/first-discoverysrc/messages"</span>
+         }
+     }
+ });
+</code></pre>
+</li>
+<li><p>Use this custom schema in the instantiation of the Tool:</p>
+<pre class="highlight"><code class="hljs javascript"> fluid.prefs.create(container, {
+     build: {
+         gradeNames: [<span class="hljs-string">"my.auxSchema.prefsServerIntegration"</span>]
+     }
+ });
+</code></pre>
+</li>
+</ol>
+<h3 id="configuring-the-preferences-server-connection">Configuring the Preferences Server Connection</h3>
+<p>The <a href="token.html">Token Panel</a>, which saves the preferences to the preferences server, uses a default URL that
+assumes that the preferences server is at the same base URL as the First Discovery Tool itself.
+It&#39;s likely that this won&#39;t be case, and that you&#39;ll need to specify a different URL. To do this:</p>
+<ol>
+<li><p>Create a grade that defines the server configuration options you want.</p>
+<p> This grade should use <code>fluid.component</code> as its base grade and provide the
+ <a href="token.html#options"><code>saveRequestConfig</code> option</a>
+ required by the Token Panel:</p>
+<pre class="highlight"><code class="hljs javascript"> fluid.defaults(<span class="hljs-string">"my.serverConfig"</span>, {
+     gradeNames: [<span class="hljs-string">"fluid.component"</span>],
+     saveRequestConfig: {
+         url: <span class="hljs-string">"http://my.host/myServer/user"</span>,
+         method: <span class="hljs-string">"POST"</span>,
+         view: <span class="hljs-string">"myApp"</span>
+     }
+ });
+</code></pre>
+</li>
+<li><p>Add your grade to the <code>loaderGrades</code> in the
+<a href="http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html">Auxiliary Schema</a>.</p>
+<p> Note that all of the desired loader grades must be included in the <code>loaderGrades</code> property,
+ not just the new one that you are adding.</p>
+<pre class="highlight"><code class="hljs javascript"> fluid.defaults(<span class="hljs-string">"my.auxSchema.prefsServerIntegration"</span>, {
+     gradeNames: [<span class="hljs-string">"gpii.firstDiscovery.auxSchema.prefsServerIntegration"</span>],
+     auxiliarySchema: {
+         <span class="hljs-string">"loaderGrades"</span>: [<span class="hljs-string">"gpii.firstDiscovery.firstDiscoveryEditor"</span>,
+                          <span class="hljs-string">"gpii.firstDiscovery.prefsServerIntegration"</span>,
+                          <span class="hljs-string">"my.serverConfig"</span>],
+         <span class="hljs-string">"terms"</span>: {
+             <span class="hljs-comment">// new paths to templates and messages</span>
+             <span class="hljs-string">"templatePrefix"</span>: <span class="hljs-string">"my/path/to/first-discovery/src/html"</span>,
+             <span class="hljs-string">"messagePrefix"</span>: <span class="hljs-string">"my/path/to/first-discovery/src/messages"</span>
+         }
+     }
+ });
+</code></pre>
+</li>
+<li><p>Use this custom schema in the instantiation of the Tool:</p>
+<pre class="highlight"><code class="hljs javascript"> fluid.prefs.create(container, {
+     build: {
+         gradeNames: [<span class="hljs-string">"my.auxSchema.prefsServerIntegration"</span>]
+     }
+ });
+</code></pre>
+</li>
+</ol>
+
+                    </div>
+
+                    <p class="docs-template-githubLink"><a href="https://github.com/GPII/docs-first-discovery/blob/master/src/documents/serverConfig.md" rel="nofollow" target="_blank" class="link-external">Edit this Page on GitHub</a></p>
+                </article>
+
+            </div>
+
+            <footer class="row docs-template-footer fl-inverted-color">
+                <p>The First Discovery Tool was developed by the <a href="http://idrc.ocad.ca/" rel="nofollow" target="_blank">Inclusive Design Research Centre</a>,<br/>
+                through the <a href="https://wiki.fluidproject.org/display/fluid/Preferences+for+Global+Access">Preferences for Global Access</a> project,
+                funded by the US Dept. of Educations's <a href="http://www.ed.gov/category/program/national-institute-disability-and-rehabilitation-research">National Institute on Disability and Rehabilitation Research</a>.</p>
+            </footer>
+
+            <script type="text/javascript">
+                docsCore.init("./");
+                jQuery( "#menu" ).menu({
+                    position: {my: "right top", at: "right bottom"},
+                    icons: {submenu:"ui-icon-blank"},
+                    // Remove the anchors from the tabindex as they are triggered
+                    // via the select event. (see below)
+                    create: function (event, ui) {
+                        jQuery("#menu .ui-menu-item a").attr("tabindex", -1);
+                    },
+                    // The jQuery menu doesn't seem to like it when the <a> are
+                    // specified as the "item" and are nested under an <li>. There
+                    // seems to be styling issues and occassionally an error thrown.
+                    // The page transition work around below is used to maintian the semantic structure,
+                    // while allowing the menu to behave as normal.
+                    select: function( event, ui ) {
+                        var location = ui.item.children("a").attr("href");
+                        if (location) {
+                            window.location.href = location;
+                        }
+                    }
+                });
+            </script>
+        </div> <!-- end container -->
+
+    </body>
+</html>

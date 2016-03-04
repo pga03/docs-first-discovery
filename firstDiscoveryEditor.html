@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>First Discovery Editor | First Discovery Tool Documentation</title>
+        <link rel="icon" type="image/png" href="images/favico.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/highlightjs-custom.css">
+        <link rel="stylesheet" href="lib/infusion/src/lib/jquery/ui/css/default-theme/jquery.ui.theme.css">
+
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/Enactors.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+        <link rel="stylesheet" href="css/docs-first-discovery.css">
+
+        <script type="text/javascript" src="lib/infusion/infusion-uio.js"></script>
+        <script type="text/javascript" src="js/DocsCore.js"></script>
+        <script type="text/javascript" src="lib/jqueryui/jquery-ui.min.js"></script>
+    </head>
+    <body class="docs-template docs-core-sidebar-expanded">
+
+        <div class="container docs-template-container">
+
+            <!-- Skip Link -->
+            <nav id="skip" class="fl-inverted-color">
+                <a href="#topics" class="docs-template-skip-topics">Skip to Topics</a>
+                <a href="#content" class="docs-template-skip-content">Skip to Content</a>
+            </nav>
+            <!-- END skip link -->
+
+
+            <header class="ignore-for-TOC row fl-inverted-color">
+                <!-- BEGIN markup for Preference Editor -->
+                <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+                    <!-- This is the div that will contain the Preference Editor component -->
+                    <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+                    <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->
+                    <div class="fl-panelBar">
+                        <span class="fl-prefsEditor-buttons">
+                            <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+                            <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide">+ show display preferences</button>
+                        </span>
+                    </div>
+                </div>
+                <!-- END markup for Preference Editor -->
+
+                <div class="small-12 column docs-template-header">
+                    <a class="docs-template-logo" href="index.html" title="Home: First Discovery Tool Documentation">
+                        <span class="show-for-sr">
+                            <h1>Documentation for the First Discovery Tool</h1>
+                        </span>
+                        <span aria-hidden="true">
+                            <h1>First Discovery Tool</h1>
+                            <span class="docs-template-tagline">Documentation</span>
+                        </span>
+                    </a>
+
+                    
+                    <nav class="right show-for-small-only docs-template-nav-mobile">
+                        <ul id="menu">
+                            <li class="docs-template-dropDown-header"><span class="docs-template-nav-mobile-icon"></span>
+                                <ul class="docs-template-dropDown">
+                                    
+                                    
+                                        
+                                            <li><a href="index.html" title="Overview">Overview</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="index-tutorials.html" title="Tutorials">Tutorials</a></li>
+                                        
+                                    
+                                        
+                                            <li class="docs-template-category-active"><span aria-label="Currently on Category: API">API</span></li>
+                                        
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="docs-template-header">
+                    <nav class="small-12 column show-for-medium-up">
+                        <ul class="inline-list right">
+                        
+                        
+                            
+                                <li><a href="index.html" title="Overview">Overview</a></li>
+                            
+                        
+                            
+                                <li><a href="index-tutorials.html" title="Tutorials">Tutorials</a></li>
+                            
+                        
+                            
+                                <li class="docs-template-category-active"><span aria-label="Currently on Category: API">API</span></li>
+                            
+                        
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="docs-corec-sidebar-bar ignore-for-TOC docs-template-topics-container small-8 medium-3 column">
+                <nav id="topics" class="docs-template-topics" tabindex="-1">
+                    
+                        
+                        
+                    
+                        
+                        
+                    
+                        
+                        
+                            <h2 class="docs-template-category">API</h2>
+                            
+                                <h3 class="docs-template-sectionName">General</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <span aria-label="Currently on: First Discovery Editor" class="docs-template-topics-active">First Discovery Editor</span>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                                <h3 class="docs-template-sectionName">Panels presented to user</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="welcome.html">Welcome</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="lang.html">Language</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="speakText.html">Speak Text</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="speechRate.html">Speech Rate</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="contrast.html">Contrast</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="textSize.html">Text Size</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="onScreenKeyboard.html">On-Screen Keyboard</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="captions.html">Captions</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="showSounds.html">Show Sounds</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="keyboard.html">Sticky Keys</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="congratulations.html">Congratulations</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                                <h3 class="docs-template-sectionName">Preferences Server Integration</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="prefsServerIntegration.html">Preferences Server Integration</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="token.html">Token Panel</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="tokenPrefsServerIntegrationConnection.html">Token and Preferences Server Integration Connection</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                                <h3 class="docs-template-sectionName">Components used by panels</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="yesNo.html">Yes/No</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="ranged.html">Ranged</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="rangedDisabled.html">Ranged With Disabled Message</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="keyboardPrefsEditorConnection.html">Sticky Keys with Prefs Editor Connection</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="stickyKeysAdjuster.html">Sticky Keys Adjuster</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="stickyKeysAssessment.html">Sticky Keys Assessor</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="keyboardTTS.html">Sticky Keys – Text-to-Speech</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="speechRatePrefsEditorConnection.html">Speech Rate with Prefs Editor Connection</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="langPrefsEditorConnection.html">Language with Prefs Editor Connection</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                                <h3 class="docs-template-sectionName">Enactors</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="enactor-lang.html">Language Enactor</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                                <h3 class="docs-template-sectionName">Language Management</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="msgLookup.html">Message Lookup</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                                <h3 class="docs-template-sectionName">Navigation</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="nav.html">Navigation</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="navButtons.html">Navigation Buttons</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="navIcons.html">Navigation Icons</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="icon.html">Navigation Icon</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="stepCount.html">Step Count</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                                <h3 class="docs-template-sectionName">Utility</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="helpButton.html">Help Button</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="selfVoicing.html">Self Voicing</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="selfVoicingToggle.html">Self Voicing Toggle Button</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="keyboardInput.html">Keyboard Input</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="keyboardInputTTS.html">Keyboard Input - Text-to-Speech</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="usKeymap.html">US Keymap</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="attachTooltip.html">Attach Tooltip</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="attachTooltipRenderer.html">Attach Tooltip Renderer</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="ttsHookupTooltip.html">Text-to-Speech Hookup – Tooltip</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="ttsHookupPrefsEditor.html">Text-to-Speech Hookup – Preferences Editor</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                        
+                    
+                </nav>
+            </div>
+
+            <div class="docs-template-articleBody small-12 medium-8 column">
+
+                <div class="small-4 medium-1 column docs-template-topics-hideShow fl-inverted-color">
+                    <a href="#" class="docs-corec-sidebar-toggle">Topics</a>
+                </div>
+
+                <article id="content">
+                    <h1>First Discovery Editor</h1>
+
+                    <div class="flc-toc-tocContainer docs-template-uio-toc"> </div>
+
+
+                    <div class="docs-template-articleContent">
+                        <h2 id="overview">Overview</h2>
+<p><strong>Component Name:</strong> <code>gpii.firstDiscovery.firstDiscoveryEditor</code></p>
+<p><strong>File:</strong> <code>firstDiscoveryEditor.js</code></p>
+<p>The First Discovery Editor component is the core component of the First Discovery Tool:
+It coordinates other major architectural functionality, such as navigation, text-to-speech,
+language management, etc.</p>
+<h2 id="using-the-first-discovery-editor-component">Using the First Discovery Editor component</h2>
+<p>The First Discovery Editor component is an instance of a  <code>fluid.prefs.prefsEditorLoader</code>.
+To use the component, specify it as the loader grade in the
+<a href="http://docs.fluidproject.org/infusion/development/AuxiliarySchemaForPreferencesFramework.html">Auxiliary Schema</a>:</p>
+<pre class="highlight"><code class="hljs javascript">fluid.defaults(<span class="hljs-string">"my.auxSchema"</span>, {
+    auxiliarySchema: {
+        <span class="hljs-string">"loaderGrades"</span>: [<span class="hljs-string">"gpii.firstDiscovery.firstDiscoveryEditor"</span>],
+        <span class="hljs-comment">// more not shown</span>
+    }
+});
+</code></pre>
+<p>To instantiate the resulting
+<a href="http://docs.fluidproject.org/infusion/development/PreferencesEditor.html">preferences editor</a>,
+use the auxiliary schema in a call to
+<a href="http://docs.fluidproject.org/infusion/development/PreferencesEditor.html"><code>fluid.prefs.create()</code></a>:</p>
+<pre class="highlight"><code class="hljs javascript">fluid.prefs.create(container, {
+    build: {
+        gradeNames: [<span class="hljs-string">"my.auxSchema"</span>]
+    }
+};
+</code></pre>
+<h2 id="grades">Grades</h2>
+<p>This component uses the following base
+<a href="http://docs.fluidproject.org/infusion/development/ComponentGrades.html">grades</a>:</p>
+<ul>
+<li><code>fluid.prefs.prefsEditorLoader</code></li>
+</ul>
+<h2 id="model">Model</h2>
+<p>This component supports the following
+<a href="http://docs.fluidproject.org/infusion/development/tutorial-gettingStartedWithInfusion/ModelComponents.html">model</a>
+properties:</p>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Description</th>
+<th>Values</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>currentPanelNum</code></td>
+<td>The panel currently displayed</td>
+<td>Panel ID (Number)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-events">Supported Events</h2>
+<p>This component supports the following
+<a href="http://docs.fluidproject.org/infusion/development/InfusionEventSystem.html">events</a>:</p>
+<table>
+    <thead>
+        <tr><th>Event</th><th>Type</th><th>Description</th><th>Parameters</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>onPrefsEditorReady</code></td>
+            <td>default</td>
+            <td>Fired when the internal prefsEditor, containing all of the panels, is ready</td>
+            <td>
+                <dl>
+                    <dd><code>component</code></dd>
+                    <dt>An instance of <code>fluid.prefs.prefsEditor</code></dt>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td><code>onCreateNav</code></td>
+            <td>default</td>
+            <td>Fired after onPrefsEditorReady, which is when all of the necessary markup is in place</td>
+            <td>
+                <dl>
+                    <dd><code>component</code></dd>
+                    <dt>An instance of <code>fluid.prefs.prefsEditor</code></dt>
+                </dl>
+            </td>
+        </tr>
+        <tr>
+            <td><code>onPanelShown</code></td>
+            <td>default</td>
+            <td>Fired each time a panel becomes visible</td>
+            <td>
+                <dl>
+                    <dd><code>number</code></dd>
+                    <dt>The panel ID of visible shown panel</dt>
+                </dl>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+<th>Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>showPanel</code></td>
+<td>Sets the visibility of the panels. The panel which is identified as the current panel in the model is made visible, the rest are hidden.</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h2 id="subcomponents">Subcomponents</h2>
+<p>This component has the following
+<a href="http://docs.fluidproject.org/infusion/development/SubcomponentDeclaration.html">subcomponents</a>:</p>
+<table>
+    <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
+    <tr>
+        <td><code>selfVoicing</code></td>
+        <td>Specifies the Text-to-Speech engine to use for self voicing.</td>
+        <td><a href="selfVoicing.html"><code>&quot;gpii.firstDiscovery.selfVoicing&quot;</code></a></td>
+        <td>
+        <pre class="highlight"><code class="hljs css"><span class="hljs-tag">selfVoicing</span>: <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">type</span>:<span class="hljs-value"> <span class="hljs-string">"gpii.firstDiscovery.selfVoicing"</span>
+</span></span></span>}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td><code>selfVoicingToggle</code></td>
+        <td>Specifies the type of Text-to-Speech button to mute/unmute self voicing that results in the text-to-speech preference to be turned on/off accordingly. </td>
+        <td><a href="selfVoicingToggle.html"><code>&quot;gpii.firstDiscovery.selfVoicingToggle&quot;</code></a></td>
+        <td>
+        <pre class="highlight"><code class="hljs less"><span class="hljs-tag">selfVoicingToggle</span>: {
+    <span class="hljs-attribute">container</span>: <span class="hljs-string">"{that}.dom.selfVoicingToggle"</span>,
+    <span class="hljs-attribute">createOnEvent</span>: <span class="hljs-string">"onPrefsEditorReady"</span>,
+    <span class="hljs-attribute">type</span>: <span class="hljs-string">"gpii.firstDiscovery.selfVoicingToggle"</span>,
+    <span class="hljs-attribute">options</span>: {
+        <span class="hljs-attribute">model</span>: {
+            <span class="hljs-attribute">enabled</span>: <span class="hljs-string">"{prefsEditor}.model.preferences.gpii_firstDiscovery_speak"</span>
+        },
+        <span class="hljs-attribute">messageBase</span>: <span class="hljs-string">"{messageLoader}.resources.prefsEditor.resourceText"</span>
+    }
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td><code>helpButton</code></td>
+        <td>Specifies the type of help button to use. The current help button is mostly a placeholder, as it only sets the text.</td>
+        <td><a href="helpButton.html"><code>&quot;gpii.firstDiscovery.helpButton&quot;</code></a></td>
+        <td>
+        <pre class="highlight"><code class="hljs less"><span class="hljs-tag">helpButton</span>: {
+    <span class="hljs-attribute">type</span>: <span class="hljs-string">"gpii.firstDiscovery.helpButton"</span>,
+    <span class="hljs-attribute">container</span>: <span class="hljs-string">"{that}.dom.helpButton"</span>,
+    <span class="hljs-attribute">createOnEvent</span>: <span class="hljs-string">"onPrefsEditorReady"</span>,
+    <span class="hljs-attribute">options</span>: {
+        <span class="hljs-attribute">messageBase</span>: <span class="hljs-string">"{messageLoader}.resources.prefsEditor.resourceText"</span>
+    }
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td><code>prefsEditor</code></td>
+        <td>Specifies the underlying prefs editor used. This is the part that contains all of the adjuster panels.</td>
+        <td><a href="http://docs.fluidproject.org/infusion/development/PreferencesEditor.html"><code>&quot;fluid.prefs.prefsEditor&quot;</code></a></td>
+        <td>
+        <pre class="highlight"><code class="hljs nimrod">prefsEditor: {
+    container: <span class="hljs-string">"{that}.dom.prefsEditor"</span>,
+    options: {
+        gradeNames: [<span class="hljs-string">"gpii.firstDiscovery.tts.prefsEditor"</span>],
+        modelListeners: {
+            states: {
+                funcName: <span class="hljs-string">"{that}.save"</span>,
+                excludeSource: <span class="hljs-string">"init"</span>
+            },
+            preferences: {
+                funcName: <span class="hljs-string">"{that}.saveAndApply"</span>,
+                excludeSource: <span class="hljs-string">"init"</span>
+            }
+        },
+        model: {
+            states: {
+                currentPanelNum: <span class="hljs-string">"{firstDiscoveryEditor}.model.currentPanelNum"</span>
+            }
+        },
+        selectors: {
+            panel: <span class="hljs-string">"{firstDiscoveryEditor}.options.selectors.panel"</span>
+        },
+        events: {
+            onPanelShown: <span class="hljs-string">"{firstDiscoveryEditor}.events.onPanelShown"</span>
+        },
+        listeners: {
+            onReady: {
+                listener: <span class="hljs-string">"{firstDiscoveryEditor}.events.onPrefsEditorReady"</span>,
+                args: <span class="hljs-string">"{firstDiscoveryEditor}"</span>
+            },
+            // the page <span class="hljs-keyword">is</span> reloaded to reset language <span class="hljs-keyword">and</span> etc.
+            <span class="hljs-string">"afterReset.reload"</span>: {
+                <span class="hljs-string">"this"</span>: <span class="hljs-string">"location"</span>,
+                <span class="hljs-keyword">method</span>: <span class="hljs-string">"reload"</span>,
+                args: <span class="hljs-literal">true</span>
+            },
+            <span class="hljs-string">"onCreate.bindResetShortcut"</span>: {
+                listener: <span class="hljs-string">"gpii.firstDiscovery.keyboardShortcut.bindShortcut"</span>,
+                args: [
+                    <span class="hljs-string">"body"</span>,
+                    gpii.firstDiscovery.keyboardShortcut.key.r,
+                    [<span class="hljs-string">"ctrlKey"</span>, <span class="hljs-string">"altKey"</span>],
+                    <span class="hljs-string">"{that}.reset"</span>
+                ]
+            }
+        },
+        distributeOptions: [{
+            record: {
+                offerAssistance: <span class="hljs-string">"{prefsEditor}.model.states.stickyKey.offerAssistance"</span>,
+                tryAccommodation: <span class="hljs-string">"{prefsEditor}.model.states.stickyKey.tryAccommodation"</span>
+            },
+            target: <span class="hljs-string">"{that &gt; gpii.firstDiscovery.panel.keyboard}.options.model"</span>
+        }]
+    }
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td><code>nav</code></td>
+        <td>Specifies the component to use to handle the navigation between panels, and the set of panel icons.</td>
+        <td><a href="nav.html"><code>&quot;gpii.firstDiscovery.nav&quot;</code></a></td>
+        <td>
+        <pre class="highlight"><code class="hljs less"><span class="hljs-tag">nav</span>: {
+    <span class="hljs-attribute">type</span>: <span class="hljs-string">"gpii.firstDiscovery.nav"</span>,
+    <span class="hljs-attribute">container</span>: <span class="hljs-string">"{that}.dom.nav"</span>,
+    <span class="hljs-attribute">createOnEvent</span>: <span class="hljs-string">"onCreateNav"</span>,
+    <span class="hljs-attribute">options</span>: {
+        <span class="hljs-attribute">model</span>: {
+            <span class="hljs-attribute">currentPanelNum</span>: <span class="hljs-string">"{firstDiscoveryEditor}.model.currentPanelNum"</span>,
+            <span class="hljs-attribute">visitedPanelNums</span>: <span class="hljs-string">"{prefsEditor}.model.states.visitedPanelNums"</span>
+        },
+        <span class="hljs-attribute">messageBase</span>: <span class="hljs-string">"{messageLoader}.resources.prefsEditor.resourceText"</span>,
+        <span class="hljs-attribute">styles</span>: <span class="hljs-string">"{firstDiscoveryEditor}.options.styles"</span>,
+        <span class="hljs-attribute">panelTotalNum</span>: <span class="hljs-string">"{firstDiscoveryEditor}.panels.length"</span>
+    }
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td><code>messageLoader</code></td>
+        <td>Specifies the component and means for loading in the JSON message bundle files.</td>
+        <td><a href="http://docs.fluidproject.org/infusion/development/LocalizationInThePreferencesFramework.html"><code>&quot;fluid.prefs.resourceLoader&quot;</code></a></td>
+        <td>
+        <pre class="highlight"><code class="hljs css"><span class="hljs-tag">messageLoader</span>: <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">options</span>:<span class="hljs-value"> {
+        locale: <span class="hljs-string">"{prefsEditorLoader}.settings.preferences.gpii_firstDiscovery_language"</span>
+    </span></span></span>}
+}</code></pre>
+        </td>
+    </tr>
+</table>
+
+<h2 id="options">Options</h2>
+<p>This component can be configured using the following
+<a href="http://docs.fluidproject.org/infusion/development/ComponentOptionsAndDefaults.html">options</a>:</p>
+<table>
+    <tr><th>Name</th><th>Description</th><th>Values</th><th>Default</th></tr>
+    <tr>
+        <td><code>defaultLocale</code></td>
+        <td>The language code to use, for selecting the correct message bundle, when no language has been provided in the preferences.</td>
+        <td>A valid language code such as: <code>&quot;en-US&quot;</code>, <code>&quot;fr-FR&quot;</code>, <code>&quot;es-MX&quot;</code>, <code>&quot;de-DE&quot;</code>, <code>&quot;nl-NL&quot;</code>, <code>&quot;sv-SE&quot;</code></td>
+        <td>
+        This resolves to &quot;en-US&quot;:<br/>
+        <pre class="highlight"><code class="hljs less"><span class="hljs-tag">defaultLocale</span>: {
+    <span class="hljs-tag">expander</span>: {
+        <span class="hljs-attribute">funcName</span>: <span class="hljs-string">"fluid.get"</span>,
+        <span class="hljs-attribute">args</span>: [{
+            <span class="hljs-attribute">expander</span>: {
+                <span class="hljs-attribute">funcName</span>: <span class="hljs-string">"fluid.defaults"</span>,
+                <span class="hljs-attribute">args</span>: [<span class="hljs-string">"gpii.firstDiscovery.schemas.language"</span>]
+            }
+        }, <span class="hljs-attr_selector">["schema", "properties", "gpii.firstDiscovery.language", "default"]</span>]
+    }
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td><code>tooltipOptions</code></td>
+        <td>The options to be used by any descendant tooltip components.</td>
+        <td></td>
+        <td>
+        <pre class="highlight"><code class="hljs css"><span class="hljs-tag">tooltipOptions</span>: <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">delay</span>:<span class="hljs-value"> <span class="hljs-number">0</span>,
+    duration: <span class="hljs-number">0</span>,
+    position: {
+        my: <span class="hljs-string">"left bottom"</span>,
+        at: <span class="hljs-string">"right+1 top"</span>
+    </span></span></span>},
+    <span class="hljs-tag">styles</span>: <span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">tooltip</span>:<span class="hljs-value"> <span class="hljs-string">"gpii-fd-tooltip"</span>
+    </span></span></span>},
+    <span class="hljs-tag">items</span>: "<span class="hljs-class">.gpiic-fd-tooltip</span><span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[disabled]</span>)"
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td><code>selectors</code></td>
+        <td>Javascript object containing selectors for various fragments of the markup, including the containers for the subcomponents.</td>
+        <td></td>
+        <td>See <a href="#selectors">Selectors</a></td>
+    </tr>
+    <tr>
+        <td><code>styles</code></td>
+        <td>Specific class names used to achieve the look and feel.</td>
+        <td></td>
+        <td>
+        <pre class="highlight"><code class="hljs less"><span class="hljs-tag">styles</span>: {
+    <span class="hljs-attribute">active</span>: <span class="hljs-string">"gpii-fd-active"</span>,
+    <span class="hljs-attribute">show</span>: <span class="hljs-string">"gpii-fd-show"</span>,
+    <span class="hljs-attribute">currentPanel</span>: <span class="hljs-string">"gpii-fd-current"</span>
+}</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td><code>modelListeners</code></td>
+        <td>JavaScript object containing model paths and the listeners that are activated when changes happen to those paths.</td>
+        <td>Keys in the object are event names, values are functions or arrays of functions.</td>
+        <td>See <a href="#model">Model</a></td>
+    </tr>
+</table>
+
+<h2 id="selectors">Selectors</h2>
+<p>One of the options that can be provided to Infusion components is a set of CSS-based
+selectors identifying where in the DOM different elements can be found. Components use a
+<a href="http://docs.fluidproject.org/infusion/development/DOMBinder.html">DOM Binder</a> to access the
+named elements.</p>
+<p>The value for the <code>selectors</code> option is itself a Javascript object containing name/value pairs:</p>
+<pre class="highlight"><code class="hljs javascript">selectors: {
+    selector1Name: <span class="hljs-string">"selector 1 string"</span>,
+    selector2Name: <span class="hljs-string">"selector 2 string"</span>,
+      ...
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Selector Name</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>prefsEditor</code></td>
+<td>The container to use for the internal prefsEditor, which contains all of the adjuster panels.</td>
+<td><code>&quot;.gpiic-fd-prefsEditor&quot;</code></td>
+</tr>
+<tr>
+<td><code>panel</code></td>
+<td>Passed down to internal prefsEditor to use as its panel selector.</td>
+<td><code>&quot;.gpiic-fd-prefsEditor-panel&quot;</code></td>
+</tr>
+<tr>
+<td><code>selfVoicingToggle</code></td>
+<td>The container for the selfVoicingToggle subcomponent.</td>
+<td><code>&quot;.gpiic-fd-selfVoicingToggle&quot;</code></td>
+</tr>
+<tr>
+<td><code>helpButton</code></td>
+<td>The container for the help button.</td>
+<td><code>&quot;.gpiic-fd-help&quot;</code></td>
+</tr>
+<tr>
+<td><code>nav</code></td>
+<td>The container for the navigation subcomponent.</td>
+<td><code>&quot;.gpiic-fd-nav&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="dependencies">Dependencies</h2>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"src/lib/infusion/src/lib/normalize/css/normalize.css"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"src/lib/foundation/css/foundation.min.css"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"src/css/style.css"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/css"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"src/lib/infusion/src/framework/preferences/css/Enactors.css"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/css"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"src/lib/infusion/src/framework/preferences/css/PrefsEditor.css"</span> /&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/lib/infusion/infusion-custom.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/schemas/schemas.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/keyboardShortcut.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/ttsHookup.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/tooltip.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/msgLookup.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/selfVoicing.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/stickyKeysAssessment.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/keyboardInput.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/stickyKeysAdjuster.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/panels.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/enactors.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/navButtons.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/navIcons.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/helpButton.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/stepCount.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/nav.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"src/js/firstDiscoveryEditor.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+
+                    </div>
+
+                    <p class="docs-template-githubLink"><a href="https://github.com/GPII/docs-first-discovery/blob/master/src/documents/firstDiscoveryEditor.html.md.handlebars" rel="nofollow" target="_blank" class="link-external">Edit this Page on GitHub</a></p>
+                </article>
+
+            </div>
+
+            <footer class="row docs-template-footer fl-inverted-color">
+                <p>The First Discovery Tool was developed by the <a href="http://idrc.ocad.ca/" rel="nofollow" target="_blank">Inclusive Design Research Centre</a>,<br/>
+                through the <a href="https://wiki.fluidproject.org/display/fluid/Preferences+for+Global+Access">Preferences for Global Access</a> project,
+                funded by the US Dept. of Educations's <a href="http://www.ed.gov/category/program/national-institute-disability-and-rehabilitation-research">National Institute on Disability and Rehabilitation Research</a>.</p>
+            </footer>
+
+            <script type="text/javascript">
+                docsCore.init("./");
+                jQuery( "#menu" ).menu({
+                    position: {my: "right top", at: "right bottom"},
+                    icons: {submenu:"ui-icon-blank"},
+                    // Remove the anchors from the tabindex as they are triggered
+                    // via the select event. (see below)
+                    create: function (event, ui) {
+                        jQuery("#menu .ui-menu-item a").attr("tabindex", -1);
+                    },
+                    // The jQuery menu doesn't seem to like it when the <a> are
+                    // specified as the "item" and are nested under an <li>. There
+                    // seems to be styling issues and occassionally an error thrown.
+                    // The page transition work around below is used to maintian the semantic structure,
+                    // while allowing the menu to behave as normal.
+                    select: function( event, ui ) {
+                        var location = ui.item.children("a").attr("href");
+                        if (location) {
+                            window.location.href = location;
+                        }
+                    }
+                });
+            </script>
+        </div> <!-- end container -->
+
+    </body>
+</html>

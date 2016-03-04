@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>More complicated: Adding a simple preference | First Discovery Tool Documentation</title>
+        <link rel="icon" type="image/png" href="images/favico.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/highlightjs-custom.css">
+        <link rel="stylesheet" href="lib/infusion/src/lib/jquery/ui/css/default-theme/jquery.ui.theme.css">
+
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/Enactors.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+        <link rel="stylesheet" href="css/docs-first-discovery.css">
+
+        <script type="text/javascript" src="lib/infusion/infusion-uio.js"></script>
+        <script type="text/javascript" src="js/DocsCore.js"></script>
+        <script type="text/javascript" src="lib/jqueryui/jquery-ui.min.js"></script>
+    </head>
+    <body class="docs-template docs-core-sidebar-expanded">
+
+        <div class="container docs-template-container">
+
+            <!-- Skip Link -->
+            <nav id="skip" class="fl-inverted-color">
+                <a href="#topics" class="docs-template-skip-topics">Skip to Topics</a>
+                <a href="#content" class="docs-template-skip-content">Skip to Content</a>
+            </nav>
+            <!-- END skip link -->
+
+
+            <header class="ignore-for-TOC row fl-inverted-color">
+                <!-- BEGIN markup for Preference Editor -->
+                <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+                    <!-- This is the div that will contain the Preference Editor component -->
+                    <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+                    <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->
+                    <div class="fl-panelBar">
+                        <span class="fl-prefsEditor-buttons">
+                            <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+                            <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide">+ show display preferences</button>
+                        </span>
+                    </div>
+                </div>
+                <!-- END markup for Preference Editor -->
+
+                <div class="small-12 column docs-template-header">
+                    <a class="docs-template-logo" href="index.html" title="Home: First Discovery Tool Documentation">
+                        <span class="show-for-sr">
+                            <h1>Documentation for the First Discovery Tool</h1>
+                        </span>
+                        <span aria-hidden="true">
+                            <h1>First Discovery Tool</h1>
+                            <span class="docs-template-tagline">Documentation</span>
+                        </span>
+                    </a>
+
+                    
+                    <nav class="right show-for-small-only docs-template-nav-mobile">
+                        <ul id="menu">
+                            <li class="docs-template-dropDown-header"><span class="docs-template-nav-mobile-icon"></span>
+                                <ul class="docs-template-dropDown">
+                                    
+                                    
+                                        
+                                            <li><a href="index.html" title="Overview">Overview</a></li>
+                                        
+                                    
+                                        
+                                            <li class="docs-template-category-active"><span aria-label="Currently on Category: Tutorials">Tutorials</span></li>
+                                        
+                                    
+                                        
+                                            <li><a href="index-api.html" title="API">API</a></li>
+                                        
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="docs-template-header">
+                    <nav class="small-12 column show-for-medium-up">
+                        <ul class="inline-list right">
+                        
+                        
+                            
+                                <li><a href="index.html" title="Overview">Overview</a></li>
+                            
+                        
+                            
+                                <li class="docs-template-category-active"><span aria-label="Currently on Category: Tutorials">Tutorials</span></li>
+                            
+                        
+                            
+                                <li><a href="index-api.html" title="API">API</a></li>
+                            
+                        
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="docs-corec-sidebar-bar ignore-for-TOC docs-template-topics-container small-8 medium-3 column">
+                <nav id="topics" class="docs-template-topics" tabindex="-1">
+                    
+                        
+                        
+                    
+                        
+                        
+                            <h2 class="docs-template-category">Tutorials</h2>
+                            
+                                <h3 class="docs-template-sectionName">Customizing the First Discovery Tool</h3>
+                                <ul>
+                                    
+                                        <li>
+                                            
+                                                <a href="reordering.html">Simplest: Reordering preferences</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="removing.html">Less simple: Removing preferences</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <span aria-label="Currently on: More complicated: Adding a simple preference " class="docs-template-topics-active">More complicated: Adding a simple preference </span>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="enactors.html">Enactors</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="serverConfig.html">Advanced: Configuring the connection to the Preferences Server</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="terminalInstall.html">Installing a Frist Discovery Terminal</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="bluemix.html">Advanced: Deploying First Discovery to Bluemix</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                            
+                        
+                    
+                        
+                        
+                    
+                </nav>
+            </div>
+
+            <div class="docs-template-articleBody small-12 medium-8 column">
+
+                <div class="small-4 medium-1 column docs-template-topics-hideShow fl-inverted-color">
+                    <a href="#" class="docs-corec-sidebar-toggle">Topics</a>
+                </div>
+
+                <article id="content">
+                    <h1>More complicated: Adding a simple preference</h1>
+
+                    <div class="flc-toc-tocContainer docs-template-uio-toc"> </div>
+
+
+                    <div class="docs-template-articleContent">
+                        <p>Your flying car has an &quot;Autopilot&quot; feature, and you want to add a preference for this. It’s a boolean preference, i.e. &quot;Do you want autopilot turned on by default?&quot; with a simple yes or no answer. After creating this new preference, and adding a new panel for the &quot;Autopilot&quot; preference, you will need to add the preference and its value to the preferences table on the confirm panel.</p>
+<h2 id="quick-version">Quick version</h2>
+<ol>
+<li>Edit <code>src/schemas/schemas.js</code> to add the &quot;Autopilot&quot; preference to the primary schemas.</li>
+<li>Create JSON files in the messages folder with the necessary strings.</li>
+<li>Edit <code>src/html/firstDiscoveryPreferencesServerIntegration.html</code> to add a placeholder for the panel.</li>
+<li>Edit <code>src/js/panels.js</code> to add the code that creates the panel for the &quot;Autopilot&quot; preference.</li>
+<li>Edit <code>src/schemas/schemas.js</code> to add code for the panel to auxiliary schema.</li>
+<li>Edit <code>src/messages/confirm_en-US.json</code> to add the <code>&quot;friendlyNames&quot;</code> and <code>&quot;tts&quot;</code> values for the confirm panel.</li>
+<li>Edit <code>src/js/panels.js</code> to add the &quot;model relays&quot; for the &quot;Autopilot&quot; preference.</li>
+<li>Edit <code>src/js/panels.js</code> to add the &quot;selectors&quot; for the &quot;Autopilot&quot; preference.</li>
+<li>Edit <code>src/js/panels.js</code> to add the &quot;protoTree&quot; options for the &quot;Autopilot&quot; preference.</li>
+<li>Edit <code>src/js/panels.js</code> to add the &quot;bindings&quot; for the &quot;Autopilot&quot; preference.</li>
+<li>Edit <code>src/html/confirmTemplate.html</code> to add the preference to the preferences table on the confirm panel.</li>
+<li>Edit <code>src/html/confirmTemplate.html</code> to add the preference to be read by &quot;tts&quot;.</li>
+</ol>
+<h2 id="detailed-instructions">Detailed Instructions</h2>
+<ol>
+<li><p>Edit <code>src/schemas/schemas.js</code> to add the &quot;Autopilot&quot; preference to the primary schemas.</p>
+<p> A. The <code>src/schemas/schemas.js</code> file contains the primary schema, which defines the preferences, and the auxiliary schema, which defines the editor itself (i.e. the panels used to adjust the preferences, where to find HTML templates, etc.)</p>
+<p> You can see the entire file here: <a href="https://github.com/GPII/first-discovery/blob/master/src/schemas/schemas.js">https://github.com/GPII/first-discovery/blob/master/src/schemas/schemas.js</a></p>
+<p> B. In the <code>schemas.js</code> file, find the definition of the &quot;speak&quot; primary schema, which starts with <code>fluid.defaults(&quot;gpii.firstDiscovery.schemas.speak&quot;,</code>:</p>
+<pre class="highlight"><code class="hljs javascript"> fluid.defaults(<span class="hljs-string">"gpii.firstDiscovery.schemas.speak"</span>, {
+     gradeNames: [<span class="hljs-string">"fluid.prefs.schemas"</span>],
+         schema: {
+           <span class="hljs-string">"gpii.firstDiscovery.speak"</span>: {
+                <span class="hljs-string">"type"</span>: <span class="hljs-string">"boolean"</span>,
+                 <span class="hljs-string">"default"</span>: <span class="hljs-literal">true</span>
+             }
+         }
+ });
+</code></pre>
+<p> This preference is a boolean preference, and follows the &quot;yesNo&quot; preference template, just like the &quot;Autopilot&quot; preference we want to add.</p>
+<p> C. Add a new definition that takes the same form as the &quot;speak&quot; preference, but with &quot;autopilot&quot; instead of &quot;speak&quot;. Change the default value to false (since we probably don’t want the car to just start out with auto-pilot on):</p>
+<pre class="highlight"><code class="hljs javascript"> fluid.defaults(<span class="hljs-string">"gpii.firstDiscovery.schemas.autopilot"</span>, {
+     gradeNames: [<span class="hljs-string">"fluid.prefs.schemas"</span>],
+         schema: {
+           <span class="hljs-string">"gpii.firstDiscovery.autopilot"</span>: {
+                <span class="hljs-string">"type"</span>: <span class="hljs-string">"boolean"</span>,
+                 <span class="hljs-string">"default"</span>: <span class="hljs-literal">false</span>
+             }
+         }
+ });
+</code></pre>
+</li>
+<li><p>Create JSON files in the src/messages folder with the necessary strings for the panel.</p>
+<p> A. The src/messages folder contains JSON files containing the interface strings for each preference panel. The file <code>&quot;speakText_en-US.json&quot;</code> is an example of the form of message file you’ll create for your preference panel.</p>
+<p> You can see that file here: <a href="https://github.com/GPII/first-discovery/blob/master/src/messages/speakText_en-US.json">https://github.com/GPII/first-discovery/blob/master/src/messages/speakText_en-US.json</a></p>
+<p> B. Create a new file in the messages folder called <code>&quot;autopilot_en-US.json&quot;</code>.</p>
+<p> C. Edit the contents of the file according to the Autopilot functionality:</p>
+<ul>
+<li>Define the &quot;instructions&quot; as &quot;Do you want autopilot turned on?&quot;;</li>
+<li>Define the &quot;yes-tooltip&quot; as &quot;Select to turn autopilot on&quot;;</li>
+<li>Define the &quot;no-tooltips&quot;Select to turn autopilot off&quot;;</li>
+<li>Define the &quot;yes-tooltipAtSelect&quot; as &quot;Autopilot is on&quot;;</li>
+<li><p>Define the &quot;no-tooltipAtSelect&quot; as &quot;Autopilot is off&quot;.</p>
+<pre class="highlight"><code class="hljs javascript">{
+  <span class="hljs-string">"instructions"</span>: <span class="hljs-string">"Do you want autopilot turned on?"</span>,
+  <span class="hljs-string">"no"</span>: <span class="hljs-string">"No"</span>,
+  <span class="hljs-string">"yes"</span>: <span class="hljs-string">"Yes"</span>,
+
+  <span class="hljs-string">"yes-tooltip"</span>: <span class="hljs-string">"Select to turn autopilot on"</span>,
+  <span class="hljs-string">"no-tooltip"</span>: <span class="hljs-string">"Select to turn autopilot off"</span>,
+  <span class="hljs-string">"yes-tooltipAtSelect"</span>: <span class="hljs-string">"Autopilot is on"</span>,
+  <span class="hljs-string">"no-tooltipAtSelect"</span>: <span class="hljs-string">"Autopilot is off"</span>
+}
+</code></pre>
+<p>D. Duplicate the file for other languages; for example, create a file called <code>&quot;autopilot_fr-FR.json&quot;</code> for a French version. Use exactly the same keys in the file, but change the values to the translated strings:</p>
+<pre class="highlight"><code class="hljs javascript">{
+  <span class="hljs-string">"instructions"</span>: <span class="hljs-string">"Voulez-vous le pilote automatique activé par défaut??"</span>,
+  <span class="hljs-string">"no"</span>: <span class="hljs-string">"Non"</span>,
+  <span class="hljs-string">"yes"</span>: <span class="hljs-string">"Oui"</span>,
+
+  <span class="hljs-string">"yes-tooltip"</span>: <span class="hljs-string">"Sélectionner pour activer le pilote automatique"</span>,
+  <span class="hljs-string">"no-tooltip"</span>: <span class="hljs-string">"Sélectionner pour désactiver le pilote automatique"</span>,
+  <span class="hljs-string">"yes-tooltipAtSelect"</span>: <span class="hljs-string">"Pilote automatique est activée"</span>,
+  <span class="hljs-string">"no-tooltipAtSelect"</span>: <span class="hljs-string">"Pilote automatique est désactivée"</span>
+}
+</code></pre>
+<p>(The currently supported languages in the tool are en-US English, fr-FR French, and es-MX Spanish; The remaining language options in the tool are not suported and do not require message files; Unsupported languages defualt to English)</p>
+</li>
+</ul>
+</li>
+<li><p>Edit <code>src/html/firstDiscoveryPreferenceServerIntegration.html</code> to add a placeholder for the panel.</p>
+<p> A. Add a new <code>&lt;section&gt;</code> element of the same form as the others, but define the class names to reflect the &quot;Autopilot&quot; preference:</p>
+<pre class="highlight"><code class="hljs xml"> <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-lang gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-lang gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-welcome gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-welcome gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-showSounds gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-showSounds gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-autopilot gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-autopilot gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpiic-fd-prefsEditor-panel-speakText gpiic-fd-prefsEditor-panel gpii-fd-prefsEditor-panel-speakText gpii-fd-main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>   
+
+ //more content not shown
+</code></pre>
+<p> Make sure that the new <code>&lt;section&gt;</code> element places the panel in the order that you want the preferences. You can see the new <code>&lt;section&gt;</code> for <code>&quot;gpiic-fd-prefsEditor-panel-autopilot&quot;</code> is placed between the <code>&quot;showSounds&quot;</code> and <code>&quot;speakText&quot;</code> sections. Be sure to use this same position for other added elements for the &quot;Autopilot&quot; preference.</p>
+</li>
+<li><p>Edit <code>src/js/panels.js</code> to add the code that creates the panel for the &quot;Autopilot&quot; preference.</p>
+<p> A. In <code>panels.js</code>, make a call to <code>fluid.defualts()</code> to create the the panel, and call <code>&quot;gpii.firstDiscovery.panel.autopilot&quot;</code>: </p>
+<pre class="highlight"><code class="hljs javascript">     fluid.defaults(<span class="hljs-string">"gpii.firstDiscovery.panel.autopilot"</span>, {
+         <span class="hljs-comment">// configuration options will go here</span>
+     });
+</code></pre>
+<p> <code>fluid.defaults()</code> is one of the core functions in Infusion: It is used to create components (the building blocks of any Infusion application) and register them with the Framework.</p>
+<p> E. Fill in the configuration options for the panel:</p>
+<p> The First Discovery Tool currently presents four basic ‘styles’ of preference: 1) basic yes/no questions, 2) a range of values (like the text size), 3) a set of choices (like the colour combinations), and 4) the keyboard adjustments.</p>
+<p> The code for the First Discovery Tool includes some base grades that can be used to implement a panel of one of these types (including the HTML template, and the CSS for styling). These base grades define most of the functionality for a particular type of panel; using these grades will effectively ‘inherit’ this functionality.</p>
+<p> For a boolean preference, the First Discovery Tool has a grade called <code>&quot;gpii.firstDiscovery.panel.yesNo&quot;</code> that provides most of the functionality for a simple yes/no panel:</p>
+<pre class="highlight"><code class="hljs javascript">     fluid.defaults(<span class="hljs-string">"gpii.firstDiscovery.panel.autopilot"</span>, {
+         gradeNames: [<span class="hljs-string">"gpii.firstDiscovery.panel.yesNo"</span>],
+         <span class="hljs-comment">// more options will go here</span>
+     });
+</code></pre>
+<p> (You will see in the code that other panel types have different grades specified in the gradeNames option.)
+ Every panel needs a preferenceMap option to tell the framework how to map the preference in the Primary Schema to the panel:</p>
+<pre class="highlight"><code class="hljs javascript">     fluid.defaults(<span class="hljs-string">"gpii.firstDiscovery.panel.autopilot"</span>, {
+         gradeNames: [<span class="hljs-string">"gpii.firstDiscovery.panel.yesNo"</span>],
+         preferenceMap: {
+             <span class="hljs-string">"gpii.firstDiscovery.autopilot"</span>: {
+                 <span class="hljs-string">"model.value"</span>: <span class="hljs-string">"default"</span>
+             }
+         }
+     });
+</code></pre>
+</li>
+<li><p>Edit <code>src/schemas/schemas.js</code> to add code for the panel to the auxiliary schema.</p>
+<p> The <code>src/schemas/schemas.js</code> file contains the auxiliary schema, which defines the editor itself (i.e. the panels used to adjust the preferences, where to find HTML templates, etc.)</p>
+<p> A. In the <code>schemas.js</code> file, find the auxiliary schema, which starts with <code>fluid.defaults(&quot;gpii.firstDiscovery.auxSchema&quot;,</code>.</p>
+<pre class="highlight"><code class="hljs javascript"> fluid.defaults(<span class="hljs-string">"gpii.firstDiscovery.auxSchema"</span>, {
+     gradeNames: [<span class="hljs-string">"fluid.prefs.auxSchema"</span>],
+     auxiliarySchema: {
+         <span class="hljs-string">"loaderGrades"</span>: [<span class="hljs-string">"gpii.firstDiscovery.firstDiscoveryEditor"</span>],
+         <span class="hljs-comment">// more not shown here</span>
+</code></pre>
+<p> B. Inside the section named &quot;auxiliarySchema&quot;, add a section for the new panel. You can see that here we specify the &quot;yesNo&quot; format as the template, by using  <code>%templatePrefix/yesNo.html</code>, and the message file for the text on screen is linked under the message option with the value <code>%messagePrefix/autopilot.json</code>.</p>
+<pre class="highlight"><code class="hljs javascript"> fluid.defaults(<span class="hljs-string">"gpii.firstDiscovery.auxSchema"</span>, {
+     gradeNames: [<span class="hljs-string">"fluid.prefs.auxSchema"</span>],
+     auxiliarySchema: {
+         <span class="hljs-string">"loaderGrades"</span>: [<span class="hljs-string">"gpii.firstDiscovery.firstDiscoveryEditor"</span>],
+         <span class="hljs-string">"namespace"</span>: <span class="hljs-string">"gpii.firstDiscovery"</span>,
+         <span class="hljs-string">"terms"</span>: {
+             <span class="hljs-string">"templatePrefix"</span>: <span class="hljs-string">"../src/html"</span>,
+             <span class="hljs-string">"messagePrefix"</span>: <span class="hljs-string">"../src/messages"</span>
+         },
+         <span class="hljs-string">"template"</span>: <span class="hljs-string">"%templatePrefix/firstDiscovery.html"</span>,
+         <span class="hljs-string">"message"</span>: <span class="hljs-string">"%messagePrefix/firstDiscovery.json"</span>,
+         <span class="hljs-string">"lang"</span>: {
+             <span class="hljs-comment">// some content not shown</span>
+         },
+         <span class="hljs-string">"welcome"</span>: {
+             <span class="hljs-comment">// some content not shown</span>
+         },
+         <span class="hljs-string">"speakText"</span>: {
+             <span class="hljs-comment">// some content not shown</span>
+         },
+         <span class="hljs-string">"autopilot"</span>: {
+             <span class="hljs-string">"type"</span>: <span class="hljs-string">"gpii.firstDiscovery.autopilot"</span>,
+             <span class="hljs-string">"panel"</span>: {
+                 <span class="hljs-string">"type"</span>: <span class="hljs-string">"gpii.firstDiscovery.panel.autopilot"</span>,
+                 <span class="hljs-string">"container"</span>: <span class="hljs-string">".gpiic-fd-prefsEditor-panel-autopilot"</span>,
+                 <span class="hljs-string">"template"</span>: <span class="hljs-string">"%templatePrefix/yesNo.html"</span>,
+                 <span class="hljs-string">"message"</span>: <span class="hljs-string">"%messagePrefix/autopilot.json"</span>
+             }
+         },
+         <span class="hljs-comment">// more content not shown</span>
+     }
+ });
+</code></pre>
+<p> At this point, you should have a new panel in the tool with a new preference called &quot;Autopilot&quot; that follows the &quot;yesNo&quot; template, and uses the text you specified in the message files. This panel should be able to self voice the instructions, buttons, and tooltips. Changing the language setting should use the alternate the text in the panel with the corresponding language selection.     </p>
+<p> Now that you have a working panel and preference, you&#39;ll want to have that preference appear in on the confirm page so that the user can make sure that your new preference is set how they want it.</p>
+</li>
+<li><p>Edit <code>src/messages/confirm_en-US.json</code> to add the <code>&quot;friendlyNames&quot;</code> and <code>&quot;tts&quot;</code> values for the confirm panel.</p>
+<p> Each preference is relayed from the &quot;prefsEditor&quot; and transformed into a user friendly name, or <code>&quot;friendlyName&quot;</code>, which is defined here. Example: &quot;en-US&quot; becomes &quot;English&quot;. The table needs a friendly name value for the preference &quot;label&quot;, which goes in the left column of the table, and a &quot;value&quot;, in the right column.  </p>
+<p> A. Add the <code>&quot;friendlyNames&quot;</code> &quot;label&quot; and &quot;value&quot; for the &quot;Autopilot&quot; preference in the <code>confirm_en-US.json</code> message file. </p>
+<pre class="highlight"><code class="hljs javascript"> <span class="hljs-string">"autopilotLabel"</span>: <span class="hljs-string">"Autopilot:"</span>,
+ <span class="hljs-string">"autopilotValue"</span>: <span class="hljs-string">""</span>
+</code></pre>
+<p> Note: the &quot;value&quot; friendly name is left blank here. That&#39;s because we will retrieve the value and insert it there later in the code.</p>
+<p> Each friendly name preference from this model is relayed to <code>&quot;tts&quot;</code> and merged into the string template with its preamble, value, and (occasionally) units. The tts values are used for text to speech to voice the contents of the confirmation panel. Example: &quot;English&quot; -&gt; &quot;Your language choice is English&quot;. Example: &quot;true&quot; -&gt; &quot;Your use captions choice is ON&quot;.</p>
+<p> B. Add the &quot;tts&quot; preamble for the &quot;Autopilot&quot; preference.</p>
+<pre class="highlight"><code class="hljs javascript"> <span class="hljs-string">"autopilotLabel"</span>: <span class="hljs-string">"Autopilot:"</span>,
+ <span class="hljs-string">"autopilotValue"</span>: <span class="hljs-string">""</span>,
+ <span class="hljs-string">"autopilotTtsPreamble"</span>: <span class="hljs-string">"Your autopilot choice is"</span>
+</code></pre>
+<p> C. Repeat step 6 for all other supported languages. </p>
+<p> For example, open <code>src/messages/confirm_fr-FR.json</code>, and add the following for French translations. </p>
+<pre class="highlight"><code class="hljs javascript"> <span class="hljs-string">"autopilotLabel"</span>: <span class="hljs-string">"Pilote Automatique:"</span>,
+ <span class="hljs-string">"autopilotValue"</span>: <span class="hljs-string">""</span>,
+ <span class="hljs-string">"autopilotTtsPreamble"</span>: <span class="hljs-string">"Votre choix est le pilote automatique"</span>
+</code></pre>
+</li>
+<li><p>Edit <code>src/js/panels.js</code> to add the &quot;model relays&quot; for the &quot;Autopilot&quot; preference.</p>
+<p> A. Navigate to the <code>&quot;fluid.defaults()&quot;</code> call to <code>&quot;gpii.firstDiscovery.panel.confirm&quot;</code>, and find the section for <code>&quot;&quot;modelRelay[]</code>.</p>
+<p> This panel uses many modelRelays. The modelRelays populate two model values in this panel,<code>&quot;friendlyNames&quot;</code> and <code>&quot;tts&quot;</code>, which were defined in the previous step.</p>
+<p> Take, for example, the model relays for the &quot;Speak&quot; preference, another simple preference that follows the &quot;yesNo&quot; template. </p>
+<pre class="highlight"><code class="hljs javascript"> <span class="hljs-comment">//more content not shown here</span>
+ {
+     source: <span class="hljs-string">"{fluid.prefs.prefsEditor}.model.preferences.gpii_firstDiscovery_speak"</span>,
+     target: <span class="hljs-string">"friendlyNames.speak"</span>,
+     singleTransform: {
+         type: <span class="hljs-string">"fluid.transforms.valueMapper"</span>,
+         inputPath: <span class="hljs-string">""</span>,
+         options: {
+             <span class="hljs-literal">true</span>: <span class="hljs-string">"{that}.options.messageBase.true"</span>,
+             <span class="hljs-literal">false</span>: <span class="hljs-string">"{that}.options.messageBase.false"</span>
+         }
+     }
+ },
+ {
+     source: <span class="hljs-string">"friendlyNames.speak"</span>,
+     target: <span class="hljs-string">"tts.speak"</span>,
+     singleTransform: {
+         type: <span class="hljs-string">"fluid.transforms.stringTemplate"</span>,
+         template: <span class="hljs-string">"%preamble %value %units."</span>,
+         terms: {
+             preamble: <span class="hljs-string">"{that}.options.messageBase.speakTtsPreamble"</span>,
+             value: <span class="hljs-string">"{that}.model.friendlyNames.speak"</span>,
+             units: <span class="hljs-string">""</span>
+         }
+     }
+ },
+ <span class="hljs-comment">//more content not shown here</span>
+</code></pre>
+<p> B. Using the &quot;Speak&quot; preference template above, add the model relays for the &quot;Autopilot&quot; preference in the <code>&quot;modelRelay: []&quot;</code> section.</p>
+<pre class="highlight"><code class="hljs javascript"> <span class="hljs-comment">//more content not shown here</span>
+ {
+     source: <span class="hljs-string">"{fluid.prefs.prefsEditor}.model.preferences.gpii_firstDiscovery_autopilot"</span>,
+     target: <span class="hljs-string">"friendlyNames.autopilot"</span>,
+     singleTransform: {
+         type: <span class="hljs-string">"fluid.transforms.valueMapper"</span>,
+         inputPath: <span class="hljs-string">""</span>,
+         options: {
+             <span class="hljs-literal">true</span>: <span class="hljs-string">"{that}.options.messageBase.true"</span>,
+             <span class="hljs-literal">false</span>: <span class="hljs-string">"{that}.options.messageBase.false"</span>
+         }
+     }
+ },
+ {
+     source: <span class="hljs-string">"friendlyNames.autopilot"</span>,
+     target: <span class="hljs-string">"tts.autopilot"</span>,
+     singleTransform: {
+         type: <span class="hljs-string">"fluid.transforms.stringTemplate"</span>,
+         template: <span class="hljs-string">"%preamble %value %units."</span>,
+         terms: {
+             preamble: <span class="hljs-string">"{that}.options.messageBase.autopilotTtsPreamble"</span>,
+             value: <span class="hljs-string">"{that}.model.friendlyNames.autopilot"</span>,
+             units: <span class="hljs-string">""</span>
+         }
+     }
+ },
+ <span class="hljs-comment">//more content not shown here</span>
+</code></pre>
+</li>
+<li><p>Edit <code>src/js/panels.js</code> to add the &quot;selectors&quot; for the &quot;Autopilot&quot; preference.</p>
+<p> A. In <code>&quot;gpii.firstDiscovery.panel.confirm&quot;</code>, find the <code>selectors: {}</code> section. </p>
+<p> Each preference requires 3 different &quot;selectors&quot;, 1) a &quot;value&quot; selector, 2) a &quot;label&quot; selector, and 3) a &quot;tts&quot; selector. Take, for example, the selectors for the &quot;Speak&quot; preference.</p>
+<pre class="highlight"><code class="hljs javascript"> speakValue: <span class="hljs-string">".speak .gpii-confirm-value"</span>,
+ speakLabel: <span class="hljs-string">".speak .gpii-confirm-label"</span>,
+ speakTts: <span class="hljs-string">".speak-tts"</span>
+</code></pre>
+<p> B. Add the selectors for the &quot;Autopilot&quot; preference, following the template of the &quot;Speak&quot; preference.</p>
+<pre class="highlight"><code class="hljs javascript"> autopilotValue: <span class="hljs-string">".autopilot .gpii-confirm-value"</span>,
+ autopilotLabel: <span class="hljs-string">".autopilot .gpii-confirm-label"</span>,
+ autopilotTts: <span class="hljs-string">".autopilot-tts"</span>
+</code></pre>
+</li>
+<li><p>Edit <code>src/js/panels.js</code> to add the &quot;protoTree&quot; options for the &quot;Autopilot&quot; preference.</p>
+<p> A. In <code>&quot;gpii.firstDiscovery.panel.confirm&quot;</code>, find the <code>protoTree: {}</code> section. </p>
+<p> The &quot;ProtoTree&quot; helps with the rendering of the panel. This is where we tell the renderer what to place on the screen.</p>
+<p> Similar to &quot;selectors&quot;, each preference also requires 3 different &quot;protoTree&quot; options, 1) &quot;value&quot;, 2) &quot;label&quot; , and 3) &quot;tts&quot;. Take, for example, the protoTree options for the &quot;Speak&quot; preference.</p>
+<pre class="highlight"><code class="hljs javascript"> speakLabel: {messagekey: <span class="hljs-string">"speakLabel"</span>},
+ speakValue: {messagekey: <span class="hljs-string">"speakValue"</span>},
+ speakTts: {messagekey: <span class="hljs-string">"speakTtsPreamble"</span>}
+</code></pre>
+<p> B. Add the &quot;protoTree&quot; options for the &quot;Autopilot&quot; preference, following the template of the &quot;Speak&quot; preference. </p>
+<pre class="highlight"><code class="hljs javascript"> autopilotLabel: {messagekey: <span class="hljs-string">"autopilotLabel"</span>},
+ autopilotValue: {messagekey: <span class="hljs-string">"autopilotValue"</span>},
+ autopilotTts: {messagekey: <span class="hljs-string">"autopilotTtsPreamble"</span>}
+</code></pre>
+</li>
+<li><p>Edit <code>src/js/panels.js</code> to add the &quot;bindings&quot; for the &quot;Autopilot&quot; preference.</p>
+<p>A. In <code>&quot;gpii.firstDiscovery.panel.confirm&quot;</code>, find the <code>bindings: {}</code> section. </p>
+<p>These &quot;bindings&quot; variables compose the &quot;value&quot; and &quot;tts&quot; strings that wil be used on the confirmation panel. Take, for example, the &quot;bindings&quot; for the &quot;Speak&quot; preference.</p>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-string">"speakValue"</span>: <span class="hljs-string">"friendlyNames.speak"</span>,
+<span class="hljs-string">"speakTts"</span>: <span class="hljs-string">"tts.speak"</span>
+</code></pre>
+<p>B. Add the &quot;bindings&quot; options for the &quot;Autopilot&quot; preference, following the template of the &quot;Speak&quot; preference.</p>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-string">"autopilotValue"</span>: <span class="hljs-string">"friendlyNames.autopilot"</span>,
+<span class="hljs-string">"autopilotTts"</span>: <span class="hljs-string">"tts.autopilot"</span>
+</code></pre>
+</li>
+<li><p>Edit <code>src/html/confirmTemplate.html</code> to add the preference to the preferences table on the confirm panel.</p>
+<p>A. Navigate to the preferences table declaration, with the class <code>&quot;gpii-fd-confirm-table&quot;</code>.</p>
+<p>Here you can see each preference has its own <code>&lt;tr&gt;</code> declaration, with 2 <code>&lt;td&gt;</code> declarations in each, 1) for the preference label, and 2) for the preference value. Take, for example, the &quot;Speak&quot; preference <code>&lt;tr&gt;</code> section. </p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table"</span>&gt;</span>
+    //more content not shown here
+    <span class="hljs-tag">&lt;<span class="hljs-title">tr</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"speak"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table-name"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-label "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table-value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-value "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-unit "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    //more content not shown here
+<span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+</code></pre>
+<p>B. In the correct order of preferences (between &quot;showSounds&quot; and &quot;speakText&quot;), add a new <code>&lt;tr&gt;</code> declaration with the class <code>&quot;autopilot&quot;</code>.</p>
+<pre class="highlight"><code class="hljs xml">    <span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table"</span>&gt;</span>
+        //more content not shown here
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"showSounds"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table-name"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-label "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table-value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-value "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-unit "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"autopilot"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"speak"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table-name"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-label "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table-value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-value "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-unit "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        //more content not shown here
+    <span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+</code></pre>
+<p>C. Add the class for the label <code>&lt;td&gt;</code> of &quot;autopilot&quot; with <code>&quot;gpii-fd-confirm-table-name&quot;</code>, and Inside it add a <code>&lt;span&gt;</code> with the class <code>&quot;gpii-confirm-label &quot;</code>.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">tr</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"autopilot"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table-name"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-label "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+</code></pre>
+<p>D. Add the class for the value <code>&lt;td&gt;</code> of &quot;autopilot&quot; with <code>&quot;gpii-fd-confirm-table-value&quot;</code>, a <code>&lt;span&gt;</code> with the class <code>&quot;gpii-confirm-value &quot;</code>, and a second <code>&lt;span&gt;</code> with the class <code>&quot;gpii-confirm-unit &quot;</code>.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">tr</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"autopilot"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table-name"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-label "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">td</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-confirm-table-value"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-value "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-confirm-unit "</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>Edit <code>src/html/confirmTemplate.html</code> to add the preference to be read by &quot;tts&quot;.</p>
+<p>A. In the confirm template, find the section of <code>&lt;p&gt;</code> declarations all with the class <code>gpii-fd-hidden-accessible</code>.</p>
+<p>These <code>&lt;p&gt;</code> declarations place the &quot;tts&quot; preferences strings on the panel so that they can be read allowed, but are given the CSS class <code>gpii-fd-hidden-accessible</code> so that they do not appear to the user. Take, for example, the <code>&lt;p&gt;</code> declaration for the &quot;Speak&quot; preference.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-hidden-accessible gpiic-fd-panel-content-tts speak-tts"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<p>B. In the correct order of preferences (between &quot;showSounds&quot; and &quot;speakText&quot;), add a new <code>&lt;p&gt;</code> declaration with the classes <code>&quot;autopilot&quot;</code>.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"gpii-fd-hidden-accessible gpiic-fd-panel-content-tts autopilot-tts"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<p>After completion of this step, you should have a new preference called &quot;Autopilot&quot; on a new panel, with its name and value in the preferences table on the confirm panel. The voicing for the table should include the &quot;Autopilot&quot; preference and correct value. The text and TTS for the preference should update with the language.</p>
+</li>
+</ol>
+
+                    </div>
+
+                    <p class="docs-template-githubLink"><a href="https://github.com/GPII/docs-first-discovery/blob/master/src/documents/adding.md" rel="nofollow" target="_blank" class="link-external">Edit this Page on GitHub</a></p>
+                </article>
+
+            </div>
+
+            <footer class="row docs-template-footer fl-inverted-color">
+                <p>The First Discovery Tool was developed by the <a href="http://idrc.ocad.ca/" rel="nofollow" target="_blank">Inclusive Design Research Centre</a>,<br/>
+                through the <a href="https://wiki.fluidproject.org/display/fluid/Preferences+for+Global+Access">Preferences for Global Access</a> project,
+                funded by the US Dept. of Educations's <a href="http://www.ed.gov/category/program/national-institute-disability-and-rehabilitation-research">National Institute on Disability and Rehabilitation Research</a>.</p>
+            </footer>
+
+            <script type="text/javascript">
+                docsCore.init("./");
+                jQuery( "#menu" ).menu({
+                    position: {my: "right top", at: "right bottom"},
+                    icons: {submenu:"ui-icon-blank"},
+                    // Remove the anchors from the tabindex as they are triggered
+                    // via the select event. (see below)
+                    create: function (event, ui) {
+                        jQuery("#menu .ui-menu-item a").attr("tabindex", -1);
+                    },
+                    // The jQuery menu doesn't seem to like it when the <a> are
+                    // specified as the "item" and are nested under an <li>. There
+                    // seems to be styling issues and occassionally an error thrown.
+                    // The page transition work around below is used to maintian the semantic structure,
+                    // while allowing the menu to behave as normal.
+                    select: function( event, ui ) {
+                        var location = ui.item.children("a").attr("href");
+                        if (location) {
+                            window.location.href = location;
+                        }
+                    }
+                });
+            </script>
+        </div> <!-- end container -->
+
+    </body>
+</html>
